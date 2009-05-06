@@ -1,0 +1,11 @@
+<section name="518">
+	It is time to leave the Singing Forest.
+	<choices>
+		<choice section="478">Head north</choice>
+		<choice section="111">East to the River Rese</choice>
+		<choice section="181">South-west to Thurlings</choice>
+		<choice section="653">North-west towards the High King's Seat</choice>
+		<choice section="711">West</choice>
+		<choice section="539">South</choice>
+	</choices>
+</section>

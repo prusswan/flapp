@@ -1,0 +1,7 @@
+<section name="630">
+	<difficulty ability="magic" level="14"/>.
+	<outcomes>
+		<success section="694"/>
+		<failure section="161"/>
+	</outcomes>
+</section>
