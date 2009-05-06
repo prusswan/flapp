@@ -1,0 +1,7 @@
+<section name="203">
+	You can hire a fishing boat for 15 Shards a day. It comes with a fishing net.
+	<choices>
+		<choice shards="15" section="267">Pay 15 Shards and go fishing</choice>
+		<choice section="135">Don’t go fishing</choice>
+	</choices>
+</section>

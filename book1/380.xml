@@ -1,0 +1,14 @@
+<section name="380">
+	<p>
+		‘By the Larcenous One!’ exclaims the high priest joyfully. ‘You are indeed an accomplished rogue.’
+	</p>
+	<p>
+		Erase the <lose item="gold chain mail of Tyrnai"><b>golden chain mail of Tyrnai</b></lose> from your Adventure Sheet. The high priest teaches you secret knowledge of Sig, the God of Deception. You get a <gain shards="300">300 Shard reward</gain> and you <gain ability="rank" amount="1">go up 1 Rank</gain>. <random dice="1" var="x"/> - the result is <gain ability="stamina" amount="x">the number of Stamina points you gain permanently</gain>. Also, don’t forget to increase your Defence by 1 as a result of your gain in Rank.
+	</p>
+	<p>
+		<if curse="Tyrnai’s Curse">
+			If you are under Tyrnai’s curse, <goto section="564"/>.
+		</if>
+		Otherwise, <goto section="100"/>.
+	</p>
+</section>

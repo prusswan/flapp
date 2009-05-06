@@ -1,0 +1,12 @@
+<section name="236">
+	<p>
+		You find Fourze inside, desperately trying to get out of his suit and run off. At the sight of a hardened adventurer, rather than a timid villager, he surrenders and confesses all. He terrified people with the monster disguise to keep them away from the farm. He and his men were kidnapping villagers, chaining them in the cellar below and selling them to a slaver from Caran Baru, for work in the slave mines. You find Haylie and several other villagers down below in the cellar.
+	</p>
+	<p>
+		‘Don’t hurt me,’ begs Fourze, ‘I’m only trying to make a few Shards.’
+	</p>
+	<p>
+		‘What! By selling your own people into slavery,’ says one of the villagers, giving him a good kick.
+	</p>
+	<p>You lead them back to Venefax. <goto section="414"/>.</p>
+</section>

@@ -1,0 +1,6 @@
+<section name="70">
+	<p>
+		Your ship is thrown about like flotsam and jetsam. When the storm subsides, you take stock. Much has been swept overboard - you <lose cargo="?">lose 1 Cargo Unit</lose>, if you had any, of your choice. Also, the ship has been swept way off course and the mate has no idea where you are. ‘We’re lost at sea, Cap’n!’ he moans.
+	</p>
+	<p><goto section="90"/>.</p>
+</section>

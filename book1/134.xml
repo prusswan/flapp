@@ -1,0 +1,7 @@
+<section name="134">
+	<p>‘The high priest is out of town,’ a clerk tells you.</p>
+	<p>
+		‘Yeah, until the heat dies down!’ quips a passing member of the temple. The clerk glares at her angrily.
+	</p>
+	<p><goto section="235"/>.</p>
+</section>

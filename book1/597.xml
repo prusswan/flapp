@@ -1,0 +1,21 @@
+<section name="597">
+	<p>
+		‘You did it!’ exclaims the warden happily, taking the <b>ghoul’s head</b> and placing it in a jar. <lose item="ghoul's head">Cross it off</lose> your Adventure Sheet.
+	</p>
+	<p>
+		<tick price="x" hidden="t"/>
+		You can have a choice of reward:
+		an <tool name="amber wand" ability="magic" bonus="1" flag="x"/>,
+		<tick shards="500" flag="x"/>, or a free
+		<resurrection text="Temple of Nagil" book="1" section="350" flag="x">resurrection deal</resurrection>, if you do not have one already. You can choose only one of these three rewards.
+	</p>
+	<p>
+		To arrange resurrection, write ‘Temple of Nagil - <i>The War-Torn Kingdom</i> <b>350</b>)’ in the Resurrection box on your Adventure Sheet. If you are later killed, turn to <b>350</b> in this book.
+	</p>
+	<p>
+		<if disease="Ghoulbite">
+			Finally, if you are suffering from ghoulbite disease, <goto section="156"/>.
+		</if>
+		Otherwise, you return to town: <goto section="100"/>.
+	</p>
+</section>

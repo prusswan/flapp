@@ -1,0 +1,7 @@
+<section name="240">
+	<p>
+		You sail into the teeming harbour of Marlock City. Sokaran warships escort you in.
+	</p>
+	<p>‘Troubled times,’ comments a sailor.</p>
+	<p><goto section="100"/>.</p>
+</section>

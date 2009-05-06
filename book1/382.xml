@@ -1,0 +1,17 @@
+<section name="382">
+	<p>
+		‘Fishing?’ you ask, ‘Surely nothing can live in these poisonous waters.’
+	</p>
+	<p>
+		The fisherman shows you a bright yellow fish with grey stripes, saying, ‘Only the smoulder fish has adapted to the sulphur - it feeds on the local seaweed. Mind you the smoulder fish is totally inedible.’
+	</p>
+	<p>‘Why hunt it then?’</p>
+	<p>
+		‘Well, each fish is worth quite a bit to sorcerers and the like. We have a standing quota to fill each month for the magical colleges at Dweomer. The sulphur-laden organs burn in a particular way - a very useful ingredient in certain magics, I am told.’
+	</p>
+	<p>‘And where does all this sulphur come from?’</p>
+	<p>
+		‘Scholars say there is an underground volcanic vent. Others believe it is the breath of the sea dragon. Personally, I always drop a silver nugget into the waters once a month to appease the dragon, for his favourite metal is silver.’
+	</p>
+	<p><goto section="135"/>.</p>
+</section>

@@ -1,0 +1,18 @@
+<section name="423">
+	<p>
+		The ratmen lie defeated at your feet. You find <gain shards="15"/> on the bodies, and a note which says: ‘Parti! Kitchuns. Tonite. Rank and file rats only - no offsirs and no king allowed!’
+	</p>
+	<p>
+		The rest of the cavern is bare, so you press on down the tunnels ahead.
+	</p>
+	<p>
+		After a while you come to a cleaner area of the sewers, a part of the old city now buried under Yellowport. It dates from the period when all of Harkuna was ruled by the Masked Ones of Uttaku, before the people overthrew them.
+	</p>
+	<p>
+		You come to two rotten wooden doors. Names have been scratched on to them by some half-literate ratman. One says ‘Thrown Rum’; the other says ‘Kitchuns’. You can hear gravelly rat voices from behind both doors.
+	</p>
+	<choices>
+		<choice section="572">Enter the ‘kitchuns’</choice>
+		<choice section="202">Enter the ‘thrown rum’</choice>
+	</choices>
+</section>

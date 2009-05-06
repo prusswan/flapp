@@ -1,0 +1,12 @@
+<section name="221">
+	<p>
+		One of the militiamen recognizes you and shouts, ‘That’s the one who assassinated Marloes Marlock! Get him!’
+	</p>
+	<p>
+		You turn tail and flee with fifteen militiamen on your heels. <rankcheck dice="1"/>.
+		<success>
+			If you score less than or equal to your Rank, <goto section="57"/>.
+		</success>
+		<failure>Otherwise, <goto section="252"/>.</failure>
+	</p>
+</section>

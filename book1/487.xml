@@ -1,0 +1,7 @@
+<section name="487">
+	<difficulty ability="scouting" level="11"/>.
+	<outcomes>
+		<success section="348"/>
+		<failure section="189"/>
+	</outcomes>
+</section>

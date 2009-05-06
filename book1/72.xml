@@ -1,0 +1,7 @@
+<section name="72">
+	You manage to shrug off the effects of the gas.
+	<choices>
+		<choice section="371">Attack the beast</choice>
+		<choice section="527">Run off</choice>
+	</choices>
+</section>

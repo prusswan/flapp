@@ -1,0 +1,15 @@
+<section name="130">
+	<p>You are greeted by several of the knights.</p>
+	<p>‘We’ll not fight you anymore,’ says the Blue Dragon Knight.</p>
+	<p>‘We keep losing,’ says the Green Dragon Knight.</p>
+	<p>
+		‘And it’s costing us a fortune in armour, not to say a lot of bruises!’ says the Red Dragon Knight.
+	</p>
+	<p>
+		You are turned away,
+		<if codeword="Axe">
+			unless you have the codeword Axe, in which case <goto section="521"/>.
+		</if>
+		Otherwise, <goto section="276"/>.
+	</p>
+</section>

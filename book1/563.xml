@@ -1,0 +1,20 @@
+<section name="563">
+	<p>
+		To renounce the worship of Sig, you must pay 50 Shards in compensation to the priesthood.
+	</p>
+	<p>‘Sig will no longer watch over you!’ says a priest.</p>
+	<p>
+		<if god="Sig"><if shards="50">
+				If you are certain you want to renounce Sig’s worship,
+				<group>
+					<text>cross off the 50 Shards, erase Sig from the God box on your Adventure Sheet</text>
+					<lose shards="50"/>
+					<tick god=""/>
+				</group>, and lose 1 point of THIEVERY.
+		</if></if>
+	</p>
+	<p>
+		‘The dungeons are full of would-be rogues who renounced the faith!’ yells a priest as you leave.
+	</p>
+	<p><goto section="100"/>.</p>
+</section>

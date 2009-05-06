@@ -1,0 +1,24 @@
+<section name="283">
+	<p>‘What goes on here?’ you ask. ‘Why do you behave so oddly?’</p>
+	<p>
+		The villagers seem quite frightened of you, but one old fellow has nerve enough to reply.
+	</p>
+	<p>
+		‘This banquet is for the ghosts of three travellers who lost their way in a storm, fell into our millpond and were drowned.’
+	</p>
+	<p>‘When was this?’ you ask.</p>
+	<p>
+		‘Seven years since. They come every year on this night, and if we didn’t placate them with victuals and treasure, there’d be a mess of trouble.’
+	</p>
+	<p>‘How do you know that?’</p>
+	<p>
+		‘Old Megan told us,’ he says. ‘She knows much about such things.’
+	</p>
+	<choices>
+		<choice section="590">Stay out at night and watch for the ghosts</choice>
+		<choice section="576">Follow the river north</choice>
+		<choice section="82">Follow the river south</choice>
+		<choice section="278">Head east into the countryside</choice>
+		<choice section="558">Go west to the main road</choice>
+	</choices>
+</section>

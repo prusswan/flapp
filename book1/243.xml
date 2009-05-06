@@ -1,0 +1,7 @@
+<section name="243">
+	You cannot find any hidden panels - Lauria did say that the real treasure was upstairs. You call to her, but she doesn’t reply.
+	<choices>
+		<choice section="386">Go upstairs</choice>
+		<choice section="534">Wait downstairs</choice>
+	</choices>
+</section>

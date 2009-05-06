@@ -1,0 +1,14 @@
+<section name="146">
+	<p>
+		He seems to see something he approves of because he says, ‘Perhaps. But first you must prove yourself. There is a knight, a man of great evil. He is known as the Black Dragon Knight - defeat him in battle and I will teach you. Bring me back his <b>black dragon shield</b> as proof of your valour.’ With that he turns and walks away.
+	</p>
+	<p>
+		‘But how will I find him? And then how will I find you?’ you cry.
+	</p>
+	<p>
+		‘Would you have me kill him for you as well?’ he asks over his shoulder. ‘As for the second, ask for me in the Blue Griffon Tavern in Caran Baru. My name is Yanryt the Son.’
+	</p>
+	<p>
+		<tick codeword="Axe">Gain the codeword Axe</tick> and <goto section="412"/>.
+	</p>
+</section>

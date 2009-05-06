@@ -1,0 +1,11 @@
+<section name="172">
+	<p>
+		‘Thank you, thank you,’ coughs the scholar. He gives you a <item name="vial of yellow dust"/> as a reward. Note it on your Adventure Sheet.
+	</p>
+	<p>
+		‘I found this at an ancient archaeological site I have been studying,’ he says. ‘I believe it needs to be thrown into the holy waters at the village of Blessed Springs, although quite what happens then, I have no idea.’
+	</p>
+	<p>
+		He thanks you again and takes his leave. <goto section="100"/>.
+	</p>
+</section>

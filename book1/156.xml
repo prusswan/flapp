@@ -1,0 +1,6 @@
+<section name="156">
+	<p>
+		The priest looks you over. ‘I’m afraid we have no one skilled enough to cure you. However, I believe the Temple of Maka in Yellowport might be able to help. And the holy waters at Blessed Springs are known to be efficacious in this kind of case.’
+	</p>
+	<p><goto section="100"/>.</p>
+</section>

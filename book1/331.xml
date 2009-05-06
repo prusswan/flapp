@@ -1,0 +1,18 @@
+<section name="331" boxes="1">
+	<p>
+		<if ticks="1">
+			If there is a tick in the box, <goto section="627"/> immediately.
+		</if>
+		If not, <tick/> and read on.
+	</p>
+	<p>
+		You fall into conversation with Pyletes, a kindly old scholar-priest of Molhern, the God of Knowledge.
+	</p>
+	<p>
+		‘Many years ago, the <b>Book of the Seven Sages</b> was stolen from us,’ he croaks. ‘News suggests that the scorpion men are in possession of it. I need a young adventurer like yourself to travel to Scorpion Bight and return the book to me. In return I can show you how to improve the skill of your choice.’
+	</p>
+	<p>
+		<tick codeword="StillInYellowport" hidden="t"/>
+		If you take up the quest, <gain codeword="Artefact" force="f">gain the codeword Artefact</gain>. Now <goto section="10">turn back to 10</goto>.
+	</p>
+</section>

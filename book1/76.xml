@@ -1,0 +1,8 @@
+<section name="76">
+	<p>
+		You are an accomplished street brawler, and after only a few minutes’ furious fighting, the three officers are laid out unconscious in the street. Several people gathered to watch the brawl - most of them give a cheer at your performance. General Marlock’s troops have not endeared themselves to the population.
+	</p>
+	<p>
+		You find about <tick shards="25"/> on the officers’ bodies and an <item name="officer's pass"/>. Take whatever you require and <goto section="100"/>.
+	</p>
+</section>

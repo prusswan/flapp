@@ -1,0 +1,13 @@
+<section name="430">
+	<p>You are sailing in the waters around Scorpion Bight.</p>
+	<p>
+		‘I wouldn’t want to put into land in these parts,’ says your navigator. ‘The scorpion men’ll take all we’ve got, and our lives too, given half a chance!’
+	</p>
+	<p><random type="travel" dice="2"/>:</p>
+	<outcomes>
+		<outcome range="2-4" section="586">Storm</outcome>
+		<outcome range="5-7" section="85">An uneventful voyage</outcome>
+		<outcome range="8-9" section="56">A ship of bizarre design</outcome>
+		<outcome range="10-12" section="264">A floating island</outcome>
+	</outcomes>
+</section>

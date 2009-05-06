@@ -1,0 +1,24 @@
+<section name="556" image="556.jpg">
+	<p><tick codeword="Amends">Gain the codeword Amends</tick>.</p>
+	<p>
+		You scatter the powder on the surface of the waters.
+		<lose item="vial of yellow dust">
+			Cross the <b>vial of yellow dust</b> off
+		</lose> your Adventure Sheet.
+	</p>
+	<p>
+		There is a flash, and a cloud of yellow smoke billows up out of the pond. When it clears, you find yourself face to face with a white-bearded bespectacled old man, floating a few feet off the water! He is dressed in long, flowing ornate robes.
+	</p>
+	<p>
+		He blinks at you for a moment before saying, ‘Thank you, thank you. That worthless apprentice of mine! Can you imagine - I told him to throw the dust into the holy waters but the idiot couldn’t even be trusted to do that!’
+	</p>
+	<p>
+		The old man’s name is Oliphard the Wizardly. As a reward, he casts a spell that enhances your skill - <gain ability="?" amount="1">add one to the ability of your choice</gain>, permanently.
+	</p>
+	<p>
+		<if profession="Mage">
+			If you are a Mage, <goto section="426"/>.
+		</if>
+		If not, he thanks you and says, ‘If you ever need some help, look for me in Trefoille.’ Then he leaves - <goto section="378"/>.
+	</p>
+</section>

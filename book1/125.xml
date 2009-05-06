@@ -1,0 +1,12 @@
+<section name="125">
+	<p>
+		You mumble a prayer to the gods, but you’re not sure if you got the ritual right.
+	</p>
+	<p>
+		The beggar thanks you and babbles, ‘Yes, yes, a new doublet for an old beggar - I shall wear it with pride!’ He wanders off, stopping passersby to show off what he thinks are his new clothes. Poor old fool.
+	</p>
+	<p>
+		<tick codeword="StillInYellowport" hidden="t"/>
+		You return to the city centre. <goto section="10"/>.
+	</p>
+</section>

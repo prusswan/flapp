@@ -1,0 +1,20 @@
+<section name="312">
+	<p>
+		‘Nerech’s a dangerous place - even its coastal waters, Cap’n,’ says the first mate. The crew won’t follow you there if they don’t think you’re good enough to lead them!’
+	</p>
+	<p>
+		<if ability="rank" greaterthan="3">
+			If your Rank is 4 or more, <goto book="4" section="50">turn to paragraph 50 in <i>The Plains of Howling Darkness</i></goto>.
+		</if>
+	</p>
+	<p>
+		If your Rank is less than 4, the first mate advises you against making the ocean journey. If you take his advice, <goto section="507" force="f"/>.
+	</p>
+	<p>
+		If you insist on making the trip, you need to <difficulty ability="charisma" level="11"/> to convince the crew to follow you.
+	</p>
+	<outcomes>
+		<success book="4" section="50"/>
+		<failure section="507"/>
+	</outcomes>
+</section>

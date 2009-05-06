@@ -1,0 +1,11 @@
+<section name="90">
+	<p>
+		Your ship is limping through unknown waters. The sun beats down, and the wind drops to a whisper.
+	</p>
+	<p>‘What direction, Cap’n?’ asks the bosun.</p>
+	<p><difficulty ability="scouting" level="10"/>.</p>
+	<outcomes>
+		<success section="633"/>
+		<failure section="484"/>
+	</outcomes>
+</section>

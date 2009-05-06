@@ -1,0 +1,4 @@
+<section name="140">
+	<lose codeword="StillInYellowport" hidden="t"/>
+	The ship drops you at Yellowport docks. You make your way to the city centre. <goto section="10"/>.
+</section>

@@ -1,0 +1,13 @@
+<section name="80">
+	<p>
+		You grab the woman’s wrist a split-second before she can cut the strings of your money pouch. You drag her around to face you, but she meets your outraged scowl with a swashbuckling grin.
+	</p>
+	<p>
+		‘You’ve got good reflexes,’ she says. ‘Most of the street scum around here are too drink-sodden or dimwitted to notice the loss of a few Shards. Want to earn some real money?’
+		<tick codeword="StillInYellowport" hidden="t"/>
+	</p>
+	<choices>
+		<choice section="425">Accept her offer</choice>
+		<choice section="10">Refuse and leave</choice>
+	</choices>
+</section>

@@ -1,0 +1,7 @@
+<section name="557">
+	‘Who is the rightful ruler of Sokara - General Grieve Marlock, or the son of the old king, Nergan Corin?’ asks the soldier.
+	<choices>
+		<choice section="631">Grieve Marlock</choice>
+		<choice section="664">Nergan Corin</choice>
+	</choices>
+</section>

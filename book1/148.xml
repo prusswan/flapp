@@ -1,0 +1,10 @@
+<section name="148">
+	<p>
+		‘Stop, stop, I surrender!’ yells the tree. You cease your attack. ‘I guess you can pass, in view of recent events!’ it says grudgingly. Then it uproots itself with a great tearing sound, and shuffles out of the way. ‘There you go!’ mutters the tree, ‘You can blooming well pass.’
+	</p>
+	<p><gain codeword="Apple">Get the codeword Apple</gain>.</p>
+	<p>
+		You walk through the thorn bush gate. Beyond, you find several huge oak trees whose branches are so big that they are able to support the homes of many people.
+	</p>
+	<p><goto section="358"/>.</p>
+</section>

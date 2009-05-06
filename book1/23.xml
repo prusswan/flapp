@@ -1,0 +1,12 @@
+<section name="23">
+	<p>
+		As you stride forward, they look up with expressions of luminous rage.
+	</p>
+	<p>
+		‘Get you back, mortal,’ warns one, ‘or I’ll touch you with my grave-cold hands and then it’ll be your dying day!’
+	</p>
+	<choices>
+		<choice section="479">Attack them</choice>
+		<choice section="520">Call on your god to banish them</choice>
+	</choices>
+</section>

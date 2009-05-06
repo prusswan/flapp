@@ -1,0 +1,14 @@
+<section name="659">
+	<p>
+		You untie the little creature from its bonds. It gives a jubilant cry, and soars upwards.
+	</p>
+	<p>
+		‘Thank you, large one!’ it chatters, ‘My name is Pikalik the Wing-warrior! We never forget - one day I will pay my debt.’ With that, he flitters away into the clouds.
+	</p>
+	<p>
+		‘That’s 75 Shards you just let fly away,’ comments the man in the palanquin wryly, ‘Mannekyn People can’t be trusted, believe me.’
+	</p>
+	<p>
+		You leave the slave market. <tick codeword="Altruist">Acquire the codeword Altruist</tick> and <goto section="400"/>.
+	</p>
+</section>

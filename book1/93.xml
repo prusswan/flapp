@@ -1,0 +1,17 @@
+<section name="93">
+	<p>
+		<if codeword="Azure">
+			If you have the codeword Azure, <goto section="359"/> immediately.
+		</if>
+		If not, read on.
+	</p>
+	<p>
+		A mad beggar, covered in sores and grime, accosts you in the street. ‘O noble one, aid me for the love of the gods!’ he rants, frothing at the mouth and gesticulating wildly. ‘I need coins to eat, food to spend, and blessings to wear!’
+		<tick codeword="StillInYellowport" hidden="t"/>
+	</p>
+	<choices>
+		<choice section="10">Ignore him and return to city centre</choice>
+		<choice shards="5" section="227" pay="f">Give him 5 Shards</choice>
+		<choice section="632">Bless him</choice>
+	</choices>
+</section>

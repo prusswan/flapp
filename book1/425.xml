@@ -1,0 +1,16 @@
+<section name="425">
+	<p>
+		The woman tells you her name is Lauria. She leads you stealthily through winding cobblestoned streets to a town house standing at the back of a small tree-lined square.
+	</p>
+	<p>
+		A yellowish fog is descending with the coming of night. Lauria waits until it is thick enough to shroud your activities from any stray passersby, then jemmies a downstairs window. Within seconds the two of you are inside.
+	</p>
+	<p>
+		‘You’ve got the easy job,’ she says. ‘Stay down here and keep watch. The stuff we’re after is upstairs.’
+	</p>
+	<p>She bounds silently up to the next floor.</p>
+	<choices>
+		<choice section="534">Stay on watch</choice>
+		<choice section="270">Search the ground floor</choice>
+	</choices>
+</section>

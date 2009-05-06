@@ -1,0 +1,13 @@
+<section name="426">
+	<p>
+		‘Ah, I see that you are a student of the arcane arts,’ says Oliphard the Wizardly. ‘There is something I need - if you can get it for me I will teach you how to advance as a mage. It was Vayss the Sea Dragon who turned me into powder. He stole my <b>magic chest</b> in which I store all my magical equipment. Without it, I am virtually powerless. Meet me in Trefoille when you have it.’
+	</p>
+	<p>‘Where is Vayss?’ you ask.</p>
+	<p>‘Why, in the Lake of the Sea Dragon, of course,’ he replies.</p>
+	<p>
+		<tick codeword="Avenge">
+			Record the codeword Avenge
+		</tick>.
+		As he leaves, Oliphard gives you an <item name="amulet of protection"/>. Note it on your Adventure Sheet. Now <goto section="378"/>.
+	</p>
+</section>

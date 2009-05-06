@@ -1,0 +1,22 @@
+<section name="13">
+	<p>
+		‘The Violet Ocean’s a dangerous place, Cap’n’, says the first mate. ‘The crew probably won’t follow you there if they don’t think you’re good enough!’
+	</p>
+	<p>
+		<if book="3">
+			<if ability="rank" greaterthan="3">
+				If your Rank is 4 or more, <goto book="3" section="55">turn to paragraph 55</goto> in <i>Over the Blood-Dark Sea</i>.
+		</if></if>
+		If your Rank is less than 4, the first mate advises you against the ocean journey. If you take his advice, <goto section="507" force="f"/>.
+	</p>
+	<p>
+		<if book="3">
+			If you insist on making the trip, you need to
+			<difficulty ability="charisma" level="12"/> to convince the crew to follow you.
+			<success>
+				If you succeed, <goto book="3" section="55">turn to paragraph 55</goto> in <i>Over the Blood-Dark Sea</i>.
+			</success>
+		</if>
+		Otherwise, <goto section="507"/>.
+	</p>
+</section>

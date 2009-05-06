@@ -1,0 +1,10 @@
+<section name="677">
+	<p>
+		You were given the missive to take to the general by spies in Golnir. He takes the <b>coded missive</b> and reads it. <lose item="coded missive">Cross it off</lose> your Adventure Sheet.
+	</p>
+	<p>
+		‘Interesting. You have done well in bringing this to me,’ he says. ‘I thank you, once more!’
+	</p>
+	<p>He rewards you with <gain shards="150"/>.</p>
+	<p>When you are ready, you leave the palace. <goto section="100"/>.</p>
+</section>

@@ -1,0 +1,15 @@
+<section name="351">
+	<p>
+		One day, a new slave is brought in to work beside you. Much to your astonishment, it is Lauria, the thief who left you in the lurch when you burgled a wizard’s house in Yellowport.
+	</p>
+	<p>
+		‘Sorry about the last time,’ she says, ‘Business - you know. Now’s my chance to make it up to you.’
+	</p>
+	<p>
+		She explains that she has discovered an escape route. This time, she promises to set up a diversion while you make for a tunnel where a cave-in has left an opening to the outside. Lauria says she will meet you later.
+	</p>
+	<choices>
+		<choice section="662">Go along with her plan</choice>
+		<choice section="565">Escape on your own</choice>
+	</choices>
+</section>

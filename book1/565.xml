@@ -1,0 +1,7 @@
+<section name="565">
+	<difficulty ability="thievery" level="10"/>.
+	<outcomes>
+		<success section="654"/>
+		<failure section="376"/>
+	</outcomes>
+</section>

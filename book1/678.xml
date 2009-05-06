@@ -1,0 +1,16 @@
+<section name="678">
+	<p>
+		<if codeword="Aspen">
+			If you have the codeword Aspen, <goto section="195"/>.
+		</if>
+		Otherwise read on.
+	</p>
+	<p>
+		The journey through the trees proves as difficult as when you first ventured into the Old Forest.
+		<difficulty ability="scouting" level="10"/>.
+	</p>
+	<outcomes>
+		<success section="679"/>
+		<failure section="36"/>
+	</outcomes>
+</section>

@@ -1,0 +1,29 @@
+<section name="552">
+	<p>
+		A swaggering Sokaran captain marches on board with a complement of marines.
+	</p>
+	<p>‘I don’t think you’ve paid your harbour duties,’ he says.</p>
+	<p>
+		‘Harbour duties! We’re in the middle of the sea!’ you exclaim angrily.
+	</p>
+	<p>
+		The captain smiles smugly at you. ‘You’d better cough up 50 Shards, or I’ll impound your ship and its cargo.’
+	</p>
+	<p>
+		‘But that’s no better than common piracy!’ says your first mate, outraged.
+	</p>
+	<p>
+		‘The duty will be 60 Shards now, for calling a captain in the Sokaran Imperial Navy a pirate!’ he sneers.
+	</p>
+	<p>Several of his men burst into laughter.</p>
+	<p>
+		<if title="Protector of Sokara">
+			If you have the title Protector of Sokara, <goto section="185"/>.
+		</if>
+		Otherwise, you can:
+	</p>
+	<choices>
+		<choice section="401" shards="60" pay="F">Hand over the money (if you have it!)</choice>
+		<choice section="311">Refuse outright</choice>
+	</choices>
+</section>

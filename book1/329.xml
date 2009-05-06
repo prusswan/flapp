@@ -1,0 +1,6 @@
+<section name="329">
+	<p>
+		‘Still haven’t found him?’ he says. ‘Did you try the Castle of the Dragon Knights to the west of the Bronze Hills?’ As he turns and leaves, he says, ‘When you have better tidings, I will return here.’
+	</p>
+	<p>You follow him, but he is nowhere to be seen. <goto section="400"/>.</p>
+</section>

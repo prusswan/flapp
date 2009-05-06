@@ -1,0 +1,16 @@
+<section name="191">
+	<p>
+		The provost marshal is a rich and powerful man, cunning and capable.
+	</p>
+	<p>
+		‘I have need of someone like you,’ he says. ‘A group of rebels, loyal to the old king, are hiding out in the Coldbleak Mountains. Their leader, Nergan Corin, is dangerous to us, as he is heir to the old throne and a rallying point for the rebels. Penetrate their stronghold and slay Nergan Corin, and you will be richly rewarded. I can promise you 500 Shards and a title if you succeed.’
+	</p>
+	<p>If you take the mission, <gain codeword="Artery" force="f">gain the codeword Artery</gain>.</p>
+	<p>
+		<if codeword="Ambuscade">
+			If you have the codeword Ambuscade, <goto section="375"/>.
+		</if>
+		<tick codeword="StillInYellowport" hidden="t"/>
+		Otherwise, the provost marshal dismisses you. <goto section="10"/>.
+	</p>
+</section>

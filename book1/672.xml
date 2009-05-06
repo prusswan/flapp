@@ -1,0 +1,12 @@
+<section name="672">
+	<p>
+		‘My chest!’ yells Oliphard joyfully as you hand it over.
+		<lose item="magic chest">
+			Cross the <b>magic chest</b> off
+		</lose>	your Adventure Sheet.
+	</p>
+	<p>
+		Oliphard thanks you and teaches you how to be a better Mage. <gain ability="rank" amount="1">Gain 1 Rank</gain> and <random dice="1" var="x">roll a die</random>. The result is <gain ability="stamina" amount="x">the number of Stamina points you gain permanently</gain>. Also, don’t forget to increase your Defence by 1 as a result of your gain in Rank.
+	</p>
+	<p>When you are ready, <goto section="656"/>.</p>
+</section>

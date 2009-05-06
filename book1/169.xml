@@ -1,0 +1,16 @@
+<section name="169" boxes="1" image="169.jpg">
+	<p>
+		<if ticks="1">
+			If there is a tick in the box, <goto section="443"/> immediately.
+		</if>
+		If not, <tick/>, and read on.
+	</p>
+	<p>
+		You see a couple of Sokaran warships, pursuing two other ships. Your first mate says, ‘See the Red Pennants on them thar ships? They be pirates, running from the Sokarans!’
+	</p>
+	<choices>
+		<choice section="286">Help the Sokarans</choice>
+		<choice section="394">Help the pirates</choice>
+		<choice section="443">Ignore the battle</choice>
+	</choices>
+</section>

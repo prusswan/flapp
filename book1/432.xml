@@ -1,0 +1,15 @@
+<section name="432">
+	<p>
+		The militiamen are down. The tall gentleman watches you like a snake with its eyes on a mongoose. You have no time to bother with him now.
+	</p>
+	<p>
+		‘We’ll meet again, perhaps,’ he says in a voice like slithering murder. Remember my name: Talanexor the Fireweaver.’
+	</p>
+	<p>
+		‘Remember my name,’ you call back as you lope off, ‘Lauria the Housebreaker.’
+	</p>
+	<p>
+		<tick codeword="StillInYellowport" hidden="t"/>
+		Let the conniving vixen get into trouble. She nearly played you for her patsy, after all. <goto section="10"/>.
+	</p>
+</section>
