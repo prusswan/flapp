@@ -1,0 +1,18 @@
+<section name="82">
+	<p>
+		The men start to yawn. ‘Great gods, I feel sleepy!’ announces the bosun, rubbing his eyes.
+	</p>
+	<p>‘Me, too,’ agrees the quartermaster. ‘Like I’d been poleaxed.’</p>
+	<p>
+		Despite your stern orders, they go to lie down on the stone slabs.
+	</p>
+	<p>
+		‘Ah, this is a comfy couch,’ murmurs the bosun as he shuts his eyes. ‘Permit us to take just a quick nap, skipper.’
+	</p>
+	<p>
+		<if codeword="Cerumen">
+			If you have the codeword Cerumen, <goto section="323"/>.
+		</if>
+		If not, <goto section="305"/>.
+	</p>
+</section>

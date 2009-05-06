@@ -1,0 +1,11 @@
+<section name="189">
+	<p>
+		A strong tropical wind strains the sails. ‘Best we strike the topsail,’ says the mate. ‘If a storm hits we’re in danger of capsizing.’
+	</p>
+	<p><random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2-4" section="174">Storm</outcome>
+		<outcome range="5-8" section="209">Nothing of note</outcome>
+		<outcome range="9-12" section="106">Madness</outcome>
+	</outcomes>
+</section>

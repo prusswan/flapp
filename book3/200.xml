@@ -1,0 +1,12 @@
+<section name="200">
+	<p>
+		‘We’re making better headway now,’ announces the mate. ‘Let’s just hope that we don’t run afoul of the weather.’
+	</p>
+	<p><random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2-3" section="654">Pirates</outcome>
+		<outcome range="4-5" section="544">Storm</outcome>
+		<outcome range="6-8" section="311">An uneventful voyage</outcome>
+		<outcome range="9-12" section="711">Lights under the waves</outcome>
+	</outcomes>
+</section>

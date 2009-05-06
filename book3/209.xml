@@ -1,0 +1,10 @@
+<section name="209">
+	<p>‘Land ahoy!’ shouts the lookout from the crow’s nest.</p>
+	<p>
+		‘That’s strange,’ says the navigator, consulting his charts. ‘There’s no island marked.’
+	</p>
+	<choices>
+		<choice section="30">Investigate the island</choice>
+		<choice section="48">Sail on</choice>
+	</choices>
+</section>

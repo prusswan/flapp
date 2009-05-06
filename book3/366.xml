@@ -1,0 +1,11 @@
+<section name="366">
+	<p>
+		Rocks rain down like cannon shells, but you are safely clear of the island and they only throw up plumes of spray far astern. You hold off the shore until the eruption is spent. After a night turned to hellish twilight by the flaming torrents of lava, the volcano lapses back into peaceful slumber.
+	</p>
+	<p>
+		‘Jiarosh is content,’ says the shaman. ‘We can return and rebuild our homes.’
+	</p>
+	<p>
+		Filled with gratitude for your help, the shaman rewards you with a <gain blessing="storm">blessing of Safety from Storms</gain> if you don’t have one already. Note this on your Adventure Sheet and then <goto section="479"/>.
+	</p>
+</section>

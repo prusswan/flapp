@@ -1,0 +1,14 @@
+<section name="242">
+	<p>
+		‘Will we have any trouble reaching Dweomer?’ you ask the skipper of the <i>Taradiddle</i>.
+	</p>
+	<p>
+		‘Not in this beauty,’ he says proudly. ‘Her mast’s of prime bluewood, and she always finds her way home.’
+	</p>
+	<p>
+		He is right; the voyage is blissfully uneventful. Remember to
+		<lose shards="35">cross off the 35 Shards</lose>
+		you had to pay for your passage,
+		then <goto section="100"/>.
+	</p>
+</section>

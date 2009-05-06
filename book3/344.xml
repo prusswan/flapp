@@ -1,0 +1,14 @@
+<section name="344">
+	<p>
+		You plant yourself beside the mat where they’re sitting. ‘Get up, you dogs, so I can whip you off to hell.’
+	</p>
+	<p>
+		They get unsteadily to their feet, all the worse for drink. ‘Aye, aye, skipper,’ says your former mate, Mister Fryer. ‘And we’ll be happy to take you with us.’
+	</p>
+	<p>
+		<if codeword="Aid">
+			If you have the codeword Aid <goto section="112"/>.
+		</if>
+		Otherwise <goto section="73"/>.
+	</p>
+</section>

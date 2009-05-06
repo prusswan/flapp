@@ -1,0 +1,14 @@
+<section name="586">
+	<p>
+		The duel is arranged for the next day, to be held in Erebus Meadow. Quite a crowd gathers in the hope of seeing some spectacular sorcery. In the event, however, Talanexor does not commence with one of his fabled fireballs. Instead, as the challenged party, he poses a conundrum. You must solve it or forfeit the duel!
+	</p>
+	<p>
+		‘There are thirty colleges in Dweomer,’ he says. ‘The other day I attended a sherry party where there were six others besides myself. What was the chance that at least two of us belonged to the same college?’
+	</p>
+	<p>What will you answer?</p>
+	<choices>
+		<choice section="658">Twenty per cent</choice>
+		<choice section="694">Twenty-five per cent</choice>
+		<choice section="703">Fifty per cent</choice>
+	</choices>
+</section>

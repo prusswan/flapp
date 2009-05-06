@@ -1,0 +1,9 @@
+<section name="527">
+	<p>
+		‘Er, something for your cellar. Master,’ you say lamely, handing over the <b>bottle of wine</b>. (<lose item="bottle of wine">Cross it off</lose> your Adventure Sheet.)
+	</p>
+	<p>
+		‘Splendid,’ says the Master, somewhat mollified. ‘And rest assured that I’ve been keeping abreast of your work ... er, whatever your name is ... and I think you can expect good marks at the end of term. Mantel will show you out.’
+	</p>
+	<p><goto section="607"/>.</p>
+</section>

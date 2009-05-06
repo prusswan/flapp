@@ -1,0 +1,22 @@
+<section name="406" dock="Dweomer">
+	<p>
+		<if item="ship's deeds">
+			If you posses a <b>ship’s deeds</b>, <goto section="710"/>.
+		</if>
+		Otherwise read on.
+	</p>
+	<p>
+		There is one ship for sale. She is a barque with a carrying capacity of 1 Cargo Unit; she will cost you 320 Shards.
+	</p>
+	<p>‘What about the crew?’ you ask the man who is selling her.</p>
+	<p>
+		‘Men from Marmorek,’ he says. ‘Landlubbers every one of them, but they’re willing to learn.’
+	</p>
+	<p>
+		If you decide to
+		<buy ship="barque" initialCrew="poor" shards="320" quantity="1">
+			buy the ship
+		</buy>, remember to cross off the money and record the details on the Ship’s Manifest. The Crew Quality is poor. Remember to change the entry in the docked column each time you arrive at a new port; it is currently docked at Dweomer, of course.
+	</p>
+	<p>Now <goto section="100"/>.</p>
+</section>

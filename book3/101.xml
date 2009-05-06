@@ -1,0 +1,14 @@
+<section name="101">
+	<p>
+		‘See those myriad islands?’ says the navigator, pointing to numerous rocky shores scattered in the west beyond a pall of haze.
+	</p>
+	<p>
+		You nod. ‘The Unnumbered Isles. We’re due south of Old Sokar - or Marlock City, as it is now called.’
+	</p>
+	<choices>
+		<choice section="205">Go west</choice>
+		<choice section="119">Go east</choice>
+		<choice section="77">Go north</choice>
+		<choice section="42">Go south</choice>
+	</choices>
+</section>

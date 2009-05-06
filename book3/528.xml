@@ -1,0 +1,7 @@
+<section name="528">
+	You wait until midnight before setting off on foot. You are
+	alone. Your men didn’t sign up to fight as marines in a nocturnal
+	raid, and in any case it will be easier to sneak into the pirate
+	camp on your own. <gain codeword="Crocus">Get the codeword Crocus</gain>
+	and <goto section="362"/>.
+</section>

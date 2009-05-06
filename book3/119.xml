@@ -1,0 +1,12 @@
+<section name="119">
+	<p>
+		You have a good day’s sailing, but at dusk a heavy gloom swathes the sunset in a welter of bloody reds, golds, charcoal grey and livid purple. It looks like a bruise in the western sky.
+	</p>
+	<p>‘Let’s hope that’s no harbinger of a storm,’ says the mate.</p>
+	<p><random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2-4" section="213">Worsening weather</outcome>
+		<outcome range="5-7" section="137">A quiet night</outcome>
+		<outcome range="8-12" section="533">A ship’s lanterns</outcome>
+	</outcomes>
+</section>

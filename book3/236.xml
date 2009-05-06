@@ -1,0 +1,20 @@
+<section name="236">
+	<p>
+		Witches come bouncing out across the waves, demonstrating their contempt of nature’s laws by riding in worm-eaten coracles that are as leaky as sieves.
+	</p>
+	<p>
+		‘Blow winds and crack your cheeks!’ they cry, adding an obscene laugh that causes disgust and horror in equal doses.
+	</p>
+	<p>
+		‘They’ll curse us to the ocean deeps,’ moans the bosun in abject fear. ‘Do something, captain!’
+	</p>
+	<p>
+		<difficulty ability="magic" level="15">
+			Make a MAGIC roll at a Difficulty of 15
+		</difficulty>.
+	</p>
+	<outcomes>
+		<success section="254"/>
+		<failure section="272"/>
+	</outcomes>
+</section>

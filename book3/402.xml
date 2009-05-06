@@ -1,0 +1,12 @@
+<section name="402">
+	<p>
+		‘I don’t like it skipper,’ says the pilot, gazing at the charts. ‘We’re steering betwixt Death and the wine-dark sea.’
+	</p>
+	<p>Arrant superstition. You will have none of it. <random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2-4" section="511">Pirates</outcome>
+		<outcome range="5" section="580">Storm</outcome>
+		<outcome range="6-8" section="32">An uneventful voyage</outcome>
+		<outcome range="9-12" section="530">A ghost ship</outcome>
+	</outcomes>
+</section>

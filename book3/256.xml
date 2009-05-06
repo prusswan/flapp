@@ -1,0 +1,10 @@
+<section name="256">
+	The priestess gets to her feet. ‘The goddesses have looked on
+	you with favour,’ she says. ‘Their breath has filled your sails,
+	their hands sheltered your back, guiding you safely here.’
+	<choices>
+		<choice section="293">Seek a blessing from the goddesses</choice>
+		<choice section="330">Renounce their worship</choice>
+		<choice section="44">Leave the temple</choice>
+	</choices>
+</section>

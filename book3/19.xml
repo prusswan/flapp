@@ -1,0 +1,14 @@
+<section name="19">
+	<p>
+		The crew amuse themselves by throwing apple cores at a shoal of glider crabs. ‘Look lively, you swabs!’ you say to them. ‘I’ll soon find you chores if you’re idle.’
+	</p>
+	<p>
+		They return to their duties with alacrity. ‘What heading shall I steer, cap’n?’ asks the helmsman.
+	</p>
+	<choices>
+		<choice section="630">Go west</choice>
+		<choice section="81">Go north</choice>
+		<choice section="4">Go east</choice>
+		<choice section="227">Go south</choice>
+	</choices>
+</section>

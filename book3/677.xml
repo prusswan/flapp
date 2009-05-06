@@ -1,0 +1,11 @@
+<section name="677">
+	The crew is on the verge of mutiny. You must assert your
+	authority if you hope to avoid a disaster.
+	<difficulty ability="charisma" level="15">
+		Make a CHARISMA roll at a Difficulty of 15
+	</difficulty>.
+	<outcomes>
+		<success section="188"/>
+		<failure section="599"/>
+	</outcomes>
+</section>

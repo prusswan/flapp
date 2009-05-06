@@ -1,0 +1,9 @@
+<section name="699">
+	‘I believe I’ve encountered this isle before,’ says the navigator,
+	‘but it never shows up at exactly the place I last marked it on my
+	charts.’
+	<choices>
+		<choice section="682">Put in at the island</choice>
+		<choice section="283">Sail on</choice>
+	</choices>
+</section>

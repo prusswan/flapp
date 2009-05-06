@@ -1,0 +1,18 @@
+<section name="235">
+	<p>
+		‘Good!’ he bellows. ‘Good! Yes, by the two gods who rule below - I’ll grapple with you.’
+	</p>
+	<p>
+		He stamps the deck with such exuberant ferocity that even the bravest of your men go scurrying for cover.
+	</p>
+	<p>
+		<difficulty ability="combat" level="13" modifier="noweapon">
+			Make a COMBAT roll at a Difficulty of 13
+		</difficulty>.
+		<i>[Unarmed, of course --Ed]</i>
+	</p>
+	<outcomes>
+		<success section="271"/>
+		<failure section="253"/>
+	</outcomes>
+</section>

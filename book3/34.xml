@@ -1,0 +1,23 @@
+<section name="34">
+	<p>
+		‘What shall we play?’ wonders the priestess, pressing the pack of cards against her lower lip. ‘Ah, yes, how about a sedate game of Paying the Devil?’
+	</p>
+	<p>She deals the cards. <random/>.</p>
+	<outcomes>
+		<outcome range="2-6" section="52">
+			<random dice="1" var="x">
+				Lose 1-6 Shards
+			</random>
+			<lose codeword="3.52.Loss" hidden="t"/>
+			<tick name="3.52.Loss" amount="x" hidden="t"/>
+		</outcome>
+		<outcome range="7"><reroll>Roll again</reroll></outcome>
+		<outcome range="8-12" section="111">
+			<random dice="1" var="x">
+				Win 1-6 Shards
+			</random>
+			<lose codeword="3.111.Gain" hidden="t"/>
+			<tick name="3.111.Gain" amount="x" hidden="t"/>
+		</outcome>
+	</outcomes>
+</section>

@@ -1,0 +1,14 @@
+<section name="55">
+	<p>
+		The weather turns colder. At night there is hoarfrost on the shrouds. ‘What lies in these grey waters?’ you ask the navigator.
+	</p>
+	<p>
+		He frowns. ‘Mer-folk with tails of hard horn. Creatures like great scorpions or lobsters, bigger than tar barrels. Spirits of death and cold moonlight.’
+	</p>
+	<p>You hold up your hand. ‘I get the picture, thank you.’</p>
+	<p><random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2-8" section="283">No encounter</outcome>
+		<outcome range="9-12" section="699">A mysterious island</outcome>
+	</outcomes>
+</section>

@@ -1,0 +1,10 @@
+<section name="624">
+	<p>
+		The men lie around the deck waiting to die. Your tongue is sticking to the roof of your mouth now, and your vision is blurred with hunger.
+	</p>
+	<p>‘Sweet heaven, skipper,’ croaks the bosun, ‘must we die too?’</p>
+	<choices>
+		<choice section="520">Take the officers and escape in the rowboat</choice>
+		<choice section="590">Stay with your ship to the bitter end</choice>
+	</choices>
+</section>

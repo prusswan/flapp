@@ -1,0 +1,13 @@
+<section name="4">
+	<p>
+		A great white bell of canvas stretches overhead, gathering in the wind as a fisherman’s net catches a shoal.
+	</p>
+	<p>
+		‘We’re making good progress,’ observes the helmsman. ‘Let’s hope this breeze doesn’t freshen into a gale, though.’
+	</p>
+	<p><random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2-6" section="491">Storm</outcome>
+		<outcome range="7-12" section="24">A safe voyage</outcome>
+	</outcomes>
+</section>

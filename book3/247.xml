@@ -1,0 +1,16 @@
+<section name="247">
+	<p>
+		You find a book that contains so many terrifying stories that you doubt if you’ll ever sleep soundly again. It leaves you so scared that you have to wait for the librarian to come looking for you.
+	</p>
+	<p>
+		‘Great tomes of fear!’ he declares. ‘Your hair has turned white.’
+	</p>
+	<p>
+		<lose ability="charisma" amount="1">
+			Lose 1 from CHARISMA
+		</lose> and
+		<tick codeword="Chill">
+			get the codeword Chill
+		</tick>. Then <goto section="368"/>.
+	</p>
+</section>

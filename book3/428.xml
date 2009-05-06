@@ -1,0 +1,23 @@
+<section name="428" image="428.jpg">
+	<p>
+		The first mate rushes into your cabin one day toward dusk. Deep in calculation over your charts, you barely glance up when he blurts out: ‘Captain, an ancient hulk has drifted alongside.’
+	</p>
+	<p>‘She’s adrift, you say? A derelict?’</p>
+	<p>
+		‘No derelict,’ he replies in an agitated voice, ‘She has a skeleton crew!’
+	</p>
+	<p>
+		‘Hmm.’ You sit back, folding your arms behind you head. ‘Perhaps her skipper wants to flesh out his crew with some of our men...’
+	</p>
+	<p>
+		‘I think you’re right!’ cries the mate, staring past you with wild eyes.
+	</p>
+	<p>
+		Something is tapping on the window pane - something that has terrified the mate. You turn to see what it is. A host of ivory faces are leering in through the casement window. It is a skeleton crew indeed! Crashing through the glass, the bony sailors leap among you chittering in ghastly glee.
+	</p>
+	<choices>
+		<choice section="539">Fight them</choice>
+		<choice section="575">Drive them off with prayer</choice>
+		<choice section="447">Cast yourself at their mercy</choice>
+	</choices>
+</section>

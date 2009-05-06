@@ -1,0 +1,9 @@
+<section name="52">
+	<set var="loss" codeword="3.52.Loss"/>
+	The priestess waits to collect her winnings. (Remember to cross
+	the sum off your Adventure Sheet if you do pay.)
+	<choices>
+		<choice section="72" shards="loss">Pay her what you owe</choice>
+		<choice section="91">Can’t or won’t pay</choice>
+	</choices>
+</section>

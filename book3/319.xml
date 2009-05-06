@@ -1,0 +1,9 @@
+<section name="319">
+	<p>
+		The nobles are so impressed by your wit and good manners that they make you a gift of a <item name="courtier's mask"><b>courtier’s mask</b></item>.
+	</p>
+	<p>
+		‘If you should ever visit our land, this will admit you to the highest social circles,’ they tell you.
+	</p>
+	<p><goto section="78"/>.</p>
+</section>

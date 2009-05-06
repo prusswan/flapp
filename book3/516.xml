@@ -1,0 +1,14 @@
+<section name="516">
+	<p>
+		‘Curse the luck!’ snarls the helmsman. ‘We’re caught in these reeds.’
+	</p>
+	<p>
+		You look over the side. Thick fronds of drifting weed snag your rudder and choke the water in all directions. <random dice="1" type="travel"/>.
+	</p>
+	<outcomes>
+		<outcome range="1-2" section="534">Drift with the current</outcome>
+		<outcome range="3-4" section="552">Sea gypsies arrive</outcome>
+		<outcome range="5" section="570">Becalmed</outcome>
+		<outcome range="6" section="50">You break free</outcome>
+	</outcomes>
+</section>

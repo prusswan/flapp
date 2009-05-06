@@ -1,0 +1,12 @@
+<section name="289">
+	<p>
+		’Journey towards the rising sun,’ says the herald of the twin gods. ‘Before you reach the stars, you will come upon a bay that is guarded by a great serpent. Fight it alone - no man may help you. At the highest point of the island you’ll get your boon.’
+	</p>
+	<p>The figure dissolves into a cascade of fading green sparks.</p>
+	<p>
+		<tick codeword="Coracle">
+			Get the codeword Coracle
+		</tick>
+		and then <goto section="252"/>.
+	</p>
+</section>

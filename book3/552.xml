@@ -1,0 +1,14 @@
+<section name="552">
+	<p>
+		A floating mat of interwoven reeds bearing coloured tents can be seen on the horizon: It is one of the caravans of the sea gypsies. They cross to you in coracles.
+	</p>
+	<p>
+		‘You’ll never get those reeds off your hull,’ they tell you. ‘Grow like wildfire, they do. We’ll get you free of them for a hundred Shards; how about it?’
+	</p>
+	<p>‘They might be our best bet,’ says the bosun.</p>
+	<choices>
+		<choice shards="100" section="50">Pay them 100 Shards</choice>
+		<choice section="715">Try bartering</choice>
+		<choice section="570">Tell them to go away</choice>
+	</choices>
+</section>

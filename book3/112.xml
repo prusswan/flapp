@@ -1,0 +1,12 @@
+<section name="112">
+	<p>
+		Your former crewmen soon back down when they see two burly natives in feather cloaks and full warpaint getting up to stand beside you.
+	</p>
+	<p>
+		‘This is the friend of Moon of Evening,’ says one of the natives, shaking his spear at the frightened mutineers. ‘You cause trouble and you will sleep with the piranhas!’
+	</p>
+	<p>
+		The three hurry off. ‘They won’t come in here again,’ says the other native.
+	</p>
+	<p><lose codeword="Church">Lose the codeword Church</lose> and <goto section="314"/>.</p>
+</section>

@@ -1,0 +1,12 @@
+<section name="711">
+	<p>
+		One night, hearing a commotion on deck, you come up from your cabin to find the sailors crowded around the rail. They are pointing into the water with cries of awe. Pushing your way through to the front, you are astonished to see the glittering lights of an undersea city shining up from below.
+	</p>
+	<p>
+		‘I’ve heard tales of such a place,’ says the first mate. ‘It is the sunken city of Ys, cursed because its inhabitants blasphemed against the gods of the sea.’
+	</p>
+	<choices>
+		<choice book="12" section="404">Dive down to the city</choice>
+		<choice section="311">Set a course away from here</choice>
+	</choices>
+</section>

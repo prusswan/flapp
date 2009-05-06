@@ -1,0 +1,12 @@
+<section name="425">
+	<p>
+		Jiarosh hears and heeds your prayers. The groundshocks die down. The smoke blows away on the wind. All is quiet.
+	</p>
+	<p>
+		The villagers are jubilant. ‘You are a mighty shaman,’ they say. ‘Honour us by staying here as our guest.’
+	</p>
+	<choices>
+		<choice section="706">Stay on the island</choice>
+		<choice section="479">Set to sea</choice>
+	</choices>
+</section>

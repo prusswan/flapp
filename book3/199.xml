@@ -1,0 +1,22 @@
+<section name="199">
+	<p>
+		You strike the water with enough force to knock the wind out of you.
+		<random dice="1" var="r">Lose 1-3 Stamina points</random> (the score of
+		<set var="half" value="(r+1)/2"/>
+		<lose stamina="half">one die halved</lose>, rounding fractions up).
+		If you survive, the current steadily carries you away from the waterspout atop which your old ship will float forever in the clouds.
+		<lose ship="t">Delete the ship and crew</lose> from your Adventure Sheet; also
+		<lose shards="*" item="*">cross off your money and possessions</lose>.
+	</p>
+	<p>
+		You drift for hours until picked up by a warship out of Port Kunrir. ‘We’ll drop you off at the Faceless King’s court,’ says the captain.
+	</p>
+	<p>‘Good. I can arrange passage home from there.’</p>
+	<p>
+		He laughs. ‘I doubt it! Slaves aren’t allowed quite that degree of freedom.’
+	</p>
+	<p>
+		<goto book="5" section="321">Turn to 321</goto> in
+		<i>The Court of Hidden Faces</i>.
+	</p>
+</section>

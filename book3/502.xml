@@ -1,0 +1,12 @@
+<section name="502">
+	<p>
+		The jaw of the skeletal captain drops open and a chilling voice issues forth: ‘Go to Chompo in Akatsurai. There you will find a clue that will lead you to the tomb of the necromancer Dawatsu Morituri, whom you must set free. This is our dread lord’s command.’
+	</p>
+	<p>
+		They return to their vessel and sail off.
+		<tick codeword="Cenotaph">
+			Get the codeword Cenotaph
+		</tick> and then
+		<goto section="321"/>.
+	</p>
+</section>

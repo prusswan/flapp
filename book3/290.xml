@@ -1,0 +1,14 @@
+<section name="290">
+	<p>
+		Again you batter the strange fighter down. Now there is a thin smear of blood at the corner of his mouth and he sounds slightly out of breath as he throws open his arms and says: ‘Come, my dear foe, let’s embrace. I’ll crush your bones to powder!’
+	</p>
+	<p>
+		<difficulty ability="combat" level="15" modifier="noweapon">
+			Make a COMBAT roll at a Difficulty of 15
+		</difficulty>.
+	</p>
+	<outcomes>
+		<success section="310"/>
+		<failure section="253"/>
+	</outcomes>
+</section>

@@ -1,0 +1,14 @@
+<section name="94">
+	<p>
+		The bottle contains a <b>treasure map</b>. ‘A bloomin’ funny thing to find in a bottle,’ is all the bosun has to say when he sees it.
+	</p>
+	<p>
+		The helmsman is more helpful. ‘See this stretch of coastline? It might indicate the Sea of Hydras.’
+	</p>
+	<p>
+		‘No,’ says the first mate with a dour shake of his head. ‘It’s the straits near Teleos, I’m sure of it.’
+	</p>
+	<p>
+		Note the <item name="treasure map" group="3.94"/> among your possessions and <goto section="352"/>.
+	</p>
+</section>

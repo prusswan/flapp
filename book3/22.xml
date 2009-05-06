@@ -1,0 +1,20 @@
+<section name="22">
+	<p>
+		‘A Shard for your thoughts,’ you say to the first mate when you find him gazing dourly out across the waves.
+	</p>
+	<p>
+		‘Far to the south, men say, there’s a pit that goes right through the world. In its black depths you can see the stars.’
+	</p>
+	<p>
+		You laugh to make light of his mood. ‘Well, what of it? Why so glum?’
+	</p>
+	<p>
+		‘Don’t you know the old saying? Battle not with monsters lest ye become a monster; and if you gaze into the abyss, the abyss also gazes into you.’ He turns away from the rail. ‘What course, captain?’
+	</p>
+	<choices>
+		<choice section="170">Go north</choice>
+		<choice section="79">Go south</choice>
+		<choice section="468">Go east</choice>
+		<choice section="40">Go west</choice>
+	</choices>
+</section>

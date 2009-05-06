@@ -1,0 +1,12 @@
+<section name="61">
+	<p>
+		An island appears as a dun-coloured smudge hovering mirage-like on the rim of the sea.
+	</p>
+	<p>
+		‘Copper Island,’ says the helmsman. ‘Shall I take her into dock, captain?’
+	</p>
+	<choices>
+		<choice section="553">Put in at Copper Island</choice>
+		<choice section="19">Sail on</choice>
+	</choices>
+</section>

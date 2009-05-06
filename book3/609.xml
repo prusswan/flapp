@@ -1,0 +1,17 @@
+<section name="609">
+	<p>
+		Estragon is the court wizard of Baroness Ravayne of Golnir. He was formerly the Warden of Choronzon College here in Dweomer, but left under something of a cloud.
+	</p>
+	<p>
+		‘That would have been his experiment in storm magic,’ elucidates the librarian. ‘I remember it rained for thirteen months and a day.’
+	</p>
+	<p>‘Heavy rain, presumably?’</p>
+	<p>
+		He nods. ‘The High Street was accessible only by punt, and the Warden of Cromlech College drowned after falling asleep in his wine cellar.’
+	</p>
+	<p>‘And what does Estragon do these days?’ you ask.</p>
+	<p>
+		‘Continues his experiments, I hear. Adventurers who help him out with various quests are richly rewarded.’
+	</p>
+	<p><goto section="368"/>.</p>
+</section>

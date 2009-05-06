@@ -1,0 +1,13 @@
+<section name="281">
+	<p>
+		The first mate breaks open a keg of beer and has all the crew raise their cups to the north. He excuses this by saying: ‘We’re toasting the High King. It’s a time-honoured ritual, Cap’n.’
+	</p>
+	<p>
+		You smile indulgently. It has been three centuries since the Uttakin swept away the once-glorious realm of the High King, but old traditions die hard. <random type="travel"/>.
+	</p>
+	<outcomes>
+		<outcome range="2-5" section="93">Songs across the waves</outcome>
+		<outcome range="6-8" section="300">Nothing untoward</outcome>
+		<outcome range="9-12" section="450">Uttakin slavers</outcome>
+	</outcomes>
+</section>

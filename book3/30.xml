@@ -1,0 +1,12 @@
+<section name="30">
+	<p>
+		The closer you get to the uncharted island, the greater your amazement. ‘Is it a natural island or a man-made thing?’ wonders the mate.
+	</p>
+	<p>
+		You can understand why he’s baffled: what lies ahead of you is a disk of jet black marble almost half a kilometer across. It rises to a height of a good hundred metres above the water. From high in the smooth black cliffs, sunlight picks out the edges of a tunnel.
+	</p>
+	<choices>
+		<choice section="11">Ascend to the tunnel</choice>
+		<choice section="48">Sail away</choice>
+	</choices>
+</section>

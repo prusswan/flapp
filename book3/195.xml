@@ -1,0 +1,12 @@
+<section name="195">
+	<p>
+		The creature throws up its bloodless hands, utters a terrible howl, and vanishes like smoke on the wind. The echoes of its final cry are a long time in dying away.
+	</p>
+	<p>
+		‘Whew!’ says the bosun in a trembling voice. ‘Good job we got it before moonrise, or its strength would’ve doubled.’
+	</p>
+	<choices>
+		<choice section="215">Explore its lair</choice>
+		<choice section="41">Sail away right now</choice>
+	</choices>
+</section>

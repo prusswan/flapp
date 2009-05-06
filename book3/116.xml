@@ -1,0 +1,14 @@
+<section name="116">
+	<p>
+		The mate joins you at the rail and the two of you watch the sun sink beyond the rocky peaks of the Innis archipelago.
+	</p>
+	<p>
+		‘What lies there in the west?’ wonders the mate. ‘Are you for finding out, skipper? Say the word and I’ll set a course for the Sea of Stilts.’
+	</p>
+	<choices>
+		<choice book="9" section="84">Travel west</choice>
+		<choice section="40">Go south</choice>
+		<choice section="58">Go north</choice>
+		<choice section="370">Head east</choice>
+	</choices>
+</section>

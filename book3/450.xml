@@ -1,0 +1,13 @@
+<section name="450">
+	<p>
+		A low prow emerges from a bank of mist close off your starboard bow. As the vessel takes shape, you recognize the bronze shields along the sides that identify it as a slave ship from Uttaku. It heaves ponderously closer - powered, not by sails, but by huge paddles turned by oxen chained in the bowels of the ship.
+	</p>
+	<p>
+		‘Normally we could hope to outrun them,’ announces the helmsman. ‘But they’ve come on us right close, and there’s hardly a breath of wind for the sails. We’ll have to stand and fight.’
+	</p>
+	<p>The crew awaits your orders.</p>
+	<choices>
+		<choice section="523">Go alongside and prepare to board</choice>
+		<choice section="541">Ram the Uttakin ship</choice>
+	</choices>
+</section>

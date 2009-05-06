@@ -1,0 +1,13 @@
+<section name="301">
+	<p>
+		‘Ah!’ cries the cook, emerging from the galley to sniff the fresh salt breeze. ‘A life on the open waves - what king in his palace could hope for better contentment?’
+	</p>
+	<p>
+		<rest stamina="1">Recover 1 Stamina point</rest> if injured, then <random type="travel"/>.
+	</p>
+	<outcomes>
+		<outcome range="2-3" section="398">Pirates</outcome>
+		<outcome range="4-5" section="562">Storm</outcome>
+		<outcome range="6-12" section="13">An uneventful voyage</outcome>
+	</outcomes>
+</section>

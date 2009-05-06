@@ -1,0 +1,11 @@
+<section name="519">
+	<p>
+		The Akatsurese captain is grateful for everything you’ve told him. ‘Now I can get a good deal on my cargo,’ he says.
+	</p>
+	<p>
+		He presents you with a
+		<weapon name="golden katana" bonus="1"/>
+		and tells you that you will be welcome in the city of Chambara.
+	</p>
+	<p>Returning to your own ship, you sail on. <goto section="228"/>.</p>
+</section>

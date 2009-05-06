@@ -1,0 +1,13 @@
+<section name="198">
+	<p>
+		You are picked up by merchants from Yellowport who come ashore to replenish their supplies. They are amazed to find a human being living here.
+	</p>
+	<p>
+		‘We are bound for Imperial Chambara, then hope to do some trading in the south,’ they say. ‘Would you like to be dropped off anywhere, or will you stay aboard till we get home?’
+	</p>
+	<choices>
+		<choice book="6" section="79">Disembark at Chambara</choice>
+		<choice section="44">Ask to be dropped off at Smogmaw</choice>
+		<choice book="1" section="140">Continue on to Yellowport</choice>
+	</choices>
+</section>

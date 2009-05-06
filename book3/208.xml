@@ -1,0 +1,10 @@
+<section name="208">
+	<p>
+		‘See that blue glow along the horizon?’ says the navigator. ‘It’s the witchlight that flickers over Braelak Isle.’
+	</p>
+	<p><random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2-5" section="422">A tempest</outcome>
+		<outcome range="6-12" section="226">Nothing of note</outcome>
+	</outcomes>
+</section>

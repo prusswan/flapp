@@ -1,0 +1,12 @@
+<section name="320">
+	You are sailing off the coast of Ankon-Konu just a few leagues
+	north of Smogmaw, the famous trading town that is home to a
+	thousand ne’er-do-wells from all points of the compass.
+	<choices>
+		<choice section="266">South to Smogmaw</choice>
+		<choice section="192">North-east to Starspike Island</choice>
+		<choice section="303">Due north</choice>
+		<choice section="263">West</choice>
+		<choice section="337">East to the Sea of Hydras</choice>
+	</choices>
+</section>

@@ -1,0 +1,9 @@
+<section name="676">
+	<p>
+		‘Ah, this is a stroke of luck,’ calls the captain of the royalist vessel. ‘We were sent to find you. The High King charges you to bring him a fragment of <b>selenium ore</b>.’
+	</p>
+	<p>
+		You bow politely. ‘Please assure our lord that I go at once to do his bidding.’
+	</p>
+	<p>The other ship sails off. <goto section="475"/>.</p>
+</section>

@@ -1,0 +1,13 @@
+<section name="141">
+	<p>
+		You hold out your hand and begin to chant prayers of great power.
+	</p>
+	<p>
+		‘That’s it, skipper,’ says the first mate encouragingly, ‘give the wight a bit of holy hellfire!’
+	</p>
+	<p><difficulty ability="sanctity" level="15">Make a SANCTITY roll at a Difficulty of 15</difficulty>.</p>
+	<outcomes>
+		<success section="195"/>
+		<failure section="85"/>
+	</outcomes>
+</section>

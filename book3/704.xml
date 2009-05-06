@@ -1,0 +1,11 @@
+<section name="704">
+	You go ashore on Starspike Island. It is a barren wilderness of
+	broken rocks covered in scarlet moss. The central pinnacle rises
+	almost vertically like a pillar supporting the heavens. Your men
+	flatly refuse to try to scale it. As one man says, ‘I went to sea to
+	become a sailor, not a mountaineer.’
+	<choices>
+		<choice section="695">Try to climb the mountain</choice>
+		<choice section="230">Set sail</choice>
+	</choices>
+</section>

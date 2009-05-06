@@ -1,0 +1,11 @@
+<section name="140">
+	Whether you beg for mercy or vow vengeance, it is all the same
+	to these merciless Reavers. You are thrown into the sea.
+	<difficulty ability="scouting" level="15">
+		Make a SCOUTING roll at a Difficulty of 15
+	</difficulty>.
+	<outcomes>
+		<success section="158"/>
+		<failure section="123"/>
+	</outcomes>
+</section>

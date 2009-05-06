@@ -1,0 +1,22 @@
+<section name="237">
+	<p>
+		A wind of frightening intensity blows up out of nowhere. ‘This weather cannot be natural!’ says the bosun with a shiver.
+	</p>
+	<p>
+		You round on him. ‘You always say that, mister. Where’s your evidence?’
+	</p>
+	<p>
+		He points all around. ‘The sheets of green lightning beyond the clouds. The thick sulphurous dust in the air. The presence of frogs and other unexplained debris in the water all around us.’
+	</p>
+	<p>You give a snort. ‘Fair enough.’</p>
+	<p>
+		To cancel the supernatural wind you must
+		<difficulty ability="magic" level="15">
+			make a MAGIC roll at a Difficulty of 15
+		</difficulty>.
+	</p>
+	<outcomes>
+		<success section="188"/>
+		<failure section="255"/>
+	</outcomes>
+</section>

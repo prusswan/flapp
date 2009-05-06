@@ -1,0 +1,13 @@
+<section name="338">
+	<p>
+		You put ashore to take on fresh water. The crewmen are happy to cavort along the wide golden beach and explore the orchid scented jungle - until the ship’s priest comes staggering back with his throat slashed, gurgles ‘Iambic pentameter’ and dies at your feet.
+	</p>
+	<p>
+		‘Pentameter - that’s a sort of ship, like a quinquireme,’ says the first mate. ‘Iambic, though? Out of a port called Iambus? Where’s that?’
+	</p>
+	<p>The rest of the shore party are spooked. They want to leave.</p>
+	<choices>
+		<choice section="41">Set sail at once</choice>
+		<choice section="8">Explore the island</choice>
+	</choices>
+</section>

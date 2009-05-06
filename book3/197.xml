@@ -1,0 +1,12 @@
+<section name="197">
+	<p>
+		Your master at arms leaps at the stranger, only to end up flat on his back across the deck. The carpenter, a burly tavern brawler, fares no better.
+	</p>
+	<p>
+		‘Do you send your minions to fight me then?’ roars the stranger. ‘I expected better of a ship’s captain!’
+	</p>
+	<choices>
+		<choice section="235">Fight him yourself</choice>
+		<choice section="217">Tell him to calm down</choice>
+	</choices>
+</section>

@@ -1,0 +1,22 @@
+<section name="457">
+	<p>
+		<lose stamina="1d">Lose 1-6 Stamina points</lose>.
+		<if dead="f">
+			If you survive, you lead your men in a charge that routs the remaining pirates. Searching the bodies of those you killed, you can help yourself to a
+			<weapon name="sword" bonus="2"/> and a suit of
+			<armour name="chain mail" bonus="3"/>.
+		</if>
+	</p>
+	<p>
+		‘We ought to get under way,’ says the first mate. ‘They’ll be back with reinforcements soon.’
+	</p>
+	<p>
+		<if dead="f">
+			You agree.
+			<lose codeword="Colour">
+				Lose the codeword Colour
+			</lose>
+			and <goto section="164"/>.
+		</if>
+	</p>
+</section>

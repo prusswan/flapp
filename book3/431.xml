@@ -1,0 +1,12 @@
+<section name="431">
+	<p>
+		The pirates take your cargo, your personal belongings and any cash you have on board. To your surprise, they agree to leave you with your ship.
+	</p>
+	<p>
+		‘In truth, it’s not worth the effort of hauling back home,’ remarks the pirate captain acerbically as he goes back aboard his own vessel.
+	</p>
+	<p>
+		You watch them sail away.
+		<lose cargo="*" item="*" shards="*">Amend your Adventure Sheet</lose> and your Ship’s Manifest, then <goto section="648"/>.
+	</p>
+</section>

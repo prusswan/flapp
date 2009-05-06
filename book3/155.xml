@@ -1,0 +1,14 @@
+<section name="155">
+	<p>
+		Despite the overcast sky, you think you have a good estimate of your position.
+	</p>
+	<p>
+		‘We are due south of Yellowport,’ you tell the navigator, who looks back at you dubiously. ‘Set your bearing accordingly.’
+	</p>
+	<choices>
+		<choice book="1" section="29">Go north</choice>
+		<choice section="246">Go south</choice>
+		<choice section="55">Go east</choice>
+		<choice section="77">Go west</choice>
+	</choices>
+</section>

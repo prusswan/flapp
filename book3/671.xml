@@ -1,0 +1,15 @@
+<section name="671">
+	<p>
+		‘Merciful gods!’ you cry in exasperation as you shuffle your sea charts. ‘How many of these cursed islands are there?’
+	</p>
+	<p>
+		‘They are numberless, cap’n,’ says the first mate gravely. ‘That is why the navies of Sokara and Golnir have had no success in dealing with these pirates. It is impossible to find their base of operations.’
+	</p>
+	<p><random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2" section="545">You find it by luck</outcome>
+		<outcome range="3-6" section="354">The Reavers find you</outcome>
+		<outcome range="7-8" section="249">You hit a reef</outcome>
+		<outcome range="9-12" section="164">You reach open ocean</outcome>
+	</outcomes>
+</section>

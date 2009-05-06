@@ -1,0 +1,11 @@
+<section name="172">
+	<p>
+		Three things take no notice of men’s lives: Fate, the weather and the tides. Against Fate and storms, man may contend; but the sea’s ferocity only Heaven can forfend.
+	</p>
+	<p><random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2-6" section="629">Lost cargo</outcome>
+		<outcome range="7-9" section="190">An uneventful passage</outcome>
+		<outcome range="10-12" section="611">Yellow plague</outcome>
+	</outcomes>
+</section>

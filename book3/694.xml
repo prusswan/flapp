@@ -1,0 +1,14 @@
+<section name="694">
+	<p>
+		Talanexor laughs triumphantly. The spectators grumble disappointedly and start to wander off.
+	</p>
+	<p>‘Is that it?’ you ask anyone who’ll listen.</p>
+	<p>
+		‘Talanexor always does that,’ replies an aged college servant. ‘He’s too stingy to buy the expensive ingredients he needs for fire magic, you see.’
+	</p>
+	<p>
+		As loser of the dispute you are judged guilty of burgling Talanexor’s home and must
+		<lose shards="*">pay him all your cash</lose>.
+		Then <goto section="571"/>.
+	</p>
+</section>

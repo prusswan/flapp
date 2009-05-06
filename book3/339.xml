@@ -1,0 +1,12 @@
+<section name="339">
+	<p>
+		Gasping for breath, your men make a hasty search of the cabin, finding three <weapon name="sword" bonus="1" quantity="3"><b>swords (COMBAT +1)</b></weapon> and a <item name="fretwork key"/>.
+	</p>
+	<p>
+		One of the two men is reeling by now. ‘I can’t stand it much longer, skipper...’ he says.
+	</p>
+	<choices>
+		<choice section="29">Explore further along the passage</choice>
+		<choice section="308">Return to your ship</choice>
+	</choices>
+</section>

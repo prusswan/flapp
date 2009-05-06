@@ -1,0 +1,14 @@
+<section name="170">
+	<p>
+		‘Ah, this is the life!’ you hear the cabin boy telling himself. ‘One day I’ll be as rich as the captain, and then I’ll buy my own ship.’
+	</p>
+	<p>
+		You put a hand on his shoulder, startling him out of his reverie. ‘In the meantime, lad, you’d better see to your chores,’ you growl at him. ‘Else we’ll hear the ship’s cat purring before the day is done.’
+	</p>
+	<p>You sail on. <random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2-5" section="237">A magical wind</outcome>
+		<outcome range="6-8" section="188">An uneventful journey</outcome>
+		<outcome range="9-12" section="659">Murder most foul</outcome>
+	</outcomes>
+</section>

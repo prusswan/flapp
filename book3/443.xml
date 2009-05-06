@@ -1,0 +1,14 @@
+<section name="443">
+	<p>It is Targdaz, your personal sorcerer.</p>
+	<p>
+		‘Still gallivanting about on the high seas?’ he says. ‘There are much more interesting things afoot back home. I’m on my way there now. Want a ride?’
+	</p>
+	<p>‘What about the ship?’</p>
+	<p>
+		‘I’m sure these fellows are capable of sailing it to port without you to tell them what to do.’
+	</p>
+	<choices>
+		<choice section="405">Fly off on Targdaz’s horse</choice>
+		<choice section="135">Decline his offer</choice>
+	</choices>
+</section>

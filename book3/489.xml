@@ -1,0 +1,16 @@
+<section name="489">
+	<p>
+		You go back to the mine office and sign the necessary papers.
+		<lose shards="30">Cross off 30 Shards</lose>.
+	</p>
+	<p>
+		Gaspar Savaloy falls on his knees to thank you. You look down in a mixture of contempt and pity as he kisses your boots.
+	</p>
+	<p>‘A tidy reward for mutiny, wouldn’t you say, Mister Savaloy?’</p>
+	<p>
+		He cannot look you in the eye. ‘I’m shamed, skipper; you’ve shamed me. But I’ll make up all I owe you an’ more, you see if I don’t. I’m bound for Dweomer, where I’ll make good. Then I can pay you back.’
+	</p>
+	<p>
+		He scurries off. <tick codeword="Cancel">Get the codeword Cancel</tick> and <goto section="317"/>.
+	</p>
+</section>

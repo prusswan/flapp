@@ -1,0 +1,23 @@
+<section name="346" tag="temple">
+	<p>
+		The other cultists nod as you enter. ‘May His name never be spoken,’ they intone in ritual greeting.
+	</p>
+	<p>
+		‘Whose name? Shush!’ you reply in the words of the time-honoured catechism.
+	</p>
+	<p>
+		It is almost time for supper. If you have a
+		<lose item="pirate captain's head" price="x">
+			<b>pirate captain’s head</b>
+		</lose>
+		or a
+		<lose item="witch's hand" price="x">
+			<b>witch’s hand</b>
+		</lose>
+		to add to the simmering stew, the other cultists present you with a prize medallion worth
+		<item name="200 Shards" flag="x"/>.
+	</p>
+	<p>
+		After having your loathsome meal, you slip furtively back to town. <goto section="44"/>.
+	</p>
+</section>
