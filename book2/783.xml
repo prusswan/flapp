@@ -1,0 +1,16 @@
+<section name="783">
+	<p>
+		The stranger says he will prove his holiness by preaching a sermon to the local cats, ‘since cats are known to be ungodly creatures.’
+	</p>
+	<p>
+		He starts to screech and howl in a most unearthly way, and sure enough after a few minutes a group of assorted cats has collected by the roadside to listen.
+	</p>
+	<p>
+		‘You see?’ says the stranger. ‘They listened raptly, the little darlings. I’m sure they’ll go home better cats for that sermon. Now it’s your turn...’
+	</p>
+	<p><difficulty ability="scouting" level="12"/>.</p>
+	<outcomes>
+		<success section="403"/>
+		<failure section="428"/>
+	</outcomes>
+</section>

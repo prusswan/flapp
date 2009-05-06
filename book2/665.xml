@@ -1,0 +1,65 @@
+<section name="665">
+	<p>
+		<tick special="lock" cache="2.617" hidden="t"/>
+		<set var="MoneyBonus" value="shards/300" cache="2.617"/>
+		The next day you go back to see what has become of the item you left. <lose shards="*" cache="2.617">The money has gone</lose>, as you expected.
+		<if god="Molhern" not="t">
+			<random dice="2">
+				<adjust amount="MoneyBonus"/>
+			</random>
+		</if>
+		<else>
+			(<random dice="3">
+				three dice<adjust amount="MoneyBonus"/>
+			</random> if you’re an initiate of Molhern)
+		</else>
+		and add 1 for every full 300 Shards you left as payment:
+	</p>
+	<outcomes>
+		<outcome range="2-6">
+			<lose item="*" cache="2.617">The item has gone</lose>
+		</outcome>
+		<outcome range="7-9">
+			The item is unchanged
+			<tick item="*" cache="2.617" addtag="Molherned" hidden="t"/>
+		</outcome>
+		<outcome range="10-12">
+			The item is
+			<tick item="*" cache="2.617" addtag="Molherned" addbonus="1">
+				upgraded by +1
+			</tick>
+		</outcome>
+		<outcome range="13-15">
+			The item is
+			<tick item="*" cache="2.617" addtag="Molherned" addbonus="2">
+				upgraded by +2
+			</tick>
+		</outcome>
+		<outcome range="16-18">
+			The item is
+			<tick item="*" cache="2.617" addtag="Molherned" addbonus="3">
+				upgraded by +3
+			</tick>
+		</outcome>
+		<outcome range="19-21">
+			The item is
+			<tick item="*" cache="2.617" addtag="Molherned" addbonus="4">
+				upgraded by +4
+			</tick>
+		</outcome>
+		<outcome range="22+">
+			The item is
+			<tick item="*" cache="2.617" addtag="Molherned" addbonus="5">
+				upgraded by +5
+			</tick>
+		</outcome>
+	</outcomes>
+	<p>
+		<tick special="unlock" cache="2.617" hidden="t"/>
+		An upgrade on armour increases its Defense bonus; an upgrade on a weapon increases its COMBAT bonus.
+	</p>
+	<itemcache name="2.617" itemlimit="1" text="Molhern's Smithy"/>
+	<p>
+		When you have made the necessary adjustments to your Adventure Sheet, <goto section="97"/>.
+	</p>
+</section>

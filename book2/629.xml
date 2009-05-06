@@ -1,0 +1,12 @@
+<section name="629">
+	<p>
+		‘That would be fractious little Nivram,’ says Knocklar after hearing your account. ‘He’s got it into his head to learn great sorcery, but he’s really just a bumbler who relies on other wizards’ inventions.’
+	</p>
+	<p>You nod. ‘So he’s no great threat, then?’</p>
+	<p>
+		Knocklar raises his eyebrows. ‘Oh, I wouldn’t say that. Once you’ve got on the wrong side of him he’ll use any amount of treacherous scheming to try to get his own back.’
+	</p>
+	<p>
+		There is no more opportunity for gossip. It is time you were on your way. <goto section="456"/>.
+	</p>
+</section>

@@ -1,0 +1,15 @@
+<section name="445">
+	<p>
+		You find nothing on your first day, but another prospector tells you that’s not unusual.
+	</p>
+	<p>
+		‘I reckon to hit a mother lode about once a month,’ he says. ‘That’s enough to keep me satisfied.’
+	</p>
+	<p>
+		He certainly seems to have very fine clothes - and you notice that, instead of digging himself, he employs a few common labourers to do the spade work.
+	</p>
+	<choices>
+		<choice section="470">Try again tomorrow</choice>
+		<choice section="104">Leave Goldfall</choice>
+	</choices>
+</section>

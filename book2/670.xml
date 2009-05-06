@@ -1,0 +1,16 @@
+<section name="670">
+	A pirate ships bears down on you without warning. To your
+	amazement, the captain decides to stand and fight. ‘I’ll not run
+	from these sea-dogs!’ he snarls.
+	<random dice="3">
+		Roll three dice and add 3<adjust amount="3"/>
+	</random>:
+	<outcomes>
+		<outcome range="6-13" section="510">
+			You’re defeated; <lose stamina="1d">lose 1-6 Stamina</lose>
+		</outcome>
+		<outcome range="14+" book="1" section="140">
+			The pirates withdraw
+		</outcome>
+	</outcomes>
+</section>

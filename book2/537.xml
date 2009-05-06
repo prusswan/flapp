@@ -1,0 +1,18 @@
+<section name="537">
+	<p>
+		A mason who has been working at Castle Ravayne mentions that he is supposed to renovate the private citadel of Sir Bredubar, the Knight of the Long Knife. ‘I don’t know why he thinks the place needs fortifying,’ says the mason. ‘Maybe he knows something I don’t. Still, the money’s good.’
+	</p>
+	<p>
+		<if codeword="Bobbin" not="t">
+			<tick codeword="Bobbin">
+				Get the codeword Bobbin
+			</tick>.
+		</if>
+		<else>
+			(If you already had it,
+			<tick codeword="Bisect">get the codeword Bisect</tick>
+			as well.)
+		</else>
+		Then <goto section="48"/>.
+	</p>
+</section>

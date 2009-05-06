@@ -1,0 +1,18 @@
+<section name="224">
+	<p>
+		To renounce the worship of the Three Fortunes, you must pay 25 Shards to the priesthood by way of compensation. The priestess listens placidly while you explain that you no longer want to be an initiate.
+	</p>
+	<p>
+		‘So you wish to abandon luck, fortune and destiny,’ she says. Is she smiling? You cannot tell because of the gold-threaded veil the Fortunes’ priestesses all wear.
+	</p>
+	<p>
+		Do you want to reconsider?
+		<if god="The Three Fortunes">
+			If you are determined to renounce your faith,
+			<lose shards="25" price="x">pay the 25 Shards</lose> and
+			<tick god="" flag="x">delete The Three Fortunes</tick>
+			from the God box on your Adventure Sheet.
+		</if>
+		When you have finished here, <goto section="102"/>.
+	</p>
+</section>

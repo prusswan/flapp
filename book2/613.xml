@@ -1,0 +1,10 @@
+<section name="613">
+	<p>‘Now I need a <b>golden katana</b>,’ says Estragon.</p>
+	<p>‘A what?’</p>
+	<p>
+		‘It is the sword of one of the knights who serve the Chancellor of the land of Akatsurai, which lies far across the ocean to the south-east. Go, and when you return I will impart the inner arcana of the mystic arts.’
+	</p>
+	<p>
+		Surely there must be somewhere nearer than Akatsurai where you can get hold of the item you need? <goto section="342"/>.
+	</p>
+</section>

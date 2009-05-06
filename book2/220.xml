@@ -1,0 +1,14 @@
+<section name="220">
+	<p>
+		To renounce the worship of Alvir and Valmir, you must pay 30 Shards in compensation to the priesthood. The high priest shakes his head sadly. ‘I beg you to reconsider,’ he urges. ‘All too often I have seen initiates renounce the twin gods, only to suffer calamity at sea within days or weeks.’
+	</p>
+	<p>
+		Do you want to change your mind?
+		<if god="Alvir and Valmir">
+			If you are determined to renounce your faith,
+			<lose shards="30" price="x">pay the 30 Shards</lose> and
+			<tick god="" flag="x">delete Alvir and Valmir</tick> from the God box on your Adventure Sheet.
+		</if>
+		When you have finished here, <goto section="301"/>.
+	</p>
+</section>

@@ -1,0 +1,9 @@
+<section name="292" tag="temple">
+	‘You do not have to be an initiate to worship here,’ intones a
+	priest, ‘but it makes the temple’s services that much cheaper.’
+	<choices>
+		<choice section="197">Become an initiate of Alvir and Valmir</choice>
+		<choice section="243">Seek a blessing</choice>
+		<choice section="2">Leave</choice>
+	</choices>
+</section>

@@ -1,0 +1,11 @@
+<section name="621">
+	At dusk, seeing a light ahead, you quicken your pace and arrive
+	at an inn. An old peeling sign hangs outside it, creaking in the
+	wind. As you approach, the door opens and the innkeeper
+	beckons you to enter. ‘It’s a cold and blustery night to be out,’
+	he says.
+	<choices>
+		<choice section="679">Enter the inn</choice>
+		<choice section="153">Pass by</choice>
+	</choices>
+</section>

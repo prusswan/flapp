@@ -1,0 +1,11 @@
+<section name="180">
+	<p>
+		‘Surround yourself with the symbols of luck,’ you overhear a priestess saying to a supplicant. ‘Then the threefold goddess shall smile on you.’
+	</p>
+	<p>
+		<if item="rabbit's foot charm">
+			If you have a <b>rabbit’s foot charm</b>, <goto section="226"/>.
+		</if>
+		If not, <goto section="203"/>.
+	</p>
+</section>

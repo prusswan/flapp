@@ -1,0 +1,13 @@
+<section name="597">
+	<p>
+		A rangy unshaven fellow with a broad grin catches up as you are walking along a lane and proposes a contest of holiness. ‘I’ll wager everything I’ve got against everything you’ve got,’ he says cheerily.
+	</p>
+	<p>‘What <i>have</i> you got?’</p>
+	<p>
+		He shows you a diamond worth at least 600 Shards. ‘Is it a deal?’
+	</p>
+	<choices>
+		<choice section="783">Accept the wager</choice>
+		<choice section="153">Refuse and bid him good-day</choice>
+	</choices>
+</section>

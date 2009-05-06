@@ -1,0 +1,14 @@
+<section name="541">
+	<p>
+		‘You bring glad tidings!’ says Vanna, clapping her hands in delight. ‘An alliance with the warriors of Akatsurai will help this realm to prosper.’
+	</p>
+	<p>
+		<training ability="charisma" dice="2"/>, and if the total is higher than your CHARISMA score then increase it by 1. Vanna also orders her seneschal to reward you with <gain shards="150"/> out of the castle treasury.
+	</p>
+	<p>
+		<lose item="diplomatic letter">
+			Cross the <b>diplomatic letter</b> off
+		</lose>
+		your Adventure Sheet and <goto section="342"/>.
+	</p>
+</section>

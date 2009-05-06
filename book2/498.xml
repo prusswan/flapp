@@ -1,0 +1,11 @@
+<section name="498">
+	<p>
+		The gypsies offer to sell you a <b>rabbit’s foot charm</b> for 30 Shards. ‘It’ll bring you good luck, friend,’ insists a grinning old woman with a face like a walnut.
+	</p>
+	<p>
+		<buy item="rabbit's foot charm" shards="30" quantity="1">
+			Buy the <b>rabbit’s foot charm</b>
+		</buy>
+		if you wish, then <goto section="371"/>.
+	</p>
+</section>

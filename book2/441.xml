@@ -1,0 +1,9 @@
+<section name="441">
+	<p>
+		‘I desire you to go to Uttaku,’ says Vanna. ‘The Uttakin are said to be steeped in decadence. I am advised they no longer pose a military threat. See if this true.’
+	</p>
+	<p>
+		The audience is at an end. You bow and withdraw.
+		<goto section="342"/>.
+	</p>
+</section>

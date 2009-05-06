@@ -1,0 +1,11 @@
+<section name="112">
+	<p>
+		The doorway into the castle keep is guarded by elite knights in gleaming gem-studded armour. They watch you narrowly as you approach, then slowly cross their halberds to bar your path. ‘What is your business here?’ asks one.
+	</p>
+	<p>
+		<if title="Paladin of Ravayne">
+			If you have the title Paladin of Ravayne, <goto section="250"/>.
+		</if>
+		If not, <goto section="273"/>.
+	</p>
+</section>

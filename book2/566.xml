@@ -1,0 +1,9 @@
+<section name="566">
+	<p>
+		‘The mountains of the north are said to be the broken backbone of the dead god Harkun, who lies across the width of the world,’ says Vanna. ‘Most people do not dare to venture there, and no map has ever been made showing the paths, valleys and hidden passes.’
+	</p>
+	<p>
+		You nod to show you understand. ‘I shall bring you that map, my lady.’
+	</p>
+	<p><goto section="342"/>.</p>
+</section>

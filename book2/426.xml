@@ -1,0 +1,9 @@
+<section name="426">
+	<p>
+		They take you aside and speak in hushed tones, even though the one person within earshot is a drunken peasant. ‘Can’t be too careful,’ says one. ‘We’re on a top secret mission for General Marlock. Here, you’d better take him this.’
+	</p>
+	<p>
+		You are handed a <item name="coded missive"/>.
+		<goto section="287"/>.
+	</p>
+</section>

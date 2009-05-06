@@ -1,0 +1,9 @@
+<section name="182">
+	<p>
+		You show the lepers you are not afraid to stay amongst them. They are grateful for your help in various chores that they find difficult. <tick ability="sanctity" amount="1">Gain 1 point of SANCTITY</tick>.
+	</p>
+	<p>
+		The next day you set out on your way once more. As you go, one of the lepers warns you: ‘In that direction lies the village of the Bald Ones. Don’t trust them - they’d soon as slit your throat as look at you. The path by their village leads to the heart of the woods.’
+	</p>
+	<p><goto section="159"/>.</p>
+</section>

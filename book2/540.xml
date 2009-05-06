@@ -1,0 +1,13 @@
+<section name="540">
+	<p>
+		‘Why have you returned empty-handed?’ cries Estragon irritably. ‘You are wasting my time. Begone!’
+	</p>
+	<p>
+		He claps his hands. There is a flash like a bolt of azure lightning and you are hurled through space, landing in a hayrick. <random dice="1"/> to see where you’ve ended up:
+	</p>
+	<outcomes>
+		<outcome range="1-3" section="223"/>
+		<outcome range="4-5" section="200"/>
+		<outcome range="6" section="153"/>
+	</outcomes>
+</section>

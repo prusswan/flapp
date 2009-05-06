@@ -1,0 +1,8 @@
+<section name="50" dock="Wishport">
+	<p>
+		‘The best sailors are to be found in Metriciens and Ringhorn,’ an old sea-salt tells you. ‘But I might be able to muster a few blokes to help out aboard your vessel.’
+	</p>
+	<p>
+		It will cost <buy crew="average" shards="20"/> to upgrade a poor crew to average. You cannot do any better than that here in Wishport. Once you’ve recorded any changes in the Ship’s Manifest, <goto section="325"/>.
+	</p>
+</section>

@@ -1,0 +1,19 @@
+<section name="273">
+	<p>
+		<tick codeword="2.273.1" hidden="t"/>
+		The guards are not convinced you are important enough to be admitted to the keep. ‘Has the baroness summoned you?’ they demand to know. ‘She is very busy.’
+	</p>
+	<p>
+		To convince them to let you in, you need to
+		<group>
+			<text>make a CHARISMA roll at a Difficulty of 10</text>
+			<lose codeword="2.273.1"/>
+			<difficulty ability="charisma" level="10" hidden="t"/>
+		</group>.
+	</p>
+	<outcomes>
+		<success section="296"/>
+		<failure section="319"/>
+		<choice section="315" box="2.273.1">Give up and walk off</choice>
+	</outcomes>
+</section>

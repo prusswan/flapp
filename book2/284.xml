@@ -1,0 +1,11 @@
+<section name="284" dock="Ringhorn">
+	Asking around, you find the best prices that can be got for a
+	second-hand vessel:
+	<market>
+		<header type="shipsale"/>
+		<trade ship="barque" sell="210"/>
+		<trade ship="brigantine" sell="400"/>
+		<trade ship="galleon" sell="800"/>
+	</market>
+	If you go ahead with the sale, cross the ship off the Ship’s Manifest. <goto section="255"/>.
+</section>

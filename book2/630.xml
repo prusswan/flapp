@@ -1,0 +1,11 @@
+<section name="630">
+	<p>
+		<lose shards="*">Cross off all the money</lose>
+		you are carrying. The leader of the brigands gives you a gallant bow and says, ‘Our thanks, stranger. It is rare to encounter such generosity in these parlous times.’
+	</p>
+	<p>
+		With a mocking laugh, the scoundrels run off.
+		<tick codeword="Bounty">Get the codeword Bounty</tick> and
+		<goto section="258"/>.
+	</p>
+</section>

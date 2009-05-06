@@ -1,0 +1,6 @@
+<section name="467">
+	<p>
+		After the duel, the wizard Estragon leads you aside. ‘You were proved right according to the old ways,’ he says, ‘but no one really believes that Fontesque is untrustworthy. I’d advise you to leave and not show your face around here for a while.’
+	</p>
+	<p><goto section="118"/>.</p>
+</section>

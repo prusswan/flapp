@@ -1,0 +1,10 @@
+<section name="274">
+	<p>‘I’ll trounce you!’ sniggers the dwarf. ‘I mean, my master will.’</p>
+	<p>
+		With that, he waddles off towards the pavillion. You are a little surprised that he isn’t going to stay and watch, since he seems so confident of the outcome.
+	</p>
+	<choices>
+		<choice section="297">Prepare to joust</choice>
+		<choice section="23">Turn back</choice>
+	</choices>
+</section>

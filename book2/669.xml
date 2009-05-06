@@ -1,0 +1,16 @@
+<section name="669">
+	<p>
+		You meet a thatcher who is giggling to himself about how much money he’s making. He explains his technique over a flagon of cider: ‘I arrive in a village and sell shares in the thatching of the roofs.’
+	</p>
+	<p>
+		You’re puzzled. ‘But surely you don’t own the roofs? The villagers do.’
+	</p>
+	<p>
+		‘Ah, but then I point out that if they buy shares in a neighbour’s roof, they’ll be able to charge him rent.’
+	</p>
+	<p>‘People would have to be stupid to fall for that!’</p>
+	<p>
+		He grins. ‘Good thing they are, then. I make a pretty penny selling people their own roofs, I can tell you.’
+	</p>
+	<p>Perhaps you’re in the wrong line of work. <goto section="265"/>.</p>
+</section>

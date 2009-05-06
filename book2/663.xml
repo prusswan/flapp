@@ -1,0 +1,12 @@
+<section name="663" dock="Ringhorn">
+	<p>
+		Vanna tells you that a ship has been made ready for you in Ringhorn harbour. ‘Now perhaps you can do something about those dreadful Reavers,’ she says. ‘I’m told they prey on any shipping that comes close to their shores.’
+	</p>
+	<p>
+		Note on the Ship’s Manifest that you now have
+		<buy ship="barque" initialCrew="average" shards="0" quantity="1">
+			a barque docked at Ringhorn
+		</buy>. The crew is of average quality.
+	</p>
+	<p><goto section="342"/>.</p>
+</section>

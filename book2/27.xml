@@ -1,0 +1,11 @@
+<section name="27" tag="temple">
+	The Three Fortunes are the goddesses of fate, who weave the
+	tapestry of all men’s lives. Their temple is a high-ceilinged
+	edifice dimly illuminated by three altar candles.
+	<choices>
+		<choice section="225">Become an initiate of the Fortunes</choice>
+		<choice section="24">Renounce their worship</choice>
+		<choice section="271">Seek a blessing</choice>
+		<choice section="217">Leave the temple</choice>
+	</choices>
+</section>

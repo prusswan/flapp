@@ -1,0 +1,12 @@
+<section name="764">
+	<p>
+		It is the first time you have seen an entire village reduced to panic because of one bent-backed old woman. ‘Can’t you see the marks of plague on her face?’ screeches one man, his face contorted in hate. ‘She must be cast out!’
+	</p>
+	<p>
+		‘Please...’ wheezes the old woman. ‘I only want a cup of water, then I’ll be on my way.’
+	</p>
+	<choices>
+		<choice section="453">Give her the water</choice>
+		<choice section="355">Ignore the incident</choice>
+	</choices>
+</section>

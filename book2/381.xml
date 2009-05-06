@@ -1,0 +1,11 @@
+<section name="381">
+	Knocklar has plenty of chores to get done. ‘I must chop some
+	firewood, feed my chickens and go and check the traps out in
+	the wood,’ he says. ‘So you’ll pardon me if I don’t stand around
+	nattering with you all day.’
+	<choices>
+		<choice section="406">Ask him for a blessing</choice>
+		<choice section="431">Request his advice</choice>
+		<choice section="456">Bid him farewell</choice>
+	</choices>
+</section>

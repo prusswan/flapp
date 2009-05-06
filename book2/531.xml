@@ -1,0 +1,14 @@
+<section name="531">
+	<p>
+		‘The Watcher was a knight who made a pact with the demonic gods of the Uttakin,’ says Knocklar. ‘He thought he’d get eternal life, but instead he became a corpse that could not quite die. He lies in his crypt dreaming of treasure and lost hopes.’
+	</p>
+	<p>‘Where is his crypt?’</p>
+	<p>
+		‘Here in this very forest. A stone tomb with a pyramid above it. The green jewel in the pyramid resembles an eye, and it’s that jewel that gives the undead knight his name.’
+	</p>
+	<p>‘How much is the jewel worth?’ you wonder.</p>
+	<p>
+		Knocklar scowls. ‘I’ll tell you what it’s not worth. It’s not worth touching - not if you value your sanity! Now, I’ve got things I should be getting on with...’
+	</p>
+	<p><goto section="456">Turn to 456</goto>.</p>
+</section>

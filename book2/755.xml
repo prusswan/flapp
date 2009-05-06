@@ -1,0 +1,6 @@
+<section name="755">
+	<p>
+		The wizards say you should apply to one of the sorcerous colleges in Dweomer, but not to bother if you’re a priest. ‘To be godly, a person must close their minds to life’s mysteries.’
+	</p>
+	<p>Thanking them for their advice you sail off. <goto section="335"/>.</p>
+</section>

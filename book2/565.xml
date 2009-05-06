@@ -1,0 +1,10 @@
+<section name="565">
+	<p>
+		‘I can do nothing until I acquire a mermaid’s coral-red tresses,’ Estragon tells you. ‘I’ll teach you some more of my magic when you bring me what I need.’
+	</p>
+	<p>‘Where will I find a mermaid?’</p>
+	<p>
+		He gives you a sharp look. ‘Not in the northern hills, that’s for sure.’
+	</p>
+	<p><goto section="342"/>.</p>
+</section>

@@ -1,0 +1,9 @@
+<section name="598">
+	You pass a man whose cart has lost a wheel. ‘If I can’t get it
+	fixed then I’ll miss the market!’ he wails, but no one will stop to
+	help.
+	<choices>
+		<choice section="438">Help him fix the wheel</choice>
+		<choice section="31">Pass by</choice>
+	</choices>
+</section>

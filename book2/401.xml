@@ -1,0 +1,6 @@
+<section name="401">
+	<p>
+		‘We’ve been on a diplomatic mission to Baroness Ravayne,’ says the leader of the Sokaran group. ‘She’s promised sanctuary to our royal master if he should require it. Here, you must take this to him without delay.’
+	</p>
+	<p>You are handed a <item name="coded missive"/>. <goto section="287"/>.</p>
+</section>

@@ -1,0 +1,8 @@
+<section name="490">
+	<p>
+		‘I require a scarab amulet for on of my experiments,’ says
+		Estragon. ‘Go and find one. When you bring it here I’ll reward
+		you well.’
+	</p>
+	<p><goto section="342"/>.</p>
+</section>

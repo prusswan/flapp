@@ -1,0 +1,12 @@
+<section name="512">
+	<p>
+		<tick god="Nagil">
+			Write Nagil in the God box
+		</tick>
+		on your Adventure Sheet. (If you were already an initiate of another god, you now lose that status, as you cannot be an initiate of more than one god at a time.)
+	</p>
+	<p>
+		‘Now you can arrange resurrection,’ the knights tell you. ‘Just go to any temple of our sweet lord Nagil.’
+	</p>
+	<p>So saying, they ride off. <goto section="127"/>.</p>
+</section>

@@ -1,0 +1,14 @@
+<section name="245">
+	You come to a road running north-south. A wandering
+	entertainer stands nearby changing the wheel of his cart. He tells
+	you that the road runs between Wheatfields and Metriciens.
+	‘Both cities are dens of traducers, venifers, and sundry other
+	callid rascals,’ he says resentfully. ‘I advise you to shun them,
+	those edacious fustilugs in their gaudy baudekins!’
+	<choices>
+		<choice section="54">Go east</choice>
+		<choice section="78">Go west</choice>
+		<choice section="193">Take the road north towards Wheatfields</choice>
+		<choice section="48">Go south to Metriciens</choice>
+	</choices>
+</section>

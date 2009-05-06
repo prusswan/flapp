@@ -1,0 +1,10 @@
+<section name="646" image="646.jpg">
+	<p>
+		Three knights overtake you on the road. Over their armour they wear white shrouds, and their shields bear the holy device of the god of death. ‘We are pledged to Nagil,’ they say. ‘We count ourselves already dead, and so we cannot be defeated in battle, for we have no fear.’
+	</p>
+	<p>They offer to make you an initiate of Nagil on the spot.</p>
+	<choices>
+		<choice section="512">Accept the offer</choice>
+		<choice section="127">Refuse</choice>
+	</choices>
+</section>

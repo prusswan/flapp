@@ -1,0 +1,25 @@
+<section name="704" image="704.jpg">
+	<p>
+		A stranger in grey robes sits on the steps of a horse-drawn carriage playing a bulbous flute. As you approach, he looks up and smiles. His teeth gleam white in the beams from the rising moon. He says:
+	</p>
+	<p>‘Read me this riddle and read it aright:</p>
+	<p>Where shall I next from my carriage alight?</p>
+	<p>It’s east of the sunset, west of the moon,</p>
+	<p>North of the sea, o’erlooked by a dune.</p>
+	<p>Such is the spot where we’ll make our tryst -</p>
+	<p>But be prompt, for sometimes it doesn’t exist.’</p>
+	<p>
+		<tick codeword="Boysen">
+			Get the codeword Boysen
+		</tick>. If you have the codewords
+		<lose codeword="Bastion">Bastion</lose> or
+		<lose codeword="Brush">Brush</lose>,
+		cross them off.
+	</p>
+	<p>
+		The pipeman starts to get back up into his carriage. Pausing, he turns and gives you a wink. ‘Mind you go straight there,’ he says. ‘I can’t abide being kept waiting.’
+	</p>
+	<p>
+		The horses need no touch of whip to stir them, nor reins to guide them. As soon as the door of the carriage closes, they are off. <goto section="222"/>.
+	</p>
+</section>

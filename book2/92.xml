@@ -1,0 +1,16 @@
+<section name="92">
+	<p>
+		The sudden tolling of a great bell rings out from the top of the tower. Before you can move, you are seized by gaunt grey hands. Phantom figures have risen up out of the ground to surround you. ‘Your prying fingers have rung the bell to disturb our rest,’ whisper the figures. ‘Now we’ll take you down with us to our abode.’
+	</p>
+	<p>
+		To escape from them you must
+		<difficulty ability="sanctity" level="13">
+			make a SANCTITY roll at a Difficulty of 13
+		</difficulty>.
+		This allows you to pass through their clutches and run off to the safety of the forest’s edge.
+	</p>
+	<outcomes>
+		<success section="159">Successful in SANCTITY roll</success>
+		<failure section="115"/>
+	</outcomes>
+</section>

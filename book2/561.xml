@@ -1,0 +1,18 @@
+<section name="561">
+	<p>
+		As you trudge across the pebbles down the water’s edge, a breeze blows in from out at sea, bringing the faintly heard strains of flute music.
+	</p>
+	<p>‘What’s that?’ you ask the fisherman.</p>
+	<p>
+		‘It’s from the belfry of the old village that now lies out under the sea,’ replies the older man. ‘At low tide you can see the roofs of the buildings. Walk out to them, even.’
+	</p>
+	<p>‘Not that anyone would,’ puts in the other man with a shudder.</p>
+	<p>‘Flute music - from a belfry?’</p>
+	<p>
+		‘They never had a bell, see. A fellow called folk to prayer with his flute. They say he was still playing when the sea closed over his head.’
+	</p>
+	<choices>
+		<choice section="585">Continue along the beach</choice>
+		<choice section="373">Return to the top of the cliff</choice>
+	</choices>
+</section>

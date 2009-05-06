@@ -1,0 +1,19 @@
+<section name="725">
+	<p>
+		You find seven simpletons weeping beside a stream. ‘Oh woe!’ cries one. ‘Our friend is missing - we think he’s drowned.’
+	</p>
+	<p>‘You think he’s drowned? You don’t know for sure?’</p>
+	<p>
+		‘We only noticed him missing when it was time for us to go home. We counted ourselves to check if we were all here, but even though seven left this morning, now there are but six.’ He counts his friends: ‘One, two, three, four, five, six. You see?’
+	</p>
+	<p>You point out that he’s forgotten to count himself.</p>
+	<p>
+		‘So no one drowned at all!’ they say, brightening up. ‘How can we ever repay you?’
+	</p>
+	<p>‘For what?’</p>
+	<p>‘Why, for saving our poor drowned friend.’</p>
+	<p>
+		You cannot help laughing at their idiocy. This is a story you can dine on for weeks.
+		<training ability="charisma"/>. If the total is higher than your CHARISMA score, increase your CHARISMA score by 1. Then <goto section="265"/>.
+	</p>
+</section>

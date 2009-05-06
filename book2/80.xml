@@ -1,0 +1,13 @@
+<section name="80">
+	<p>
+		You meet a figure palely loitering under the gibbet. The hairs on the back of your neck rise when he steps forward and passes his hand right through you. ‘Yes, I am dead,’ he moans. ‘Wrongfully executed on this gibbet for a crime I did not commit. The real murderer had me framed, but I’ll be avenged on him yet, with your help. He wears a velvet patch over one eye. Find him and bring me what lies under the patch. I’ll be grateful, never think I won’t...’
+	</p>
+	<p>
+		He vanishes. A shiver passes up your spine. However long ago this crime was perpetrated, the spirit cannot have rest until his tormentor is dead.
+	</p>
+	<p>
+		<tick codeword="Bumble">
+			Get the codeword Bumble
+		</tick>, then <goto section="11"/>.
+	</p>
+</section>

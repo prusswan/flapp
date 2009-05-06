@@ -1,0 +1,14 @@
+<section name="733">
+	<p>
+		‘You wish to serve this noble household?’ replies Baroness Vanna. ‘In what capacity?’
+	</p>
+	<p>What will you suggest?</p>
+	<choices>
+		<choice section="757">Spying on her foes</choice>
+		<choice section="777">A diplomatic mission</choice>
+		<choice section="391">Slaying a monster</choice>
+		<choice section="416">Making a map</choice>
+		<choice section="686">Denounce a traitor</choice>
+		<choice section="662">Pay a cash tribute</choice>
+	</choices>
+</section>

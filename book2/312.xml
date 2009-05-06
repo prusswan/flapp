@@ -1,0 +1,11 @@
+<section name="312">
+	An old hogwarden tells you that the Abbey of Lacuna lies to the
+	north. ‘It’s at the end of a winding road that only the faithful can
+	ever find,’ he claims.
+	<choices>
+		<choice section="7">Go north</choice>
+		<choice section="168">Go south</choice>
+		<choice section="99">Go east</choice>
+		<choice section="237">Go west</choice>
+	</choices>
+</section>

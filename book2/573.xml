@@ -1,0 +1,9 @@
+<section name="573" image="573.jpg">
+	Just after nightfall, a punt carrying translucent figures comes
+	drifting along the river. ‘Come with us,’ call out the wraiths.
+	‘We’ll take you to a feast in the underworld.’
+	<choices>
+		<choice section="603">Climb aboard</choice>
+		<choice section="130">Shun them</choice>
+	</choices>
+</section>

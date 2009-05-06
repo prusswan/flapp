@@ -1,0 +1,12 @@
+<section name="785">
+	<p>
+		Against the last blood-red swathes of sunset, a vast ship hoves into view. As it gets closer and you are able to get a true impression of its size, awe gradually gives way to fear. It is like a fortress built of oak. Even the tallest pine tree would be dwarfed by its masts, and those black sails are like the canopy of night.
+	</p>
+	<p>
+		‘She’s dread Nagil’s flagship,’ whispers the mate. ‘Her sailors are not living men.’
+	</p>
+	<choices>
+		<choice section="433">Go aboard the Ship of Souls</choice>
+		<choice section="221">Sail away</choice>
+	</choices>
+</section>

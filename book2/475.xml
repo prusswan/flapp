@@ -1,0 +1,11 @@
+<section name="475">
+	<p>
+		A woman of remarkable ugliness is sitting by the side of the road. Most people cross over to the other verge to avoid her, and a few children stop to pelt her with clods of earth until you shoo them away.
+	</p>
+	<p>‘Thank you,’ she says. ‘All I want now is a great big kiss.’</p>
+	<p>She has a face like a frog that’s been hit with a hammer!</p>
+	<choices>
+		<choice section="651">Give her a kiss</choice>
+		<choice section="35">Continue on your way</choice>
+	</choices>
+</section>

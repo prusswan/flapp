@@ -1,0 +1,10 @@
+<section name="702">
+	Two brigands leap out from hiding and menace you with their
+	swords. One is behind you, one in front. ‘Give it up,’ they
+	advise. ‘Money’s not worth getting killed over.’
+	<choices>
+		<choice section="726">Fight them</choice>
+		<choice section="750">Run off</choice>
+		<choice section="384">Hand over your cash</choice>
+	</choices>
+</section>

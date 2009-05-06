@@ -1,0 +1,7 @@
+<section name="47">
+	‘Over here!’ calls a plaintive voice from beyond a thicket. ‘Over here!’
+	<choices>
+		<choice section="346">Investigate</choice>
+		<choice section="93">Ignore the voice</choice>
+	</choices>
+</section>

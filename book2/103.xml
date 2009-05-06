@@ -1,0 +1,12 @@
+<section name="103">
+	<p>
+		The ghost comes as before. ‘You have returned with proof? Ah, the wretch’s gemstone eye. Good, good!’
+	</p>
+	<p>
+		He takes the <b>flame opal eye</b>
+		(<lose item="flame opal eye">cross it off</lose>)
+		and seeps down into the dank soil. You dig and find a chest containing <gain shards="250"/>. Also
+		<gain ability="sanctity" amount="1">gain 1 point of SANCTITY</gain> 
+		for having righted a wrong. Then <goto section="11"/>.
+	</p>
+</section>

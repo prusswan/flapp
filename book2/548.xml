@@ -1,0 +1,11 @@
+<section name="548">
+	<p>
+		The Sokarans tell you that they work for a consortium of merchants in Yellowport.
+	</p>
+	<p>
+		‘We are travelling around Golnir to find out what commodities are in demand,’ explains the senior member of the party. ‘Minerals are plentiful in Yellowport, as you may know, but grains and furs are in short supply.’
+	</p>
+	<p>
+		Bidding them good-day, you continue along the riverbank. <goto section="130"/>.
+	</p>
+</section>

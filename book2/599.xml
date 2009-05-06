@@ -1,0 +1,16 @@
+<section name="599" image="599.jpg">
+	<p>
+		A lady calls to you from the window of a fortified tower as you pass by below.
+	</p>
+	<p>
+		‘I’ve been abducted by an evil knight,’ she says. ‘If you see my champion, pray tell him where I am.’
+	</p>
+	<p>‘Do you need rescuing?’ you call back.</p>
+	<p>
+		‘Thank you for the offer, but I think my champion will want to do that himself.’
+	</p>
+	<choices>
+		<choice section="413">Rescue her</choice>
+		<choice section="388">Go on your way</choice>
+	</choices>
+</section>
