@@ -1,0 +1,17 @@
+<section name="26">
+	<p>
+		<tick codeword="Fuligin">Get the codeword Fuligin</tick>
+		if you didn’t already have it.
+	</p>
+	<p>
+		You are given tea at the clanhouse of Hofuna, the principal merchant in the town.
+	</p>
+	<p>
+		‘So,’ he says, ‘have you come to invest some money with me? I have some really profitable ventures on the go right now.’
+	</p>
+	<choices>
+		<choice section="440">Make an investment</choice>
+		<choice section="483">Check on investments</choice>
+		<choice section="8">Leave</choice>
+	</choices>
+</section>

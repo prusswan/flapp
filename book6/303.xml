@@ -1,0 +1,20 @@
+<section name="303">
+	<p>
+		<if resurrection="t">
+			<tick codeword="6.303.1" hidden="t"/>
+			<lose codeword="6.303.2" hidden="t"/>
+		</if>
+		<else>
+			<tick codeword="6.303.2" hidden="t"/>
+			<lose codeword="6.303.1" hidden="t"/>
+		</else>
+		The mourners take no notice when you step out among them. At first you think they are overwhelmed by grief; but then it dawns on you that they really can’t see you. You reach out to touch one, but your hand passes straight through him.
+	</p>
+	<p>
+		‘I’m afraid they can’t see you because you’re dead,’ says a voice. You turn to see a little fat priest standing there. ‘You died of exposure seven nights ago,’ he says, ‘and since you’re a stranger in the district we’ve had to go to the expense of burying you.’
+	</p>
+	<choices>
+		<choice box="6.303.1" section="10">If you have a resurrection deal</choice>
+		<choice box="6.303.2" section="322">If not</choice>
+	</choices>
+</section>

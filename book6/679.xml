@@ -1,0 +1,11 @@
+<section name="679">
+	<p>
+		‘How can you possibly find her?’ laments Takakura, weeping bitterly into his long sleeves. ‘Alas, poor Kokoro. I know only that she has been taken to a small house with a green door somewhere in the suburbs.’
+	</p>
+	<p>
+		<if profession="troubadour">
+			If you are a Troubadour, <goto section="721"/>.
+		</if>
+		If not, <goto section="736"/>.
+	</p>
+</section>

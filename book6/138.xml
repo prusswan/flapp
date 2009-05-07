@@ -1,0 +1,8 @@
+<section name="138" image="138.jpg">
+	<p>
+		They belong to the Camellia Clan, a once-prosperous house that has fallen on hard times. ‘But there is a new wind blowing from the east,’ says the younger knight, ‘and the fortunes of our family may rise again.’
+	</p>
+	<p>
+		They start to reminisce about past glories, entirely forgetting about you. <goto section="243"/>.
+	</p>
+</section>

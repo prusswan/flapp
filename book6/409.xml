@@ -1,0 +1,15 @@
+<section name="409">
+	<p>
+		You get up in the night feeling thirsty. Stumbling out to the stream behind the cottage, you catch sight of a scraggly creature with luminous grey flesh and red eyes loping down the path from the clifftop.
+	</p>
+	<p>
+		‘Take this stranger!’ cries out a voice from behind you. ‘Just leave our daughter’s body untouched!’
+	</p>
+	<p>
+		It is the old man and his wife. They invited you to stay overnight so that the ghoul would devour you rather than the corpse of their daughter.
+	</p>
+	<choices>
+		<choice section="506">Run off into the night</choice>
+		<choice section="527">Stand up to the ghoul</choice>
+	</choices>
+</section>

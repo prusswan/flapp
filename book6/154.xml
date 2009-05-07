@@ -1,0 +1,6 @@
+<section name="154">
+	<p>
+		You catch up with a pilgrim on his way to the Wistaria Clan shrine in Chompo. ‘Ordinary riff-raff aren’t allowed into the shrine,’ he tells you, ‘but I’m assured of a welcome because I saved an old Wistaria lord from getting beaten up by skinheads in Chambara.’
+	</p>
+	<p><goto section="357"/>.</p>
+</section>

@@ -1,0 +1,9 @@
+<section name="410" dock="Gai River">
+	<p>
+		Note that your ship is now docked at the mouth of the Gai River. Your men are too fearful to come ashore with you.
+	</p>
+	<p>
+		‘This is Oni Province, skipper,’ says the mate. ‘Don’t you know what ‘oni’ means? It’s the Akatsurese word for devil.’
+	</p>
+	<p>You disembark alone. <goto section="356"/>.</p>
+</section>

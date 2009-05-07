@@ -1,0 +1,8 @@
+<section name="434">
+	<p>
+		‘The merchant houses keep their doors closed to outsiders,’ a Sokaran spice trader tells you. ‘You need a letter of introduction to show that you’re trustworthy.’
+	</p>
+	<p>‘Where can I get one?’</p>
+	<p>He shakes his head. ‘Not here. Try asking in Chambara.’</p>
+	<p><goto section="8"/>.</p>
+</section>

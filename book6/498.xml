@@ -1,0 +1,7 @@
+<section name="498">
+	<p>Chomei flatly refuses to forge a sword for a you.</p>
+	<p>
+		‘I do not deal with merchants!’ he says. ‘My swords are of the highest quality .They are works of art, and not to be handled by those whose fingers are grubby with coinage.’
+	</p>
+	<p>His servant shows you out. <goto section="79"/>.</p>
+</section>

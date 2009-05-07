@@ -1,0 +1,17 @@
+<section name="435">
+	<p>
+		The wizard emerges from his home to demand that you pay a toll. He wants you to give him 200 Shards for crossing his lawn.
+	</p>
+	<p>
+		<if shards="200">
+			If you are willing to pay,
+			<group>
+				<text>cross off the money</text>
+				<lose shards="200"/>
+				<goto section="44"/>
+			</group>
+			and go on your way by turning to <b>44</b>.
+		</if>
+		If you can’t or won’t pay, <goto section="441"/>.
+	</p>
+</section>

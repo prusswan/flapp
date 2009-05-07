@@ -1,0 +1,16 @@
+<section name="541">
+	<p>
+		By dint of intrigue, the artful Masayori has managed to raise himself to the position of minister of the interior. You run across him in the bark-roofed colonnade that leads from the outer palace to the rock garden.
+	</p>
+	<p>
+		‘Ah, if it isn’t our foreign friend,’ he says in a tone like over-sugared sherbet.
+	</p>
+	<p>You give the briefest of greetings and try to move past.</p>
+	<p>
+		‘A moment of your time, if you please. Lately the Sovereign’s rest has been disturbed by an evil creature that descends by night to perch on the palace roof. Someone has to be found who can destroy this creature, and I took the liberty of putting your name forward.’ He gives you a wide smile, reminiscent of a cat who has the key to the canary’s cage.
+	</p>
+	<choices>
+		<choice section="669">Volunteer for the job</choice>
+		<choice section="384">Try to get out of it</choice>
+	</choices>
+</section>

@@ -1,0 +1,13 @@
+<section name="660">
+	<p>
+		The youths back off, but they seem surprised rather than afraid of you. ‘You should keep your nose out of things that don’t concern you,’ says the ringleader. He spits on the ground at your feet before leading his gang away.
+	</p>
+	<p>
+		The old man is Lord Yasutaka of the Wistaria Clan. He made his common mistake of opening criticising the Lord Chancellor. ‘Those shaven-headed youths are Kiyomori’s private army of thugs,’ he says. ‘It’s deplorable what’s happened to this country!’
+	</p>
+	<p>
+		Get the codewords <tick codeword="Fruit">Fruit</tick>
+		and <tick codeword="Fuchsia">Fuchsia</tick> before
+		<goto section="79">turning to 79</goto>.
+	</p>
+</section>

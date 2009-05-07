@@ -1,0 +1,9 @@
+<section name="105" dock="Kaiju">
+	The mate reports that everything is ship-shape. ‘We can sail as
+	soon as the tide turns, if need be,’ he says with a wary glance
+	towards the town.
+	<choices>
+		<choice section="745" sail="t">Put to sea</choice>
+		<choice section="128">Disembark</choice>
+	</choices>
+</section>

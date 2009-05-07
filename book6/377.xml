@@ -1,0 +1,12 @@
+<section name="377">
+	<p>
+		‘Get you gone,’ says the captain of the guards. ‘This is the Sovereign’s palace. You cannot simply wander in off the street.’
+	</p>
+	<p>
+		There is nothing you can do. You turn and walk away.
+		<if codeword="Frame">
+			If you have the codeword Frame, <goto section="4"/>.
+		</if>
+		If not, <goto section="79"/>.
+	</p>
+</section>

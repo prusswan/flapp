@@ -1,0 +1,14 @@
+<section name="308">
+	<p>
+		You hold out your hand to the abbot. Ever since you touched the saint, a fragrance like sandalwood has hung about your fingers.
+	</p>
+	<p>
+		The abbot nods and says, ‘You have journeyed right across the world and returned to us. Has anything changed?’ He gestures all around him at the ivy-clad buildings, the serenely smiling statues, and the mountain peaks above the treetops.
+	</p>
+	<p>‘I have changed.’</p>
+	<p>‘A good answer. You may attempt the test again.’</p>
+	<p>
+		<lose codeword="Ink">Lose the codeword Ink</lose>
+		and <goto section="276"/>.
+	</p>
+</section>

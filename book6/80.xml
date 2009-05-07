@@ -1,0 +1,16 @@
+<section name="80">
+	<p>
+		The Ghostwaters of Nyg are a place of ill repute. Mist lies in a heavy blanket across the sea and sends white tendrils writhing against the sides of the ship. To the north-east is imperial Chambara, capital city of the exotic land of Akatsurai.
+	</p>
+	<p>‘My brother went there,’ the ship’s surgeon tells you.</p>
+	<p>‘What was it like?’</p>
+	<p>‘I don’t know. The poor devil never returned.’</p>
+	<choices>
+		<choice section="150">Set course for Chambara</choice>
+		<choice section="200">Steer due east</choice>
+		<choice section="102">Follow the coastline south</choice>
+		<choice book="3" section="98">Head for Ankon-Konu</choice>
+		<choice section="202">Go west</choice>
+		<choice section="300">Steer due north</choice>
+	</choices>
+</section>

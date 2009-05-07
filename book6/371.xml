@@ -1,0 +1,13 @@
+<section name="371">
+	<p>
+		A monk comes to wake you. You are lying on a prayer mat in front of the effigy of the Sage of Peace. The silvery glimmer of departing night filters into the incense-filled haze.
+	</p>
+	<p>
+		‘What is happening?’ you ask, confused. ‘I can’t remember leaving the catacombs.’
+	</p>
+	<p>‘You failed the tests,’ replies the monk. ‘Come with me.’</p>
+	<p>
+		<tick codeword="Friz">Get the codeword Friz</tick>
+		and <goto section="276"/>.
+	</p>
+</section>

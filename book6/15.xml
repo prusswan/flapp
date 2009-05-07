@@ -1,0 +1,13 @@
+<section name="15">
+	<p>
+		The monk tells you that he acquired marvellous powers after mastering the Pure Land sutra. This enabled him to travel to a fabulous realm in the night sky where he learned many arcane secrets.
+	</p>
+	<p>
+		‘I can help you to do the same,’ he says, ‘as long as you are genuinely pious.’
+	</p>
+	<choices>
+		<choice section="525">Ask for his help</choice>
+		<choice section="425">Attack him</choice>
+		<choice section="610">Bid him goodnight</choice>
+	</choices>
+</section>

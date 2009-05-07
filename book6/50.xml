@@ -1,0 +1,19 @@
+<section name="50">
+	<p>
+		The thief says he will train you in stealth and lockpicking in return for the <b>dragon mask</b>.
+	</p>
+	<p>
+		‘I’d make a lot more money if I wore that,’ he says. ‘People would be so frightened that I wouldn’t even have to draw my sword.’
+	</p>
+	<p>
+		If you agree to the deal, cross off the
+		<lose item="dragon mask" price="x"/> and
+		<random dice="2" flag="x" var="roll"/>.
+		<set var="t" value="thievery" modifier="natural"/>
+		<if var="roll" greaterthan="t">
+			If you get more than your current THIEVERY score then you can
+			<gain ability="thievery" amount="1">increase it by 1</gain>.
+		</if>
+	</p>
+	<p>Now <goto section="316"/>.</p>
+</section>

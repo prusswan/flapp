@@ -1,0 +1,11 @@
+<section name="85">
+	<p>
+		‘We were servants in a noble household,’ says the older man, ‘but because of the envy of others we were discredited and lost our position. You know the expression <i>shoja hissui</i>? Those who flourish are destined to fall.’
+	</p>
+	<p>
+		<if codeword="Fleet|Fuchsia|Frog">
+			If you have either Fleet, Fuchsia or Frog, <goto section="558"/>.
+		</if>
+		If you don’t have any of those codewords, <goto section="504"/>.
+	</p>
+</section>

@@ -1,0 +1,20 @@
+<section name="212">
+	<p>
+		‘Pay attention,’ says the tengu king, sailing high over your head with an effortless leap. ‘This is a tricky technique to master, and if you get it wrong in a fight it’ll prove worse than useless.’
+	</p>
+	<p><random/>.</p>
+	<outcomes>
+		<outcome range="2-6">
+			<lose ability="combat" amount="1">
+				Reduce your COMBAT score by 1
+			</lose>
+		</outcome>
+		<outcome range="7">The lesson teaches you nothing</outcome>
+		<outcome range="8-12">
+			<gain ability="combat" amount="1">
+				Increase your COMBAT score by 1
+			</gain>
+		</outcome>
+	</outcomes>
+	<p>After your lesson is over, <goto section="259"/>.</p>
+</section>

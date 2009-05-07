@@ -1,0 +1,10 @@
+<section name="134">
+	<p>
+		You blink and look again. What you took for a serpent’s head really is just a large rock in the middle of the stream. A man in elegant black silk steps on to it.
+	</p>
+	<p>‘Excellent,’ he says, ‘you have brought my sceptre.’</p>
+	<choices>
+		<choice section="159">Give it to him</choice>
+		<choice section="182">Keep it yourself</choice>
+	</choices>
+</section>

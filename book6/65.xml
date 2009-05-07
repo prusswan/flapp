@@ -1,0 +1,15 @@
+<section name="65">
+	<p>
+		You keep up a vigil by Takakura’s bedside. In the dark of the night an imposing figure enters the room. The other courtiers present take no notice as the newcomer sweeps up to where you are sitting.
+	</p>
+	<p>
+		‘There is something of mine you have,’ says a voice. You look up, but cannot make out the details of his face in the dim candlelight. You know what he has come for: the <b>royal sceptre</b>.
+		<lose item="royal sceptre">Cross it off</lose> your Adventure Sheet.
+	</p>
+	<p>
+		‘This time he will live,’ says the stranger. A breeze rustles his robes. Something flutters against your face and you awaken. It is dawn. Takakura looks up at you and smiles.
+	</p>
+	<p>‘A miracle!’ cry the physicians. ‘The sickness has gone!’</p>
+	<p>You know the truth, but who would believe you?</p>
+	<p><goto section="79"/>.</p>
+</section>

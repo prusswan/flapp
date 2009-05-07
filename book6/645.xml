@@ -1,0 +1,22 @@
+<section name="645">
+	<p>
+		Add the <weapon name="spear" bonus="4"/> to your list of possessions.
+	</p>
+	<p>
+		The gaping hole in the man’s chest slowly closes as the dead grey flesh knits itself together. His eyes open, gleaming like polished golden orbs with no sign of irises or pupils. You take a step back as he drifts into an upright position and unfolds his arms.
+	</p>
+	<p>
+		‘I am Lord Morituri of the Dawatsu Clan,’ he says in a voice made thick by centuries of silence.
+	</p>
+	<p>You start to reply, ‘And I am–’</p>
+	<p>
+		Morituri holds up a long-taloned hand. ‘That no longer matters. Your life is behind you now.’
+	</p>
+	<p>
+		<if title="Chosen One of Nagil">
+			If you have the title Chosen One of Nagil,
+			<goto section="711"/>.
+		</if>
+		If not, <goto section="742"/>.
+	</p>
+</section>

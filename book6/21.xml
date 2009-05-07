@@ -1,0 +1,13 @@
+<section name="21">
+	<p>
+		‘Go back out into the world,’ advises the abbot. ‘You are not yet ready for enlightenment.’
+	</p>
+	<p>‘What must I do?’</p>
+	<p>‘The saint of Vulture Peak will advise you.’</p>
+	<p>‘Where will I find him?’</p>
+	<p>
+		The abbot smiles. ‘That is something you must discover for yourself. Now go.’
+	</p>
+	<p><lose codeword="Friz">Lose the codeword Friz</lose> if you had it.</p>
+	<p><goto section="211"/>.</p>
+</section>

@@ -1,0 +1,15 @@
+<section name="150">
+	<p>
+		‘Ah, you can almost smell the rich spices of the Orient!’ says the bosun as he stands at the rail and sucks in a deep breath.
+	</p>
+	<p>
+		‘That’s seaweed you’re smelling, you lubber!’ laughs the first mate. ‘Either that or your own sweet grog-soaked breath.’
+	</p>
+	<p>‘Enough skylarking!’ you call. ‘Look lively now.’</p>
+	<p><random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2" section="145">Pirates attack</outcome>
+		<outcome range="3-10" section="381">Nothing untoward</outcome>
+		<outcome range="11-12" section="588">Submerged rocks</outcome>
+	</outcomes>
+</section>

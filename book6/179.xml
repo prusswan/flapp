@@ -1,0 +1,15 @@
+<section name="179">
+	<p>
+		The courtiers look at you in shock. The frown on Takakura’s face tells you that he is not pleased by your reply. ‘What are you saying?’ he mutters darkly. ‘Is it not true that the Sovereign’s wish is second only to the decrees of heaven?’
+	</p>
+	<p>
+		This is a sticky situation. You will need
+		<difficulty ability="charisma" level="15">
+			a CHARISMA roll at a Difficulty of 15
+		</difficulty> to wriggle out of it.
+	</p>
+	<outcomes>
+		<success section="271"/>
+		<failure section="286"/>
+	</outcomes>
+</section>

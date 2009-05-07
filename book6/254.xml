@@ -1,0 +1,11 @@
+<section name="254">
+	<p>
+		‘You must communicate my good wishes to your mistress,’ says Kiyomori. ‘Assure her that both our houses would be enriched by stronger links. Indeed, I am told she is a comely wench - and my son Shigemori is yet unmarried.’
+	</p>
+	<p>
+		He hands you a
+		<item name="diplomatic letter"/>.
+		Add it to your list of possessions before
+		<goto section="289">turning to 289</goto>.
+	</p>
+</section>

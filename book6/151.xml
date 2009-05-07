@@ -1,0 +1,12 @@
+<section name="151" image="151.jpg">
+	<p>
+		You are accosted by the side of the street by a blind man who stares at you with milky-white eyes. ‘Travel straight to the woods from here,’ he hisses in a tone of great urgency. ‘Go upstream and look for a door under an old oak. Take the left-hand path.’
+	</p>
+	<p>
+		He veers off, tapping the boardwalk with his cane, and is lost in the crowd. A strange encounter.
+	</p>
+	<p>
+		<lose codeword="Cenotaph">Lose the codeword Cenotaph</lose>
+		and <goto section="8"/>.
+	</p>
+</section>

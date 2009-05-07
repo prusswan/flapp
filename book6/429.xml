@@ -1,0 +1,8 @@
+<section name="429" dock="Gai River">
+	Your men are surprised to see you return alive. ‘Let’s get going
+	without delay, captain,’ urges the first mate.
+	<choices>
+		<choice section="250" sail="t">Set to sea</choice>
+		<choice section="568">Go ashore</choice>
+	</choices>
+</section>

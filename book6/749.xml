@@ -1,0 +1,13 @@
+<section name="749">
+	<p>
+		‘Fair stands the wind for Yarimura!’ cries the captain as you set sail. ‘Sweeter to me than the taste of wine is the surge of the sea and the scent of brine!’
+	</p>
+	<p>
+		‘You didn’t know our skipper was a poet, did you?’ asks the quartermaster. ‘Er, did you pay the fee for your berth, by the way?’
+	</p>
+	<p>Pay him if you haven’t already, then <random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2-10" book="4" section="280">You reach Yarimura safely</outcome>
+		<outcome range="11-12" section="241">The ship sinks</outcome>
+	</outcomes>
+</section>

@@ -1,0 +1,10 @@
+<section name="90">
+	<p>You have entered the coastal waters of Dragon Island.</p>
+	<p>
+		‘We must be careful, skipper,’ cautions one of the deckhands. ‘I hear this is the home of Ranryu, the Serpent of Chaos.’
+	</p>
+	<choices>
+		<choice section="418">Drop anchor and go ashore</choice>
+		<choice section="122">Sail away from the island</choice>
+	</choices>
+</section>

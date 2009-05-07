@@ -1,0 +1,12 @@
+<section name="694" image="694.jpg">
+	<p>
+		Shuriyoko turns the evidence in his fingers. His gaze is like acid. ‘Why would you have this unless you are plotting against our master the Shogun? Now I’ll see you get a traitor’s reward.’
+	</p>
+	<p>
+		You are taken out into the courtyard and beheaded.
+		<lose codeword="Frog">Lose the codeword Frog</lose>
+		and the
+		<lose title="Hatamoto">title Hatamoto</lose>,
+		then <goto section="140"/>.
+	</p>
+</section>

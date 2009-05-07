@@ -1,0 +1,13 @@
+<section name="684">
+	<p>
+		One of the Akatsurese sailors, a man named Narakami, fancies himself as something of a poet. Gazing out to sea he says: ‘Under the wide sky, a scintillant refulgence: the lightning’s flicker. I see it and am fearful, then it fades and I am sad.’
+	</p>
+	<p>
+		‘Belay that talk of lightning,’ shouts the mate superstitiously, ‘or you’ll see me with my lash, and that’ll make you sad all right!’
+	</p>
+	<p><random type="travel"/>.</p>
+	<outcomes>
+		<outcome range="2-5" section="335">A flash of lightning</outcome>
+		<outcome range="6-12" section="713">A quiet voyage</outcome>
+	</outcomes>
+</section>

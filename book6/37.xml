@@ -1,0 +1,11 @@
+<section name="37">
+	<p>
+		Takakura turns out not to be very curious as to why you are prowling around his palace at night. He is too preoccupied by his own cares. You learn that the Lord Chancellor, angered by Takakura’s affair with a girl who had also besotted the chancellor’s own son-in-law, has sent the girl away and confined Takakura to the palace without servants to wait on him.
+	</p>
+	<p>‘But surely you’re the Sovereign?’</p>
+	<p>He manages a bleak smile. ‘It’s not as simple as that.’</p>
+	<choices>
+		<choice section="679">Offer to find the girl</choice>
+		<choice section="79">Take your leave</choice>
+	</choices>
+</section>

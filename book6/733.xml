@@ -1,0 +1,12 @@
+<section name="733">
+	<p>
+		You arrive at an inn nestling at the back of a broad bay. A couple of ships are anchored here. The crewmen of one, the <i>White Lady</i> out of Yellowport, are lolling supine on the veranda of the inn after spending the afternoon drinking bottles of rice wine.
+	</p>
+	<p>
+		‘I like this place so much I don’t think I’ll ever leave!’ declares one.
+	</p>
+	<choices>
+		<choice section="445">Stop at the inn</choice>
+		<choice section="591">Continue on your way</choice>
+	</choices>
+</section>

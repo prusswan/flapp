@@ -1,0 +1,15 @@
+<section name="19">
+	<p>You and he recognize each other at the same instant.</p>
+	<p>‘Talanexor the Fire Weaver ...’</p>
+	<p>
+		He nods, not exactly smiling. ‘We meet again. For the last time, I suspect.’
+	</p>
+	<p>
+		A scythe of red fire sweeps from his hand towards you. You have just a split second in which to act.
+	</p>
+	<choices>
+		<choice section="140">Jump out of the basket</choice>
+		<choice section="663">Deflect the spell</choice>
+		<choice section="685">Cut the balloon loose</choice>
+	</choices>
+</section>

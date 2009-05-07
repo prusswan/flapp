@@ -1,0 +1,12 @@
+<section name="41">
+	<p>‘It is nothing to do with you,’ says one of the youths.</p>
+	<p>
+		‘Help me!’ pleads the old gentleman. ‘I dared to speak out against the chancellor’s dictatorial policies, and now his thugs are going to beat me up.’
+	</p>
+	<p>
+		<if codeword="Fleet">
+			If you have the codeword Fleet, <goto section="62"/>.
+		</if>
+		If not, decide whether to help the old man (<goto section="660" force="F"/>) or to stay out of it (<goto section="79" force="f"/>).
+	</p>
+</section>

@@ -1,0 +1,19 @@
+<section name="228">
+	<p>
+		<if item="lacquer box">
+			If you have a <b>lacquer box</b>,
+			<goto section="748"/>.
+		</if>
+		Otherwise read on.
+	</p>
+	<p>
+		Dusk is lost in a swirl of cold grey clouds when a woman stops you on a lonely moorland path and asks if you will do something for her.
+	</p>
+	<p>
+		‘Please deliver this to my sister on Toho Island,’ she says, proffering a <b>lacquer box</b>. ‘But on no account should you open it.’
+	</p>
+	<choices>
+		<choice section="252">Agree to deliver it</choice>
+		<choice section="376">Decline to help</choice>
+	</choices>
+</section>

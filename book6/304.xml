@@ -1,0 +1,13 @@
+<section name="304">
+	<p>
+		She receives the
+		<lose item="lacquer box"/>
+		with the almost witlessly pleased expression of a small child being given a bag of candy. ‘Good, good, good,’ she says in her reedy voice. ‘Your reward is to be fearless from now until your dying day.’
+	</p>
+	<p>
+		<tick ability="combat" amount="1">Gain 1 point on your COMBAT score</tick>
+		up to the maximum possible score of 12, but
+		<lose ability="sanctity" amount="2">lose 2 points from SANCTITY</lose>.
+		Whether you realize it or not, you have run a wicked errand for these two witches. Now <goto section="298"/>.
+	</p>
+</section>

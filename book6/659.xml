@@ -1,0 +1,11 @@
+<section name="659">
+	<p>
+		The mist blows away on the breeze. Akugenda by now is visible only as a small floating shape against the fiery sunset. Kiyimori’s eyes narrow in focused rage.
+	</p>
+	<p>‘Jiro,’ he snaps, ‘slay the interfering clod.’</p>
+	<p>
+		Jiro and two other warriors spread out to encircle you.
+		<tick codeword="Fern">Get the codeword Fern</tick>
+		and <goto section="618"/>.
+	</p>
+</section>

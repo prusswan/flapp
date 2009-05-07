@@ -1,0 +1,14 @@
+<section name="322">
+	<p>‘How is it that you can see me?’ you ask the priest.</p>
+	<p>
+		‘I have diligently chanted the Peacock Sutra every day for eighty-five years,’ he says in a tone of quiet modesty. ‘As a result of this I have magical powers.’
+	</p>
+	<p>‘Including resurrection?’</p>
+	<p>
+		‘Yes...’ he says with reluctance. ‘But I always advise souls to pass on to their next incarnation without regret.’
+	</p>
+	<choices>
+		<choice section="341">Insist that he resurrects you</choice>
+		<choice section="559">Accept your fate</choice>
+	</choices>
+</section>

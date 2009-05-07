@@ -1,0 +1,15 @@
+<section name="193">
+	<p>
+		‘In Chambara,’ says one of the sailors, ‘I once saw a knight cut a man down and walk away, with no better excuse than to test the edge of his sword.’
+	</p>
+	<p>
+		‘The Akatsurese are bloodthirsty fiends,’ says the ship’s carpenter. ‘And yet, do you know what they call us? Whitefaced devils! They are irredeemable!’
+	</p>
+	<p>Where will you set your course?</p>
+	<choices>
+		<choice section="72">To the north</choice>
+		<choice book="3" section="136">South to the Sea of Hydras</choice>
+		<choice section="250">East to Akatsurai</choice>
+		<choice book="3" section="172">West</choice>
+	</choices>
+</section>

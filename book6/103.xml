@@ -1,0 +1,9 @@
+<section name="103">
+	<p>
+		Shuriyoku presents you with your reward, a pouch containing <gain shards="350"/>.
+	</p>
+	<p>
+		‘Well done,’ he says. ‘Espionage is never a pleasant business, I know, but this gold will sweeten the aftertaste of treachery.’
+	</p>
+	<p>Make a note of the money and then <goto section="553"/>.</p>
+</section>

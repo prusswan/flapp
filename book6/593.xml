@@ -1,0 +1,12 @@
+<section name="593">
+	<p>
+		Passage on a barge will cost you 10 Shards. ‘What is to be found at the source of the Moku River?’ you ask the barge master.
+	</p>
+	<p>
+		‘There is a shrine where the river emerges from Kwaidan Forest,’ he replies. ‘No one goes there any more. We simply carry goods from the villages along the riverbank.’
+	</p>
+	<choices>
+		<choice shards="10" section="419">Pay 10 Shards to go upriver</choice>
+		<choice section="79">Stay in Chambara for now</choice>
+	</choices>
+</section>

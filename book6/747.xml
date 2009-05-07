@@ -1,0 +1,9 @@
+<section name="747">
+	<p>
+		It is a young man whose handsome face is set in a look of deep sorrow. He notices you without alarm. ‘Ah, I thought the chancellor had sent away all my guards,’ he says. ‘But no, I see you are a stranger. What brings you to my palace?’
+	</p>
+	<p>
+		You are face to face with the Sovereign of Akatsurai.
+		<goto section="37"/>.
+	</p>
+</section>

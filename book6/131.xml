@@ -1,0 +1,20 @@
+<section name="131">
+	<p>
+		Takakura takes the <b>lady’s court robe</b> from you and holds it to his face, breathing in his lost love’s perfume. ‘I am sorry I couldn’t persuade her to return,’ you say, bowing.
+	</p>
+	<p>
+		Takakura heaves a deep sigh. ‘It is not your fault. Secretary Masayori will see you are rewarded for your efforts on the way out.’
+	</p>
+	<p>
+		And so you are dismissed.
+		<lose item="lady's court robe">
+			Cross the <b>lady’s court robe</b> off
+		</lose>
+		your Adventure Sheet. Masayori, a disdainful individual with a long thin neck and globular head, gives you a purse containing
+		<gain shards="150"/> for your efforts.
+	</p>
+	<p>
+		‘You won’t come back here if you know what’s good for you,’ he says. ‘We don’t need foreign devils meddling in court affairs.
+	</p>
+	<p>Well, you’ve been told. Now <goto section="79"/>.</p>
+</section>

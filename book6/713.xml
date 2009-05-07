@@ -1,0 +1,8 @@
+<section name="713">
+	Your vessel is skirting the north coast of Akatsurai’s largest
+	island. It is up to you to set the course.
+	<choices>
+		<choice section="161">Go east</choice>
+		<choice section="224">Go west</choice>
+	</choices>
+</section>

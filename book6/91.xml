@@ -1,0 +1,7 @@
+<section name="91">
+	You search the corpses and find a
+	<weapon name="sword" bonus="1"/>, a
+	<item name="dragon mask"/> and a set of
+	<item name="silver chopsticks"/>.
+	Take these if you want and then <goto section="529"/>.
+</section>

@@ -1,0 +1,15 @@
+<section name="170">
+	<p>
+		You are sailing in the Ghostwaters of Nyg. When you enquire the reason for this region’s name, none aboard can enlighten you.
+	</p>
+	<p>
+		‘Nyg was a wizard of old,’ says the navigator with a shrug. ‘I know no more than that.’
+	</p>
+	<choices>
+		<choice section="80">Go east</choice>
+		<choice section="309">Go north</choice>
+		<choice book="3" section="98">Go south</choice>
+		<choice book="3" section="136">Go west</choice>
+		<choice section="250">Head for land</choice>
+	</choices>
+</section>
