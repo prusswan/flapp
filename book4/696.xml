@@ -1,0 +1,7 @@
+<section name="696">
+	<difficulty ability="SANCTITY" level="13"/>.
+	<outcomes>
+		<success section="324"/>
+		<failure section="286"/>
+	</outcomes>
+</section>

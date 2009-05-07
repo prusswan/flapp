@@ -1,0 +1,7 @@
+<section name="694">
+	The black stallion leads his herd straight at you. <difficulty ability="COMBAT" level="15"/>.
+	<outcomes>
+		<success section="207"/>
+		<failure section="16"/>
+	</outcomes>
+</section>

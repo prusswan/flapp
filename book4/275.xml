@@ -1,0 +1,8 @@
+<section name="275">
+	<p>
+		You sprinkle the dust over Luroc and yourself. Cross the <lose item="dust of tranquillity"/> off your Adventure Sheet. Instantly, a feeling of peace and calm washes over you both.
+	</p>
+	<p>‘Let’s get out before we lost it completely,’ says Luroc.</p>
+	<p>You race for the door, and slip away into the night.</p>
+	<p><goto section="337"/>.</p>
+</section>

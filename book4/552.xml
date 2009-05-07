@@ -1,0 +1,19 @@
+<section name="552">
+	<p>
+		At the top, you find only the large, sprawling ruin of a mountain stronghold. Broken towers and shattered walls are all that is left now. A disconsolate old man appears, blind, and dressed in rags.
+	</p>
+	<p>
+		‘All gone now,’ he mutters, ‘all gone. It was a city of magicians, until they messed with magics best left untouched by man. Leave while you still can, adventurer.’
+	</p>
+	<p>
+		<difficulty ability="magic|sanctity" level="13">
+			Make a MAGIC or SANCTITY roll
+		</difficulty>
+		(your choice as to which) at Difficulty 13.
+	</p>
+	<outcomes>
+		<success section="502">Successful MAGIC or SANCTITY roll</success>
+		<failure section="142">Failed MAGIC or SANCTITY roll</failure>
+	</outcomes>
+</section>
+

@@ -1,0 +1,17 @@
+<section name="367">
+	<p>
+		You recognise Kaschuf. During your seafaring days on the Violet Ocean you came across an uncharted island. There you found a heart-shaped locket, with Kaschuf’s bald face and piercing green eyes painted inside. And when you opened it you released something. You tell Kaschuf your tale, and the effect is extraordinary. He goes white with terror!
+	</p>
+	<p>
+		But Kevar hops from foot to foot in glee and croaks, ‘You found his soul in that locket! And released it! Kaschuf is no longer deathless! He can be killed...’
+	</p>
+	<p>
+		‘The fight’s not over yet, old man,’ bellows Kaschuf, as he glares savagely at you. ‘I could still win!’
+	</p>
+	<p>Kevar claps his hand over his mouth. You must fight.</p>
+	<fight name="Kaschuf" combat="8" defence="8" stamina="20"/>
+	<p>
+		If you win, <goto section="158"/>.
+		If you lose, <goto dead="t" section="7"/>.
+	</p>
+</section>

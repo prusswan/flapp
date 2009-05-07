@@ -1,0 +1,26 @@
+<section name="441" image="441.jpg">
+	<p>
+		You manage to run outside safely. The Ruby Citadel collapses in on itself with a thundering roar, but the tattooed man calmly walks out, chunks of ruby rock bouncing off his blue energy shield. His hawk-nosed face is made all the more strange by the bizarre tattoos that cover him entirely.
+	</p>
+	<p>
+		‘I am Targdaz,’ he says, ‘the Magnificent.’ He tilts his head back as he says ‘magnificent’, as if challenging you to gainsay him. ‘Anyway,’ he goes on, ‘I’m grateful...’ He pauses for a moment, and looks away, struck by a sudden thought. Then he yells, ‘By the Fiery One! Of course!’
+	</p>
+	<p>
+		He turns away, gestures, and a large palanquin of black and gold appears in mid-air, floating in front of him. He jump in, and yells: ‘Take me to the Hall of Ebron and no further!’
+	</p>
+	<p>
+		The palanquin moves off. You notice footprints appearing in the snow, as of invisible bearers, carrying the palanquin away. Then it accelerates to an impossible speed, and races out of sight. The last thing you hear is Targdaz muttering, ‘Must tell Hetepek....’
+	</p>
+	<p>
+		You examine the footprints, and give an involuntary shudder: they are not human.
+	</p>
+	<p>
+		Musing about the strange behaviour of wizards, especially ungrateful ones, you carry on your way.
+	</p>
+	<p>
+		<if profession="Troubadour">
+			If you are a Troubadour, <goto section="28"/>.
+		</if>
+		If not, <goto section="499"/>.
+	</p>
+</section>

@@ -1,0 +1,14 @@
+<section name="310">
+	<p>
+		You are sailing into Disaster Bay. Heavy rains begin to fall, and the skies darken, severely reducing visibility.
+	</p>
+	<p>
+		‘These are dangerous waters, cap’n,’ says the first mate. ‘Some people say the reefs and rocks of the bay shift and change, making any chart unreliable.’
+	</p>
+	<p><random type="travel" dice="2"/>.</p>
+	<outcomes>
+		<outcome range="2-5" section="645">Storm</outcome>
+		<outcome range="6-9" section="533">Untroubled journey so far</outcome>
+		<outcome range="10-12" section="243">A fire in the distance</outcome>
+	</outcomes>
+</section>

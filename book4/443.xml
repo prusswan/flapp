@@ -1,0 +1,15 @@
+<section name="443">
+	<p>
+		A strange ship emerges from the fog bank. It is barely seaworthy, a floating wreck with rotting rigging, and mouldy timbers. But it is the nature of the crew that draws your attention - ghostly forms, undead pirates, spectral figures that leap and dance, wielding rusty cutlasses. A tattered red pennant flies from the mast.
+	</p>
+	<p>
+		Your crew is filled with dread. ‘Ye gods,’ wails the first mate. ‘It’s a ghost ship - if they catch us, they’ll take our souls down into the cold, dark deeps!’
+	</p>
+	<p>
+		The spectral ship surges towards you in silent pursuit as the hot sun beats down.
+	</p>
+	<choices>
+		<choice section="492">Make a run for it</choice>
+		<choice section="546">Prepare to fight</choice>
+	</choices>
+</section>

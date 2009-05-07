@@ -1,0 +1,10 @@
+<section name="365">
+	<p>
+		You ask the gate guard to let you through into Nerech. He looks you up and down, and eyes you askance for a moment. Then he says, ‘Give us yer boots, then. They’re a nice pair and it’s sad to think they would go to waste.’
+	</p>
+	<p>He grins ghoulishly at you.</p>
+	<choices>
+		<choice book="1" section="259">Turn back</choice>
+		<choice section="32">Venture forth</choice>
+	</choices>
+</section>

@@ -1,0 +1,3 @@
+<section name="577">
+	<lose stamina="2d">Lose 2-12 Stamina points</lose> (the roll of two dice). If you are still alive, your courage earns the nomads’ respect and they lower their weapons, offering you comradeship. <goto section="246"/>.
+</section>

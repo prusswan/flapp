@@ -1,0 +1,21 @@
+<section name="411">
+	<p>
+		You have only one choice - to lead your men in a concerted attack up the beach, and try to defeat the wreckers in battle. Otherwise you will be picked off one by one. As for the ship - you can see that it will be lost. With a vengeful battle cry, you try to rally your crew.
+	</p>
+	<p>
+		‘Up and at ‘em, lads!’ you shout, and, waist deep in the water, you charge at the beach.
+	</p>
+	<p>
+		<difficulty ability="charisma" level="11">
+			<adjust profession="1" value="1"/>
+			<adjust ability="rank" greaterthan="3" value="1"/>
+			<adjust crew="poor" value="-1"/>
+			<adjust crew="good" value="1"/>
+			<adjust crew="excellent" value="1"/>
+		</difficulty>. Add 1 to your roll if you are a Warrior, and one if you are 4th Rank or higher. Subtract one if you have a poor crew, and add one if you have a good or an excellent crew.
+	</p>
+	<outcomes>
+		<success section="561"/>
+		<failure section="497"/>
+	</outcomes>
+</section>

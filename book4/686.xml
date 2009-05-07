@@ -1,0 +1,12 @@
+<section name="686">
+	<p>
+		You find the house of Etla. Inside, you come across a grisly scene. Etla lies dead across a table - his throat has been cut. He is clutching a note in one hand.
+	</p>
+	<p>
+		You take it and read, ‘To the bearer of Etla’s map. Meet me in Kunrir, Uttaku, and we’ll divide the treasure. You will find me at the House of Sweet Repose.’ It is signed Nyelm Starhand.
+	</p>
+	<p>
+		<lose codeword="Dirk"/> and <gain codeword="Dregs">gain the codeword Dregs</gain>.
+	</p>
+	<p>You leave the bloody scene. <goto section="77"/>.</p>
+</section>

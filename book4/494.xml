@@ -1,0 +1,7 @@
+<section name="494">
+	You are set upon by a gang of ruffians who are intent on robbing you. <difficulty ability="combat" level="15"/>.
+	<outcomes>
+		<success section="692"/>
+		<failure section="131"/>
+	</outcomes>
+</section>

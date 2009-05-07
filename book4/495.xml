@@ -1,0 +1,14 @@
+<section name="495">
+	<p>
+		You know enough arcane lore to decipher the plaques above the tunnel entrances. They read ‘Dweomer’, ‘Imperial Chambara’, ‘The Bronze Hills’ and ‘The Pyramid’.
+	</p>
+	<p>
+		You realize that finding your way back the way you came will be virtually impossible. You will have to go through one of the tunnels.
+	</p>
+	<choices>
+		<choice section="656">Dweomer</choice>
+		<choice section="518">Imperial Chambara</choice>
+		<choice section="402">The Bronze Hills</choice>
+		<choice section="623">The Pyramid</choice>
+	</choices>
+</section>

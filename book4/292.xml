@@ -1,0 +1,15 @@
+<section name="292">
+	<p>
+		A tall woman draped in a twist of silk steps out of the shadows to confront you. She looks like an angel, except that her wings are black.
+	</p>
+	<p>
+		‘You were told never to return,’ she says in a mild, sweetly musical voice.
+	</p>
+	<p>‘Unless I wished to dwell among the dead.’</p>
+	<p>She nods.</p>
+	<p>‘That is so.’</p>
+	<choices>
+		<choice section="15">Turn back and go on your way</choice>
+		<choice section="534">Accompany Death’s angel</choice>
+	</choices>
+</section>

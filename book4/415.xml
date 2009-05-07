@@ -1,0 +1,7 @@
+<section name="415">
+	<p>The crew absolutely refuses to sail into the Unbounded Ocean.</p>
+	<p>
+		‘There’s no land out there, and the seas are infested with Demons of the Deep - if we go too far, we’ll fall off the edge of the world!’ says the first mate.
+	</p>
+	<p><goto section="580"/> and choose again.</p>
+</section>

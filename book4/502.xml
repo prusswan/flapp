@@ -1,0 +1,14 @@
+<section name="502">
+	<p>
+		Your intuition tells you something is not right. Suddenly, the ruined stronghold wavers and fades before your eyes to be replaced by a thriving fortified settlement. The blind man has turned into a rather well-dressed, corpulent fellow, who isn’t even blind. The whole thing was an illusion.
+	</p>
+	<p>‘Ah, well, I see that you can see,’ he says.</p>
+	<p>
+		He explains that the Isle of Mystery is inhabited by magicians who worship Molhern, the god of knowledge and magic. They like to live in solitude, and shield their island with illusions.
+	</p>
+	<p>
+		‘You might as well go in, now that you’ve seen through our little trick,’ mutters the man.
+	</p>
+	<p>You stroll through the main gate in to the City of Mystery.</p>
+	<p><goto section="274"/>.</p>
+</section>

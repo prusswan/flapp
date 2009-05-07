@@ -1,0 +1,23 @@
+<section name="532">
+	<p>
+		The doors are opened by the butler, Kevar. His long white hair is even longer now. Kaschuf himself, tall, strong, and as bald as ever steps forward.
+	</p>
+	<p>
+		‘Haven’t I seen you somewhere before? No matter, I’ll carve you to pieces, just like all the others!’
+	</p>
+	<p>
+		Kaschuf goes white with terror when you tell him that you have released his soul from a locket you found on an uncharted island.
+	</p>
+	<p>
+		Kevar hops from foot to foot in glee and croaks, ‘Kaschuf is no longer Deathless! He can be killed - he can be killed!’
+	</p>
+	<p>
+		‘The fight’s not over yet, old man,’ bellows Kaschuf, as he glares savagely at you. ‘I could still win!’ Kevar freezes and claps his hand over his mouth.
+	</p>
+	<p>You must fight.</p>
+	<fight name="Kaschuf" combat="8" defence="8" stamina="20"/>
+	<p>
+		If you win, <goto section="158"/>.
+		If you lose, <goto section="7" dead="t"/>.
+	</p>
+</section>

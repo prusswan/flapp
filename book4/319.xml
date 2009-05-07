@@ -1,0 +1,14 @@
+<section name="319">
+	<p>
+		You uncork the vial and hold it under the shaman’s nose. His eyes snap open and he gives you a red-rimmed stare.
+	</p>
+	<p>
+		‘Go where the dead spirits go,’ he says in a throaty growl. Find the deep tunnels below the ice. Wrap up warm, mind, or your veins will with rubies fill and with feet of marble you’ll take your last step. Placate the foreign chief’s guardian fetch with bard-song, learned of old.’
+	</p>
+	<p>
+		Perhaps it was a wasted effort bringing the old shaman round. He seems to be babbling nonsense. Moreover the <b>uncanny salts</b> have dissolved into the cold night air; <lose item="uncanny salts">cross them off</lose> your Adventure Sheet.
+	</p>
+	<p>
+		You return to the camp to find a warm place by the fire where you can get some sleep. <goto section="394"/>.
+	</p>
+</section>

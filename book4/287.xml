@@ -1,0 +1,21 @@
+<section name="287">
+	<p>
+		The captain’s first mate recognizes you, but you have no idea who he is. He is amazed you don’t know him.
+	</p>
+	<p>
+		‘Don’t you recognize your old friend Clarny Dukes,’ he whines, distraught. ‘You saved my life, when we were lost in the Desert of Bones. Don’t you remember?’
+	</p>
+	<p>
+		You remember nothing. It must have happened during a period of your life of which you have no memory whatsoever. At any rate, you pretend to remember, and the first mate persuades the captain to let you live.
+	</p>
+	<p>
+		They put you ashore at their next port of call. <random dice="1"/>.
+		<!-- rearranged so reroll comes after outcomes -->
+	</p>
+	<outcomes>
+		<outcome range="1,2" section="10">Yarimura</outcome>
+		<outcome range="3,4" book="1" section="10">Yellowport</outcome>
+		<outcome range="5,6" book="6" section="79">Chambara</outcome>
+	</outcomes>
+	<p>If you don't have the relevant book in the series, <reroll>roll again</reroll>.</p>
+</section>

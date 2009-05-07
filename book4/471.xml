@@ -1,0 +1,14 @@
+<section name="471">
+	<p>
+		You have successfully navigated the dangerous waters of Disaster Bay. Up ahead, your lookout spots an island.
+	</p>
+	<p>
+		‘That be Bazalek Isle,’ says your mate, ‘No one who has landed there has ever got back alive - I’d advise against it, unless you’ve a map or something, cap’n.’
+	</p>
+	<choices>
+		<choice section="201">North along the coast to Yarimura</choice>
+		<choice section="120">East towards the Isle of Mystery</choice>
+		<choice section="305">Out into the Unbounded Ocean</choice>
+		<choice section="673">Drop anchor and explore Bazalek Isle</choice>
+	</choices>
+</section>

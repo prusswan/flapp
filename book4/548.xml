@@ -1,0 +1,21 @@
+<section name="548">
+	<p>
+		<if codeword="Deathless">
+			If you have the codeword Deathless, <goto section="672"/>.	
+		</if>
+		If not, read on.
+	</p>
+	<p>
+		The village is called Vodhya. The people stare at you in amazement as you walk into the main square. They seem a pale, unhealthy lot, dogged by some terrible worry, their faces drawn and pinched. Then they pull their furs around them and hurry off, slamming doors and windows, until you are all alone, save for a young boy that gazes at you wide-eyed.
+	</p>
+	<p>
+		Above the village is a tall hill upon which squats a dark and windswept keep, which dominates the land. You ask the boy what’s going on.
+	</p>
+	<p>
+		He just turns and looks up at the grim, iron-grey keep and whispers dolefully, ‘The Lady Nastasya, Kaschuf’s got her... and he won’t stop hurting us until she promises to marry him. But she won’t, no she won’t. How could she marry the one who killed her father?’
+	</p>
+	<choices>
+		<choice section="398">Leave Vodhya</choice>
+		<choice section="42">Go up to the Keep of Kaschuf</choice>
+	</choices>
+</section>

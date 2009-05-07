@@ -1,0 +1,7 @@
+<section name="539">
+	<p>
+		‘You may not pass,’ booms the jackal head. It breathes and you are blown like a leaf in the wind, for hundreds of yards.
+		<lose stamina="1d">Lose 1-6 Stamina points</lose> (the roll of one die).
+	</p>
+	<p>You pick yourself up. <goto section="266"/>.</p>
+</section>

@@ -1,0 +1,9 @@
+<section name="323">
+	<p>The crew seems surprised to see you.</p>
+	<p>
+		‘We thought you’d never be coming back alive, cap’n!’ says the first mate.
+	</p>
+	<p>
+		You sail your ship back through the fog bank that surrounds the isle, and into open waters. <goto section="296"/>.
+	</p>
+</section>
