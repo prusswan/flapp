@@ -117,6 +117,8 @@ public class Pack implements FilenameFilter {
 							if (!matched)
 								continue;
 						}
+						else if (xmlFiles[i].startsWith("."))
+							continue; // hidden info, probably SVN-related
 						count++;
 						addFile(bookOut, BookDetails[d][0] + "/" + xmlFiles[i], zipPathPrefix + xmlFiles[i]);
 					}
