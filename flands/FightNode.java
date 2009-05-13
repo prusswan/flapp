@@ -1110,14 +1110,6 @@ public class FightNode extends Node implements Executable, ActionListener, Rolle
 			addEnableElements(leaves);
 		}
 
-		private ActionNode firstActionChild = null;
-		protected void addChild(Node n) {
-			if (firstActionChild == null && n instanceof ActionNode) {
-				firstActionChild = (ActionNode)n;
-				firstActionChild.addActionListener(this);
-			}
-		}
-
 		private boolean executed = false;
 		public boolean getExecuted() { return executed; }
 		public void execute() {
