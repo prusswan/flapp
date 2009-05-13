@@ -61,7 +61,11 @@ public class FLApp extends JFrame implements MouseListener,
 		MouseMotionListener, ActionListener {
 	private static FLApp single = null;
 
-	static boolean debugging = true;
+	/**
+	 * If true, removes the end game confirm dialogs, as well as saving and retrieving
+	 * codewords from a subdirectory (see Codewords.refresh() and update()).
+	 */
+	static boolean debugging = false;
 
 	public static FLApp getSingle() {
 		if (single == null)
