@@ -79,12 +79,10 @@ public class GotoNode extends ActionNode implements Executable, ChangeListener, 
 			flag = atts.getValue("flag");
 			price = atts.getValue("price");
 			if (flag != null) {
-				Flag f = Flag.getFlag(flag);
-				f.addListener(this);
+				getFlags().addListener(flag, this);
 			}
 			if (price != null) {
-				Flag f = Flag.getFlag(price);
-				f.addListener(this);
+				getFlags().addListener(price, this);
 			}
 		}
 		keepEnabled = getBooleanValue(atts, "revisit", false);
@@ -199,9 +197,9 @@ public class GotoNode extends ActionNode implements Executable, ChangeListener, 
 			return false;
 		if (emptyvar != null && isVariableDefined(emptyvar))
 			return false;
-		if (flag != null && !Flag.getFlag(flag).getState())
+		if (flag != null && !getFlags().getState(flag))
 			return false;
-		if (price != null && Flag.getFlag(price).getState())
+		if (price != null && getFlags().getState(price))
 			return false;
 		return true;
 	}
@@ -338,6 +336,10 @@ public class GotoNode extends ActionNode implements Executable, ChangeListener, 
 	public void dispose() {
 		if (setSail)
 			getShips().removeShipListener(this);
+		if (flag != null)
+			getFlags().removeListener(flag, this);
+		if (price != null)
+			getFlags().removeListener(price, this);
 	}
 	
 	protected void loadProperties(Attributes atts) {

@@ -90,7 +90,7 @@ public class DifficultyNode extends ActionNode implements Executable, Roller.Lis
 		findExecutableGrouper().addExecutable(this);
 		
 		if (flag != null)
-			Flag.getFlag(flag).addListener(this);
+			getFlags().addListener(flag, this);
 	}
 
 	protected Node createChild(String name) {
@@ -112,7 +112,7 @@ public class DifficultyNode extends ActionNode implements Executable, Roller.Lis
 	}
 
 	public boolean execute(ExecutableGrouper grouper) {
-		if (result < 0 && (flag == null || Flag.getFlag(flag).getState())) {
+		if (result < 0 && (flag == null || getFlags().getFlag(flag).getState())) {
 			// Set up for user to roll
 			System.out.println("DifficultyNode: ready to roll!");
 			setEnabled(true);
@@ -185,7 +185,7 @@ public class DifficultyNode extends ActionNode implements Executable, Roller.Lis
 		roller.startRolling();
 		
 		if (flag != null)
-			Flag.getFlag(flag).setState(false);
+			getFlags().setState(flag, false);
 	}
 
 	public void rollerFinished(Roller r) {
@@ -228,8 +228,8 @@ public class DifficultyNode extends ActionNode implements Executable, Roller.Lis
 			effects.notifyOwner();
 		}
 
-		if (flag != null && !Flag.getFlag(flag).getState())
-			Flag.getFlag(flag).setState(true);
+		if (flag != null && !getFlags().getState(flag))
+			getFlags().setState(flag, true);
 		
 		// Pretend like we've just been called by the cached grouper...
 		execute(findExecutableGrouper());
@@ -273,5 +273,10 @@ public class DifficultyNode extends ActionNode implements Executable, Roller.Lis
 			sb.append(", subtract ").append(-delta);
 		sb.append(", trying to beat a score of ").append(level);
 		return sb.toString();
+	}
+	
+	public void dispose() {
+		if (flag != null)
+			getFlags().removeListener(flag, this);
 	}
 }

@@ -46,7 +46,7 @@ public class ResurrectionNode extends ActionNode implements Executable, ChangeLi
 
 		flag = atts.getValue("flag");
 		if (flag != null)
-			Flag.getFlag(flag).addListener(this);
+			getFlags().addListener(flag, this);
 		
 		super.init(atts);
 	}
@@ -79,7 +79,7 @@ public class ResurrectionNode extends ActionNode implements Executable, ChangeLi
 	}
 	
 	public boolean execute(ExecutableGrouper grouper) {
-		if (flag != null && !Flag.getFlag(flag).getState())
+		if (flag != null && !getFlags().getState(flag))
 			setEnabled(false);
 		else {
 			boolean canDo = canDoAction();
@@ -122,7 +122,7 @@ public class ResurrectionNode extends ActionNode implements Executable, ChangeLi
 		callsContinue = false;
 
 		if (flag != null)
-			Flag.getFlag(flag).setState(false);
+			getFlags().setState(flag, false);
 	}
 
 	protected Element createElement() { return null; }
@@ -130,6 +130,8 @@ public class ResurrectionNode extends ActionNode implements Executable, ChangeLi
 	public void dispose() {
 		if (shards == null)
 			getAdventurer().removeMoneyListener(this);
+		if (flag != null)
+			getFlags().removeListener(flag, this);
 	}
 	
 	protected String getTipText() {

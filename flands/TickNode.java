@@ -105,12 +105,10 @@ public class TickNode extends ActionNode implements Executable, ItemListener, Fl
 		price = atts.getValue("price");
 		flag = atts.getValue("flag");
 		if (flag != null) {
-			Flag f = Flag.getFlag(flag);
-			f.addListener(this);
+			getFlags().addListener(flag, this);
 		}
 		if (price != null) {
-			Flag f = Flag.getFlag(price);
-			f.addListener(this);
+			getFlags().addListener(price, this);
 		}
 		profession = atts.getValue("profession");
 
@@ -195,9 +193,9 @@ public class TickNode extends ActionNode implements Executable, ItemListener, Fl
 
 	private boolean callContinue = false;
 	public boolean execute(ExecutableGrouper grouper) {
-		if (flag != null && !Flag.getFlag(flag).getState())
+		if (flag != null && !getFlags().getState(flag))
 			return true; // without enabling
-		if (price != null && Flag.getFlag(price).getState())
+		if (price != null && getFlags().getState(price))
 			return true; // ditto
 
 		setEnabled(true);
@@ -520,9 +518,9 @@ public class TickNode extends ActionNode implements Executable, ItemListener, Fl
 		}
 
 		if (flag != null)
-			Flag.getFlag(flag).setState(false);
+			getFlags().setState(flag, false);
 		if (price != null)
-			Flag.getFlag(price).setState(true);
+			getFlags().setState(price, true);
 
 		// Notify the grouper that we're ready to continue
 		if (callContinue)
@@ -543,7 +541,7 @@ public class TickNode extends ActionNode implements Executable, ItemListener, Fl
 			// Continue execution now
 			setEnabled(false);
 			if (flag != null)
-				Flag.getFlag(flag).setState(false);
+				getFlags().setState(flag, false);
 			if (callContinue)
 				findExecutableGrouper().continueExecution(this, false);
 		}
@@ -551,9 +549,9 @@ public class TickNode extends ActionNode implements Executable, ItemListener, Fl
 
 	public void dispose() {
 		if (flag != null)
-			Flag.getFlag(flag).removeListener(this);
+			getFlags().removeListener(flag, this);
 		if (price != null)
-			Flag.getFlag(price).removeListener(this);
+			getFlags().removeListener(price, this);
 	}
 
 	private int abilityChosen = -1;

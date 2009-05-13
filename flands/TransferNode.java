@@ -61,8 +61,7 @@ public class TransferNode extends ActionNode implements Executable, Flag.Listene
 		
 		price = atts.getValue("price");
 		if (price != null) {
-			Flag f = Flag.getFlag(price);
-			f.addListener(this);
+			getFlags().addListener(price, this);
 		}
 		
 		hidden = getBooleanValue(atts, "hidden", false);
@@ -144,8 +143,7 @@ public class TransferNode extends ActionNode implements Executable, Flag.Listene
 	private boolean callContinue = false;
 	public boolean execute(ExecutableGrouper grouper) {
 		if (price != null) {
-			Flag f = Flag.getFlag(price);
-			flagChanged(price, f.getState());
+			flagChanged(price, getFlags().getState(price));
 			return true;
 		}
 
@@ -240,7 +238,7 @@ public class TransferNode extends ActionNode implements Executable, Flag.Listene
 		setEnabled(false);
 		
 		if (price != null)
-			Flag.getFlag(price).setState(true);
+			getFlags().setState(price, true);
 		
 		if (callContinue) {
 			callContinue = false;
@@ -297,5 +295,11 @@ public class TransferNode extends ActionNode implements Executable, Flag.Listene
 			text += " to the cache [" + to + "]";
 		
 		return text;
+	}
+	
+	public void dispose() {
+		if (price != null) {
+			getFlags().removeListener(price, this);
+		}
 	}
 }

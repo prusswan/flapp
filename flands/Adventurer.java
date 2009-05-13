@@ -121,6 +121,8 @@ public class Adventurer implements Loadable {
 
 	private ExtraChoice.List choices = new ExtraChoice.List();
 	
+	private Flag.Set flags = new Flag.Set();
+	
 	private boolean hardcore = false;
 	private long hardcoreTime = 0;
 	
@@ -787,6 +789,8 @@ public class Adventurer implements Loadable {
 
 	public ExtraChoice.List getExtraChoices() { return choices; }
 	
+	public Flag.Set getFlags() { return flags; }
+	
 	private List<Resurrection> resurrections = new LinkedList<Resurrection>();
 	private DefaultStyledDocument resurrectionDoc = null;
 	//public Resurrection getResurrection() { return resurrection; }
@@ -1160,6 +1164,9 @@ public class Adventurer implements Loadable {
 				hardcore = true;
 				hardcoreTime = Long.parseLong(val);
 			}
+			
+			flags.loadFrom(charProps);
+			
 			return success;
 		}
 		catch (IOException ioe) {
@@ -1215,6 +1222,8 @@ public class Adventurer implements Loadable {
 
 		if (hardcore)
 			charProps.setProperty("Hardcore", Long.toString(System.currentTimeMillis()));
+		
+		flags.saveTo(charProps);
 		
 		try {
 			charProps.store(out, null);

@@ -113,12 +113,10 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 		price = atts.getValue("price");
 		flag = atts.getValue("flag");
 		if (price != null && price.length() > 0) {
-			Flag f = Flag.getFlag(price);
-			f.addListener(this);
+			getFlags().addListener(price, this);
 		}
 		if (flag != null) {
-			Flag f = Flag.getFlag(flag);
-			f.addListener(this);
+			getFlags().addListener(flag, this);
 		}
 		if (price != null) {
 			if (shards != null)
@@ -233,12 +231,10 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 	private boolean callContinue = false;
 	public boolean execute(ExecutableGrouper grouper) {
 		if (price != null && price.length() > 0) {
-			Flag f = Flag.getFlag(price);
-			flagChanged(price, f.getState());
+			flagChanged(price, getFlags().getState(price));
 		}
 		if (flag != null) {
-			Flag f = Flag.getFlag(flag);
-			flagChanged(flag, f.getState());
+			flagChanged(flag, getFlags().getState(flag));
 		}
 		
 		if (price != null) {
@@ -607,9 +603,9 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 		}
 
 		if (flag != null)
-			Flag.getFlag(flag).setState(false);
+			getFlags().setState(flag, false);
 		if (price != null)
-			Flag.getFlag(price).setState(true);
+			getFlags().setState(price, true);
 
 		super.actionPerformed(evt);
 		
@@ -826,14 +822,14 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 	
 	public void dispose() {
 		if (flag != null)
-			Flag.getFlag(flag).removeListener(this);
+			getFlags().removeListener(flag, this);
 		if (price != null && price.length() > 0)
-			Flag.getFlag(price).removeListener(this);
+			getFlags().removeListener(price, this);
 	}
 
 	public void stateChanged(ChangeEvent e) {
 		// Only called if price != null, shards != null
-		flagChanged(price, Flag.getFlag(price).getState());
+		flagChanged(price, getFlags().getState(price));
 	}
 }
 

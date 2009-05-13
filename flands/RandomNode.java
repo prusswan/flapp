@@ -45,8 +45,7 @@ public class RandomNode extends ActionNode implements Executable, Roller.Listene
 		var = xmlAtts.getValue("var");
 		flag = xmlAtts.getValue("flag");
 		if (flag != null) {
-			Flag f = Flag.getFlag(flag);
-			f.addListener(this);
+			getFlags().addListener(flag, this);
 		}
 		type = xmlAtts.getValue("type");
 		forced = getBooleanValue(xmlAtts, "force", true);
@@ -107,8 +106,7 @@ public class RandomNode extends ActionNode implements Executable, Roller.Listene
 
 	public boolean execute(ExecutableGrouper grouper) {
 		if (flag != null) {
-			Flag f = Flag.getFlag(flag);
-			if (!f.getState())
+			if (!getFlags().getState(flag))
 				return true;
 		}
 
@@ -194,7 +192,7 @@ public class RandomNode extends ActionNode implements Executable, Roller.Listene
 
 	public void dispose() {
 		if (flag != null)
-			Flag.getFlag(flag).removeListener(this);
+			getFlags().removeListener(flag, this);
 	}
 	
 	protected String getTipText() {

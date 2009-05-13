@@ -47,7 +47,7 @@ public class PriceNode extends ActionNode implements Executable, ChangeListener,
 	}
 
 	public boolean execute(ExecutableGrouper grouper) {
-		Flag.getFlag(flag).addListener(this);
+		getFlags().addListener(flag, this);
 		if (shards != null)
 			getAdventurer().addMoneyListener(this);
 		if (item != null)
@@ -75,7 +75,7 @@ public class PriceNode extends ActionNode implements Executable, ChangeListener,
 	}
 
 	public void stateChanged(ChangeEvent evt) {
-		if (Flag.getFlag(flag).getState()) {
+		if (getFlags().getState(flag)) {
 			// Price has been paid - disable for now
 			setEnabled(false);
 			return;
@@ -107,10 +107,10 @@ public class PriceNode extends ActionNode implements Executable, ChangeListener,
 		if (shards != null)
 			getAdventurer().adjustMoney(-getAttributeValue(shards));
 
-		Flag.getFlag(flag).setState(true); // paid
+		getFlags().setState(flag, true); // paid
 	}
 
 	public void dispose() {
-		Flag.getFlag(flag).removeListener(this);
+		getFlags().removeListener(flag, this);
 	}
 }

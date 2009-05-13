@@ -47,8 +47,7 @@ public class ItemNode extends ActionNode implements Executable, ChangeListener, 
 			replace = item.getName();
 		flag = xmlAtts.getValue("flag");
 		if (flag != null) {
-			Flag f = Flag.getFlag(flag);
-			f.addListener(this);
+			getFlags().addListener(flag, this);
 		}
 		quantityStr = xmlAtts.getValue("quantity");
 		forced = getBooleanValue(xmlAtts, "force", false);
@@ -109,8 +108,7 @@ public class ItemNode extends ActionNode implements Executable, ChangeListener, 
 			quantity = -1;
 		
 		if (flag != null) {
-			Flag f = Flag.getFlag(flag);
-			flagChanged(flag, f.getState());
+			flagChanged(flag, getFlags().getState(flag));
 			return true; // don't block
 		}
 		
@@ -162,7 +160,7 @@ public class ItemNode extends ActionNode implements Executable, ChangeListener, 
 			if (flag != null || quantity == 0)
 				setEnabled(false);
 			if (flag != null)
-				Flag.getFlag(flag).setState(false);
+				getFlags().setState(flag, false);
 		}
 
 		if (itemGroup != null && !isEnabled()) {
@@ -206,7 +204,7 @@ public class ItemNode extends ActionNode implements Executable, ChangeListener, 
 	
 	public void dispose() {
 		if (flag != null)
-			Flag.getFlag(flag).removeListener(this);
+			getFlags().removeListener(flag, this);
 	}
 	
 	protected String getTipText() {

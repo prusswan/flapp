@@ -613,6 +613,7 @@ public abstract class Node implements XMLOutput, Expression.Resolver {
 	static BlessingList getBlessings() { return getAdventurer().getBlessings(); }
 	static CurseList getCurses() { return getAdventurer().getCurses(); }
 	static ShipList getShips() { return getAdventurer().getShips(); }
+	static Flag.Set getFlags() { return getAdventurer().getFlags(); }
 
 	public IndexSet findItemMatches() {
 		IndexSet result = modifyItemMatches(null);

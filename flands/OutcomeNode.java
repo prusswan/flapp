@@ -96,7 +96,7 @@ public class OutcomeNode extends ActionNode implements Executable, Flag.Listener
 		varName = xmlAtts.getValue("var");
 		flag = xmlAtts.getValue("flag");
 		if (flag != null)
-			Flag.getFlag(flag).addListener(this);
+			getFlags().addListener(flag, this);
 		codewords = split(xmlAtts.getValue("codeword"));
 		andCodewords = andSplitter;
 		blessing = Blessing.getBlessing(xmlAtts);
@@ -272,7 +272,7 @@ public class OutcomeNode extends ActionNode implements Executable, Flag.Listener
 	private ExecutableGrouper grouper = null;
 	public boolean activate(ExecutableGrouper grouper) {
 		this.grouper = grouper;
-		if (flag != null && !Flag.getFlag(flag).getState()) {
+		if (flag != null && !getFlags().getState(flag)) {
 			// This OutcomeNode is dependent on an earlier price being paid,
 			// though not directly. Example at 5.674.
 			System.out.println("OutcomeNode: flag is false - skipping");
@@ -298,7 +298,7 @@ public class OutcomeNode extends ActionNode implements Executable, Flag.Listener
 			
 			if (flag != null) {
 				System.out.println("OutcomeNode, range " + getRange() + ", matches - setting flag to false");
-				Flag.getFlag(flag).setState(false);
+				getFlags().setState(flag, false);
 			}
 
 			if (blessing != null && getBlessings().hasBlessing(blessing)) {
@@ -353,7 +353,7 @@ public class OutcomeNode extends ActionNode implements Executable, Flag.Listener
 
 	public void dispose() {
 		if (flag != null)
-			Flag.getFlag(flag).removeListener(this);
+			getFlags().removeListener(flag, this);
 	}
 
 	public void flagChanged(String name, boolean state) {

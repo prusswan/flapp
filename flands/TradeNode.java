@@ -309,7 +309,7 @@ public class TradeNode extends Node  {
 			forced = getBooleanValue(atts, "force", false);
 			flag = atts.getValue("flag");
 			if (flag != null)
-				Flag.getFlag(flag).addListener(this);
+				getFlags().addListener(flag, this);
 
 			super.init(atts);
 
@@ -397,7 +397,7 @@ public class TradeNode extends Node  {
 				return false;
 			if (quantity == 0)
 				return false;
-			if (flag != null && !Flag.getFlag(flag).getState())
+			if (flag != null && !getFlags().getState(flag))
 				return false;
 
 			return true;
@@ -467,7 +467,7 @@ public class TradeNode extends Node  {
 						getItems().adjustMoney(-shards, currency);
 				}
 				if (flag != null)
-					Flag.getFlag(flag).setState(false);
+					getFlags().setState(flag, false);
 				if (callContinue) {
 					callContinue = false;
 					findExecutableGrouper().continueExecution(this, false);
@@ -486,7 +486,7 @@ public class TradeNode extends Node  {
 			if (item != null)
 				getItems().removeChangeListener(this);
 			if (flag != null)
-				Flag.getFlag(flag).removeListener(this);
+				getFlags().removeListener(flag, this);
 		}
 		
 		protected void loadProperties(Attributes atts) {
@@ -579,7 +579,7 @@ public class TradeNode extends Node  {
 			quantity = getIntValue(atts, "quantity", -1);
 			price = atts.getValue("price");
 			if (price != null)
-				Flag.getFlag(price).addListener(this);
+				getFlags().addListener(price, this);
 
 			if (item == null)
 				item = Item.createItem(atts);
@@ -628,7 +628,7 @@ public class TradeNode extends Node  {
 
 		protected boolean canSellNow() {
 			if (quantity == 0) { System.out.println("quantity=0"); return false; }
-			if (price != null && Flag.getFlag(price).getState()) { System.out.println(price + " is set"); return false; }
+			if (price != null && getFlags().getState(price)) { System.out.println(price + " is set"); return false; }
 			if (shipType >= 0) {
 				if (getShips().findShipsOfType(shipType).length > 0)
 					return true;
@@ -721,7 +721,7 @@ public class TradeNode extends Node  {
 			
 			if (quantity > 0) quantity--;
 			if (price != null)
-				Flag.getFlag(price).setState(true);
+				getFlags().setState(price, true);
 		}
 
 		void soldItem(Item i) {
@@ -739,7 +739,7 @@ public class TradeNode extends Node  {
 			if (cargoType > Ship.NO_CARGO)
 				getShips().removeCargoListener(this);
 			if (price != null)
-				Flag.getFlag(price).removeListener(this);
+				getFlags().removeListener(price, this);
 		}
 		
 		protected String getTipText() {
