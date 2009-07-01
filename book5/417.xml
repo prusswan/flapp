@@ -10,7 +10,7 @@
 			If you still want to renounce Ebron,
 			<group>
 				<text>delete Ebron from your God box</text>
-				<tick god=""/>
+				<lose god="Ebron"/>
 				<tick codeword="Erebus"/>
 			</group>
 			and tick the codeword <i>Erebus</i>.

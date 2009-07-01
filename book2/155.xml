@@ -8,7 +8,7 @@
 			If you are determined to renounce your faith,
 			<lose shards="30" price="x">pay the 30 Shards</lose>
 			and
-			<tick god="" flag="x">delete Alvir and Valmir</tick>
+			<lose god="Alvir and Valmir" flag="x">delete Alvir and Valmir</lose>
 			from the God box on your Adventure Sheet.
 		</if>
 		When you have finished here, <goto section="148"/>.

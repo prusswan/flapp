@@ -5,7 +5,7 @@
 			<group>
 				delete Maka from the God box
 				<lose shards="15"/>
-				<tick god=""/>
+				<lose god="Maka"/>
 			</group>
 			on your Adventure Sheet.
 	</if></if>

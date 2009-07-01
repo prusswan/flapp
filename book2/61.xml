@@ -3,7 +3,7 @@
 		You are allowed to stay one night at the abbey. <rest stamina="2">Recover 2 Stamina points</rest> if injured. ‘You must leave now,’ the nuns tell you at breakfast. ‘Only initiates may remain here among us.’
 	</p>
 	<p>
-		<if god="">
+		<if safeAddGod="Lacuna">
 			If you wish to become an initiate of Lacuna you must convince the nuns of your sincerity by
 			<difficulty ability="sanctity" level="12" force="f">
 				making a SANCTITY roll at Difficulty 12

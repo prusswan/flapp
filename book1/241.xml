@@ -8,7 +8,7 @@
 				<group>
 					<text>pay the 40 Shards and delete Elnir</text>
 					<lose shards="40"/>
-					<tick god=""/>
+					<lose god="Elnir"/>
 				</group>
 				from the God box on your Adventure Sheet.
 		</if></if>

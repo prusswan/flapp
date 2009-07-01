@@ -10,7 +10,7 @@
 		<if god="Molhern"><if shards="40">
 			If you are determined to renounce your faith,
 			<lose shards="40">pay the 40 Shards</lose> and
-			<tick god="">delete Molhern from the God box</tick>
+			<lose god="Molhern">delete Molhern from the God box</lose>
 			on your Adventure Sheet.
 		</if></if>
 	</p>

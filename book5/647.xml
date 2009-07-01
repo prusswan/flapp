@@ -11,7 +11,7 @@
 			<group>
 				pay the 30 Shards
 				<lose shards="30"/>
-				<tick god=""/>
+				<lose god="The Three Fortunes"/>
 			</group>
 			and delete Three Fortunes from the God box on your Adventure Sheet.
 		</if>

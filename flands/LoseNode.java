@@ -52,6 +52,7 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 	private String price, flag;
 	private String cache;
 	private String title;
+	private String god;
 	private boolean forced;
 	private List<AdjustNode> adjustments = null;
 
@@ -98,6 +99,7 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 			blessing.setPermanent(getBooleanValue(atts, "permanent", false));
 		curse = Curse.createCurse(atts);
 		title = atts.getValue("title");
+		god = atts.getValue("god");
 
 		ship = getBooleanValue(atts, "ship", false);
 		resurrection = getBooleanValue(atts, "resurrection", false);
@@ -284,6 +286,7 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 				(curse != null && getCurses().findMatches(curse).length > 0) ||
 				(allItems && getAffectedItems().getItemCount() > 0) ||
 				(title != null && getAdventurer().hasTitle(title)) ||
+				(god != null && getAdventurer().hasGod(god)) ||
 				(ship && getShips().findShipsHere().length > 0) ||
 				(cargo != Ship.NO_CARGO && getShips().findShipsHere().length > 0 && getShips().getShip(getShips().getSingleShip()).hasCargo(cargo)) ||
 				(crew != 0 && getShips().findShipsHere().length > 0
@@ -534,6 +537,9 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 		if (title != null)
 			getAdventurer().removeTitle(title);
 		
+		if (god != null)
+			getAdventurer().removeGod(god);
+		
 		// Handle all ship-related losses here
 		if (ship || cargo != Ship.NO_CARGO || crew != 0) {
 			int[] indices = getShips().findShipsHere();
@@ -710,6 +716,13 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 		
 		if (title != null)
 			lines.add("Lose the title " + title);
+		
+		if (god != null) {
+			if (god.equals("*"))
+				lines.add("Renounce worship of all gods");
+			else
+				lines.add("Renounce worship of " + god);
+		}
 		
 		if (crew != 0)
 			lines.add("Reduce your crew's level by " + crew);

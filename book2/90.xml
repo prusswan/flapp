@@ -5,6 +5,6 @@
 	<if not="t" weapon="?"><if not="t" armour="?">
 			If you are not carrying any armour or weapons, they will <lose shards="*" price="x">take any money</lose> you have on you instead.
 	</if></if>
-	Cross off the item (or your money), <tick god="" flag="x">delete Elnir from the God box</tick> on your Adventure Sheet, and then
+	Cross off the item (or your money), <lose god="Elnir" flag="x">delete Elnir from the God box</lose> on your Adventure Sheet, and then
 	<goto section="379"/>.
 </section>

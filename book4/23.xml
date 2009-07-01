@@ -11,7 +11,7 @@
 			<group>
 				<text>delete Juntoku from the God box</text>
 				<lose shards="40"/>
-				<tick god=""/>
+				<lose god="Juntoku"/>
 			</group>
 			on your Adventure Sheet.
 		</if></if>

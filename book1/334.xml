@@ -11,7 +11,7 @@
 				<group>
 					<text>cross off the 40 Shards and delete Lacuna</text>
 					<lose shards="40"/>
-					<tick god=""/>
+					<lose god="Lacuna"/>
 				</group>
 				from the God box on your Adventure Sheet.
 		</if></if>

@@ -16,9 +16,9 @@
 	</p>
 	<p>
 		Either way, if you survive then you are free to leave.
-		<tick god="">
+		<lose god="Lacuna">
 			Delete Lacuna from the God box
-		</tick>
+		</lose>
 		on your Adventure Sheet and then
 		<goto section="294"/>.
 	</p>

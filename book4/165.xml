@@ -12,7 +12,7 @@
 				<group>
 					<text>pay the 40 Shards and delete Nisoderu from the God box</text>
 					<lose shards="40"/>
-					<tick god=""/>
+					<lose god="Nisoderu"/>
 				</group>
 				on your Adventure Sheet.
 				<i>[If you had a resurrection arranged with Nisoderu, you will lose that as well --Ed]</i>

@@ -34,7 +34,7 @@
 				<group>
 					<text>40 Shards</text>
 					<lose shards="40"/>
-					<tick god=""/>
+					<lose god="Juntoku"/>
 				</group>
 				to avoid the god’s wrath.)
 		</if></if>

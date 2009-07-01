@@ -12,7 +12,7 @@
 				<group>
 					<text>pay the 15 Shards and delete Maka</text>
 					<lose shards="15"/>
-					<tick god=""/>
+					<lose god="Maka"/>
 				</group>
 				from the God box on your Adventure Sheet.
 		</if></if>

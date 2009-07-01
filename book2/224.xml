@@ -10,7 +10,7 @@
 		<if god="The Three Fortunes">
 			If you are determined to renounce your faith,
 			<lose shards="25" price="x">pay the 25 Shards</lose> and
-			<tick god="" flag="x">delete The Three Fortunes</tick>
+			<lose god="The Three Fortunes" flag="x">delete The Three Fortunes</lose>
 			from the God box on your Adventure Sheet.
 		</if>
 		When you have finished here, <goto section="102"/>.

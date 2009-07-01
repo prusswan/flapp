@@ -8,7 +8,7 @@
 		</else>
 	</p>
 	<p>
-		<if god="">
+		<if safeAddGod="Nagil">
 			To pass the test you must
 			<random dice="1" var="x">
 				roll under your Rank on one die

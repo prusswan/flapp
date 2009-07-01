@@ -12,7 +12,7 @@
 				<group>
 					<text>delete Nai from the God box</text>
 					<lose shards="40"/>
-					<tick god=""/>
+					<lose god="Nai"/>
 				</group>
 				on your Adventure Sheet.
 		</if></if>

@@ -405,6 +405,8 @@ public class FLApp extends JFrame implements MouseListener,
 				if (heightLeft >= 100)
 					shipWindow.setBounds(0, getHeight(), getWidth(), Math.max(100,
 							getActualScreenSize().height - getHeight()));
+				else
+					shipWindow.setLocation(0, getActualScreenSize().height - shipWindow.getHeight());
 			}
 			else
 				windowProps.applyTo(shipWindow);

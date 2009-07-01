@@ -9,7 +9,7 @@
 			<group>
 				delete Tyrnai from the God box
 				<lose shards="50"/>
-				<tick god=""/>
+				<lose god="Tyrnai"/>
 				<lose stamina="1"/>
 			</group>
 			on your Adventure Sheet. The high priest smashes you across the jaw, saying, 'I'm doing you a favour - believe me!'

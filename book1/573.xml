@@ -21,7 +21,7 @@
 		</outcome>
 	</outcomes>
 	<p>
-		<tick god="">Delete The Three Fortunes from the God box</tick> on your Adventure Sheet.
+		<lose god="The Three Fortunes">Delete The Three Fortunes from the God box</lose> on your Adventure Sheet.
 	</p>
 	<p>When you have finished here, <goto section="86"/>.</p>
 </section>

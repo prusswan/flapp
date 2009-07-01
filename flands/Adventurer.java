@@ -513,43 +513,55 @@ public class Adventurer implements Loadable {
 		return true;
 	}
 	
+	/**
+	 * Convenience method to handle the removal of a specific god.
+	 * Removes any resurrections or ability effects tied to the god in question.
+	 */
+	private void removeAGod(God g, Iterator<God> i) {
+		for (int r = resurrections.size() - 1; r >= 0; r--)
+			if (resurrections.get(r).isGod(g.getName()))							
+				// Resurrection was connected to following a particular god
+				removeResurrection(resurrections.get(r));
+		
+		if (g.getEffect() != null) {
+			// Remove it now
+			effects.removeStatRelated(g.getEffect().getAbility(), new GodEffectSrc(g.getName()), g.getEffect());
+			effects.notifyOwner();
+		}
+		i.remove();		
+	}
+	
 	public void setGod(String god) { setGod(god, null); }
 	public void setGod(String god, String compatible) {
-		if (gods.size() != 1 || !gods.get(0).getName().equalsIgnoreCase(god)) {
-			if (godless && (god != null && !god.equals("")))
-				return; // can't have a god
-			
-			God newGod = new God(god);
-			if (compatible != null) {
-				StringTokenizer st = new StringTokenizer(compatible, ",;");
-				while (st.hasMoreTokens())
-					newGod.addCompatibleGod(st.nextToken().trim());
-			}
-			
-			// Remove incompatible gods
-			for (Iterator<God> i = gods.iterator(); i.hasNext(); ) {
-				God g = i.next();
-				// Either old god should be compatible with new god,
-				// or new god compatible with old god
-				if (!g.compatibleWith(god) && !newGod.compatibleWith(g.getName())) {
-					for (int r = resurrections.size() - 1; r >= 0; r--)
-						if (resurrections.get(r).isGod(g.getName()))							
-							// Resurrection was connected to following a particular god
-							removeResurrection(resurrections.get(r));
-					
-					if (g.getEffect() != null) {
-						// Remove it now
-						effects.removeStatRelated(g.getEffect().getAbility(), new GodEffectSrc(g.getName()), g.getEffect());
-						effects.notifyOwner();
-					}
-					i.remove();
-				}
-			}
-			
-			// Add new god
-			gods.add(newGod);
-			updateGodDocument();
+		if (gods.size() == 1 && gods.get(0).getName().equalsIgnoreCase(god))
+			// No change
+			return;
+		
+		if (godless && god != null && !god.equals(""))
+			return; // can't have a god
+		
+		God newGod = new God(god);
+		if (compatible != null) {
+			StringTokenizer st = new StringTokenizer(compatible, ",;");
+			while (st.hasMoreTokens())
+				newGod.addCompatibleGod(st.nextToken().trim());
 		}
+		
+		// Remove incompatible gods
+		for (Iterator<God> i = gods.iterator(); i.hasNext(); ) {
+			God g = i.next();
+			// Either old god should be compatible with new god,
+			// or new god compatible with old god
+			if (!g.compatibleWith(god) && !newGod.compatibleWith(g.getName())) {
+				removeAGod(g, i);
+			}
+		}
+		
+		// Add new god
+		if (god != null && !god.equals(""))
+			gods.add(newGod);
+		
+		updateGodDocument();
 	}
 	public void setGodEffect(String god, AbilityEffect ae) {
 		for (Iterator<God> i = gods.iterator(); i.hasNext(); ) {
@@ -562,6 +574,18 @@ public class Adventurer implements Loadable {
 				effects.addStatRelated(ae.getAbility(), new GodEffectSrc(g.getName()), ae);
 				effects.notifyOwner();
 			}
+		}
+	}
+	public void removeGod(String god) {
+		if (god != null) {
+			for (Iterator<God> i = gods.iterator(); i.hasNext(); ) {
+				God g = i.next();
+				if (god.equals("*") || god.equalsIgnoreCase(g.getName())) {
+					removeAGod(g, i);
+				}
+					
+			}
+			updateGodDocument();
 		}
 	}
 	public boolean isGodless() { return godless; }

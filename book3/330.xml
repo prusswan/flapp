@@ -2,7 +2,7 @@
 	<p>
 		You tell the priestess you
 		<if god="The Three Fortunes">
-			<tick god="" force="f">no longer wish to be an initiate</tick>
+			<lose god="The Three Fortunes" force="f">no longer wish to be an initiate</lose>
 		</if>. She utters a long weary sigh and throws her head back in the slumbrous heat. ‘Go then.’
 	</p>
 	<p>‘Do I not have to pay compensation? That is customary.’</p>

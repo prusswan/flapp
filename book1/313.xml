@@ -6,5 +6,5 @@
 	<else>
 		If the two dice score less than or equal to your Defence, the daggers all miss.
 	</else>
-	Either way, if you survive then you are free to leave. <tick god="">Delete Lacuna from the God box</tick> on your Adventure Sheet and <goto section="400"/>.
+	Either way, if you survive then you are free to leave. <lose god="Lacuna">Delete Lacuna from the God box</lose> on your Adventure Sheet and <goto section="400"/>.
 </section>

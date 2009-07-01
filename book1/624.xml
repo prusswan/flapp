@@ -9,7 +9,7 @@
 				<group>
 					<text>pay the 30 Shards and delete Alvir and Valmir</text>
 					<lose shards="30"/>
-					<tick god=""/>
+					<lose god="Alvir and Valmir"/>
 				</group>
 				from the God box on your Adventure Sheet.
 		</if></if>

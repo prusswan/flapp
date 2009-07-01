@@ -4,7 +4,7 @@
 	</p>
 	<p>
 		<if god="Tyrnai">
-			If you renounce your initiate status, pay the <lose shards="50" price="x"/> and <tick god="" flag="x">delete Tyrnai from the God box</tick> on your Adventure Sheet. If you earlier arranged a resurrection here, it is cancelled with no refund.
+			If you renounce your initiate status, pay the <lose shards="50" price="x"/> and <lose god="Tyrnai" flag="x">delete Tyrnai from the God box</lose> on your Adventure Sheet. If you earlier arranged a resurrection here, it is cancelled with no refund.
 		</if>
 		When you have finished, <goto section="43"/>.
 	</p>

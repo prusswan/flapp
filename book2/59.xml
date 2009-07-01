@@ -1,6 +1,6 @@
 <section name="59">
 	<p>
-		<tick god="">Amend your Adventure Sheet</tick> to show you are no longer an initiate of Sig.
+		<lose god="Sig">Amend your Adventure Sheet</lose> to show you are no longer an initiate of Sig.
 	</p>
 	<p>
 		You leave the temple and head off down a narrow street. After a few minutes, you think you hear a soft padding on the cobblestones behind. Are you being followed?

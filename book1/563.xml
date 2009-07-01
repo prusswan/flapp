@@ -9,7 +9,7 @@
 				<group>
 					<text>cross off the 50 Shards, erase Sig from the God box on your Adventure Sheet</text>
 					<lose shards="50"/>
-					<tick god=""/>
+					<lose god="Sig"/>
 				</group>, and lose 1 point of THIEVERY.
 		</if></if>
 	</p>

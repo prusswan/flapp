@@ -36,7 +36,7 @@
 				<group>
 					<text>pay 30 Shards</text>
 					<lose shards="30"/>
-					<tick god=""/>
+					<lose god="Sanobu"/>
 				</group>
 				by way of compensation.)
 		</if></if>

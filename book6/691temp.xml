@@ -21,7 +21,7 @@
 			If you are already a initiate of Nisoderu and want to renounce her worship, cross her name off the God box on your Adventure Sheet. Then
 			<group>
 				<text>make a CHARISMA roll of Difficulty 18</text>
-				<tick god=""/>
+				<lose god="Nisoderu"/>
 				<difficulty ability="charisma" level="18" var="c"/>
 			</group>
 			to see how she responds to your ingratitude.
