@@ -9,6 +9,7 @@ import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -107,6 +108,21 @@ public class CurseList extends AbstractListModel implements MouseListener, Actio
 			if (match.matches(c)) {
 				System.out.println("Curse " + i + "=" + c.getName() + " is matched");
 				matches[count++] = i;
+			}
+		}
+
+		if (count > 1 && configuredList != null && (match.getName() == null || !match.getName().equals("*"))) {
+			// See if we can trim this down using selections
+			int[] selections = configuredList.getSelectedIndices();
+			int[] newMatches = new int[count];
+			int newCount = 0;
+			for (int i = 0; i < count; i++)
+				if (Arrays.binarySearch(selections, matches[i]) >= 0)
+					newMatches[newCount++] = matches[i];
+
+			if (newCount > 0) {
+				count = newCount;
+				matches = newMatches;
 			}
 		}
 
