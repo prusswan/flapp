@@ -78,7 +78,7 @@ public class TrainingNode extends ActionNode implements Executable, Roller.Liste
 			// More than one ability - do a popup dialog to choose one
 			int[] stats = new int[abilities.length];
 			for (int a = 0; a < stats.length; a++)
-				stats[a] = getAdventurer().getAbility(a).natural;
+				stats[a] = getAdventurer().getAbility(abilities[a]).natural;
 			StyledDocument[] docs = Adventurer.getAbilityDocuments(abilities, stats);
 
 			DocumentChooser dc = new DocumentChooser(FLApp.getSingle(), "Choose", docs, false);
@@ -87,7 +87,7 @@ public class TrainingNode extends ActionNode implements Executable, Roller.Liste
 			if (dc.getSelectedIndices() == null)
 				return; // failure
 			System.out.println("Selected indices has length " + dc.getSelectedIndices());
-			ability = dc.getSelectedIndices()[0];
+			ability = abilities[dc.getSelectedIndices()[0]];
 		}
 		setEnabled(false);
 
