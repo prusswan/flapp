@@ -201,11 +201,15 @@ public class FLApp extends JFrame implements MouseListener,
 			adventurer.getBlessings().addBlessing(Blessing.STORM);
 			//adventurer.getBlessings().addBlessing(Blessing.WRATH);
 			//adventurer.getBlessings().addBlessing(Blessing.LUCK);
-			Curse c = new Curse(Curse.DISEASE_TYPE, "Red Ague");
+			Curse c = new Curse(Curse.CURSE_TYPE, "Blight of Nagil");
 			c.addEffect(AbilityEffect.createAbilityBonus(
 					Adventurer.ABILITY_COMBAT, -1));
 			c.addEffect(AbilityEffect.createAbilityBonus(
 					Adventurer.ABILITY_CHARISMA, -1));
+			//adventurer.getCurses().addCurse(c);
+			c = new Curse(Curse.CURSE_TYPE, "Curse of the Shadar");
+			c.addEffect(AbilityEffect.createAbilityBonus(Adventurer.ABILITY_MAGIC, -1));
+			c.addEffect(AbilityEffect.createAbilityBonus(Adventurer.ABILITY_COMBAT, -1));
 			//adventurer.getCurses().addCurse(c);
 			Item spear = new Item.Weapon("spear of retribution", 8);
 			spear.addTag("Molherned");
@@ -940,7 +944,7 @@ public class FLApp extends JFrame implements MouseListener,
 	public void actionPerformed(ActionEvent evt) {
 		String command = evt.getActionCommand();
 		if (command.equals(showRulesCommand)) {
-			SectionBrowser rulesPanel = new SectionBrowser("rules.xml");
+			SectionBrowser rulesPanel = new SectionBrowser("Rules.xml");
 			rulesPanel.createFrame("Rules").setVisible(true);
 		}
 		else if (command.equals(showQuickRulesCommand)) {
@@ -1054,7 +1058,13 @@ public class FLApp extends JFrame implements MouseListener,
 	}
 	
 	String chooseSavedGame(boolean load) {
-		JFileChooser chooser = new JFileChooser();
+		JFileChooser chooser;
+		try {
+			chooser = new JFileChooser();
+		}
+		catch (Exception e) {
+			chooser = new JFileChooser(new RestrictedFileSystemView());
+		}
 		chooser.setFileFilter(new FileFilter() {
 			public boolean accept(File f) {
 				return f.isDirectory() || f.getName().toLowerCase().endsWith(".dat");
