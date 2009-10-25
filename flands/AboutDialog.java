@@ -21,7 +21,7 @@ public class AboutDialog extends JDialog implements ActionListener {
 	private String[] message =
 	{
 			"Fabled Lands App (FLApp)",
-			"Version 1.0.2",
+			"Version 1.0.3",
 			"Book text \u00a9 Dave Morris & Jamie Thomson",
 			"Illustrations \u00a9 Russ Nicholson",
 			"Source code by Jonathan Mann"
@@ -42,7 +42,7 @@ public class AboutDialog extends JDialog implements ActionListener {
 		for (int l = 0; l < message.length; l++) {
 			labels[l] = new JLabel(message[l], JLabel.CENTER);
 		}
-		JTextField website = new JTextField("http://au.geocities.com/jemann75/");
+		JTextField website = new JTextField("http://flapp.sourceforge.net/");
 		website.setEditable(false);
 		//website.setBorder(null);
 		labels[message.length] = website;

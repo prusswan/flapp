@@ -1,5 +1,5 @@
 Fabled Lands Application (FLApp)
-v1.0.2
+v1.0.3
 --------------------------------
 
 The most current version of this software (and the source code) can be downloaded from
@@ -132,9 +132,9 @@ Thanks to Andy for creating PDFs of the books. Book 5 was typed up personally, b
 others could be converted far more quickly via cut and paste.
 Thanks to Andy and Simon for scanning the book illustrations (I lack scanner-fu).
 Bug-finders: ahnslaut, andreasl, anthes, bty927796, cinnamon_spider931976, cip5651,
-  dj_afterhours, edrickv, hauke.pribnow, hubcommish, joanshomer, jonathonyeldon,
-  jpcheong, Lorenzo, lt.johnsteele, maj21, mariefoxprice, Martha Hoffman,
-  matthewbarratt2001, myth_dracon, Stefan Hegemann, xander77, yuvalm2, 268.529 (who needs the alphabet?)
+  ddevejian, dj_afterhours, edrickv, hauke.pribnow, hubcommish, joanshomer, jonathonyeldon,
+  jpcheong, Lorenzo, lt.johnsteele, maj21, mariefoxprice, Martha Hoffman, matthewbarratt2001,
+  myth_dracon, Sigrdrifa, Stefan Hegemann, xander77, yuvalm2, 268.529 (who needs the alphabet?)
 Hero bug-finders: shadow_451, ellora84, eddienguyen
 (Email me if you want to be removed from this list or listed by another name)
 
@@ -150,4 +150,4 @@ working; to find these problems I need to either a) be psychic, or b) have good 
 
 A very happy Holy Day of the Recantation of the Soul to all.
 --jonathan mann (jemann75@yahoo.com)
---1 July 2009
+--25 Oct 2009
