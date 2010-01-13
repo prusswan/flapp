@@ -47,6 +47,7 @@ public class SetVarNode extends ActionNode implements Executable, Expression.Res
 		
 		super.init(atts);
 		hidden = true; // by default
+		if (getParent() instanceof GroupNode) hidden = false; // an exception
 	}
 
 	public void handleContent(String text) {

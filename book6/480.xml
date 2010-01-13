@@ -3,15 +3,13 @@
 	in your ankle. Pain floods into your veins, icy cold and lava-like
 	at the same time. To survive you must either
 	<if blessing="poison">
-		<group force="t">
-			<text>use up a blessing</text>
-			<lose blessing="poison"/>
-			<set var="x" value="1"/>
-		</group>
+		<lose blessing="poison">use up a blessing</lose>
+		<set var="x" value="1"/>
 		of Immunity to Disease/Poison (if you have one)
 	</if>
+	or
 	<else>
-		or suck out the poison by succeeding in
+		suck out the poison by succeeding in
 		<difficulty ability="scouting" level="14" var="x">
 			a SCOUTING roll at Difficulty 14
 		</difficulty>.
