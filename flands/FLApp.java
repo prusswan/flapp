@@ -672,10 +672,9 @@ public class FLApp extends JFrame implements MouseListener,
 		if (pos >= 0) {
 			try {
 				java.awt.Rectangle r = textPane.modelToView(pos);
-				// System.out.println("Mouse at " + pt + "; rectangle of
-				// reported position: " + r);
-				if (Math.abs(r.x - pt.x) < 5 && pt.y >= r.y
-						&& pt.y < r.y + r.height)
+				//System.out.println("Mouse at " + pt + "; rectangle of reported position: " + r);
+				if (r.x - pt.x < 21 && pt.x - r.x < r.width + 21 &&
+					pt.y >= r.y	&& pt.y < r.y + r.height)
 					// The hotzone gets ridiculously big, especially at the end
 					// of the document
 					currentElement = document.getCharacterElement(pos);
