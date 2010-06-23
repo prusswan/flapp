@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="685">
 	<p>
-		Without warning, you lunge at the baroness’s throat. Her nearest sentries dash forward to grab you, but they may already be too late.
+		Without warning, you lunge at the baroness&#8217;s throat. Her nearest sentries dash forward to grab you, but they may already be too late.
 		<difficulty ability="combat" level="16">
 			Make a COMBAT roll at a Difficulty of 16
 		</difficulty>.
 		<success>
-			If successful, you managed to snap Vanna’s neck before the sentries could stop you.
+			If successful, you managed to snap Vanna&#8217;s neck before the sentries could stop you.
 		</success>
 		<failure>
 			A failed COMBAT roll means they drag you off before you can complete the deed.

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="74">
 	<p>
 		<tick special="lock" cache="3.74" hidden="t"/>
@@ -26,7 +27,7 @@
 		</if>
 	</p>
 	<p>
-		When you’ve finished at your shack, <goto section="44"/>. Remember to erase the tick next to the shack option there if your home was destroyed by fire.
+		When you&#8217;ve finished at your shack, <goto section="44"/>. Remember to erase the tick next to the shack option there if your home was destroyed by fire.
 	</p>
 	<itemcache name="3.74" text="Items in shack"/>
 </section>

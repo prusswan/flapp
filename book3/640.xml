@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="640">
 	<p>
 		<if shards="1">
 			The scholars demand
 			<adjustmoney multiply="0.5">half of any cash</adjustmoney>
-			you’re carrying.
+			you&#8217;re carrying.
 		</if>
 		<else>
 			(If you have no cash they will

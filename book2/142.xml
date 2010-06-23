@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="142">
 	From Wishport you have the option to put to sea, take the road
-	to Haggart’s Corner, or travel cross-country. In order to go by
+	to Haggart&#8217;s Corner, or travel cross-country. In order to go by
 	sea, you must either possess a ship which is docked in the
-	harbour (check the Ship’s Manifest) or find a captain who is
+	harbour (check the Ship&#8217;s Manifest) or find a captain who is
 	willing to take you as a passenger.
 	<choices>
 		<choice section="325">Go to the harbour</choice>

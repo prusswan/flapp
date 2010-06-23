@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="139">
 	<p>
-		The sky turns sulphur-grey. Thunderheads pile up on the horizon like vengeful gods. Lightning flickers like burning pitch on the world’s rim. ‘It’s the end!’ shrieks the bosun. ‘Say your prayers, lads!’
+		The sky turns sulphur-grey. Thunderheads pile up on the horizon like vengeful gods. Lightning flickers like burning pitch on the world&#8217;s rim. &#8216;It&#8217;s the end!&#8217; shrieks the bosun. &#8216;Say your prayers, lads!&#8217;
 	</p>
 	<p>
 		<if blessing="storm">

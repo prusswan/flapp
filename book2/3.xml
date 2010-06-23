@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="3">
-	The merchants’ guild in Wishport is too small to trade on behalf
+	The merchants&#8217; guild in Wishport is too small to trade on behalf
 	of its clients, but at least you can bank money here for safe
 	keeping.
 	<lose codeword="2.36.1" hidden="t"/>

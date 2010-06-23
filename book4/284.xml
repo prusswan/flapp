@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="284">
 	This time the golem does not give you three choices. Your only hope is to guess the password by luck. Add up the score of
 	<if not="t" god="The Three Fortunes">

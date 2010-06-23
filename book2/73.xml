@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="73">
 	You get talking to the captain of a small sloop, who tells you
 	that he will take you as far as Marlock City for 5 Shards.
@@ -7,6 +8,6 @@
 	<choices>
 		<choice shards="8" section="261">Set sail for Dweomer</choice>
 		<choice shards="5" section="266">Set sail for Marlock City</choice>
-		<choice section="217">Don’t put to sea yet</choice>
+		<choice section="217">Don&#8217;t put to sea yet</choice>
 	</choices>
 </section>

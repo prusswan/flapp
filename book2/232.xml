@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="232">
 	<p>
-		Ringhorn market consists of hundreds of stalls crowded into a cobbled square under the walls of the Sheriff’s citadel. This is where you can buy or sell personal items. Items with no purchase price are not available locally.
+		Ringhorn market consists of hundreds of stalls crowded into a cobbled square under the walls of the Sheriff&#8217;s citadel. This is where you can buy or sell personal items. Items with no purchase price are not available locally.
 	</p>
 	<market>
 		<header type="armour"/>
@@ -31,6 +32,6 @@
 		<item name="lantern" buy="100" sell="90"/>
 	</market>
 	<p>
-		For bulk trade goods you need to visit the warehouses at the waterfront. When you’re through here, <goto section="2"/>.
+		For bulk trade goods you need to visit the warehouses at the waterfront. When you&#8217;re through here, <goto section="2"/>.
 	</p>
 </section>

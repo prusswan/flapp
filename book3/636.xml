@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="636">
 	The ship manoeuvres out on to open ocean and is soon heading
 	north under a full press of sail.
 	<lose shards="15">Pay the 15 Shards</lose> for your berth
-	if you haven’t already, then <random dice="1" type="travel"/>.
+	if you haven&#8217;t already, then <random dice="1" type="travel"/>.
 	<outcomes>
 		<outcome range="1">
 			Captured by slavers;

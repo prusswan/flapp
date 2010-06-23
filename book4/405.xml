@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="405">
 	<!-- HACK: we remove the candle in the next section if a lantern
 	is not found. Edit if other light sources emerge -->

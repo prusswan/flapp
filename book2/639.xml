@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="639">
 	<p>
 		You are presented with a suit of
@@ -6,7 +7,7 @@
 		<transfer to="null" armour="*" xarmour="?" xgroup="2.639">
 			Lose any other suits of armour
 		</transfer>
-		that you have in your possession (Sir Debrumas takes them to give to the Poor Knights’ fund).
+		that you have in your possession (Sir Debrumas takes them to give to the Poor Knights&#8217; fund).
 	</p>
 	<p><goto section="342"/>.</p>
 </section>

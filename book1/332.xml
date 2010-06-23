@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="332" dock="Isle of Druids">
 	<p>
 		The quayside at the Trading Post is a simple affair, without the harbour facilities or the shipwrights of the larger ports. There are no ships available to buy here, but if you already own a ship, you can buy and sell cargo.
@@ -13,7 +14,7 @@
 		<trade cargo="timber" buy="120" sell="100"/>
 	</market>
 	<p>
-		Prices are for single Cargo Units. Fill in your current cargo on the Ship’s Manifest.
+		Prices are for single Cargo Units. Fill in your current cargo on the Ship&#8217;s Manifest.
 	</p>
 	<p>
 		You can buy a one-way passage to Yellowport from here at a cost of 15 Shards - <if shards="15"><goto section="74" force="f"/>.</if>

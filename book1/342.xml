@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="342">
 	<p>
-		The alchemist’s shop is lined with potions, jars of exotic substances, herbs, and so on. Alembics and beakers bubble and boil, full of strangely-coloured liquids. The alchemist, a tall, gangly fellow with a beak of a nose, sells potions. You can buy as many as you can afford - each one costs 50 Shards.
+		The alchemist&#8217;s shop is lined with potions, jars of exotic substances, herbs, and so on. Alembics and beakers bubble and boil, full of strangely-coloured liquids. The alchemist, a tall, gangly fellow with a beak of a nose, sells potions. You can buy as many as you can afford - each one costs 50 Shards.
 	</p>
 	<p>
 		<buy item="potion of strength" shards="50">

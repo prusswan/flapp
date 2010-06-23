@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="462">
 	<p>
 		<transfer weapon="*" to="2.462" hidden="t"/>
@@ -6,7 +7,7 @@
 	</p>
 	<fight name="Vampire" combat="7" defence="9" stamina="14"/>
 	<p>
-		It’s too late to flee now.
+		It&#8217;s too late to flee now.
 		<if dead="f">
 			<transfer item="*" from="2.462" hidden="t"/>
 			If you defeat the vampire, he turns into a grey mist and you can have his

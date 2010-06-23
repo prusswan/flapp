@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="318">
 	<p>
 		On a small island like this there is not much on sale, but at least the villagers fall over themselves to offer you a bargain.
@@ -5,7 +6,7 @@
 	<p>
 		<!-- add node to market that will mark 3.318.sold if an
 		     item with tag 318.free is sold -->
-		‘Nothing is too good for our saviour!’ declares one old lady with grateful tears in her eyes.
+		&#8216;Nothing is too good for our saviour!&#8217; declares one old lady with grateful tears in her eyes.
 	</p>
 	<market>
 		<header type="armour"/>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="425">
 	<p>
 		With apparent reluctance the golem admits you to the fortress, where you are allowed to stuff your pockets with gold and precious gems worth 1000-6000 Shards (<random dice="1" var="x"/> and multiply by 1000). <i>[Collect the money by repeatedly clicking <item name="1000 Shards" quantity="x">here</item> until the text becomes disabled --Ed]</i>

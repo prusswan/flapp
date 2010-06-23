@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="159" image="159.jpg">
 	<p>
 		The island is a tropical paradise. You decide to treat your crew to a week of rest and relaxation.
@@ -34,6 +35,6 @@
 		The four categories of Crew Quality are poor, average, good and excellent. Crew Quality cannot go below poor or above excellent.
 	</p>
 	<p>
-		When ready to set sail again (assuming you aren’t marooned!) <goto section="41"/>.
+		When ready to set sail again (assuming you aren&#8217;t marooned!) <goto section="41"/>.
 	</p>
 </section>

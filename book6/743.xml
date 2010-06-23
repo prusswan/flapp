@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="743">
 	<p>
-		You are reeling with exhaustion and almost snow-blind. The dragon’s roar seems like peals of evil laughter resounding off the mountain peaks.
+		You are reeling with exhaustion and almost snow-blind. The dragon&#8217;s roar seems like peals of evil laughter resounding off the mountain peaks.
 	</p>
 	<fight name="Dragon" combat="13" defence="25" stamina="27"/>
 	<p>

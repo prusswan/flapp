@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="554">
 	<p>
 		<if ability="magic" modifier="natural" lessthan="2">
@@ -7,7 +8,7 @@
 			<set var="deduct" value="1"/>
 		</else>
 		
-		It is a magician’s grimoire brimming with arcane secrets.
+		It is a magician&#8217;s grimoire brimming with arcane secrets.
 		<training ability="magic" var="x"/>. Gain 1 on MAGIC if you get higher than your current score, but
 		<if var="x" equals="2">
 			<lose ability="magic" amount="deduct">

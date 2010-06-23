@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="686">
 	<if codeword="Bisect">
 		If you have the codeword Bisect, <goto section="710"/>.

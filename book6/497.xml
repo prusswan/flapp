@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="497" dock="Chambara">
 	<p>
 		The Akatsurese are not great seafarers, and these are the best prices you can get for a second hand vessel:
@@ -9,6 +10,6 @@
 		<trade ship="galleon" sell="700"/>
 	</market>
 	<p>
-		If you go ahead with the sale, remember to cross the ship off the Ship’s Manifest. <goto section="612"/>.
+		If you go ahead with the sale, remember to cross the ship off the Ship&#8217;s Manifest. <goto section="612"/>.
 	</p>
 </section>

@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="610">
 	<p>
 		You find the remains of the snake demon that you slew here. Its rotting flesh adds to the stench of decay that permeates the tomb.
 	</p>
 	<p>
-		At the far end of the hall, you find a large plaque which is inscribed: ‘Here lies Xinoc the Priest-King, exalted under heaven.’ There is a small hole in the plaque.
+		At the far end of the hall, you find a large plaque which is inscribed: &#8216;Here lies Xinoc the Priest-King, exalted under heaven.&#8217; There is a small hole in the plaque.
 	</p>
 	<p>
 		<if item="obsidian key">

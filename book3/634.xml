@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="634">
 	<p>
 		Helpless in the grip of the storm, the vessel cracks apart. The seawater rushes into the broken shell of the hull, dragging you down. The screams of your crewmen are drowned out by the howl of the storm.
 		<lose ship="t">Cross the ship and crew off</lose>
-		your Ship’s Manifest. You can think of nothing now but saving yourself.
+		your Ship&#8217;s Manifest. You can think of nothing now but saving yourself.
 	</p>
 	<p>
 		<rankcheck dice="2"/>.

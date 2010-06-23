@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="555">
 	The kelpie turns and counter-charges, sprouting two long, pointed horns from its head.
 	<fight name="Kelpie" combat="6" defence="8" stamina="12"/>

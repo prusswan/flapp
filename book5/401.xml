@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="401">
 	<p>
 		You can earn Status points by performing tasks for the ministers of the court. <if name="UttakuStatus" greaterthan="9">If you obtain 10 or more Status points, you are entitled to an audience with the Faceless King - <goto section="700" force="f"/>.</if> If you haven't got enough status, or you don't want to see him, read on.

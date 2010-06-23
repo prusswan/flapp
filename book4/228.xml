@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="228">
 	You have learnt much from your battle in the arena. You
 	<gain ability="rank" amount="1">gain a Rank</gain>

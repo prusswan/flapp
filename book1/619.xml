@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="619" boxes="1">
 	<p>
 		<if ticks="1">
@@ -9,7 +10,7 @@
 		You come across a blazing house in the poorer area of town. A crowd has gathered, watching the flames impassively.
 	</p>
 	<p>
-		A young girl runs up to you, in tears. ‘My mother is inside! Please, please help her!’ she begs.
+		A young girl runs up to you, in tears. &#8216;My mother is inside! Please, please help her!&#8217; she begs.
 	</p>
 	<p>
 		The fire is raging hard, and you are not sure whether anyone could be left alive inside.

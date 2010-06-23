@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="566">
 	<p>
-		The cat was the vessel’s sole living crewmember. Now that you’ve got rid of it, you can legally help yourself to the cargo. This comprises 2 Cargo Units. <random dice="1"/> to determine the commodity.
+		The cat was the vessel&#8217;s sole living crewmember. Now that you&#8217;ve got rid of it, you can legally help yourself to the cargo. This comprises 2 Cargo Units. <random dice="1"/> to determine the commodity.
 	</p>
 	<outcomes>
 		<outcome range="1">

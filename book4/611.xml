@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="611">
 	<p>
-		You approach a fat fellow on a cart laden with barrels, at the far end of the queue waiting to enter the citadel. He wants 75 Shards to hide you in a barrel. If you haven’t the cash, or don’t want to pay that much, you’d better leave - <goto section="400" force="f"/>.
+		You approach a fat fellow on a cart laden with barrels, at the far end of the queue waiting to enter the citadel. He wants 75 Shards to hide you in a barrel. If you haven&#8217;t the cash, or don&#8217;t want to pay that much, you&#8217;d better leave - <goto section="400" force="f"/>.
 	</p>
 	<p>
 		<if shards="75">

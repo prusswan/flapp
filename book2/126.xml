@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="126">
 	<p>
-		The abbot is pleased to tell you about the god Molhern. ‘Originally he was the god of craftsmen, blacksmiths and stonemasons,’ he says.
+		The abbot is pleased to tell you about the god Molhern. &#8216;Originally he was the god of craftsmen, blacksmiths and stonemasons,&#8217; he says.
 	</p>
 	<p>
-		‘It was Molhern who gave mankind the secret of making fire. But he also taught the secret of writing, which is why he is the patron deity of scholars. Our library here is the most magnificent in the world.’
+		&#8216;It was Molhern who gave mankind the secret of making fire. But he also taught the secret of writing, which is why he is the patron deity of scholars. Our library here is the most magnificent in the world.&#8217;
 	</p>
 	<p>
 		<if codeword="Bumble">

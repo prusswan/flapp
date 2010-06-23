@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="573">
 	<!-- reordered to make my life easier -->
 	<p>
 		To renounce the worship of the Three Fortunes, you will have to undergo a ritual. Do you want to reconsider? If so, <goto section="86" force="f">return to 86</goto>.
 	</p>
 	<p>
-		‘We must determine what the Three Fortunes have to say about the matter,’ says the high priest.
+		&#8216;We must determine what the Three Fortunes have to say about the matter,&#8217; says the high priest.
 		<if god="The Three Fortunes">
 			<random dice="1"/>.
 		</if>

@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="384">
 	<p>
 		<if god="Molhern">
 			<set var="cost" value="15"/>
-			If you are an initiate it costs only 15 Shards to purchase Molhern’s blessing.
+			If you are an initiate it costs only 15 Shards to purchase Molhern&#8217;s blessing.
 		</if>
 		<else>
 			<set var="cost" value="25"/>

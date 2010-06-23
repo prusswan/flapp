@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="232">
 	<p>
 		Don't forget to <lose shards="15">pay the fare</lose> for your journey. The ship sets sail and is soon making good headway. <random dice="2" type="travel" var="x"/>.

@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="622" dock="Tigre Bay">
 	<p>
-		The wreck is the tattered remnants of an Uttakin trader. Washed up nearby is some of its cargo. If you have a ship docked in Tigre Bay, you can fetch some of your crew, and take whatever cargo you can fit on board your own ship. If you haven’t got a ship here, you can’t carry the cargo - <goto section="669" force="f"/>.
+		The wreck is the tattered remnants of an Uttakin trader. Washed up nearby is some of its cargo. If you have a ship docked in Tigre Bay, you can fetch some of your crew, and take whatever cargo you can fit on board your own ship. If you haven&#8217;t got a ship here, you can&#8217;t carry the cargo - <goto section="669" force="f"/>.
 	</p>
 	<p>
 		<!-- instead of checkboxes, we use hidden codewords here.
@@ -38,7 +39,7 @@
 	</p>
 	<p>
 		<!-- original text
-		Each time you take a unit of cargo, tick the relevant box. If a box is already ticked, then you took that cargo the last time you were here. Note any cargo on the Ship’s Manifest. -->
+		Each time you take a unit of cargo, tick the relevant box. If a box is already ticked, then you took that cargo the last time you were here. Note any cargo on the Ship&#8217;s Manifest. -->
 		Each unit of cargo can only be taken once; if one of the cargos is disabled, then you took that cargo the last time you were here. Note any cargo on the Ship's Manifest.
 	</p>
 	<choices>

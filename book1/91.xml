@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="91" boxes="1">
 	<p>
-		He smiles and takes you into the Gambler’s Den. It is a smokefilled casino, full of all kinds of dubious characters, playing cards and dice. If you want to gamble, decide how much you want to bet, to a maximum of 20 Shards, and
+		He smiles and takes you into the Gambler&#8217;s Den. It is a smokefilled casino, full of all kinds of dubious characters, playing cards and dice. If you want to gamble, decide how much you want to bet, to a maximum of 20 Shards, and
 		<group force="t">
 			<text>roll two dice</text>
 			<random dice="2"/>

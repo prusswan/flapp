@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="400" image="400.jpg">
 	<p>
 		Caran Baru is a medium-sized town, that acts as a way-station between the citadel to the north, and the rich towns of the south. It is a garrison town; many supplies, arms, and soldiers move through Caran Baru on the north-south trail. Shops, temples, traders, and the like have sprung up here to serve the needs of the military. There is also a sizeable mining community, for the mines of Sokara lie in the Bronze Hills, just outside town, and a slave market where poor unfortunates, sold into slavery, are bought for work in the mines.
@@ -18,7 +19,7 @@
 	</p>
 	<choices>
 		<choice section="215">Visit the marketplace</choice>
-		<choice section="112">Visit the merchants’ guild</choice>
+		<choice section="112">Visit the merchants&#8217; guild</choice>
 		<choice section="473">Visit the slave market</choice>
 		<choice section="282">Visit the temple of Tyrnai</choice>
 		<choice section="615">Visit the temple of Lacuna</choice>

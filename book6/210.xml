@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="210">
 	You lose your grip while negotiating an overhang, plunging down a sheer precipice. If you are lucky, the tree branches below might just save your life.
 	<if item="rope|climbing gear" not="t">

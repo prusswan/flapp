@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="604">
 	The running footsteps are those of a rabid wolf. It leaps at you, frothing at the mouth, intent on ripping out your throat.
 	<fight name="Rabid Wolf" combat="7" defence="5" stamina="6"/>

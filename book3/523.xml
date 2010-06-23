@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="523">
 	<p>
-		You cast grappling hooks to hold your vessel alongside the slavers’ ship while ladders are flung out to allow your crew to go board. The Uttakin warriors stand ready to receive you; their smiles give a sensation of grim foreboding.
+		You cast grappling hooks to hold your vessel alongside the slavers&#8217; ship while ladders are flung out to allow your crew to go board. The Uttakin warriors stand ready to receive you; their smiles give a sensation of grim foreboding.
 	</p>
 	<p>
 		<if profession="warrior">

@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="120">
 	You come to an inn nestling against a fringe of trees beside a
 	meadow full of flowers. The innkeeper, whose name is Chard,
-	tells you that he does good business: ‘The merchants who travel
+	tells you that he does good business: &#8216;The merchants who travel
 	between Wheatfields and Castle Ravayne are never short of
-	money to spend.’
+	money to spend.&#8217;
 	<choices>
 		<choice section="143">Stop at the inn</choice>
 		<choice section="166">Take the road north</choice>

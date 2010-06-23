@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="551">
 	A farmer puts you up for a couple of days;
 	<rest stamina="1">recover 1 Stamina if injured</rest>.

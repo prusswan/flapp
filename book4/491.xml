@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="491" boxes="1">
 	<p>
-		Night is falling and it becomes ever more cold as the last of the sun’s warmth leaves the Great Steppes. You stumble across an ancient ruined tower. There is little left of the roof but you manage to huddle in a corner which shelters you from the cold wind.
+		Night is falling and it becomes ever more cold as the last of the sun&#8217;s warmth leaves the Great Steppes. You stumble across an ancient ruined tower. There is little left of the roof but you manage to huddle in a corner which shelters you from the cold wind.
 	</p>
 	<p>
 		<if ticks="1">

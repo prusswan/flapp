@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="196">
 	You return to the ship and sail away.
 	<if item="lantern" not="t">

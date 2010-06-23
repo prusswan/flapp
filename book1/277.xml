@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="277">
 	<p>
 		A patrol of militiamen - mercenaries in the pay of the dictator, General Grieve Marlock - stop you in the street.
@@ -12,7 +13,7 @@
 		</if>
 	</p>
 	<p>
-		Otherwise they decide you will be arrested unless you pay 15 Shards as ‘taxes’. If you refuse, or don’t have 15 Shards, <goto section="538" force="f"/>.
+		Otherwise they decide you will be arrested unless you pay 15 Shards as &#8216;taxes&#8217;. If you refuse, or don&#8217;t have 15 Shards, <goto section="538" force="f"/>.
 		<if shards="15">
 			<tick codeword="StillInYellowport" hidden="t"/>
 			If you hand over the money, <lose shards="15">cross it off</lose> and the militiamen leave you alone - <goto section="10">turn back to 10</goto>.

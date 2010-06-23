@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="100">
 	<p>
 		<if codeword="Drifter">If you have the codeword Drifter <if codeword="Energy">and the codeword Energy, <goto section="652"/>.</if></if> Otherwise read on.

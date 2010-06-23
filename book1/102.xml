@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="102">
 	<p>
 		<if codeword="Defend">
@@ -6,7 +7,7 @@
 		If not, read on.
 	</p>
 	<p>
-		‘What are you doing back here,’ asks Grieve Marlock, angrily. ‘You should be defending the citadel! You know, that castle in the Pass of Eagles, up north! Get back there and talk to Orin Telana!’
+		&#8216;What are you doing back here,&#8217; asks Grieve Marlock, angrily. &#8216;You should be defending the citadel! You know, that castle in the Pass of Eagles, up north! Get back there and talk to Orin Telana!&#8217;
 	</p>
 	<p>
 		<if item="coded missive">

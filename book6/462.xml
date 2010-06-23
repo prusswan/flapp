@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="462">
 	<p>
 		The local sea captains no longer ply their trade with the western ports because of the threat posed by the fleet owned by the Starburst Clan.
 	</p>
 	<p>
-		‘To make a living these days, we have to make the long haul all the way to Yarimura,’ complains one.
+		&#8216;To make a living these days, we have to make the long haul all the way to Yarimura,&#8217; complains one.
 	</p>
 	<p>You can get passage to these destinations:</p>
 	<choices>
@@ -12,6 +13,6 @@
 		<choice shards="35" book="11" section="197">To Dangor, cost 35 Shards</choice>
 	</choices>
 	<p>
-		Don’t forget to pay the fare before you travel. If you decide to stay in Mukogawa for the time being, <goto section="281"/>.
+		Don&#8217;t forget to pay the fare before you travel. If you decide to stay in Mukogawa for the time being, <goto section="281"/>.
 	</p>
 </section>

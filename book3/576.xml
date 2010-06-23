@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="576" boxes="1">
 	<if ticks="0">
 		If the box above is empty, <tick>put a tick in it</tick> and

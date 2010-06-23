@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="272">
 	<p>
 		<if codeword="Aloft">
@@ -7,7 +8,7 @@
 	</p>
 	<p>The chief administrator is not happy to see you.</p>
 	<p>
-		‘What are you doing here?’ he demands. ‘You should be at Devil’s Peak, north of here! The storm demons still threaten our city. Come back when you have succeeded.’
+		&#8216;What are you doing here?&#8217; he demands. &#8216;You should be at Devil&#8217;s Peak, north of here! The storm demons still threaten our city. Come back when you have succeeded.&#8217;
 	</p>
 	<p><goto section="100"/>.</p>
 </section>

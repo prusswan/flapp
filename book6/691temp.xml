@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="691">
 	<p>
 		<set var="a" value="0"/>
@@ -28,7 +29,7 @@
 		</if>
 	</p>
 	<p>
-		If you want to obtain Nisoderu’s guarantee of resurrection,
+		If you want to obtain Nisoderu&#8217;s guarantee of resurrection,
 		<if god="Nisoderu">
 			<difficulty ability="charisma" level="14" force="f" var="c2">
 				make a CHARISMA roll at a Difficulty of 14
@@ -36,7 +37,7 @@
 		</if>
 		<else>
 			(<difficulty ability="charisma" level="20" force="f" var="c2">or 20</difficulty>)
-			if you’re not an initiate).
+			if you&#8217;re not an initiate).
 		</else>
 		<success var="c2">
 			If successful, write

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="437" boxes="1">
 	<p>
 		<if ticks="1">
@@ -6,7 +7,7 @@
 		If not, <tick/>, and read on.
 	</p>
 	<p>
-		Beladai is surprised to see you. ‘It is vital for us all that you infiltrate the citadel,’ he says. ‘Do your best to open the gates. If you are having trouble penetrating the citadel, perhaps this will help. We took it from a patrol yesterday.’
+		Beladai is surprised to see you. &#8216;It is vital for us all that you infiltrate the citadel,&#8217; he says. &#8216;Do your best to open the gates. If you are having trouble penetrating the citadel, perhaps this will help. We took it from a patrol yesterday.&#8217;
 	</p>
 	<p>
 		He gives you an <item name="officer's pass"/>. Note it on your Adventure Sheet.

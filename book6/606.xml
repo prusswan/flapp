@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="606" dock="Hagashin">
 	<p>
 		<if codeword="Frame">
@@ -7,7 +8,7 @@
 		Otherwise read on.
 	</p>
 	<p>
-		You must have a ship docked in the harbour in order to transport goods. The prices given here are for single Cargo Units, which are much more than one person could hope to carry. Any cargo you buy will be delivered to your ship in the harbour, so note it on the Ship’s Manifest.
+		You must have a ship docked in the harbour in order to transport goods. The prices given here are for single Cargo Units, which are much more than one person could hope to carry. Any cargo you buy will be delivered to your ship in the harbour, so note it on the Ship&#8217;s Manifest.
 	</p>
 	<market>
 		<header type="cargo"/>

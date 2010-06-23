@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="384">
 	<p>
 		The terrified islanders swarm about your ship. Women and children are put in the hold, and any cargo you had is jettisoned
-		(<lose cargo="*">cross it off</lose> the Ship’s Manifest).
+		(<lose cargo="*">cross it off</lose> the Ship&#8217;s Manifest).
 		Others must cling to the rigging or perch on the rail. The extra load makes the ship float alarmingly low in the water.
 	</p>
 	<p>
-		As you put out from the shore, the volcano is already starting to spit out long fiery torrents of lava. But the danger isn’t over yet.
+		As you put out from the shore, the volcano is already starting to spit out long fiery torrents of lava. But the danger isn&#8217;t over yet.
 	</p>
 	<p>
 		<random dice="1">

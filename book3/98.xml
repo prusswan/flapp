@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="98">
 	<p>
 		You have reached a torrid clime where the sun beats down mercilessly by day, warping the dry timbers of the ship and turning the ocean into a dark, heaving, fathomless cauldron.
@@ -5,7 +6,7 @@
 	<p><random type="travel"/>.</p>
 	<outcomes>
 		<outcome range="2-5" section="183">A vessel adrift</outcome>
-		<outcome range="6-8" section="118">All’s quiet</outcome>
+		<outcome range="6-8" section="118">All&#8217;s quiet</outcome>
 		<outcome range="9-12" section="647">Monsters of the deep</outcome>
 	</outcomes>
 </section>

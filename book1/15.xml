@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="15">
 	<p>
 		Three drunken army officers accost you on the street.
@@ -7,10 +8,10 @@
 		If not, read on.
 	</p>
 	<p>
-		‘Sho, what have we... <i>hic</i>... here,’ sneers one of them drunkenly.
+		&#8216;Sho, what have we... <i>hic</i>... here,&#8217; sneers one of them drunkenly.
 	</p>
 	<p>
-		‘Out of the way, you stinking dog!’ says another, shoving you in the chest.
+		&#8216;Out of the way, you stinking dog!&#8217; says another, shoving you in the chest.
 	</p>
 	<choices>
 		<choice section="44">Step out of the way</choice>

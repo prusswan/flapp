@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="14">
-	Your ship is sailing off the south-eastern coast. ‘Wishport, ahoy!’
+	Your ship is sailing off the south-eastern coast. &#8216;Wishport, ahoy!&#8217;
 	calls down the lookout.
 	<choices>
 		<choice section="175">Go west</choice>

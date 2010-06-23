@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="422">
 	<p>
-		Black clouds boil up suddenly across a clear sky. Within minutes the ship is bucking wildly in an icy gale as sheets of lightning crackle overhead. ‘No natural storm could come up so quick,’ says the bosun. ‘this is sorcery.’
+		Black clouds boil up suddenly across a clear sky. Within minutes the ship is bucking wildly in an icy gale as sheets of lightning crackle overhead. &#8216;No natural storm could come up so quick,&#8217; says the bosun. &#8216;this is sorcery.&#8217;
 	</p>
 	<p>
-		Assuming he’s right, you can try to cancel the storm by
+		Assuming he&#8217;s right, you can try to cancel the storm by
 		<difficulty ability="magic" level="14">
 			making a MAGIC roll at a Difficulty of 14
 		</difficulty>.

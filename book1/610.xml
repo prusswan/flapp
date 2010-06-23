@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="610" boxes="1">
 	<p>
 		<if ticks="1">
@@ -9,7 +10,7 @@
 		At nightfall, the market is kept open for a special sale. A cage with a steel floor is wheeled out. Inside is a dark, manlike shape. It seems to radiate shadows, for you can barely make it out.
 	</p>
 	<p>
-		The slaver says, ‘A trau, ladies and gentlemen. Excellent miners, though they have to be chained with cold iron at all times.’
+		The slaver says, &#8216;A trau, ladies and gentlemen. Excellent miners, though they have to be chained with cold iron at all times.&#8217;
 	</p>
 	<p>
 		The price is 100 Shards.

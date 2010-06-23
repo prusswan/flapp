@@ -1,12 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="187">
 	<p>
 		You tell the high priest that you wish to renounce the worship of Nagil. He brings out a small wax dummy, and carves your name into it. Then he sets fire to it. The wax melts into a puddle on the floor and the priest steps into it, leaving the imprint of his foot.
 	</p>
 	<p>
-		‘Such is the fate of those who would deny Nagil, the Lord of Death,’ he says.
+		&#8216;Such is the fate of those who would deny Nagil, the Lord of Death,&#8217; he says.
 	</p>
 	<p>
-		When you ask if you must pay compensation to the temple, he shakes his head, saying, ‘It is you who loses, not we.’
+		When you ask if you must pay compensation to the temple, he shakes his head, saying, &#8216;It is you who loses, not we.&#8217;
 	</p>
 	<p>
 		<if god="Nagil">

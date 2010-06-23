@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="283">
 	You are sailing off the south-eastern promentary of Sokara,
 	known for obscure reasons as Scorpion Bight. To the north lies
-	the Druids’ Isle.
+	the Druids&#8217; Isle.
 	<choices>
 		<choice book="1" section="136">Steer north</choice>
 		<choice section="173">Steer south</choice>

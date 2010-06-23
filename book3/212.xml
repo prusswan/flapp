@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="212">
 	<p>
 		The ship cracks open and seawater rushes into the broken shell of the hull. The screams of your crewmen are drowned out by the surge of the waves.
@@ -15,7 +16,7 @@
 			and (if you can survive that)
 			<if book="7">
 				<goto book="7" section="559">turn to 559</goto>
-				in <i>The Serpent King’s Domain</i>.
+				in <i>The Serpent King&#8217;s Domain</i>.
 			</if>
 			<else>
 				<i>[Lacking this book, you are swept elsewhere; <goto section="505"/>.]</i>

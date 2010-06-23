@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="25">
 	<p>
 		Captain Vorkung is impressed with your claims of loyalty to the rightful king. He decides you might be useful to their cause, and you are led, blindfolded, through a secret pass to a mountain stockade.
@@ -6,7 +7,7 @@
 		King Nergan gives you an audience in a makeshift throne room. He is a young, and handsome man, who seems committed to his country. He leads you aside, into a private chamber.
 	</p>
 	<p>
-		‘I have need of one such as you,’ he says. ‘Yellowport groans under the yoke of Governor Marloes Marlock, the brother of General Grieve Marlock. If you can get into the palace at Yellowport and assassinate Marloes, I will be eternally grateful.’
+		&#8216;I have need of one such as you,&#8217; he says. &#8216;Yellowport groans under the yoke of Governor Marloes Marlock, the brother of General Grieve Marlock. If you can get into the palace at Yellowport and assassinate Marloes, I will be eternally grateful.&#8217;
 	</p>
 	<p>
 		<if codeword="Artery">

@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="603">
 	<if god="The Three Fortunes"><set var="cost" value="20"/></if>
 	<else><set var="cost" value="80"/></else>
 	If you are an initiate it costs only 20 Shards to purchase the
-	Three Fortunes’ blessing. A non-initiate must pay 80 Shards.
+	Three Fortunes&#8217; blessing. A non-initiate must pay 80 Shards.
 	<if shards="cost">
 		<group>
 			<text>Cross off the money and mark Luck</text>

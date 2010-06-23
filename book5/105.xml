@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="105">
 	<if not="t" god="Maka">
 		It costs <lose price="c" shards="75"/>

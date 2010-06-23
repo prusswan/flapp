@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="368">
 	The giant chameleon leaps out of the branches to the ground, its skin colour already changing to match that of the forest floor. You must fight it.
 	<fight name="Giant Chameleon" combat="10" defence="10" stamina="19"/>

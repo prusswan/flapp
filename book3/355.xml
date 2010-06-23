@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="355" image="355.jpg">
 	<p>
-		The sky is the colour of thunder. From behind the clouds comes the muttering of a great storm. The sailors chatter in fear. ‘It is the voice of Elnir,’ says the cook. ‘And he ain’t inviting us to dance no blessed jig!’
+		The sky is the colour of thunder. From behind the clouds comes the muttering of a great storm. The sailors chatter in fear. &#8216;It is the voice of Elnir,&#8217; says the cook. &#8216;And he ain&#8217;t inviting us to dance no blessed jig!&#8217;
 	</p>
 	<p>
 		<if blessing="storm">

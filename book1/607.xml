@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="607">
 	<p>
 		Your ship, crew and cargo are lost to the deep, dark sea.
-		<lose ship="t">Cross them off</lose> the Ship’s Manifest.
+		<lose ship="t">Cross them off</lose> the Ship&#8217;s Manifest.
 	</p>
 	<p>
 		Your only thought now is to save yourself.

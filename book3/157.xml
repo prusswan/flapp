@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="157">
 	<p>
-		Helpless in the hurricane’s grip, your vessel is torn apart. Water rushes into the broken shell of the hull, dragging you down. The screams of your crewmen are lost in the roar of the storm.
+		Helpless in the hurricane&#8217;s grip, your vessel is torn apart. Water rushes into the broken shell of the hull, dragging you down. The screams of your crewmen are lost in the roar of the storm.
 		<lose ship="t">Cross off your ship and crew</lose>; they are lost. So are your <lose shards="*" item="*">money and possessions</lose>. You can think of nothing now but saving yourself.
 	</p>
 	<p>
@@ -16,7 +17,7 @@
 		You wake on a pallet below deck. You start to sit up, but you are still too weak after your ordeal.
 	</p>
 	<p>
-		‘Save your strength,’ says a voice out of the gloom. ‘You’ll need it. The life of a slave is harsh indeed.’
+		&#8216;Save your strength,&#8217; says a voice out of the gloom. &#8216;You&#8217;ll need it. The life of a slave is harsh indeed.&#8217;
 	</p>
 	<p>
 		You discover that you have been picked up by an Uttakin slave ship. The slavers will only agree to release you if you can pay a ransom of 300 Shards.
@@ -28,6 +29,6 @@
 	</p>
 	<choices>
 		<choice book="2" section="229">Pay the ransom</choice>
-		<choice book="5" section="321">Can’t or won’t pay</choice>
+		<choice book="5" section="321">Can&#8217;t or won&#8217;t pay</choice>
 	</choices>
 </section>

@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="680">
 	<p>
-		The pirate vessel crunches into your ship’s side. The attackers swarm aboard, screaming the war-cry that has struck terror into many brave hearts over the centuries. Your men square off grimly with hooks, belaying-pins and anything that comes to hand. They will die fighting rather than be enslaved.
+		The pirate vessel crunches into your ship&#8217;s side. The attackers swarm aboard, screaming the war-cry that has struck terror into many brave hearts over the centuries. Your men square off grimly with hooks, belaying-pins and anything that comes to hand. They will die fighting rather than be enslaved.
 	</p>
 	<p>
 		<if profession="warrior">

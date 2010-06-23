@@ -1,15 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="100" image="100.jpg">
 	<p>
 		Marlock City is a huge sprawling metropolis, enclosed in a fortified wall said to have been built one thousand years ago by the ancient Shadar Empire. It is the capital city of Sokara. Marlock City was once known as Sokar, until General Grieve Marlock led the army in bloody revolt against the old king, Corin VII, and had him executed. The general renamed the city after himself - it is now a crime to call it Sokar.
 	</p>
 	<p>
-		The general lives in the old king’s palace, and calls himself the Protector-General of all Sokara. Whereas the old king was corrupt, the general rules with a fist of iron. Some people like the new regime; others are royalists, still loyal to Nergan, the heir to the throne, who has gone into hiding somewhere.
+		The general lives in the old king&#8217;s palace, and calls himself the Protector-General of all Sokara. Whereas the old king was corrupt, the general rules with a fist of iron. Some people like the new regime; others are royalists, still loyal to Nergan, the heir to the throne, who has gone into hiding somewhere.
 	</p>
 	<p>
-		Outside the city gates hang the bodies of many dead people - labels around their necks read: ‘Rebels, executed by the state for the good of the people’.
+		Outside the city gates hang the bodies of many dead people - labels around their necks read: &#8216;Rebels, executed by the state for the good of the people&#8217;.
 	</p>
 	<p>
-		‘You’d best behave yourself if you don’t want to end up like one of them,’ grates a guardsman, nodding towards the swinging corpses, as you pass through the great eagle-headed gates of Marlock City.
+		&#8216;You&#8217;d best behave yourself if you don&#8217;t want to end up like one of them,&#8217; grates a guardsman, nodding towards the swinging corpses, as you pass through the great eagle-headed gates of Marlock City.
 	</p>
 	<p>
 		<if not="t" codeword="1.100.1">
@@ -27,11 +28,11 @@
 		<choice section="568">Visit the temple of Elnir</choice>
 		<choice section="396">Visit the market</choice>
 		<choice section="142">Visit the harbourmaster</choice>
-		<choice section="571">Go to the merchants’ guild</choice>
+		<choice section="571">Go to the merchants&#8217; guild</choice>
 		<choice section="138">Explore the city</choice>
 		<choice section="434" box="1.100.1">Visit your town house {box} (if box ticked)</choice>
 		<choice section="535">Visit the House of Priests</choice>
-		<choice section="601">Visit the general’s palace</choice>
+		<choice section="601">Visit the general&#8217;s palace</choice>
 		<choice section="377">Travel east towards Trefoille</choice>
 		<choice section="166">Head south-east towards the Shadar Tor</choice>
 		<choice section="99">Follow the River Grimm north</choice>

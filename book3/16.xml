@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="16">
 	<p>
 		You can take their three
@@ -6,9 +7,9 @@
 		</weapon>
 		and the <gain shards="107"/> they have in their money pouches. One of them also had a
 		<item name="mariner's ruttier">
-			<b>mariner’s ruttier</b>
+			<b>mariner&#8217;s ruttier</b>
 		</item>
-		tucked into his breeches; he clearly won’t have any use for it now.
+		tucked into his breeches; he clearly won&#8217;t have any use for it now.
 	</p>
 	<p>
 		When you have finished going over the bodies,

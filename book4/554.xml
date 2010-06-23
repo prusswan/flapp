@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="554">
 	<p>
 		<if god="Nai">
 			<set var="cost" value="10"/>
-			If you are an initiate it costs only 10 Shards to purchase Nai’s blessing.
+			If you are an initiate it costs only 10 Shards to purchase Nai&#8217;s blessing.
 		</if>
 		<else>
 			<set var="cost" value="25"/>

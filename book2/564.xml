@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="564">
 	<p>
 		They fear you might tell the authorities about them. Three of them step forward slowly, moving with the slow crab-like crouch of wrestlers. You get ready to fight, but you did not notice the smuggler creeping up behind you. He dashes a large stone against your skull and you fall stunned.
@@ -12,6 +13,6 @@
 	</p>
 	<choices>
 		<choice section="229">Pay the ransom</choice>
-		<choice book="5" section="321">Can’t or won’t pay</choice>
+		<choice book="5" section="321">Can&#8217;t or won&#8217;t pay</choice>
 	</choices>
 </section>

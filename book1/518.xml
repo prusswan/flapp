@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="518">
 	You are on the road between the Citadel of Velis Corin and Fort Mereth. This is quite rarely travelled - the military guardposts are few and far between. <random type="travel" dice="1"/>.
 	<outcomes>

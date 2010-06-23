@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="476">
 	<p>
-		He is outraged that you rescued his lady love. ‘That was my own sworn task, you varlet!’ he cries, charging at you with raised mace.
+		He is outraged that you rescued his lady love. &#8216;That was my own sworn task, you varlet!&#8217; he cries, charging at you with raised mace.
 	</p>
 	<fight name="Angry Knight" combat="5" defence="9" stamina="6"/>
 	<p>

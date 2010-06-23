@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="715">
 	<p>
 		The heart of the wood is as dark a spot as you are likely to find this side of the grave. The trees stand on all sides like the pillars of an immense cathedral.
@@ -6,7 +7,7 @@
 		There is a fluttering sound. Something drops lightly to the ground behind you. You turn to see a strange hunched creature with a long black beak, gnarled leathery talons and a mantle of glossy black feathers. It winks at you mischievously and points to the upper branches, where you can now make out many other such creatures like smudges of ink in the bosky gloom.
 	</p>
 	<p>
-		The nearest creature plucks at your sleeve. ‘We don’t get many of your kind in these parts,’ it says in a harsh croaking voice.
+		The nearest creature plucks at your sleeve. &#8216;We don&#8217;t get many of your kind in these parts,&#8217; it says in a harsh croaking voice.
 	</p>
 	<p>
 		<if shards="751"><set var="a" value="-2"/></if>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="135">
 	<!-- modified so that even 'kept' weapons can be broken -->
 	<tick special="weaponlock" hidden="t"/>

@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="369" tag="temple">
 	<p>
 		<if item="boar's tusk">
-			If you have a <b>boar’s tusk</b>, <goto section="612"/>.
+			If you have a <b>boar&#8217;s tusk</b>, <goto section="612"/>.
 		</if>
 		If not, read on.
 	</p>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="333">
 <!-- a tricky section, because it contains an optional ability roll.
      Even after the user has rolled, they can choose one of the other options.

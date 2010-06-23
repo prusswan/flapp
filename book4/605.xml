@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="605" boxes="1">
 	<p>
 		<if ticks="1">
@@ -21,7 +22,7 @@
 			and a good quality crew can be
 			<buy crew="excellent" shards="0">upgraded to excellent</buy>.
 		</elseif>
-		Note the change on your Ship’s Manifest, if applicable. If the crew is already of excellent quality, there is no further improvement.
+		Note the change on your Ship&#8217;s Manifest, if applicable. If the crew is already of excellent quality, there is no further improvement.
 	</p>
 	<p>When you are ready, <goto section="296"/>.</p>
 </section>

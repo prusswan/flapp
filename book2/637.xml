@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="637">
-	<p>Estragon smiles. ‘I never thought you’d succeed in this quest.’</p>
+	<p>Estragon smiles. &#8216;I never thought you&#8217;d succeed in this quest.&#8217;</p>
 	<p>
 		<lose codeword="2.567.3a" hidden="t"/>
 		<tick codeword="2.567.3b" hidden="t"/>
-		‘I thought you could see the future in your magic mirrors,’ you reply, handing him the <b>golden katana</b>.
+		&#8216;I thought you could see the future in your magic mirrors,&#8217; you reply, handing him the <b>golden katana</b>.
 	</p>
-	<p>‘In this case the portents were unclear.’</p>
+	<p>&#8216;In this case the portents were unclear.&#8217;</p>
 	<p>
 		<set var="r" value="rank" modifier="natural"/>
 		<random dice="2" var="roll"/>,

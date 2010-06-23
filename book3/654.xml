@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="654">
 	<p>
 		A pirate galley comes bucking across the waves, gaining steadily in the mild breeze.
 	</p>
 	<p>
-		‘If the wind doesn’t pick up, we’re done for!’ shouts the helmsman.
+		&#8216;If the wind doesn&#8217;t pick up, we&#8217;re done for!&#8217; shouts the helmsman.
 	</p>
 	<choices>
 		<choice section="672">Make a run for it</choice>

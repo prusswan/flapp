@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="531">
 	<if item="golden net">
 		If you have a <b>golden net</b>, <goto section="4"/>.

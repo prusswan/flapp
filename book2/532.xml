@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="532">
 	<if ability="sanctity" greaterthan="5">
 		If your SANCTITY score is 6 or more,

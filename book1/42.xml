@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="42">
 	<p>
 		Two hulking shapes appear out of the shadows as if from nowhere. They are hideous creatures - manlike, standing on two legs, but with the tail and hairy features of a gigantic rat. Their yellowing teeth snap at you as they lunge for you; the ratmen also wield wicked-looking shortswords in their hands.
 	</p>
-	<p>‘Gut the human!’ yells one of them in a bestial voice.</p>
+	<p>&#8216;Gut the human!&#8217; yells one of them in a bestial voice.</p>
 	<p>
 		You must fight them, both at once, as if they were one opponent.
 		<if item="rat poison">

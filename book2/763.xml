@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="763">
 	<p>
 		You spend weeks in meditation and study.
@@ -5,7 +6,7 @@
 		If the number rolled is higher than your MAGIC score, increase it by 1.
 	</p>
 	<p>
-		‘Books alone are not enough. You must also study the secret patterns of nature,’ says the monk in charge of the scriptorium.
+		&#8216;Books alone are not enough. You must also study the secret patterns of nature,&#8217; says the monk in charge of the scriptorium.
 	</p>
 	<p>
 		Taking this advice to heart, you set out again on your travels. <goto section="74"/>.

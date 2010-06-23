@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="536">
 	<if item="climbing gear">
 		If you have some <b>climbing gear</b>, <goto section="628"/>.

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="450">
 	<!-- how do I prevent access to cache until fee is paid? -->
 	<p>
@@ -9,7 +10,7 @@
 	</p>
 	<p>
 		<tick special="lock" cache="4.450" hidden="t"/>
-		You must pay your membership fee of 5 Shards. If you cannot or won’t pay, you are promptly shown out again - <goto section="633" force="f"/>.
+		You must pay your membership fee of 5 Shards. If you cannot or won&#8217;t pay, you are promptly shown out again - <goto section="633" force="f"/>.
 	</p>
 	<p>
 		If you <lose shards="5">pay</lose>,

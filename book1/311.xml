@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="311">
 	<p>
 		<if crew="good"><set var="x" value="1"/></if>
@@ -9,7 +10,7 @@
 		If not, read on.
 	</p>
 	<p>
-		‘In that case, I have no choice but to seize your ship!’ More of his men swarm on to your ship, and a battle ensues.
+		&#8216;In that case, I have no choice but to seize your ship!&#8217; More of his men swarm on to your ship, and a battle ensues.
 	</p>
 	<p>
 		<if profession="warrior">

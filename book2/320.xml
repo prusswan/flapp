@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="320">
 	<p>
 		Your opponent falls with a heavy clatter to the sward, releasing a wisp of green vapour. When you throw open the visor, you are amazed to see the armour is empty.
 	</p>
 	<p>
-		The dwarf comes running out of the pavilion in a state of high dudgeon. ‘You cheated!’ he says. ‘It isn’t fair. I will have my revenge.’ So saying, he darts off into the bushes.
+		The dwarf comes running out of the pavilion in a state of high dudgeon. &#8216;You cheated!&#8217; he says. &#8216;It isn&#8217;t fair. I will have my revenge.&#8217; So saying, he darts off into the bushes.
 	</p>
 	<p>
 		<tick codeword="Baluster">

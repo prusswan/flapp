@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="607" tag="temple">
 	<p>
 		At the temple you can get medical treatment for only
@@ -14,7 +15,7 @@
 				If successful you are
 				<gain title="Initiate of the Sage of Peace">
 					accepted as an initiate
-				</gain>. (The monks are open minded and don’t mind if you were already an initiate of another god.)
+				</gain>. (The monks are open minded and don&#8217;t mind if you were already an initiate of another god.)
 			</success>
 			<failure>
 				If you try the SANCTITY roll and fail, the doctrine turns out to be so confusing that you

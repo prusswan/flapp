@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="381">
-	Knocklar has plenty of chores to get done. ‘I must chop some
+	Knocklar has plenty of chores to get done. &#8216;I must chop some
 	firewood, feed my chickens and go and check the traps out in
-	the wood,’ he says. ‘So you’ll pardon me if I don’t stand around
-	nattering with you all day.’
+	the wood,&#8217; he says. &#8216;So you&#8217;ll pardon me if I don&#8217;t stand around
+	nattering with you all day.&#8217;
 	<choices>
 		<choice section="406">Ask him for a blessing</choice>
 		<choice section="431">Request his advice</choice>

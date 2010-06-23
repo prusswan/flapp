@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="700">
 	<p>
 		Loud shrieking laughter rings out from high above as a shower of pebbles, soil and pine cones is flung down on your head.
@@ -16,6 +17,6 @@
 		</if>
 	</p>
 	<p>
-		If you survive, you hear a fluttering as your attackers flit off into the depths of the wood. Soon you find a stream which must surely lead down towards the forest’s edge. <goto section="529"/>.
+		If you survive, you hear a fluttering as your attackers flit off into the depths of the wood. Soon you find a stream which must surely lead down towards the forest&#8217;s edge. <goto section="529"/>.
 	</p>
 </section>

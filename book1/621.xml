@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="621">
 	The coast road between Yellowport and Venefax is wellmaintained and you make good time. You pass a few army patrols but they leave you alone.
 	<lose codeword="StillInYellowport" hidden="t"/>

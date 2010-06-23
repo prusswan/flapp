@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="503">
 	<p>
-		The slaver’s vessel crunches into the side of your ship. As the attackers swarm abroad, the sailors prepare to defend themselves with whatever comes to hand.
+		The slaver&#8217;s vessel crunches into the side of your ship. As the attackers swarm abroad, the sailors prepare to defend themselves with whatever comes to hand.
 	</p>
 	<p><random dice="2"/>:</p>
 	<outcomes>

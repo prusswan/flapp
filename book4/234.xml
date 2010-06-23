@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="234">
 	You are walking across the plains, a featureless expanse of seemingly endless grasslands. <random type="travel" dice="2"/>.
 	<outcomes>

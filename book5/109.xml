@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="109" image="109.jpg">
 	<p>
 		<if codeword="Expunge">If you have the codeword Expunge, <goto section="449"/> immediately.</if> If not, read on.

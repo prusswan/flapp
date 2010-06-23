@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="267">
 	<p>
-		You help yourself to the pirates’ treasure, which amounts to
-		<gain shards="400"/>. Their ship’s hold contains
+		You help yourself to the pirates&#8217; treasure, which amounts to
+		<gain shards="400"/>. Their ship&#8217;s hold contains
 		<buy cargo="spices" quantity="1" shards="0">1 Cargo Unit of spices</buy>,
 		which you can add to your own cargo if your ship has room for it. Your mate is for taking the
 		<item name="pirate captain's head">
-			<b>pirate captain’s head</b>
+			<b>pirate captain&#8217;s head</b>
 		</item>
 		as a gory trophy of your victory. Add it to your list of possessions if you agree.
 	</p>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="684">
 	You are high up in the peaks, struggling on through swirling eddies of snow and ice.
 	<if codeword="Calcium" not="t">

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="138">
 	<tick codeword="2.138.1" hidden="t"/>
 	<if item="key of stars"><set var="open" value="1"/></if>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="41">
 	<p>
 		<if god="Ebron">If you have Ebron written in your God box, <goto section="501"/> immediately.</if> If not, read on.

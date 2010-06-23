@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="294" tag="temple">
 	<p>
 		<if god="Lacuna"><tick codeword="2.294.1" hidden="t"/></if>
@@ -5,7 +6,7 @@
 		Lacuna is the moon goddess and the overseer of the hunt. She is the patron deity of woodsmen, hunters and those who walk in the wild corners of the world.
 	</p>
 	<p>
-		Her temple here in Haggart’s Corner is a simple log-built chapel with bronze shields set along the walls. Grass carpets the floor and there is a smell of heather in the air. Pine cones smoulder on the altar.
+		Her temple here in Haggart&#8217;s Corner is a simple log-built chapel with bronze shields set along the walls. Grass carpets the floor and there is a smell of heather in the air. Pine cones smoulder on the altar.
 	</p>
 	<choices>
 		<choice section="317">Become an initiate of Lacuna</choice>

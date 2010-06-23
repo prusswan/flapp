@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="104">
 	<p>
-		The combined strength of all your men is just enough to push the iron doors open. Within lies a hidden valley entirely surrounded by high cliffs - a paradise of bubbling brooks, emerald lawns, fruit trees and scented flowers. Strewn all around are gold, silver and gems as plentiful as pebbles in a merchant’s garden. With wild cries of delight, your men stuff their pockets with all they can carry.
+		The combined strength of all your men is just enough to push the iron doors open. Within lies a hidden valley entirely surrounded by high cliffs - a paradise of bubbling brooks, emerald lawns, fruit trees and scented flowers. Strewn all around are gold, silver and gems as plentiful as pebbles in a merchant&#8217;s garden. With wild cries of delight, your men stuff their pockets with all they can carry.
 	</p>
 	<p>
 		<set var="curr" value="stamina"/>
@@ -22,7 +23,7 @@
 		A cold breeze shakes the boughs of the trees. Leaves fall, curling on the grass.
 	</p>
 	<p>
-		‘We’ve let Time into Paradise,’ reckons the mate. ‘Let’s not linger here.’
+		&#8216;We&#8217;ve let Time into Paradise,&#8217; reckons the mate. &#8216;Let&#8217;s not linger here.&#8217;
 	</p>
 	<p><goto section="5"/>.</p>
 </section>

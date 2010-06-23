@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="338" image="338.jpg">
 	<p>
 		<if codeword="Ebony">If you have the codeword Ebony, <goto section="99"/>.</if> If not, read on.

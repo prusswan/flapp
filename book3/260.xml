@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="260">
-	If you haven’t already done so, cross off the 35 Shards that the
+	If you haven&#8217;t already done so, cross off the 35 Shards that the
 	captain wants to take you to Metriciens. Then <random type="travel" dice="1"/>.
 	<outcomes>
 		<outcome range="1-2">

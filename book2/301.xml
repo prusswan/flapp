@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="301" tag="temple">
 	<if god="Alvir and Valmir">
 		<tick codeword="2.301.1" hidden="t"/>

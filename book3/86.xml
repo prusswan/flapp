@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="86">
 	<p>
 		<!-- need node to catch sale of pirate captain's head,
@@ -36,6 +37,6 @@
 		</item>
 	</market>
 	<p>
-		Items with no purchase price are not available in Smogmaw’s market. When you have completed your transactions, <goto section="167"/>.
+		Items with no purchase price are not available in Smogmaw&#8217;s market. When you have completed your transactions, <goto section="167"/>.
 	</p>
 </section>

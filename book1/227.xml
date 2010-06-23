@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="227">
 	<p>
-		<lose shards="5">Cross off 5 Shards</lose>. The mad beggar takes the money and swallows the lot in one gulp. ‘A gourmet meal!’ he babbles.
+		<lose shards="5">Cross off 5 Shards</lose>. The mad beggar takes the money and swallows the lot in one gulp. &#8216;A gourmet meal!&#8217; he babbles.
 	</p>
 	<p>
 		<tick codeword="StillInYellowport" hidden="t"/>

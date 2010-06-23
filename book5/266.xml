@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="266">
 	The Conjuror of Amusements has no need of you for now. He does offer to teach you a magic trick or two, for 250 Shards.
 	<if shards="250">

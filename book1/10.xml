@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="10" boxes="4" image="10.jpg">
 	<p>
 		<if codeword="Assassin">
@@ -31,10 +32,10 @@
 		Yellowport is the second largest city in Sokara. It is mainly a trading town, and is known for its exotic goods from distant Ankon-Konu, way to the south.
 	</p>
 	<p>
-		The Stinking River brings rich deposits of sulphur from the Lake of the Sea Dragon down to the town, where it is extracted and stored in the large waterfront warehouses run by the merchants’ guild. From here, the mineral is exported all over Harkuna. Unfortunately, all that sulphur has its drawbacks. The stink is abominable, and much of the city has a yellowish hue. The river is so full of sulphur that it is virtually useless as a source of food or of drinking water. However, the demand for sulphur, especially from the sorcerous guilds, is great.
+		The Stinking River brings rich deposits of sulphur from the Lake of the Sea Dragon down to the town, where it is extracted and stored in the large waterfront warehouses run by the merchants&#8217; guild. From here, the mineral is exported all over Harkuna. Unfortunately, all that sulphur has its drawbacks. The stink is abominable, and much of the city has a yellowish hue. The river is so full of sulphur that it is virtually useless as a source of food or of drinking water. However, the demand for sulphur, especially from the sorcerous guilds, is great.
 	</p>
 	<p>
-		Politically, much has changed in the past few years. The old and corrupt king of Sokara, Corin VII, has been deposed and executed in a military coup. General Grieve Marlock and the army now control Sokara. The old Council of Yellowport has been ‘indefinitely dissolved’ and a provost marshal, Marloes Marlock, the general’s brother, appointed as military governor of the town.
+		Politically, much has changed in the past few years. The old and corrupt king of Sokara, Corin VII, has been deposed and executed in a military coup. General Grieve Marlock and the army now control Sokara. The old Council of Yellowport has been &#8216;indefinitely dissolved&#8217; and a provost marshal, Marloes Marlock, the general&#8217;s brother, appointed as military governor of the town.
 	</p>
 	<p>
 		<if not="t" codeword="1.10.1">
@@ -65,7 +66,7 @@
 		<choice section="523">Seek an audience with the provost marshal</choice>
 		<choice section="30">Visit the market</choice>
 		<choice section="555">Visit the harbourmaster</choice>
-		<choice section="405">Go the merchants’ guild</choice>
+		<choice section="405">Go the merchants&#8217; guild</choice>
 		<choice section="302">Explore the city by day</choice>
 		<choice section="442">Explore the city by night</choice>
 		<choice section="300" box="1.10.1">Visit your town house {box} (if box ticked)</choice>

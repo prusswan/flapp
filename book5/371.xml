@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="371">
 	<p>
 		<if codeword="Eternal">If you have the codeword Eternal, <goto section="28"/>.</if> If not, read on.

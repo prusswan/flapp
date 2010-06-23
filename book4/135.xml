@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="135">
 	Your ship, crew and cargo are lost to the deep, dark sea.
 	<lose ship="t">Cross them off</lose> your Ship's Manifest.

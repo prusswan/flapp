@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="285">
 	<p>
 		A sharp tang is on the air. The sky, thick with iron-coloured clouds, begins to spin slowly like a great inexorable wheel. The heavens are shot though with brimstone flares. The crew stands slack-faced with dismay.
 	</p>
 	<p>
-		‘It is the fist of Elnir...’ whimpers the bosun. ‘He means to punish us for our sins.’
+		&#8216;It is the fist of Elnir...&#8217; whimpers the bosun. &#8216;He means to punish us for our sins.&#8217;
 	</p>
 	<p>
 		<if blessing="storm">

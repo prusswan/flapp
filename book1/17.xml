@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="17">
 	<p>
 		The horse and you hit the wall. There is a bright flash, and you find you have passed straight through into the hill - it must be a faery mound!
@@ -9,13 +10,13 @@
 		You are in a cavern, lit by mouse-sized faery folk, who flit about in the air blazing like fireflies. The other horses have also turned into goblins, elves and faeries of all shapes and sizes.
 	</p>
 	<p>
-		‘What have we here?,’ whispers a pale, dark-eyed elf woman, dressed in silvery cobwebs and wearing a gold crown.
+		&#8216;What have we here?,&#8217; whispers a pale, dark-eyed elf woman, dressed in silvery cobwebs and wearing a gold crown.
 	</p>
 	<p>
-		‘An overweight mortal sitting on poor old Gobrash, your majesty!’ groans the goblin you are sitting on.
+		&#8216;An overweight mortal sitting on poor old Gobrash, your majesty!&#8217; groans the goblin you are sitting on.
 	</p>
 	<p>
-		You realize you are in great danger here - there’s no telling what the faery folk will do to you. The queen signals to her people and they close in around you ominously. <difficulty ability="sanctity" level="9"/>.
+		You realize you are in great danger here - there&#8217;s no telling what the faery folk will do to you. The queen signals to her people and they close in around you ominously. <difficulty ability="sanctity" level="9"/>.
 	</p>
 	<outcomes>
 		<success section="626"/>

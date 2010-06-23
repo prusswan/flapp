@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="179">
 	<p>
-		With your own eyes you have seen Fiddler’s Green - a myth spoken of by every seaman.
+		With your own eyes you have seen Fiddler&#8217;s Green - a myth spoken of by every seaman.
 	</p>
 	<p>
 		<set var="moved" value="0"/>
@@ -20,7 +21,7 @@
 		</if>
 	</p>
 	<p>
-		Priests, Warriors and Rogues get no chance to increase in Rank; the beauty of Fiddler’s Green leaves them unmoved.
+		Priests, Warriors and Rogues get no chance to increase in Rank; the beauty of Fiddler&#8217;s Green leaves them unmoved.
 	</p>
 	<p>
 		Once you have made the necessary adjustments to your Adventure Sheet, <goto section="161"/>.

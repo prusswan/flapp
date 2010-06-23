@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="298">
 	Tendrils of magical force hold you rooted to the spot. The
-	corpse’s bleak gaze burrows into your soul like a maggot into
+	corpse&#8217;s bleak gaze burrows into your soul like a maggot into
 	decaying flesh. To escape its clutches you must
 	<difficulty ability="magic" level="15"/>.
 	<outcomes>

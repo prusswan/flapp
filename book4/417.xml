@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="417">
 	<p>
 		Looking through the gem you are able to see clearly the exact position of the stairway, and you ascend. At the gates of the tower, a man with golden skin, and amber eyes, greets you.
 	</p>
 	<p>
-		‘Welcome to the Bazaar of the Golden Ones, traveller,’ he says in a musical voice. Inside, you find a market like none you have ever seen.
+		&#8216;Welcome to the Bazaar of the Golden Ones, traveller,&#8217; he says in a musical voice. Inside, you find a market like none you have ever seen.
 	</p>
 	<market>
 		<header type="armour"/>

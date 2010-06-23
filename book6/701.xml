@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="701">
 	<p>
-		You pull yourself up on the ledge. Sure enough there is an open doorway between pillars of translucent moonstone that have been polished smooth until they shine like ice. On the lintel is carved a cryptic motto: ‘Heaven and earth are limitless.’
+		You pull yourself up on the ledge. Sure enough there is an open doorway between pillars of translucent moonstone that have been polished smooth until they shine like ice. On the lintel is carved a cryptic motto: &#8216;Heaven and earth are limitless.&#8217;
 	</p>
 	<p>
-		With a sound like the clanging of copper shields, a long blue dragon hauls itself out of the recesses of the cave. Your limbs are trembling after the exertion of the climb and the glow in the dragon’s eyes is so dazzling that you feel sick, and yet somehow you must fight it.
+		With a sound like the clanging of copper shields, a long blue dragon hauls itself out of the recesses of the cave. Your limbs are trembling after the exertion of the climb and the glow in the dragon&#8217;s eyes is so dazzling that you feel sick, and yet somehow you must fight it.
 	</p>
 	<p>
 		<if item="iron fan">

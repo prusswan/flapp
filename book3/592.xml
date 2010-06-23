@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="592">
 	<p>
 		The Kraken returns to the depths, inexorably dragging your vessel down with it.
 		<lose ship="t">
 			Cross the ship and crew	off
-		</lose> your Ship’s Manifest.
+		</lose> your Ship&#8217;s Manifest.
 		They are lost; you will be lucky if you can save yourself.
 	</p>
 	<p>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="480" image="480.jpg">
 	<p>
 		A flotilla of mossy pontoons comes drifting across the water towards you. They look like floating gardens. As they get closer you can see people and animals moving between brightly coloured tents on each pontoon. They are the sea gypsies, who live on these large clumps of floating weeds.
@@ -5,7 +6,7 @@
 	<p>
 		As soon as they draw alongside, the gypsies clamber aboard without waiting for permission and start shoving a curious assortment of goods towards you.
 	</p>
-	<p>‘Best prices on the high seas!’ says one with a cavalier grin.</p>
+	<p>&#8216;Best prices on the high seas!&#8217; says one with a cavalier grin.</p>
 	<market>
 		<header header1="Item" header2="To buy" header3="To sell"/>
 		<item name="rope" buy="30" sell="20"/>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="488">
 	<random dice="2">
 		<adjust ability="rank"/>

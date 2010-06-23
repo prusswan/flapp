@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="316">
 	<p>
-		‘This is the very idol of which I spoke!’ cries the priest delightedly.
+		&#8216;This is the very idol of which I spoke!&#8217; cries the priest delightedly.
 	</p>
 	<p>
 		He takes the <b>winged idol</b> from you and installs it inside the teepee. <lose item="winged idol">Cross it off</lose> your list of possessions and <tick codeword="Cushat">get the codeword Cushat</tick>.

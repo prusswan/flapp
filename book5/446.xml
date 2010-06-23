@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="446">
 	<p>
 		<if codeword="Edify">If you have the codeword Edify <goto section="594"/> immediately.</if> If not, read on.

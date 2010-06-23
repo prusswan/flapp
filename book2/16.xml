@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="16">
-	‘The best buys in Metriciens are grain and cloth,’ a merchant
+	&#8216;The best buys in Metriciens are grain and cloth,&#8217; a merchant
 	advises you.
 	<tick codeword="Bastion">
 		Acquire the codeword Bastion
-	</tick> if you didn’t have it already.
+	</tick> if you didn&#8217;t have it already.
 	<lose codeword="2.36.1" hidden="t"/>
 	<tick codeword="2.36.2" hidden="t"/>
 	<lose codeword="2.36.3" hidden="t"/>

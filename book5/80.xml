@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="80">
 	<p>You must fight all three of them, one at a time.</p>
 	<fight name="Priest" combat="8" defence="9" stamina="12"/>

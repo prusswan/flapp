@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="464">
 	You walk down into pitch darkness. The scent is of damp loam
 	and ozone. Sorcery is in the very air here, strong enough to
@@ -12,6 +13,6 @@
 		<failure book="12" section="25"/>
 	</outcomes>
 	<if book="12" not="t">
-		<i>[If you’re missing book 12, don’t say you weren’t warned - <goto section="123"/>.]</i>
+		<i>[If you&#8217;re missing book 12, don&#8217;t say you weren&#8217;t warned - <goto section="123"/>.]</i>
 	</if>
 </section>

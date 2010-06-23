@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="189">
-	You soon leave Chard’s Inn behind in your haste to seek fresh
+	You soon leave Chard&#8217;s Inn behind in your haste to seek fresh
 	adventures.
 	<choices>
 		<choice section="166">Take the road north to Wheatfields</choice>

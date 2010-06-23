@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="290">
 	The hydra spits acid at your back.
 	<if armour="?" using="t">
@@ -7,7 +8,7 @@
 		your Adventure Sheet.
 	</if>
 	<else>
-		(If you didn’t have any armour, you
+		(If you didn&#8217;t have any armour, you
 		<lose stamina="3d">lose 3-18 Stamina points</lose>
 		instead.)
 	</else>

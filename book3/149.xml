@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="149">
 	<p>
-		All who hear the mermaids’ song are drawn to their doom. Your only hope lies in the possibility that you are tone deaf. There is no chance of this if you are a Troubadour;
+		All who hear the mermaids&#8217; song are drawn to their doom. Your only hope lies in the possibility that you are tone deaf. There is no chance of this if you are a Troubadour;
 		<if profession="troubadour">
 			<set var="x" value="12"/>
 		</if>
@@ -20,7 +21,7 @@
 				turning to 333
 			</goto> in <i>Into the Underworld</i>.
 			<if book="12" not="t">
-				[You’re out of luck - <goto section="123"/>.]
+				[You&#8217;re out of luck - <goto section="123"/>.]
 			</if>
 		</else>
 	</p>

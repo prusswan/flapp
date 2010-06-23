@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="85">
 	<p>
 		<lose codeword="3.85.1" hidden="t"/>
 		The vampire screeches like an angry owl and lashes out with its long white talons.
 	</p>
 	<p>
-		‘Go on, skipper, we’re right behind you,’ says the first mate nervously.
+		&#8216;Go on, skipper, we&#8217;re right behind you,&#8217; says the first mate nervously.
 	</p>
 	<fight name="Vampire" combat="15" defence="18" stamina="18"/>
 	<p>

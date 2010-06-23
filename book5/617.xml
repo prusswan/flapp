@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="617">
 	<p>
 		You fail to deflect the flames sufficiently. You are burnt horribly. <lose stamina="3d">Lose 3-18 Stamina</lose> (the roll of three dice). If that kills you, <goto section="7" dead="t"/>. Otherwise, read on.

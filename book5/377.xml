@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="377">
 	<p>
 		<if codeword="Evil|Exultant">If you have the codeword Evil or Exultant, <goto section="533"/> immediately.</if> If not, read on.

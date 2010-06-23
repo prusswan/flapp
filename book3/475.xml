@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="475">
-	You are off the coast of Old Harkuna with the Sorcerers’ Isle
+	You are off the coast of Old Harkuna with the Sorcerers&#8217; Isle
 	not many leagues to the south-east.
 	<choices>
 		<choice book="5" section="60">Steer north</choice>

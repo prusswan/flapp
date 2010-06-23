@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="405">
-	<p>Targdaz’s horse flies you back to your castle in a matter of hours.</p>
+	<p>Targdaz&#8217;s horse flies you back to your castle in a matter of hours.</p>
 	<p>
-		‘I didn’t want to waste the spell,’ he says as it flies off. ‘Each time I summon that steed it costs a year of my life.’
+		&#8216;I didn&#8217;t want to waste the spell,&#8217; he says as it flies off. &#8216;Each time I summon that steed it costs a year of my life.&#8217;
 	</p>
 	<p>
 		You are more concerned about your ship and crew.
@@ -29,8 +30,8 @@
 		</success>
 		<failure>
 			Failure means that they sailed off and you must
-			<lose ship="t">cross the vessel’s details off</lose>
-			your Ship’s Manifest.
+			<lose ship="t">cross the vessel&#8217;s details off</lose>
+			your Ship&#8217;s Manifest.
 		</failure>
 	</p>
 	<p>

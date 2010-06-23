@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="136">
 	<p>
-		‘Unclean!’ warns the man, his voice just a ragged croak issuing from a mouth ravaged by sores. You are horrified by the realization that you have strayed into a hamlet of lepers! <random dice="1">Roll a die</random>:
+		&#8216;Unclean!&#8217; warns the man, his voice just a ragged croak issuing from a mouth ravaged by sores. You are horrified by the realization that you have strayed into a hamlet of lepers! <random dice="1">Roll a die</random>:
 	</p>
 	<outcomes>
 		<outcome range="1-3">

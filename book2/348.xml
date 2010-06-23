@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="348">
 	<p>
 		<tick special="lock" cache="2.348" hidden="t"/>
@@ -26,7 +27,7 @@
 		You can also <rest>rest</rest> at your town house for as long as you wish. If injured, restore your Stamina to its normal unwounded score.
 	</p>
 	<p>
-		When you’ve finished at your town house, <goto section="217"/> (and remember to erase the tick in the town house box there if it was destroyed by fire).
+		When you&#8217;ve finished at your town house, <goto section="217"/> (and remember to erase the tick in the town house box there if it was destroyed by fire).
 	</p>
 	<itemcache name="2.348" text="Items at town house"/>
 </section>

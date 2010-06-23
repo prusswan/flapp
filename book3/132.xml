@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="132" image="132.jpg">
 	<p>
 		It is with mounting excitement that you recognize this island as the one marked on the map.
@@ -28,7 +29,7 @@
 		</outcome>
 		<outcome range="6">
 			<gain shards="200"/> and a
-			<item name="pirate captain's head"><b>pirate captain’s head</b></item>
+			<item name="pirate captain's head"><b>pirate captain&#8217;s head</b></item>
 		</outcome>
 	</outcomes>
 	<p>

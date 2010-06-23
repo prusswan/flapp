@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="337" boxes="1">
 	<p>
 		<if ticks="1">
@@ -9,7 +10,7 @@
 		The crew have been using a net to catch fish. This time they have caught a sea centaur, a strange-looking creature, with a top half like a man, and a bottom half like a sea horse. It struggles feebly, clutching at the net with webbed fingers, trying to saw it apart with a long, serrated dagger made of some sea shell.
 	</p>
 	<p>
-		‘We’ll have to kill it, Cap’n - they’re terrible bad luck to have on board,’ says the first mate.
+		&#8216;We&#8217;ll have to kill it, Cap&#8217;n - they&#8217;re terrible bad luck to have on board,&#8217; says the first mate.
 	</p>
 	<p>One of the sailors is already readying his cutlass.</p>
 	<choices>

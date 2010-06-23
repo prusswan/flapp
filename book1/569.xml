@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="569">
 	You will have to fight them one at a time. They are tough opponents because their skin is made of iron.
 	<fight name="First Golem" combat="5" defence="11" stamina="10"/>

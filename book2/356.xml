@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="356">
 	The sun is shining across the flower-filled meadows as you make
-	your way on from Tekshin’s Tavern.
+	your way on from Tekshin&#8217;s Tavern.
 	<choices>
 		<choice section="332">Take the road to Goldfall</choice>
 		<choice section="309">Take the road to Wheatfields</choice>

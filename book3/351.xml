@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="351" boxes="3">
 	<if not="t" ticks="2">
 		<resurrection text="Island of Rebirth" book="3" section="351" hidden="t"/>

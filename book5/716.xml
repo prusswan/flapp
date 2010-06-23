@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="716">
 	<p>You are picked up by a passing ship. <random dice="1" var="x"/>.</p>
 	<outcomes>

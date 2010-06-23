@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="572">
 	<p>
 		You come to a farmer's cottage. <if codeword="Eclipse">If you have the codeword Eclipse, <goto section="369"/> immediately.</if> If not, read on.

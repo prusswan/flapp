@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="157">
 	<p>
 		The back room of the temple is shrouded in gloom. A golden wheel is set into the far wall. You may spin this wheel once at a cost of <lose shards="20" price="x"/>. <random dice="1" flag="x"/> for the outcome.

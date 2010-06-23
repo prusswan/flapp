@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="113">
 	<if codeword="Armour">
 		If you have the codeword Armour, <goto section="550"/> immediately.

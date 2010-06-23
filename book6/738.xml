@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="738">
 	<p>
-		‘Your technique is magnificent,’ remarks Kiyomori. ‘A pity I must order your death.’
+		&#8216;Your technique is magnificent,&#8217; remarks Kiyomori. &#8216;A pity I must order your death.&#8217;
 	</p>
 	<p>
 		<set var="r" value="rank" modifier="natural"/>
@@ -16,6 +17,6 @@
 		</if>
 	</p>
 	<p>
-		The rest of the chancellor’s guards are already on their way - time to make a break for it. <goto section="577"/>.
+		The rest of the chancellor&#8217;s guards are already on their way - time to make a break for it. <goto section="577"/>.
 	</p>
 </section>

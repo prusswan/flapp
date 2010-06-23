@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="270">
 	<if not="t" safeAddGod="Nagil">
 		Becoming an initiate of Nagil is not possible if you are already an initiate of another temple.

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="465">
 	<p>
 		You are gazing over the side when you see a dark shadow rising from the depths. It is huge.
@@ -14,13 +15,13 @@
 		<elseif ship="brigantine">
 			<random dice="2">
 				two dice<adjust ability="rank"/>
-			</random> if she’s a brigantine,
+			</random> if she&#8217;s a brigantine,
 		</elseif>
 		<else>
 			and
 			<random dice="3">
 				three dice<adjust ability="rank"/>
-			</random> if she’s a galleon.
+			</random> if she&#8217;s a galleon.
 		</else>
 		You can add your Rank to this roll.
 	</p>

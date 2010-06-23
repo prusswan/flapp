@@ -1,20 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="369">
 	<p>
-		‘Knocklar, you oaf!’ says the severed head. ‘You dropped me in the forest again. If not for the kindness of this stranger I’d have lain there until morning with beetles crawling up my nostrils!’
+		&#8216;Knocklar, you oaf!&#8217; says the severed head. &#8216;You dropped me in the forest again. If not for the kindness of this stranger I&#8217;d have lain there until morning with beetles crawling up my nostrils!&#8217;
 	</p>
 	<p>
-		Knocklar takes the head and smiles. ‘You must stay a while and tell me of your adventures,’ he says. ‘I have renounced the world myself in favour of a life of spiritual contemplation.’
+		Knocklar takes the head and smiles. &#8216;You must stay a while and tell me of your adventures,&#8217; he says. &#8216;I have renounced the world myself in favour of a life of spiritual contemplation.&#8217;
 	</p>
 	<p>
-		‘A life of drunken idleness, more like!’ declares the head in outrage.
+		&#8216;A life of drunken idleness, more like!&#8217; declares the head in outrage.
 	</p>
 	<p>
-		Knocklar leads you into his cottage where, ignoring the head’s protests, he stuffs it into a breadbin. Then he invites you to stay and have supper with him.
+		Knocklar leads you into his cottage where, ignoring the head&#8217;s protests, he stuffs it into a breadbin. Then he invites you to stay and have supper with him.
 	</p>
 	<p>
 		Cross the
 		<lose item="severed head"/>
-		off your Adventure Sheet and then decide what you’re doing now.
+		off your Adventure Sheet and then decide what you&#8217;re doing now.
 	</p>
 	<choices>
 		<choice section="481">Stay for supper</choice>

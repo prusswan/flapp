@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="702">
 	Two brigands leap out from hiding and menace you with their
-	swords. One is behind you, one in front. ‘Give it up,’ they
-	advise. ‘Money’s not worth getting killed over.’
+	swords. One is behind you, one in front. &#8216;Give it up,&#8217; they
+	advise. &#8216;Money&#8217;s not worth getting killed over.&#8217;
 	<choices>
 		<choice section="726">Fight them</choice>
 		<choice section="750">Run off</choice>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="582">
 	<p>
 		You wake to the desolate cry of a seagull, calling into the empty skies. You are alone on a rocky island in the middle of the sea. Scattered around are the dead bodies of your crew, looted and left for the birds. Your ship and cargo is gone, and you have been robbed.
@@ -11,7 +12,7 @@
 		off your Adventure Sheet. No wonder they call it Disaster Bay!
 	</p>
 	<p>
-		All is not lost, however. You are marooned, but there is plenty of wood and rigging from the wreck of your ship for you to build a raft. After a day�s hard work, you have built a serviceable raft. You push out into the sea. <random dice="1"/>.
+		All is not lost, however. You are marooned, but there is plenty of wood and rigging from the wreck of your ship for you to build a raft. After a day&#239;&#191;&#189;s hard work, you have built a serviceable raft. You push out into the sea. <random dice="1"/>.
 	</p>
 	<outcomes>
 		<outcome range="1,2" section="422"/>

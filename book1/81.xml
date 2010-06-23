@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="81">
 	This could be a tough fight.
 	<fight name="Golem" combat="5" defence="10" stamina="10"/>

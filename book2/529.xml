@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="529">
 	<p>
 		<set var="r" value="rank" modifier="natural"/>
-		You have found an explorer’s book full of maps and handy hints.
+		You have found an explorer&#8217;s book full of maps and handy hints.
 		<gain ability="scouting" amount="1">
 			Add 1 to your SCOUTING score
 		</gain>. Also

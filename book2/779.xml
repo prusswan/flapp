@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="779">
 	<p>
-		The market at Haggart’s Corner amounts to just a few shops whose dusty shelves suggest they don’t do a roaring trade. ‘People prefer to do business with the trau,’ says one storekeeper with a shrug. ‘Who can compete?’
+		The market at Haggart&#8217;s Corner amounts to just a few shops whose dusty shelves suggest they don&#8217;t do a roaring trade. &#8216;People prefer to do business with the trau,&#8217; says one storekeeper with a shrug. &#8216;Who can compete?&#8217;
 	</p>
 	<p>Perhaps you will find a bargain here all the same:</p>
 	<market>
@@ -25,6 +26,6 @@
 		<item name="faery mead" sell="150"/>
 	</market>
 	<p>
-		Items that have no purchase price listed are not available here. When you’ve completed your business, <goto section="242"/>.
+		Items that have no purchase price listed are not available here. When you&#8217;ve completed your business, <goto section="242"/>.
 	</p>
 </section>

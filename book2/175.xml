@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="175">
 	Seeing the fearful looks of the crew, you ask the first mate what
-	the matter is. ‘These are haunted waters, Cap’n!’ is all he will tell
+	the matter is. &#8216;These are haunted waters, Cap&#8217;n!&#8217; is all he will tell
 	you. <random type="travel"/>:
 	<outcomes>
 		<outcome range="2-4" section="583">Storm</outcome>

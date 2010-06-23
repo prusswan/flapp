@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="255">
 	<p>
 		<if codeword="Erebus|Evade">If you have have the codeword Erebus or Evade (or both), <goto section="16"/> immediately.</if> If not, read on.

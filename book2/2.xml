@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="2" image="2.jpg">
 	<p>
 		Ringhorn receives goods from all along the Rese River, trading along the coast from Uttaku to Yellowport and south to distant Ankon-Konu. It is a very large, bustling city.
@@ -15,7 +16,7 @@
 		<choice section="301">Visit the temple of Alvir and Valmir</choice>
 		<choice section="324">Visit the temple of Elnir</choice>
 		<choice section="347">Visit the temple of Sig</choice>
-		<choice section="357">Visit the merchants’ guild</choice>
+		<choice section="357">Visit the merchants&#8217; guild</choice>
 		<choice section="370">Leave the city</choice>
 	</choices>
 </section>

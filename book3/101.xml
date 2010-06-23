@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="101">
 	<p>
-		‘See those myriad islands?’ says the navigator, pointing to numerous rocky shores scattered in the west beyond a pall of haze.
+		&#8216;See those myriad islands?&#8217; says the navigator, pointing to numerous rocky shores scattered in the west beyond a pall of haze.
 	</p>
 	<p>
-		You nod. ‘The Unnumbered Isles. We’re due south of Old Sokar - or Marlock City, as it is now called.’
+		You nod. &#8216;The Unnumbered Isles. We&#8217;re due south of Old Sokar - or Marlock City, as it is now called.&#8217;
 	</p>
 	<choices>
 		<choice section="205">Go west</choice>

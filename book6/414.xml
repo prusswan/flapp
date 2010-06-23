@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="414">
 	<p>
 		<tick special="lock" cache="6.414" hidden="t"/>
 		You can leave possessions and money here at your town house. Record anything you leave in the box below. Each time you return,
-		<random dice="2"/> to see what’s happened in your absence:
+		<random dice="2"/> to see what&#8217;s happened in your absence:
 	</p>
 	<outcomes>
 		<outcome range="2-9">Your belongings are safe</outcome>

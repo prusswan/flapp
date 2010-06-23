@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="208">
 	<p>
-		‘See that blue glow along the horizon?’ says the navigator. ‘It’s the witchlight that flickers over Braelak Isle.’
+		&#8216;See that blue glow along the horizon?&#8217; says the navigator. &#8216;It&#8217;s the witchlight that flickers over Braelak Isle.&#8217;
 	</p>
 	<p><random type="travel"/>.</p>
 	<outcomes>

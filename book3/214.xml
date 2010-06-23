@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="214">
 	<p>
 		You close with the pirate vessel. At close quarters you see the attackers waiting with drawn swords at the rail. They are an odd mix of tall Uttakin, velvet-coated Golnirans, Sokarans with broad pale faces and savage natives of the Feathered Lands. All are alike in one respect, however: the naked hate that shines from their eyes. As the ships come together, they leap aboard with a wild battle-cry.
@@ -17,7 +18,7 @@
 				<adjust crew="poor" amount="-2"/>
 				<adjust crew="good" amount="2"/>
 				<adjust crew="excellent" amount="3"/>
-			</random> if you’re a Warrior)
+			</random> if you&#8217;re a Warrior)
 		</else>
 		and add your Rank. Then, if your crew is poor quality, subtract 2 from the total. If the crew is good, add 2. If the crew is excellent, add 3.
 	</p>

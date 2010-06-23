@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="379">
 	<p>
-		The pirates’ treasure comprises <gain shards="900"/>, which you can record on your Adventure Sheet. Their ship’s hold contains
+		The pirates&#8217; treasure comprises <gain shards="900"/>, which you can record on your Adventure Sheet. Their ship&#8217;s hold contains
 		<buy cargo="textiles" quantity="1" shards="0">
 			1 Cargo Unit of textiles
 		</buy>,
-		which you can add to your own cargo if you have room for it. Your mate suggests taking the <item name="pirate captain's head"><b>pirate captain’s head</b></item> in case it carries a bounty.
+		which you can add to your own cargo if you have room for it. Your mate suggests taking the <item name="pirate captain's head"><b>pirate captain&#8217;s head</b></item> in case it carries a bounty.
 	</p>
 	<p>
 		<set var="r" value="rank" modifier="natural"/>

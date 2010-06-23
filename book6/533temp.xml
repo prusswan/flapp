@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="533">
 	<p>
 		<if title="Senior Court Rank|Junior Court Rank">
@@ -13,7 +14,7 @@
 				<adjust codeword="Fuchsia" amount="3"/>
 			</difficulty>
 		</if>
-		if you’re a Warrior, or
+		if you&#8217;re a Warrior, or
 		<if not="t" profession="warrior">
 			<difficulty ability="charisma" level="22" flag="x">
 				Difficulty 22<adjust amount="t"/>

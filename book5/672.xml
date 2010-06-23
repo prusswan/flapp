@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="672" boxes="1">
 	<p>
 		<if ticks="0"><tick>Tick the box above</tick>.</if>

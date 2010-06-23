@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="171">
 	<p>
 		<tick special="lock" cache="2.171" hidden="t"/>
-		You can leave possessions and money here to save having to carry them around with you. Write in the box anything you’re leaving here. Each time you return, <random/>:
+		You can leave possessions and money here to save having to carry them around with you. Write in the box anything you&#8217;re leaving here. Each time you return, <random/>:
 	</p>
 	<outcomes>
 		<outcome range="2-8">Your possessions are safe</outcome>
@@ -20,5 +21,5 @@
 		You can also rest at your town house for as long as you wish. If injured, <rest>restore your Stamina</rest> to its normal unwounded score.
 	</p>
 	<itemcache name="2.171" text="Items in town house"/>
-	<p>When you’ve finished at your town house, <goto section="48"/>.</p>
+	<p>When you&#8217;ve finished at your town house, <goto section="48"/>.</p>
 </section>

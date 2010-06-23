@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="770">
 	<lose codeword="2.770.1" hidden="t"/>
 	They say nothing in response to your defiance, but you sense
@@ -13,7 +14,7 @@
 			<random dice="2" var="x">
 				<adjust amount="-bonus"/>
 			</random>
-			and subtract your armour’s Defence bonus to find out how many <lose stamina="x">Stamina points of damage</lose> it does.
+			and subtract your armour&#8217;s Defence bonus to find out how many <lose stamina="x">Stamina points of damage</lose> it does.
 			<tick codeword="2.770.1" hidden="t"/>
 		</flee>
 	</p>

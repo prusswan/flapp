@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="498">
 	<p>
 		<if god="Molhern"><set var="cost" value="20"/></if>
@@ -5,7 +6,7 @@
 		A blessing costs 20 Shards if you are an initiate, 40 Shards otherwise. You cannot buy a blessing from Molhern if you already have one.
 	</p>
 	<p>
-		Molhern’s blessing allows you a second attempt at any one failed MAGIC roll. After the second roll (whether successful or not) the blessing is used up.
+		Molhern&#8217;s blessing allows you a second attempt at any one failed MAGIC roll. After the second roll (whether successful or not) the blessing is used up.
 	</p>
 	<p>
 		<if shards="cost">

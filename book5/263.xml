@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="263">
 	<p>'Right,' says the troll matter-of-factly, and he attacks you.</p>
 	<fight name="Troll" combat="9" defence="12" stamina="20" flee="8"/>

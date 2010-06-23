@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="215">
 	<p>
 		<!-- break up this section? -->
-		Sanobu’s shrine is built on a wide shelf of rock overlooking the waterfall. There is no effigy of the god, just a dim chamber at the back of the shrine where you can view the exposed mark in the rock which is supposedly Sanobu’s footprint.
+		Sanobu&#8217;s shrine is built on a wide shelf of rock overlooking the waterfall. There is no effigy of the god, just a dim chamber at the back of the shrine where you can view the exposed mark in the rock which is supposedly Sanobu&#8217;s footprint.
 	</p>
 	<p>
 		<if shards="35"><if blessing="storm" not="t">

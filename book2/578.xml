@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="578">
 	<if god=""><lose codeword="2.578.1" hidden="t"/></if>
 	<else><tick codeword="2.578.1" hidden="t"/></else>

@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="594">
 	<p>
 		<tick special="lock" cache="2.594" hidden="t"/>
-		Following the merchant’s advice, you invest your money and wait to see what return you get. <random/>:
+		Following the merchant&#8217;s advice, you invest your money and wait to see what return you get. <random/>:
 	</p>
 	<outcomes>
 		<outcome range="2-3">

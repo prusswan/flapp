@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="145" image="145.jpg">
 	<p>
 		Conflass market consists of tiers of shops, linked by walkways, surrounding a pleasant green park in the middle of the town.
@@ -30,6 +31,6 @@
 		<item name="lantern" buy="100" sell="90"/>
 	</market>
 	<p>
-		Items with no purchase price listed are not available locally. When you’ve finished your business here, <goto section="191"/>.
+		Items with no purchase price listed are not available locally. When you&#8217;ve finished your business here, <goto section="191"/>.
 	</p>
 </section>

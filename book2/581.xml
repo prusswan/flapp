@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="581">
 	<p>
 		<lose codeword="2.581.1" hidden="t"/>
@@ -5,7 +6,7 @@
 	</p>
 	<fight name="Elf Lady" combat="7" defence="10" stamina="7"/>
 	<p>
-		You doubt if she’d accept your surrender.
+		You doubt if she&#8217;d accept your surrender.
 		<flee>
 			If you turn and run, she will get one final swipe at your undefended back and you must
 			<lose stamina="1d">lose 1-6 Stamina points</lose>.

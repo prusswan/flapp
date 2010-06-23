@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="476">
 	<p>
 		<lose codeword="3.476.2" hidden="t"/>
 		<lose codeword="3.476.1" hidden="t"/>
 		<lose codeword="3.476.0" hidden="t"/>
 		
-		You’re obliged to fall in with the Reavers, at least for a while. You are given a midshipman’s position aboard one of their vessels and told that promotion will depend on how you acquit yourself in this job.
+		You&#8217;re obliged to fall in with the Reavers, at least for a while. You are given a midshipman&#8217;s position aboard one of their vessels and told that promotion will depend on how you acquit yourself in this job.
 	</p>
 	<p>
 		<difficulty ability="thievery" level="14" var="t">

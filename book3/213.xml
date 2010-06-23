@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="213">
 	<p>
-		The sky turns black and spits lightning. Your crew grow fearful. ‘Lay her a-hold!’ cries the bosun in panic. ‘Bestir yourselves, lads, or we’re done for!’
+		The sky turns black and spits lightning. Your crew grow fearful. &#8216;Lay her a-hold!&#8217; cries the bosun in panic. &#8216;Bestir yourselves, lads, or we&#8217;re done for!&#8217;
 	</p>
 	<p>
 		<if blessing="storm">
@@ -10,7 +11,7 @@
 		</if>
 	</p>
 	<p>
-		Otherwise the storm hits with titanic fury, throwing vast fists of water up from the sea to batter your ship’s frail timbers.
+		Otherwise the storm hits with titanic fury, throwing vast fists of water up from the sea to batter your ship&#8217;s frail timbers.
 		<if ship="barque">
 			<random dice="1">
 				<adjust crew="poor" amount="-1"/>

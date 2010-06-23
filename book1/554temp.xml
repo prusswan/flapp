@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="554">
 	<tick codeword="1.554.1" hidden="t"/>
-	King Skabb’s rusty iron crown shattered when he fell, so you take the <item name="copper amulet" force="t"/> from around his neck. Note it on your Adventure Sheet. You also find a chest in the corner of the room but it is clearly booby-trapped. You can open it using magic, or your skills as a thief. To pick the lock,
+	King Skabb&#8217;s rusty iron crown shattered when he fell, so you take the <item name="copper amulet" force="t"/> from around his neck. Note it on your Adventure Sheet. You also find a chest in the corner of the room but it is clearly booby-trapped. You can open it using magic, or your skills as a thief. To pick the lock,
 	<group>
 		<text>make a THIEVERY roll at Difficulty 9</text>
 		<lose codeword="1.554.1"/>

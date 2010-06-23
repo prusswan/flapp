@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="600">
 	The ship steers out of harbour and sets her prow to the east.
 	<lose shards="20">Cross off the 20 Shards</lose>
-	if you haven’t already, then <random type="travel" dice="1"/>.
+	if you haven&#8217;t already, then <random type="travel" dice="1"/>.
 	<outcomes>
 		<outcome range="1">
 			Shipwreck; you alone reach land.

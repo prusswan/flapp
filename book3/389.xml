@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="389">
 	<tick codeword="3.389.1" hidden="t"/>
 	It is possible to forge a powerful wand with this substance, but if
@@ -12,6 +13,6 @@
 	<outcomes>
 		<success section="371"/>
 		<failure section="708"/>
-		<choice box="3.389.1" section="262">Don’t attempt it</choice>
+		<choice box="3.389.1" section="262">Don&#8217;t attempt it</choice>
 	</outcomes>
 </section>

@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="696">
 	<p>
-		‘It’s good to see you remember to turn up at lectures once in a while,’ remarks the senior mage drily as you sidle in at the back of the hall.
+		&#8216;It&#8217;s good to see you remember to turn up at lectures once in a while,&#8217; remarks the senior mage drily as you sidle in at the back of the hall.
 	</p>
 	<p>
 		<set var="m" value="magic" modifier="natural"/>

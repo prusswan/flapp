@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="302">
 	<p>
-		Wishport market is located in a warren of alleys adjacent to the waterfront. Each alley is dedicated to a different commodity. In one you can buy rope, in another lanterns, and so on. You hear the echo of hammer on anvil from the weaponsmith’s forge just ahead.
+		Wishport market is located in a warren of alleys adjacent to the waterfront. Each alley is dedicated to a different commodity. In one you can buy rope, in another lanterns, and so on. You hear the echo of hammer on anvil from the weaponsmith&#8217;s forge just ahead.
 	</p>
 	<market>
 		<header type="armour"/>
@@ -36,5 +37,5 @@
 	<p>
 		The market is where you can buy and sell possessions to carry on your person. To buy trade goods that can be carried on board ship, you need to visit the warehouses at the waterfront.
 	</p>
-	<p>When you’re through here, <goto section="217"/>.</p>
+	<p>When you&#8217;re through here, <goto section="217"/>.</p>
 </section>

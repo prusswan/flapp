@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="605">
-	The spider’s bite was poisonous.
+	The spider&#8217;s bite was poisonous.
 	<set var="x" value="0"/>
 	<if codeword="6.481.1" not="t"><set var="x" value="1"/></if>
 	<else><if blessing="poison">
@@ -17,5 +18,5 @@
 	<if var="x" equals="1">
 		then <goto section="331"/>.
 	</if>
-	If the spider bit you and you don’t have a blessing, <goto section="140"/>.
+	If the spider bit you and you don&#8217;t have a blessing, <goto section="140"/>.
 </section>

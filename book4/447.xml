@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="447">
 	<p>
 		<if god="Amanushi"><set var="cost" value="20"/></if>
 		<else><set var="cost" value="35"/></else>
-		If you are an initiate it costs only 20 Shards to purchase Amanushi’s blessing. A non-initiate must pay 35 Shards.
+		If you are an initiate it costs only 20 Shards to purchase Amanushi&#8217;s blessing. A non-initiate must pay 35 Shards.
 		<if shards="cost">
 			Cross off the money and
 			<group>

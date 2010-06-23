@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="199">
 	<p>
 		You strike the water with enough force to knock the wind out of you.
@@ -9,11 +10,11 @@
 		<lose shards="*" item="*">cross off your money and possessions</lose>.
 	</p>
 	<p>
-		You drift for hours until picked up by a warship out of Port Kunrir. ‘We’ll drop you off at the Faceless King’s court,’ says the captain.
+		You drift for hours until picked up by a warship out of Port Kunrir. &#8216;We&#8217;ll drop you off at the Faceless King&#8217;s court,&#8217; says the captain.
 	</p>
-	<p>‘Good. I can arrange passage home from there.’</p>
+	<p>&#8216;Good. I can arrange passage home from there.&#8217;</p>
 	<p>
-		He laughs. ‘I doubt it! Slaves aren’t allowed quite that degree of freedom.’
+		He laughs. &#8216;I doubt it! Slaves aren&#8217;t allowed quite that degree of freedom.&#8217;
 	</p>
 	<p>
 		<goto book="5" section="321">Turn to 321</goto> in

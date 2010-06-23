@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="142">
 	This will be a test of your ingenuity, leadership and survival skills.
 	<if profession="wayfarer" not="t">

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="202">
 	<p>
 		<if god="Alvir and Valmir"><set var="cost" value="5"/></if>

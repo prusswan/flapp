@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="667" boxes="1">
 	<p>
 		<if ticks="1">
@@ -6,7 +7,7 @@
 		If not, <tick/> and read on.
 	</p>
 	<p>
-		You have rescued Alissia, the commander’s daughter, from the manbeasts! They have a tearful, joyous reunion - all thanks to you!
+		You have rescued Alissia, the commander&#8217;s daughter, from the manbeasts! They have a tearful, joyous reunion - all thanks to you!
 	</p>
 	<p>
 		The commander rewards you with combat training. <gain ability="combat" amount="1">Add one to your COMBAT ability permanently</gain>.

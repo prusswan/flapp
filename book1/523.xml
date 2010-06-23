@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="523">
 	<p>
 		<tick codeword="StillInYellowport" hidden="t"/>
@@ -9,7 +10,7 @@
 		</if>
 	</p>
 	<p>
-		Otherwise, you have to wait several hours to be seen by one of the provost marshal’s aides, a certain Captain Royzer.
+		Otherwise, you have to wait several hours to be seen by one of the provost marshal&#8217;s aides, a certain Captain Royzer.
 	</p>
 	<p>
 		<if codeword="Artery">

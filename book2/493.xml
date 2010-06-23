@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="493">
 	<p>
-		You will not find much of interest in the stores at Marmorek. ‘Pickaxes, candles, tents, buckets, sieves - all you need for mining and prospecting, friend!’ declares the store-owner jovially.
+		You will not find much of interest in the stores at Marmorek. &#8216;Pickaxes, candles, tents, buckets, sieves - all you need for mining and prospecting, friend!&#8217; declares the store-owner jovially.
 	</p>
 	<market>
 		<header type="armour"/>
@@ -17,6 +18,6 @@
 		<item name="tent" buy="150" sell="135"/>
 	</market>
 	<p>
-		Items with no purchase price are not available locally. When you’re through here, <goto section="190"/>.
+		Items with no purchase price are not available locally. When you&#8217;re through here, <goto section="190"/>.
 	</p>
 </section>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="745">
 	You underestimated the potency of the local brew. Unless you have a blessing of Immunity to Disease/Poison,
 	<if blessing="poison">

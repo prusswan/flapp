@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="293">
 	<p>
 		Sakkaku is famous for being the home of the god Dosojin, overseer of the many roads and remote trails. He is the patron god of travellers. His shrine is an imposing structure of black wood decorated with polished silver plaques.
@@ -11,7 +12,7 @@
 				<adjust profession="wayfarer" amount="4"/>
 			</difficulty>
 		</group>
-		(or Difficulty 10 if you’re a Wayfarer).
+		(or Difficulty 10 if you&#8217;re a Wayfarer).
 		<success>
 			On a successful roll you get a blessing of
 			<tick blessing="travel"/>

@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="594">
 	<p>
 		You give a stirring speech that turns them around completely. Soon they are vowing to follow your orders to the ends of the earth.
 	</p>
 	<p>
-		‘Aye, and beyond!’ declares the bosun. ‘As far as hell’s harbour gates, if you ask us, skipper!’
+		&#8216;Aye, and beyond!&#8217; declares the bosun. &#8216;As far as hell&#8217;s harbour gates, if you ask us, skipper!&#8217;
 	</p>
 	<p>
 		<training ability="charisma" dice="2"/>,

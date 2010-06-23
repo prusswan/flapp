@@ -1,15 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="22">
 	<p>
-		‘A Shard for your thoughts,’ you say to the first mate when you find him gazing dourly out across the waves.
+		&#8216;A Shard for your thoughts,&#8217; you say to the first mate when you find him gazing dourly out across the waves.
 	</p>
 	<p>
-		‘Far to the south, men say, there’s a pit that goes right through the world. In its black depths you can see the stars.’
+		&#8216;Far to the south, men say, there&#8217;s a pit that goes right through the world. In its black depths you can see the stars.&#8217;
 	</p>
 	<p>
-		You laugh to make light of his mood. ‘Well, what of it? Why so glum?’
+		You laugh to make light of his mood. &#8216;Well, what of it? Why so glum?&#8217;
 	</p>
 	<p>
-		‘Don’t you know the old saying? Battle not with monsters lest ye become a monster; and if you gaze into the abyss, the abyss also gazes into you.’ He turns away from the rail. ‘What course, captain?’
+		&#8216;Don&#8217;t you know the old saying? Battle not with monsters lest ye become a monster; and if you gaze into the abyss, the abyss also gazes into you.&#8217; He turns away from the rail. &#8216;What course, captain?&#8217;
 	</p>
 	<choices>
 		<choice section="170">Go north</choice>

@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="218">
 	<p>
-		The pirates obey their own warped code of honour, surrendering now that you’ve slain their leader. You can take his
+		The pirates obey their own warped code of honour, surrendering now that you&#8217;ve slain their leader. You can take his
 		<weapon name="sword" bonus="1"/> and
 		<armour name="splint armour" bonus="4"/>.
 		The new pirate leader also presents you with the
 		<item name="pirate captain's head">
-			<b>pirate captain’s head</b>
+			<b>pirate captain&#8217;s head</b>
 		</item>	if you want it.
 		As the new leader he agrees to take you to their lair in a secluded cove midway between Shingen and Hidari, where they hand over their loot.
 	</p>

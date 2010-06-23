@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="486">
 	<p>
 		The ship keels over; timbers warp and split; mere anarchy is loosed upon you. Seawater rushes into the broken shell of the hull drowning out the cries of your crewmen.
 		<lose ship="t">Cross them and the ship off</lose>
-		your Ship’s Manifest. You can think of nothing now but saving yourself.
+		your Ship&#8217;s Manifest. You can think of nothing now but saving yourself.
 	</p>
 	<p>
 		<rankcheck dice="2"/>.

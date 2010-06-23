@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="423">
 	<p>
-		With a heart full of sadness, you watch your ship drop out of sight beyond the horizon. <lose ship="t">Cross her details off</lose> your Ship’s Manifest.
+		With a heart full of sadness, you watch your ship drop out of sight beyond the horizon. <lose ship="t">Cross her details off</lose> your Ship&#8217;s Manifest.
 	</p>
 	<p>
 		Rowing on with dogged perseverance, you wait for the Three Fortunes to deal you another hand. <random type="travel" dice="1"/>.

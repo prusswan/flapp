@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="94">
 	<p>
 		<if god="Nai"><set var="cost" value="25"/></if>
 		<else><set var="cost" value="50"/></else>
-		To get Nai’s blessing you must donate 50 Shards (25 Shards if you’re an initiate of Nai) and
+		To get Nai&#8217;s blessing you must donate 50 Shards (25 Shards if you&#8217;re an initiate of Nai) and
 		<group>
 			<text>make a CHARISMA roll of Difficulty 16</text>
 			<lose shards="cost"/>

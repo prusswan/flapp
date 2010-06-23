@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="152">
 	<p>
-		‘The Autumn Moon family has handled all the financial affairs of the Wistaria Clan for seven generations,’ says Ko-ishi. ‘Your money could not be in safer hands.’
+		&#8216;The Autumn Moon family has handled all the financial affairs of the Wistaria Clan for seven generations,&#8217; says Ko-ishi. &#8216;Your money could not be in safer hands.&#8217;
 	</p>
 	<p>
 		<tick codeword="Fuligin">Get the codeword Fuligin</tick>
-		if you didn’t have it already.
+		if you didn&#8217;t have it already.
 	</p>
 	<choices>
 		<choice section="175">Make an investment</choice>

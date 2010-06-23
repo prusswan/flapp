@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="38">
 	<p>
 		Heavy black clouds race towards you across the sky, whipping the waves into a frenzy. The crew mutter among themselves fearfully.
@@ -30,7 +31,7 @@
 			</random>
 			if a galleon.
 		</else>
-		Add one to the roll if the crew’s quality is good; add 2 if it is excellent.
+		Add one to the roll if the crew&#8217;s quality is good; add 2 if it is excellent.
 	</p>
 	<outcomes>
 		<outcome range="1-3" section="325">Ship sinks</outcome>

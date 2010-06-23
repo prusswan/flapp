@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="557">
 	<if book="12">
 		If you have <i>Into the Underworld</i>, <goto section="484"/>

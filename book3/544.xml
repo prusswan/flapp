@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="544">
 	<p>
-		The sky turns the colour of burning sulphur and begins to spit lightning like gobbets of hot demons’ blood.
+		The sky turns the colour of burning sulphur and begins to spit lightning like gobbets of hot demons&#8217; blood.
 	</p>
 	<p>
 		<if blessing="storm">

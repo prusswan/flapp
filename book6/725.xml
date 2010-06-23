@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="725">
 	<p>
 		<if title="Initiate of the Sage of Peace" not="t">
@@ -10,7 +11,7 @@
 				<tick title="Initiate of the Sage of Peace">made an initiate</tick>.
 			</success>
 		</if>
-		The monks are open-minded and don’t mind if you were already an initiate of another god; you can be both.
+		The monks are open-minded and don&#8217;t mind if you were already an initiate of another god; you can be both.
 	</p>
 	<p>
 		<failure>

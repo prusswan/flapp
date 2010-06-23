@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="301">
 	<p>
-		‘Ah!’ cries the cook, emerging from the galley to sniff the fresh salt breeze. ‘A life on the open waves - what king in his palace could hope for better contentment?’
+		&#8216;Ah!&#8217; cries the cook, emerging from the galley to sniff the fresh salt breeze. &#8216;A life on the open waves - what king in his palace could hope for better contentment?&#8217;
 	</p>
 	<p>
 		<rest stamina="1">Recover 1 Stamina point</rest> if injured, then <random type="travel"/>.

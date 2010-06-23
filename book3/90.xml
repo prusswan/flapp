@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="90">
-	‘I hope you’re well-versed in outdoor survival,’ mutters an old
+	&#8216;I hope you&#8217;re well-versed in outdoor survival,&#8217; mutters an old
 	man, displaying the stump of the leg that he lost to a crocodile.
 	<choices>
 		<choice book="7" section="450">Follow the coast east</choice>

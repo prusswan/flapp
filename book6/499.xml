@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="499">
 	<p>
 		You get three
@@ -11,7 +12,7 @@
 			<lose blessing="*"/>
 			<gain crew="poor"/>
 		</group>
-		worth 1000 Shards but you must also lose all blessings and reduce your crew’s quality to poor.
+		worth 1000 Shards but you must also lose all blessings and reduce your crew&#8217;s quality to poor.
 	</p>
 	<p>The crew is anxious to set sail. <goto section="745"/>.</p>
 </section>

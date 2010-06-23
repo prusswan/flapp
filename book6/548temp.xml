@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="548">
 	<p>
 		The armoury is run by the Thunderhead Clan, whose members maintain a proud tradition stretching back five hundred years. They will not make a suit of armour for just anybody. You have to convince them you are worthy by paying
@@ -9,7 +10,7 @@
 		</difficulty>.
 		You can add 2 to the dice roll for having each of these codewords: <i>Fuchsia</i>, <i>Fleet</i> and <i>Frog</i>.
 		<success>
-			If you’re accepted you can buy one suit of armour only at the following prices.
+			If you&#8217;re accepted you can buy one suit of armour only at the following prices.
 		</success>
 	</p>
 	<market sell="f">

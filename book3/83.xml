@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="83">
 	<p>
-		The sky is the colour of burning sulphur. Thunder rumbles the heavens, making your crewmen quail. ‘The wrath of the gods is upon us!’ shrieks the bosun. ‘Say your final prayers, lads!’
+		The sky is the colour of burning sulphur. Thunder rumbles the heavens, making your crewmen quail. &#8216;The wrath of the gods is upon us!&#8217; shrieks the bosun. &#8216;Say your final prayers, lads!&#8217;
 	</p>
 	<p>
 		<if blessing="storm">

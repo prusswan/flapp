@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="27">
 	<p>
-		It is only once you’re under way that the captain remembers to mention the dangers of travelling by sea: ‘Pirates, waterspouts, shark men and giant squids...’
+		It is only once you&#8217;re under way that the captain remembers to mention the dangers of travelling by sea: &#8216;Pirates, waterspouts, shark men and giant squids...&#8217;
 	</p>
 	<p><random dice="1" type="travel">Roll one die</random>.</p>
 	<outcomes>

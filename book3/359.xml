@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="359">
 	<p>
-		How about that money I put into your business venture?’ you ask him.
+		How about that money I put into your business venture?&#8217; you ask him.
 	</p>
-	<p>‘Oh yes,’ he says, ‘that.’</p>
+	<p>&#8216;Oh yes,&#8217; he says, &#8216;that.&#8217;</p>
 	<p>
 		<random dice="2">
 			<adjust god="The Three Fortunes" amount="1"/>

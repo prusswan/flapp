@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="192" dock="Ringhorn" image="192.jpg">
 	<p>
 		Owning a ship has two advantages. First, it makes it much easier to travel around. Second, it allows you to get rich by trading goods in bulk.
@@ -13,7 +14,7 @@
 		<trade ship="galleon" initialCrew="average" buy="700"/>
 	</market>
 	<p>
-		Record your ship in the box provided on the Ship’s Manifest. You get to choose the ship’s name. The crew quality is average unless you hire on better sailors. Each time you arrive at a new destination, change the entry in the Docked column to the ship’s current location. (So, if you aren’t going to set sail immediately, note that the ship is docked at Ringhorn.)
+		Record your ship in the box provided on the Ship&#8217;s Manifest. You get to choose the ship&#8217;s name. The crew quality is average unless you hire on better sailors. Each time you arrive at a new destination, change the entry in the Docked column to the ship&#8217;s current location. (So, if you aren&#8217;t going to set sail immediately, note that the ship is docked at Ringhorn.)
 	</p>
 	<choices>
 		<choice section="330">Hire on better crew</choice>

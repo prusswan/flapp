@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="161">
 	<p>
 		The governor is a seasoned veteran of many battles, a hardy man. He is quick to react, and calls his guards before you can kill him. You are subdued by sheer numbers.
 	</p>
 	<p>
-		‘Take this dirty rebel assassin to the dungeons!’ sneers Marloes Marlock.
+		&#8216;Take this dirty rebel assassin to the dungeons!&#8217; sneers Marloes Marlock.
 	</p>
 	<p>
 		The guards take all your money and possession. <lose shards="*" item="*">Cross them off</lose> and <goto section="454"/>.

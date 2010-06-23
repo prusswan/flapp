@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="277">
 	<p>
 		Its bite was venomous.
@@ -13,6 +14,6 @@
 		</if>
 	</p>
 	<p>
-		Assuming you survive, you search the spider’s den and find several corpses trussed up in web silk. Among the litter of mouldered bones, you find <gain shards="50"/> - treasure that the spider’s previous victims have no further use for. Note it on your Adventure Sheet and then <goto section="93"/>.
+		Assuming you survive, you search the spider&#8217;s den and find several corpses trussed up in web silk. Among the litter of mouldered bones, you find <gain shards="50"/> - treasure that the spider&#8217;s previous victims have no further use for. Note it on your Adventure Sheet and then <goto section="93"/>.
 	</p>
 </section>

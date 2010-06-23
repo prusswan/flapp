@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="510">
 	<rankcheck dice="2" add="-2">Roll two dice and subtract 2</rankcheck>.
 	<failure>If the score is greater than your Rank, you are drowned (<goto section="7"/>).</failure>

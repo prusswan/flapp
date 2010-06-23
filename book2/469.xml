@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="469">
 	A long serpentine shape emerges from the cave, unfolds wings
 	like sheets of bronze, and flies at you spitting fire.
@@ -5,7 +6,7 @@
 	No retreat or surrender is possible.
 	<if dead="f">
 		If you win, you can take the
-		<item name="dragon's head"><b>dragon’s head</b></item>
+		<item name="dragon's head"><b>dragon&#8217;s head</b></item>
 		as a trophy, then <goto section="172"/>.
 	</if>
 </section>

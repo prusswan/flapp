@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="478">
 	<p>
 		<if god="Nagil"><set var="cost" value="200"/></if>
@@ -6,7 +7,7 @@
 	</p>
 	<p>
 		To arrange resurrection, pay the fee and write
-		‘<resurrection shards="cost" book="1" section="350" text="Temple of Nagil" god="Nagil"/>’ in the Resurrection box on your Adventure Sheet. If you are later killed, turn to <b>350</b> in this book. You can have only one resurrection arranged at any one time. If you arrange resurrection later at a different temple, the original one is cancelled - cross it off your Adventure Sheet. You will not get a refund!
+		&#8216;<resurrection shards="cost" book="1" section="350" text="Temple of Nagil" god="Nagil"/>&#8217; in the Resurrection box on your Adventure Sheet. If you are later killed, turn to <b>350</b> in this book. You can have only one resurrection arranged at any one time. If you arrange resurrection later at a different temple, the original one is cancelled - cross it off your Adventure Sheet. You will not get a refund!
 	</p>
 	<p><goto section="71"/>.</p>
 </section>

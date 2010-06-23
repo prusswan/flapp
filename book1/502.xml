@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="502">
 	<p>
-		‘The Violet Ocean’s a dangerous place, Cap’n’, says the first mate. ‘The crew probably won’t follow you there if they don’t think you’re good enough!’
+		&#8216;The Violet Ocean&#8217;s a dangerous place, Cap&#8217;n&#8217;, says the first mate. &#8216;The crew probably won&#8217;t follow you there if they don&#8217;t think you&#8217;re good enough!&#8217;
 	</p>
 	<p>
 		<if ability="rank" greaterthan="3">

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="331" dock="Metriciens">
 	<p>
 		Owning a ship has two advantages. First, it makes it much easier to travel around. Second, it allows you to get rich by trading goods in bulk. Goods are transported in Cargo Units. (A Cargo Unit weighs several tonnes - much more than one person could carry!)
@@ -13,7 +14,7 @@
 		<trade ship="galleon" initialCrew="average" buy="700"/>
 	</market>
 	<p>
-		Record your ship in the Ship’s Manifest. You get to choose the ship’s name. The crew quality is average unless you hire on better sailors. Each time you arrive at a new destination, change the entry in the Docked column to the ship’s current location. (So if you aren’t going to sail straight away, note that the ship is docked at Metriciens.)
+		Record your ship in the Ship&#8217;s Manifest. You get to choose the ship&#8217;s name. The crew quality is average unless you hire on better sailors. Each time you arrive at a new destination, change the entry in the Docked column to the ship&#8217;s current location. (So if you aren&#8217;t going to sail straight away, note that the ship is docked at Metriciens.)
 	</p>
 	<choices>
 		<choice section="354">Hire on better crew</choice>

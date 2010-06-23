@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="330">
 	<p>
 		The sea spider collapses, oozing a foul-smelling black ichor into the water.
@@ -7,7 +8,7 @@
 	</p>
 	<p>You climb out to find your crew searching for you.</p>
 	<p>
-		‘We thought you were a goner for sure, cap’n,’ says one of them.
+		&#8216;We thought you were a goner for sure, cap&#8217;n,&#8217; says one of them.
 	</p>
 	<p>You make it back to your ship, and set sail at high tide.</p>
 	<p><goto section="471"/>.</p>

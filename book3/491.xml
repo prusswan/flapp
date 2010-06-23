@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="491">
 	<p>
 		It is as though night has fallen suddenly in the middle of the day. Thunderheads hunch on the horizon like vast brooding crows. Lightning streaks yellow fire across the tortured sky.
 	</p>
-	<p>‘Doomsday!’ shrieks the bosun. ‘Repent or be damned!’</p>
+	<p>&#8216;Doomsday!&#8217; shrieks the bosun. &#8216;Repent or be damned!&#8217;</p>
 	<p>
 		<if blessing="storm">
 			If you have the blessing of Alvir and Valmir, which confers Safety from Storms, you can ignore the storm.

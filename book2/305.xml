@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="305">
 	The Haunted Hills are virtually uninhabited, except for
-	will-o’-the-wisps, monsters and a few mad outcasts.
+	will-o&#8217;-the-wisps, monsters and a few mad outcasts.
 	<random type="travel"/> to see what you encounter:
 	<outcomes>
 		<outcome range="2-4" section="760">A sulphurous cave</outcome>

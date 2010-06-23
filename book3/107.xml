@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="107">
-	‘Land ahoy!’ cries the lookout. It is Fiddler’s Green, the island
+	&#8216;Land ahoy!&#8217; cries the lookout. It is Fiddler&#8217;s Green, the island
 	gifted to you by the herald of the sea gods.
 	<choices>
 		<choice section="143">Put in at the island</choice>

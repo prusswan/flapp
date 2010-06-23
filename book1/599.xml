@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="599">
 	<p>
 		<if god="Tyrnai"><set var="cost" value="200"/></if>
@@ -6,7 +7,7 @@
 	</p>
 	<p>
 		To arranged resurrection, pay the fee and write
-		‘<resurrection text="Temple of Tyrnai" book="1" section="500" shards="cost" god="Tyrnai"/>’
+		&#8216;<resurrection text="Temple of Tyrnai" book="1" section="500" shards="cost" god="Tyrnai"/>&#8217;
 		in the Resurrection box on your Adventure Sheet. If you are later killed, turn to <b>500</b> in this book. You can have only one resurrection arranged at any one time. If you arranged another resurrection later at a different temple, the original one is cancelled - cross it off your Adventure Sheet, you do not get a refund.
 	</p>
 	<p>When you are finished here, <goto section="526"/>.</p>

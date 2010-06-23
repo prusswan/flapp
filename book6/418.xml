@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="418">
 	<if codeword="Fire">
 		If you have the codeword Fire, <goto section="516"/>.

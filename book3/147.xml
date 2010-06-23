@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="147" tag="temple">
 	<p>You swim out to the shrine of the sea gods. <random dice="1"/>.</p>
 	<outcomes>
@@ -11,7 +12,7 @@
 	</outcomes>
 	<p>
 		<if dead="f">
-			Assuming you survive, you touch the obelisk and receive a blessing of Safety from Storms, as long as you didn’t have one already. <tick blessing="storm">Note this in the Blessings box</tick> on your Adventure Sheet.
+			Assuming you survive, you touch the obelisk and receive a blessing of Safety from Storms, as long as you didn&#8217;t have one already. <tick blessing="storm">Note this in the Blessings box</tick> on your Adventure Sheet.
 		</if>
 	</p>
 	<p>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="49">
 	<p>
 		Donations have been streaming into the shrine lately. As the overlord of the battlefield, Juntoku is very popular with soldiers - especially now, on the eve of civil war.
@@ -5,7 +6,7 @@
 	<p>
 		The courtyard of the shrine is fined with flocks of well-fed pigeons, the special messengers of the god. You look around for a priest, finally catching the eye of a slight youth in a long-sleeved white robe.
 	</p>
-	<p>‘Just leave a donation and tell the god what you want,’ he says.</p>
+	<p>&#8216;Just leave a donation and tell the god what you want,&#8217; he says.</p>
 	<p>
 		To obtain a blessing requires you to
 		<difficulty ability="charisma" level="15" force="f">
@@ -36,7 +37,7 @@
 					<lose shards="40"/>
 					<lose god="Juntoku"/>
 				</group>
-				to avoid the god’s wrath.)
+				to avoid the god&#8217;s wrath.)
 		</if></if>
 	</p>
 	<p>When you have finished your devotions, <goto section="178"/>.</p>

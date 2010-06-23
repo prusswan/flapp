@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="618">
 	Remember to pay the <lose shards="10"/> that is the cost of passage to Ringhorn. The ship is soon under way. <random type="travel" dice="1"/>.
 	<outcomes>

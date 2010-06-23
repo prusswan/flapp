@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="278">
 	<p>
 		<tick special="lock" cache="2.278" hidden="t"/>
@@ -28,7 +29,7 @@ wish to leave. Each time you return, <random/>:
 	</outcomes>
 	<p>
 		<tick special="unlock" cache="2.278" hidden="t"/>
-		You can also <rest>rest</rest> at your town house for as long as you wish. If injured, restore your Stamina to its normal unwounded score. When you’ve finished at your town house, <goto section="2"/> (and remember to erase the tick in the town house box there if it was destroyed by fire).
+		You can also <rest>rest</rest> at your town house for as long as you wish. If injured, restore your Stamina to its normal unwounded score. When you&#8217;ve finished at your town house, <goto section="2"/> (and remember to erase the tick in the town house box there if it was destroyed by fire).
 	</p>
 	<itemcache name="2.278" text="Items at town house"/>
 </section>

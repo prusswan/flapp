@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="276">
 	<p>
 		<if codeword="Friz">
 			If you have the codeword Friz you can retrieve any items you left here previously and must then <goto section="21"/>.
 		</if>
-		If you don’t have the codeword <i>Friz</i> then read on.
+		If you don&#8217;t have the codeword <i>Friz</i> then read on.
 	</p>
 	<p>
 		You enter the great hall at the centre of the monastery complex. A vast statue of the Sage of Peace towers up to the rafters. Incense rises from smouldering sticks set around its feet and runs in thin white rivulets across the smooth contours of stone.

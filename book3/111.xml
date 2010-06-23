@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="111" tag="temple">
 	<set var="x" codeword="3.111.Gain" hidden="t"/>
 	<tick shards="x" hidden="t"/>

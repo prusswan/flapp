@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="48">
 	<p>
-		You sail away from the strange artificial island. ‘Mark it on the charts, mister,’ you tell the navigator.
+		You sail away from the strange artificial island. &#8216;Mark it on the charts, mister,&#8217; you tell the navigator.
 	</p>
 	<p>
 		<if codeword="Callid">

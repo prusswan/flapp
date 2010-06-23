@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="168">
 	<p>
 		<if item="dead head|ghoul's head">
-			If you possess a <b>dead head</b> or a <b>ghoul’s head</b>, <goto section="191">turn now to 191</goto>.
+			If you possess a <b>dead head</b> or a <b>ghoul&#8217;s head</b>, <goto section="191">turn now to 191</goto>.
 		</if>
 		If not, read on.
 	</p>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="457">
 	<p>
 		<lose stamina="1d">Lose 1-6 Stamina points</lose>.
@@ -8,7 +9,7 @@
 		</if>
 	</p>
 	<p>
-		‘We ought to get under way,’ says the first mate. ‘They’ll be back with reinforcements soon.’
+		&#8216;We ought to get under way,&#8217; says the first mate. &#8216;They&#8217;ll be back with reinforcements soon.&#8217;
 	</p>
 	<p>
 		<if dead="f">

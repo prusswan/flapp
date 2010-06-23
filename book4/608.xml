@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="608">
 	<p>
-		Your ship, crew and cargo are lost to the deep, dark sea. <lose ship="t">Cross them off</lose> your Ship’s Manifest.
+		Your ship, crew and cargo are lost to the deep, dark sea. <lose ship="t">Cross them off</lose> your Ship&#8217;s Manifest.
 	</p>
 	<p>
 		Your only thought now is to save yourself. <rankcheck dice="2"/>.

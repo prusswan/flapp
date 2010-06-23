@@ -1,12 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="683">
 	<p>
-		You help yourself to the pirates’ treasure, which amounts to
+		You help yourself to the pirates&#8217; treasure, which amounts to
 		<gain shards="450"/>.
 		Record it on your Adventure Sheet. Their hold contains
 		<buy cargo="grain" shards="0" quantity="1">1 Cargo Unit of grain</buy>,
 		which you can add to your own cargo if you have room for it. Your mate advises taking the
-		<item name="pirate captain's head"><b>pirate captain’s head</b></item>.
-		‘A grisly trophy, perhaps, but often there’s a reward if you have proof you’ve slain such a devil.’
+		<item name="pirate captain's head"><b>pirate captain&#8217;s head</b></item>.
+		&#8216;A grisly trophy, perhaps, but often there&#8217;s a reward if you have proof you&#8217;ve slain such a devil.&#8217;
 	</p>
 	<p>
 		<set var="r" value="rank" modifier="natural"/>

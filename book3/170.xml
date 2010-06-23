@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="170">
 	<p>
-		‘Ah, this is the life!’ you hear the cabin boy telling himself. ‘One day I’ll be as rich as the captain, and then I’ll buy my own ship.’
+		&#8216;Ah, this is the life!&#8217; you hear the cabin boy telling himself. &#8216;One day I&#8217;ll be as rich as the captain, and then I&#8217;ll buy my own ship.&#8217;
 	</p>
 	<p>
-		You put a hand on his shoulder, startling him out of his reverie. ‘In the meantime, lad, you’d better see to your chores,’ you growl at him. ‘Else we’ll hear the ship’s cat purring before the day is done.’
+		You put a hand on his shoulder, startling him out of his reverie. &#8216;In the meantime, lad, you&#8217;d better see to your chores,&#8217; you growl at him. &#8216;Else we&#8217;ll hear the ship&#8217;s cat purring before the day is done.&#8217;
 	</p>
 	<p>You sail on. <random type="travel"/>.</p>
 	<outcomes>

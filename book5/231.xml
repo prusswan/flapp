@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="231">
 	The seneschal has no further use for your services, although he does offer to teach you the ins and outs of court etiquette for 350 Shards.
 	<if shards="350">

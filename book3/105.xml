@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="105" boxes="1">
 	<if ticks="0">
 		If the box above is not ticked, <tick>tick it now</tick> and

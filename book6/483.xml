@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="483">
 	<p>
 		To find out how well your investments have done,
@@ -47,6 +48,6 @@
 		</outcome>
 	</outcomes>
 	<p>
-		Now <goto section="440"/>, where you can withdraw the sum recorded in the box there after adjusting it according to the result you’ve just rolled.
+		Now <goto section="440"/>, where you can withdraw the sum recorded in the box there after adjusting it according to the result you&#8217;ve just rolled.
 	</p>
 </section>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="367">
 	<p>
 		<if god="Ebron">If you have Ebron written in the God Box on your Adventure Sheet, <goto section="441"/>.</if> If not, read on.

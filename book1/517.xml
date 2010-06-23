@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="517" tag="temple">
 	<if item="ghoul's head">
-		If you have a <b>ghoul’s head</b>, <goto section="597"/>.
+		If you have a <b>ghoul&#8217;s head</b>, <goto section="597"/>.
 	</if>
 	If not, a priest asks which service you require.
 	<choices>

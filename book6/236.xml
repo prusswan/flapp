@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="236">
 	<p>
 		The man turns and looks at you, still keeping his odd stance. He has eyes of such startling intensity that you hardly take in the details of his face. He could be thirty years old, or seventy.
 	</p>
 	<p>
-		‘Have you no manners,’ he says, ‘that you interrupt a Master of the Way while he is practising <i>qi gong</i>?’
+		&#8216;Have you no manners,&#8217; he says, &#8216;that you interrupt a Master of the Way while he is practising <i>qi gong</i>?&#8217;
 	</p>
 	<choices>
 		<choice section="398">Apologize and leave</choice>

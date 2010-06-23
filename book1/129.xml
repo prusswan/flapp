@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="129">
-	‘Psst, come here, friend!’ someone whispers from the shadows.
+	&#8216;Psst, come here, friend!&#8217; someone whispers from the shadows.
 	<choices>
 		<choice section="641">Go over to him</choice>
 		<choice section="100">Ignore him and leave</choice>

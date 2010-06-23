@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="195" boxes="1" tag="temple" image="195.jpg">
 	<p>
 		<if ticks="1">If there is a tick in the box, <goto section="624"/> immediately.

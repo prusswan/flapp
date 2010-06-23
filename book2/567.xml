@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="567">
 	<if not="t" codeword="2.567.1b">
 		<if item="scarab amulet">
@@ -22,8 +23,8 @@
 	</if></if></if>
 	You tell Estragon you have brought him an item he needs for
 	his experiments. Before turning to the entry listed here, put a
-	tick in the box to remind you you’ve completed that errand.
-	(You can’t run the same errand twice!)
+	tick in the box to remind you you&#8217;ve completed that errand.
+	(You can&#8217;t run the same errand twice!)
 	<i>[I've modified this to only enable the appropriate choices --Ed]</i>
 	<choices>
 		<choice box="2.567.1a" section="515"><b>scarab amulet</b></choice>

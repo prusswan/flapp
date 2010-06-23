@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="657" image="657.jpg">
 	<p>
 		The creature falls dead. You can squeeze a little of its venom from its sting - if you do so, note the <item name="scorpion venom"/> on your Adventure Sheet.
@@ -11,7 +12,7 @@
 				<effect ability="thievery" bonus="-1"/>
 				<effect ability="scouting" bonus="-1"/>
 			</poison>
-			by the scorpion man’s venom. Subtract 1 from your COMBAT, THIEVERY, and SCOUTING abilities, as you are severely weakened (although no ability can drop to zero). Note that you are poisoned - you can restore your abilities to normal if you get cured.
+			by the scorpion man&#8217;s venom. Subtract 1 from your COMBAT, THIEVERY, and SCOUTING abilities, as you are severely weakened (although no ability can drop to zero). Note that you are poisoned - you can restore your abilities to normal if you get cured.
 		</if>
 		<if poison="Scorpion Poison">
 			<if item="scorpion antidote">

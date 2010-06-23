@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="41">
-	<p>‘It is nothing to do with you,’ says one of the youths.</p>
+	<p>&#8216;It is nothing to do with you,&#8217; says one of the youths.</p>
 	<p>
-		‘Help me!’ pleads the old gentleman. ‘I dared to speak out against the chancellor’s dictatorial policies, and now his thugs are going to beat me up.’
+		&#8216;Help me!&#8217; pleads the old gentleman. &#8216;I dared to speak out against the chancellor&#8217;s dictatorial policies, and now his thugs are going to beat me up.&#8217;
 	</p>
 	<p>
 		<if codeword="Fleet">

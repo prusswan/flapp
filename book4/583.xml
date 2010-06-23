@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="583" boxes="1">
 	<p>
 		<if ticks="1">
@@ -9,7 +10,7 @@
 		The evening is drawing in and the moon rises, bleeding its light on to the snow. You are huddled around your camp-fire when a man runs at breakneck speed into the firelight. He is a nomad of the steppes, with a pale, wan complexion.
 	</p>
 	<p>
-		He drops to his knees before you and says, ‘Help me! Help me! They have taken her to the top of the pyramid. They will surely kill her.’
+		He drops to his knees before you and says, &#8216;Help me! Help me! They have taken her to the top of the pyramid. They will surely kill her.&#8217;
 	</p>
 	<choices>
 		<choice section="454">Follow him to the pyramid</choice>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="356">
 	<p>
 		You are pious enough to be allowed to enter the sacred grove. You step in and knock on the door.
@@ -7,10 +8,10 @@
 		You hand him the <lose item="oak staff"/> (cross it off your Adventure Sheet).
 	</p>
 	<p>
-		‘Thank you!’ says the druid, ‘An oak staff, eh! That’s an interesting message, to be sure.’
+		&#8216;Thank you!&#8217; says the druid, &#8216;An oak staff, eh! That&#8217;s an interesting message, to be sure.&#8217;
 	</p>
 	<p>
-		He hands you <gain shards="50"/> as payment and a <item name="willow staff"/>, saying, ‘Please take this staff to the Oak Druid in the City of Trees, on the Isle of Druids - I’m sure he’ll reward you, too. Good day, and thanks again!’
+		He hands you <gain shards="50"/> as payment and a <item name="willow staff"/>, saying, &#8216;Please take this staff to the Oak Druid in the City of Trees, on the Isle of Druids - I&#8217;m sure he&#8217;ll reward you, too. Good day, and thanks again!&#8217;
 	</p>
 	<p>With that he shuts the door.</p>
 	<p>You head back into the forest. <goto section="47"/>.</p>

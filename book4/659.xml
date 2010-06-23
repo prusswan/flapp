@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="659">
 	You will have to fight them. Treat them as one opponent.
 	<fight name="Undead Warriors" combat="8" defence="7" stamina="16"/>

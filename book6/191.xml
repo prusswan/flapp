@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="191">
 	<p>
 		You get lost in a sudden fog that rises without warning off the waterlogged rice paddies. Suddenly you hear a champing noise and you pull off your haversack to find that the head has gnashed its way out. The head gives you a painful bite before you manage to throw it away into the fog.
@@ -10,7 +11,7 @@
 				reduce your unwounded Stamina score by 1 point
 			</lose>
 		</else>
-		permanently if you don’t have a blessing of Immunity to Disease/Poison. Almost as bad, half your money has fallen out of the pack and you have no hope of finding it now, so
+		permanently if you don&#8217;t have a blessing of Immunity to Disease/Poison. Almost as bad, half your money has fallen out of the pack and you have no hope of finding it now, so
 		<adjustmoney multiply="0.5">cross it off</adjustmoney>
 		your Adventure Sheet. Also remember to
 		<group force="t">

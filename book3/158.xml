@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="158">
 	<p>
 		Somehow you manage to keep your head above water. You swim until your limbs feel as though they are caught in a net. You struggle on, mortally weak but determined not to give up.
@@ -9,7 +10,7 @@
 		To your immense relief, you have been rescued by merchants from Metriciens.
 	</p>
 	<p>
-		‘We are bound for Dweomer and then home,’ they say. ‘We’ll drop you off wherever you like.’
+		&#8216;We are bound for Dweomer and then home,&#8217; they say. &#8216;We&#8217;ll drop you off wherever you like.&#8217;
 	</p>
 	<choices>
 		<choice section="100">Get off at Dweomer</choice>

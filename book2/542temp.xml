@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="542" boxes="3">
 	<p>
-		‘I have been waiting for you,’ Estragon says. ‘There is a task you can perform, and in return I’ll teach you a little sorcery.’
+		&#8216;I have been waiting for you,&#8217; Estragon says. &#8216;There is a task you can perform, and in return I&#8217;ll teach you a little sorcery.&#8217;
 	</p>
 	<p>
 		<if not="t" ticks="3">

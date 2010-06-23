@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="182">
 	<p>
 		On the south of the island you find a sheltered bay surrounded by high mist-cloaked crags.
 	</p>
 	<p>
-		‘This would make a good anchorage, skipper,’ says the first mate.
+		&#8216;This would make a good anchorage, skipper,&#8217; says the first mate.
 	</p>
 	<choices>
 		<choice section="220">Drop anchor here</choice>

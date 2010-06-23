@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="340">
 	<if codeword="Dragon|Edifice">
 		If you have the codewords Dragon or Edifice, <goto section="499"/> immediately.

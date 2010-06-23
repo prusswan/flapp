@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="496">
 	<set var="a" value="armour"/>
 	Goblins pelt you with stones from the top of a nearby tor.
 	<random dice="2" var="x">
 		<adjust amount="-a"/>
-	</random> and subtract your armour’s Defence bonus (if any).
+	</random> and subtract your armour&#8217;s Defence bonus (if any).
 	The result is
 	<lose stamina="x">how many Stamina points you lose</lose>.
 	<choices>

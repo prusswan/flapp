@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="199">
 	<p>
 		<if codeword="Drake">
@@ -15,11 +16,11 @@
 		Bakhan has searched for ways to deal with curses for many years. If you are cursed (such as the Curse of the Shadar), Bakhan can <lose curse="?" flag="c">remove it</lose> for you, but it will cost you <lose price="c" shards="100"/>.
 	</p>
 	<p>
-		'You look a brave sort,' Bakhan croaks. 'I need a <b>witch’s hand</b> and some <b>parrot fungus</b> if I am to lift my own curse. Bring me those things, and I will reward you.'
+		'You look a brave sort,' Bakhan croaks. 'I need a <b>witch&#8217;s hand</b> and some <b>parrot fungus</b> if I am to lift my own curse. Bring me those things, and I will reward you.'
 	</p>
 	<p>
 		<if item="witch's hand"><if item="parrot fungus">
-				If you have a <b>witch’s hand</b> and some <b>parrot fungus</b>, <goto section="691"/>.
+				If you have a <b>witch&#8217;s hand</b> and some <b>parrot fungus</b>, <goto section="691"/>.
 		</if></if>
 		If not, you leave. <goto section="10"/>.
 	</p>

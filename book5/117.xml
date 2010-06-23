@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="117">
 	<p>
 		<if item="chameleon cloak">If you have a <b>chameleon cloak</b>, <goto section="590"/> immediately.</if>

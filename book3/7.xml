@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="7">
 	<p>
-		The stowaway is an assassin who bursts from hiding and runs at you brandishing a long curved knife. ‘Nivram the Wizard sends his regards, scum!’ he rants.
+		The stowaway is an assassin who bursts from hiding and runs at you brandishing a long curved knife. &#8216;Nivram the Wizard sends his regards, scum!&#8217; he rants.
 	</p>
 	<fight name="Assassin" combat="8" defence="10" stamina="8"/>
 	<p>

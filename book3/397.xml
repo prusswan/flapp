@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="397">
 	Sure enough, just a few hours later, the door of the tavern flies
 	open and a pack of cutthroats come storming in. Most of your
@@ -13,7 +14,7 @@
 		<random dice="3">
 			three<adjust ability="rank"/>
 			<adjust crew="excellent" amount="2"/>
-		</random> if you’re a Warrior
+		</random> if you&#8217;re a Warrior
 	</else>)
 	and add your Rank. Add 2 to the total if your crew is excellent quality.
 	<outcomes>

@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="304">
 	<if codeword="Chill"><set var="awake" value="1"/></if>
-	‘Ah, this is the life,’ declares the bosun as he stretches
+	&#8216;Ah, this is the life,&#8217; declares the bosun as he stretches
 	contentedly in the shade under a palm tree. The exertion in the
 	heat of the afternoon has made you all drowsy. To stay awake
 	you must either have the codeword <i>Chill</i> or succeed in

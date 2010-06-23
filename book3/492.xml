@@ -1,12 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="492">
 	<p>
-		The pirates’ treasure amounts to <gain shards="600"/>.
-		Record it on your Adventure Sheet. Their ship’s hold contains
+		The pirates&#8217; treasure amounts to <gain shards="600"/>.
+		Record it on your Adventure Sheet. Their ship&#8217;s hold contains
 		<buy cargo="metals" quantity="1" shards="0">
 			1 Cargo Unit of metals
 		</buy>, which you can add to your own cargo if you have room for it. The mate advises you take the
 		<item name="pirate captain's head">
-			<b>pirate captain’s head</b>
+			<b>pirate captain&#8217;s head</b>
 		</item>, which may bring a reward.
 	</p>
 	<p>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="744">
 	<if not="t" item="lantern">
 		<lose item="candle" hidden="t"/>

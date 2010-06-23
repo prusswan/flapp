@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="587">
 	<p>
 		The shrine is lit by hundreds of candles, each illuminating a tiny niche in which there is a statue of a different god. You can make an offering of
@@ -28,7 +29,7 @@
 		Ability blessings can be used once to reroll the dice when using that ability.
 	</p>
 	<p>
-		You can also buy wands from the sorcerer’s booth at the side of the shrine. His stock is small but inexpensive.
+		You can also buy wands from the sorcerer&#8217;s booth at the side of the shrine. His stock is small but inexpensive.
 	</p>
 	<market>
 		<header type="magic" header1="" header2="To buy" header3="To sell"/>

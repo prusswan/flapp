@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="613" image="613.jpg">
 	<p>
 		You are stripped of your money and possessions.
@@ -10,7 +11,7 @@
 		The Uttakin captain looks down on you with an inscrutable stare.
 	</p>
 	<p>
-		‘Forget your former life,’ he advises you. ‘Now and for evermore you are a slave.’
+		&#8216;Forget your former life,&#8217; he advises you. &#8216;Now and for evermore you are a slave.&#8217;
 	</p>
 	<p>
 		<goto book="5" section="321">Turn to 321</goto> in

@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="554">
 	The rural estates of the lords of Toho are very different from the
 	dwellings of their cousins on the western island. Here you see
 	great log-built manor houses with thatched roofs as big as a
-	temple’s. The peasant huts are clustered close to the home of
+	temple&#8217;s. The peasant huts are clustered close to the home of
 	their lord, in fear of attacks from the upland barbarians.
 	<choices>
 		<choice section="633">Go north</choice>

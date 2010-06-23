@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="209">
-	<p>‘Land ahoy!’ shouts the lookout from the crow’s nest.</p>
+	<p>&#8216;Land ahoy!&#8217; shouts the lookout from the crow&#8217;s nest.</p>
 	<p>
-		‘That’s strange,’ says the navigator, consulting his charts. ‘There’s no island marked.’
+		&#8216;That&#8217;s strange,&#8217; says the navigator, consulting his charts. &#8216;There&#8217;s no island marked.&#8217;
 	</p>
 	<choices>
 		<choice section="30">Investigate the island</choice>

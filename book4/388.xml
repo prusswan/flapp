@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="388">
 	<p>
 		<if god="Tambu">
 			<set var="cost" value="10"/>
-			If you are an initiate it costs only 10 Shards to purchase Tambu’s blessing.
+			If you are an initiate it costs only 10 Shards to purchase Tambu&#8217;s blessing.
 		</if>
 		<else>
 			<set var="cost" value="25"/>

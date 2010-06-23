@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="541">
 	<p>
 		<if title="blue skin|Masked Lord|Masked Lady">If you have blue skin or the title Masked Lord or Masked Lady, <goto section="297"/>.</if> If not, read on.

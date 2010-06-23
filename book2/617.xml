@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="617">
 	<p>
 		<lose item="*" shards="*" cache="2.617" hidden="t"/>
@@ -9,6 +10,7 @@
 		<include weapon="?"/>
 		<include armour="?"/>
 		<exclude item="?" tags="Molherned" reason="Molhern has already worked on this item!"/>
+		<exclude item="?" bonus="6+" reason="This item is good enough already!"/>
 	</itemcache>
 	<p>
 		You camp out for the night not far away. Sometime after midnight you are woken by a hammering sound from the other side of the trees.

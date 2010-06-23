@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="361">
-	The hydra’s bites were venomous.
+	The hydra&#8217;s bites were venomous.
 	<if codeword="HydraDamage">
 		<lose codeword="HydraDamage" hidden="t"/>
 		If it managed to injure you at all during the battle, <goto section="377"/>.

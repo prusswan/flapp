@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="205">
 	A merchant from Golnir is prepared to take you to Imperial Chambara but you need <i>Lords of the Rising Sun</i> to travel there.
 	<if book="6">

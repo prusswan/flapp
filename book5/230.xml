@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="230">
 	<p>
 		<if codeword="Epistle">If you have the codeword Epistle, <goto section="370"/> immediately.</if> If not, read on.

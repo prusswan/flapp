@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="614">
 	<p>
 		There is a gasp from everyone present when you unroll your cape and show what you have brought.
 	</p>
 	<p>
-		‘It is a marvel!’ cries Vanna, leaping to her feet. ‘Truly you are as great as any knight of this court.’
+		&#8216;It is a marvel!&#8217; cries Vanna, leaping to her feet. &#8216;Truly you are as great as any knight of this court.&#8217;
 	</p>
 	<p>
 		<set var="r" value="rank" modifier="natural"/>
@@ -25,7 +26,7 @@
 	<p>
 		Remember to
 		<lose item="dragon's head">
-			cross the <b>dragon’s head</b> off
+			cross the <b>dragon&#8217;s head</b> off
 		</lose>
 		your Adventure Sheet, then <goto section="342"/>.
 	</p>

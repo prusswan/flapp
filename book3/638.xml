@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="638">
 	<p>
-		You are chained to the wall of the Reaver King’s throne room and flogged whenever he is in a bad temper - which is often. Days turn into weeks and gradually your health declines.
+		You are chained to the wall of the Reaver King&#8217;s throne room and flogged whenever he is in a bad temper - which is often. Days turn into weeks and gradually your health declines.
 		<lose stamina="3d">Lose 3-18 Stamina points</lose>.
 		<if dead="f">
 			If you survive, there eventually comes a time when you are too weak and battered to give the Reavers any sport. They sell you to slavers from Yarimura, who strip you of

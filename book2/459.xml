@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="459">
 	Your ship, crew and cargo are lost.
-	<lose ship="t">Cross them off</lose> the Ship’s
+	<lose ship="t">Cross them off</lose> the Ship&#8217;s
 	Manifest. The waves close over your head and your only
 	thought now is to save yourself.
 	<rankcheck dice="2"/>.

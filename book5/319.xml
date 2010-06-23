@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="319" image="319.jpg">
 	<p>The scholar comes back, and you are forced to return his map.</p>
 	<p><tick name="EpistleWeeks" count="2">Add 2 to the running total of weeks</tick> spent on your book.

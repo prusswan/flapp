@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="250">
 	<p>
-		The sea tosses fretfully, the sky is thick with muttering clouds. ‘Storms or dark sorcery,’ remarks the bosun in a doomful voice.
+		The sea tosses fretfully, the sky is thick with muttering clouds. &#8216;Storms or dark sorcery,&#8217; remarks the bosun in a doomful voice.
 	</p>
 	<p><random type="travel"/>.</p>
 	<outcomes>

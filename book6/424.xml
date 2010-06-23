@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="424">
 	<p>
 		It is a long steep climb. The sun is sinking towards the horizon as you emerge from the trees and look along the clifftop. The late afternoon light is the colour of blood.
@@ -6,13 +7,13 @@
 		Lord Kiyomori and his guards stand in a circle around a man who is kneeling with his hands tied behind him. The breeze whips his long loose hair around his face as he looks up at them with a scowl of almost demonic ferocity.
 	</p>
 	<p>
-		‘So, Akugenda,’ says Kiyomori, ‘you are unrepentant even now.’
+		&#8216;So, Akugenda,&#8217; says Kiyomori, &#8216;you are unrepentant even now.&#8217;
 	</p>
 	<p>
-		The man called Akugenda spits on the ground. ‘Repentance, you pious hypocrite? I call upon the Thunder Spirit to hear this vow: I’ll be revenged on the pack of you!’
+		The man called Akugenda spits on the ground. &#8216;Repentance, you pious hypocrite? I call upon the Thunder Spirit to hear this vow: I&#8217;ll be revenged on the pack of you!&#8217;
 	</p>
 	<p>
-		Kiyomori looks away in distaste. ‘Enough of this. Jiro, kill him.’
+		Kiyomori looks away in distaste. &#8216;Enough of this. Jiro, kill him.&#8217;
 	</p>
 	<choices>
 		<choice section="474">Stop the execution</choice>

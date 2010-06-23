@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="157">
 	<!-- not ideal: revise if extra light sources are found -->
 	<if codeword="LitCandle">

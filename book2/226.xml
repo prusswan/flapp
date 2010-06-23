@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="226">
 	<p>
-		The high priestess sees the charm around your neck and smiles. ‘The goddesses will surely favour you,’ she says.
+		The high priestess sees the charm around your neck and smiles. &#8216;The goddesses will surely favour you,&#8217; she says.
 	</p>
 	<p>
 		<if item="silver horseshoe">

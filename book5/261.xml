@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="261">
 	To renounce the worship of Maka you must pay 15 Shards to the priesthood as compensation.
 	<if god="Maka"><if shards="15">

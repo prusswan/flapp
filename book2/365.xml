@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="365">
 	<p>
-		There is only one thing to be said for the dungeon of Castle Ravayne: there aren’t any rats. It’s far too uncomfortable for rats.
+		There is only one thing to be said for the dungeon of Castle Ravayne: there aren&#8217;t any rats. It&#8217;s far too uncomfortable for rats.
 	</p>
 	<p>
 		<lose item="*" shards="*">
