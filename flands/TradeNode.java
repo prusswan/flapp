@@ -22,7 +22,7 @@ import org.xml.sax.Attributes;
  * 
  * @author Jonathan Mann
  */
-public class TradeNode extends Node  {
+public class TradeNode extends Node implements Executable {
 	public static final String ElementName = "trade";
 	private int shipType = -1;
 	//private int initialCrew = Ship.NO_CREW;
@@ -37,6 +37,7 @@ public class TradeNode extends Node  {
 
 	public TradeNode(Node parent) {
 		super(ElementName, parent);
+		setEnabled(false);
 	}
 
 	public TradeNode(Node parent, Item item) {
@@ -81,7 +82,7 @@ public class TradeNode extends Node  {
 
 		super.init(atts);
 
-		// Add and create children
+		findExecutableGrouper().addExecutable(this);
 	}
 
 	/**
@@ -231,6 +232,15 @@ public class TradeNode extends Node  {
 				createParagraphNode(" - ", StyleConstants.ALIGN_RIGHT);
 		}
 		this.atts = null;
+	}
+
+	public boolean execute(ExecutableGrouper grouper) {
+		setEnabled(true);
+		return true;
+	}
+
+	public void resetExecute() {
+		setEnabled(false);
 	}
 	
 	public static class BuyNode extends ActionNode implements Executable, ChangeListener, Flag.Listener {
@@ -387,6 +397,8 @@ public class TradeNode extends Node  {
 		}
 		
 		protected boolean canBuyNow() {
+			if (!getParent().enabled)
+				return false;
 			if (getMoney() < shards)
 				return false;
 			if (cargoType > Ship.NO_CARGO && getShips().findShipsWithSpace().length == 0)
@@ -627,6 +639,8 @@ public class TradeNode extends Node  {
 		public void resetExecute() { setEnabled(false); }
 
 		protected boolean canSellNow() {
+			if (!getParent().enabled)
+				return false;
 			if (quantity == 0) { System.out.println("quantity=0"); return false; }
 			if (price != null && getFlags().getState(price)) { System.out.println(price + " is set"); return false; }
 			if (shipType >= 0) {
