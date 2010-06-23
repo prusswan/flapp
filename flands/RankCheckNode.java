@@ -43,6 +43,14 @@ public class RankCheckNode extends ActionNode implements Executable, Roller.List
 		setVariableValue(AbilityTypeVar, Adventurer.ABILITY_RANK);
 	}
 
+	protected void outit(Properties props) {
+		super.outit(props);
+		if (add != 0) saveProperty(props, "add", add);
+		if (dice != 1) saveProperty(props, "dice", dice);
+		if (var != null) props.setProperty("var", var);
+		if (!force) saveProperty(props, "force", false);
+	}
+	
 	private boolean hadContent = false;
 	public void handleContent(String text) {
 		if (text.trim().length() == 0)

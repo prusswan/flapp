@@ -2,6 +2,7 @@ package flands;
 
 
 import java.awt.event.ActionEvent;
+import java.util.Properties;
 
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -51,6 +52,13 @@ public class ResurrectionNode extends ActionNode implements Executable, ChangeLi
 		super.init(atts);
 	}
 
+	protected void outit(Properties props) {
+		super.outit(props);
+		if (resurrection != null) resurrection.saveTo(props);
+		if (shards != null) saveVarProperty(props, "shards", shards);
+		if (flag != null) props.setProperty("flag", flag);
+	}
+	
 	private boolean hadContent = false;
 	public void handleContent(String text) {
 		if (!hadContent && text.trim().length() == 0) return;

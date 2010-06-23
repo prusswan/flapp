@@ -904,6 +904,9 @@ public class Adventurer implements Loadable {
 	public static final int MODIFIER_NOTOOL = 2;
 	public static final int MODIFIER_NOARMOUR = 3;
 	public static final int MODIFIER_CURRENT = 4;
+	private static final String[] AbilityModifierNames =
+		{"affected", "natural", "noweapon", "noarmour", "current"};
+	
 	public static int getAbilityModifier(String val) {
 		if (val == null)
 			return MODIFIER_AFFECTED;
@@ -917,6 +920,14 @@ public class Adventurer implements Loadable {
 			return MODIFIER_CURRENT;
 		else
 			return MODIFIER_AFFECTED;
+	}
+	public static String getAbilityModifierName(int type) {
+		try {
+			return AbilityModifierNames[type];
+		}
+		catch (ArrayIndexOutOfBoundsException e) {
+			return "";
+		}
 	}
 
 	public static final int PURPOSE_TESTING = 0;

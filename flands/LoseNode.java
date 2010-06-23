@@ -163,10 +163,35 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 	
 	protected void outit(Properties props) {
 		super.outit(props);
+		if (codeword != null) props.setProperty("codeword", codeword);
+		if (shards != null) saveVarProperty(props, "shards", shards);
+		if (staminaExp != null) props.setProperty("stamina", staminaExp.toString());
+		else if (staminaVar != null) saveVarProperty(props, "stamina", staminaVar);
+		else if (staminaTo != null) saveVarProperty(props, "staminato", staminaTo);
+		if (ability >= 0) props.setProperty("ability", Adventurer.getAbilityName(ability));
+		if (amount != null) saveVarProperty(props, "amount", amount);
+		if (fatal) saveProperty(props, "fatal", true);
+		if (allItems) {
+			props.setProperty("item", "*");
+			if (chance != null) props.setProperty("chance", chance);
+		}
+		else if (item != null) item.saveProperties(props);
+		if (itemCountStr != null) saveVarProperty(props, "multiple", itemCountStr);
+		else if (itemAt != null) saveVarProperty(props, "itemAt", itemAt);
 		if (blessing != null)
 			blessing.saveTo(props);
 		if (curse != null)
 			props.setProperty(Curse.getTypeName(curse.getType()), curse.getName());
+		if (title != null) props.setProperty("title", title);
+		if (god != null) props.setProperty("god", god);
+		if (ship) saveProperty(props, "ship", true);
+		if (resurrection) saveProperty(props, "resurrection", true);
+		if (cargo >= 0) props.setProperty("cargo", Ship.getCargoName(cargo));
+		if (crew != 0) saveProperty(props, "crew", crew);
+		if (price != null) props.setProperty("price", price);
+		if (flag != null) props.setProperty("flag", flag);
+		if (cache != null) props.setProperty("cache", cache);
+		if (!forced) saveProperty(props, "forced", false);
 	}
 	
 	public void handleContent(String text) {

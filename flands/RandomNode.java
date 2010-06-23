@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Properties;
 import java.util.Random;
 
 import javax.swing.text.Element;
@@ -54,6 +55,15 @@ public class RandomNode extends ActionNode implements Executable, Roller.Listene
 		super.init(xmlAtts);
 	}
 
+	protected void outit(Properties props) {
+		super.outit(props);
+		if (dice != 2) saveProperty(props, "dice", dice);
+		if (var != null) props.setProperty("var", var);
+		if (flag != null) props.setProperty("flag", flag);
+		if (type != null) props.setProperty("type", type);
+		if (!forced) saveProperty(props, "force", false);
+	}
+	
 	public boolean isTravel() { return (type != null && type.equalsIgnoreCase("travel")); }
 	
 	protected boolean addedContent = false;

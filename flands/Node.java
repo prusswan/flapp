@@ -382,6 +382,15 @@ public abstract class Node implements XMLOutput, Expression.Resolver {
 		return results;
 	}
 
+	protected static String concatenate(String[] strs, boolean andSplitter) {
+		StringBuffer sb = new StringBuffer(strs[0]);
+		for (int i = 1; i < strs.length; i++) {
+			sb.append(andSplitter ? '&' : '|');
+			sb.append(strs[i]);
+		}
+		return sb.toString();
+	}
+	
 	/**
 	 * Always called between elements, with a string that may be empty
 	 * but always contains all accumulated content between two tags.
@@ -674,11 +683,39 @@ public abstract class Node implements XMLOutput, Expression.Resolver {
 	}
 
 	/**
-	 * Save static properties to the passed object.
+	 * Save static properties to the passed object. This is generally used for nodes
+	 * within items or curses; e.g. a treasure map with a use effect might trigger
+	 * a GotoNode - when the game is saved, the attributes of that node need to be
+	 * saved along with the item details.
 	 * 'outit' is the opposite of 'init'; a poor pun, but it makes
 	 * the name memorable.
 	 */
 	protected void outit(Properties props) {}
+	
+	protected void saveVarProperty(Properties props, String propName, String varStr) {
+		if (varStr != null) {
+			// Property is defined
+			props.setProperty(propName, varStr); // fall-through case - overwritten if incorrect
+			if (!Character.isDigit(varStr.charAt(0))) {
+				boolean negate = false;
+				if (varStr.charAt(0) == '-') {
+					if (Character.isDigit(varStr.charAt(1))) { // assume string is more than "-"
+						// negative integer - we've already stored it correctly
+						return;
+					}
+					negate = true;
+					varStr = varStr.substring(1);
+				}
+				if (isVariableDefined(varStr)) {
+					int val = getVariableValue(varStr);
+					if (negate) val = -val;
+					saveProperty(props, propName, val);
+				}
+				else
+					System.out.println("Node.outit: couldn't resolve variable " + varStr + " for output; may be intentional.");
+			}
+		}
+	}
 	
 	public void outputTo(PrintStream out, String indent, int flags) throws IOException {
 		output(this, out, indent, flags);

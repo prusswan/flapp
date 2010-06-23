@@ -2,6 +2,7 @@ package flands;
 
 
 import java.awt.event.ActionEvent;
+import java.util.Properties;
 
 import javax.swing.text.Element;
 import javax.swing.text.SimpleAttributeSet;
@@ -43,6 +44,25 @@ public class TrainingNode extends ActionNode implements Executable, Roller.Liste
 		super.init(atts);
 	}
 
+	protected void outit(Properties props) {
+		super.outit(props);
+		
+		StringBuffer abilityString = new StringBuffer();
+		if (ability >= 0)
+			abilityString.append(Adventurer.getAbilityName(ability));
+		else {
+			for (int a = 0; a < abilities.length; a++) {
+				if (a > 0) abilityString.append("|");
+				abilityString.append(Adventurer.getAbilityName(abilities[a]));
+			}
+		}
+		props.setProperty("ability", abilityString.toString());
+		
+		if (dice != 2) saveProperty(props, "dice", dice);
+		if (add != 0) saveProperty(props, "add", add);
+		if (var != null) props.setProperty("var", var);
+	}
+	
 	public void handleContent(String text) {
 		if (text.length() == 0) {
 			// end tag without any content

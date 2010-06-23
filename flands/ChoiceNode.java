@@ -3,6 +3,7 @@ package flands;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Properties;
 
 import javax.swing.JCheckBox;
 import javax.swing.event.ChangeEvent;
@@ -76,8 +77,32 @@ public class ChoiceNode extends Node implements Executable, ActionListener, Chan
 		gotoNode.setDescriptionNode(descriptionNode);
 	}
 
+	/**
+	 * Not sure why ChoiceNode would be written out since a GotoNode would
+	 * probably suffice - perhaps an item effect with some constraints handled here?
+	 */
+	protected void outit(Properties props) {
+		super.outit(props);
+		
+		if (shards != null) saveVarProperty(props, "shards", shards);
+		if (currency != null) props.setProperty("currency", currency);
+		if (item != null) item.saveProperties(props);
+		if (shards != null || item != null) saveProperty(props, "pay", pay);
+		gotoNode.outit(props);
+		if (profession >= 0) props.setProperty("profession", Adventurer.getProfessionName(profession));
+		if (god != null) props.setProperty("god", god);
+		if (boxword != null) props.setProperty("box", boxword);
+		if (emptyvar != null) props.setProperty("emptyvar", emptyvar);
+		if (flee) saveProperty(props, "flee", flee);
+		if (book != null) props.setProperty("book", book);
+	}
+	
 	public void resetExecute() {
-		if (shards != null || item != null || profession >= 0 || god != null)
+		// TODO: What the hell? Why is this check here?
+		// Added 'flee' check to end - otherwise rerolling an enemy's parting shot
+		// will leave the goto flee choice enabled
+		// Not sure if these checks need to be here at all, but if in doubt...
+		if (shards != null || item != null || profession >= 0 || god != null || flee)
 			setEnabled(false);
 	}
 

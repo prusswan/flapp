@@ -28,6 +28,7 @@ public class Resurrection {
 
 	public String getBook() { return book; }
 	public String getSection() { return section; }
+	public String getText() { return text; }
 	public String getGod() { return god; }
 	public boolean isGod(String god) { return (this.god != null && this.god.equalsIgnoreCase(god)); }
 	public void setGod(String god) { this.god = god; }
@@ -73,6 +74,9 @@ public class Resurrection {
 			return null;
 	}
 	
+	/**
+	 * Internal output method - used when saving character stats.
+	 */
 	void saveTo(Properties props, int key) {
 		props.setProperty("ResBook" + key, book);
 		props.setProperty("ResSection" + key, section);
@@ -82,5 +86,17 @@ public class Resurrection {
 			props.setProperty("ResGod" + key, god);
 		if (supplemental)
 			props.setProperty("ResSupp" + key, "1");
+	}
+	
+	/**
+	 * Public output method - used when saving as part of a ResurrectionNode.
+	 * @see ResurrectionNode#outit(Properties)
+	 */
+	void saveTo(Properties props) {
+		props.setProperty("book", book);
+		props.setProperty("section", section);
+		if (text != null) props.setProperty("text", text);
+		if (god != null)  props.setProperty("god", god);
+		if (supplemental) props.setProperty("supplemental", "1");
 	}
 }

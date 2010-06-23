@@ -1,7 +1,9 @@
 package flands;
 
 import java.awt.event.ActionEvent;
+import java.util.Iterator;
 import java.util.Properties;
+import java.util.Map.Entry;
 
 import javax.swing.JOptionPane;
 import javax.swing.text.Element;
@@ -68,6 +70,26 @@ public class TransferNode extends ActionNode implements Executable, Flag.Listene
 		forced = getBooleanValue(atts, "force", true);
 		
 		super.init(atts);
+	}
+	
+	protected void outit(Properties props) {
+		super.outit(props);
+		if (from != null) props.setProperty("from", from);
+		if (to != null) props.setProperty("to", to);
+		if (include != null) include.saveProperties(props);
+		if (limit != null) saveVarProperty(props, "limit", limit);
+		if (exclude != null) {
+			Properties excludeProps = new Properties();
+			exclude.saveProperties(excludeProps);
+			for (Iterator<Entry<Object,Object>> i = excludeProps.entrySet().iterator(); i.hasNext(); ) {
+				Entry<Object,Object> e = i.next();
+				props.put(ExcludePrefix + e.getKey(), e.getValue());
+			}
+		}
+		if (shards != null) saveVarProperty(props, "shards", shards);
+		if (price != null) props.setProperty("price", price);
+		if (hidden) saveProperty(props, "hidden", true);
+		if (!forced) saveProperty(props, "force", false);
 	}
 	
 	private boolean hadContent = false;

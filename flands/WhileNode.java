@@ -29,6 +29,11 @@ public class WhileNode extends Node implements Executable, ExecutableGrouper {
 		var = atts.getValue("var");
 	}
 
+	protected void outit(Properties props) {
+		super.outit(props);
+		props.setProperty("var", var);
+	}
+	
 	public void handleContent(String text) {
 		if (text.trim().length() == 0) return;
 		addEnableElements(getDocument().addLeavesTo(getElement(), new String[] { text }, null));

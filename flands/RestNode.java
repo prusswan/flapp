@@ -50,27 +50,9 @@ public class RestNode extends ActionNode implements Executable, ChangeListener, 
 
 	protected void outit(Properties props) {
 		super.outit(props);
-		if (staminaStr != null) {
-			if (!Character.isDigit(staminaStr.charAt(0))) {
-				boolean negate = false;
-				String varCheck = staminaStr;
-				if (staminaStr.startsWith("-")) {
-					negate = true;
-					varCheck = staminaStr.substring(1);
-				}
-				
-				if (isVariableDefined(varCheck)) {
-					int val = getVariableValue(varCheck);
-					if (negate)
-						val = -val;
-					saveProperty(props, "stamina", val);
-				}
-				else
-					System.err.println("RestNode.outit: couldn't find stamina var: " + varCheck);
-			}
-			else
-				props.setProperty("stamina", staminaStr);
-		}
+		saveVarProperty(props, "stamina", staminaStr);
+		if (shards > 0)
+			saveProperty(props, "shards", shards);
 	}
 	
 	public void handleContent(String text) {

@@ -155,6 +155,17 @@ public class OutcomeNode extends ActionNode implements Executable, Flag.Listener
 		}
 	}
 
+	protected void outit(Properties props) {
+		super.outit(props);
+		if (rangeMin < rangeMax)
+			props.setProperty("range", rangeMin + (orRange ? "," : "-") + rangeMax);
+		if (varName != null) props.setProperty("var", varName);
+		if (flag != null) props.setProperty("flag", flag);
+		props.setProperty("codeword", concatenate(codewords, andSplitter));
+		if (blessing != null) blessing.saveTo(props);
+		if (gotoNode != null) gotoNode.outit(props);
+	}
+	
 	protected Node createChild(String name) {
 		if (descriptionBox == null) {
 			descriptionBox = new BoxNode(this, BoxNode.Y_AXIS);

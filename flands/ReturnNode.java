@@ -2,6 +2,7 @@ package flands;
 
 
 import java.awt.event.ActionEvent;
+import java.util.Properties;
 
 import javax.swing.text.Element;
 
@@ -26,6 +27,10 @@ public class ReturnNode extends ActionNode implements Executable {
 	public void init(Attributes atts) {
 		forced = getBooleanValue(atts, "force", true);
 		super.init(atts);
+	}
+	protected void outit(Properties props) {
+		super.outit(props);
+		if (!forced) saveProperty(props, "force", false);
 	}
 
 	public void handleContent(String text) {

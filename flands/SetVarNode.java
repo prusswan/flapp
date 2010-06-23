@@ -2,6 +2,7 @@ package flands;
 
 
 import java.awt.event.ActionEvent;
+import java.util.Properties;
 
 import javax.swing.text.Element;
 
@@ -50,6 +51,22 @@ public class SetVarNode extends ActionNode implements Executable, Expression.Res
 		if (getParent() instanceof GroupNode) hidden = false; // an exception
 	}
 
+	protected void init(Properties props) {
+		super.outit(props);
+		if (var != null) props.setProperty("var", var);
+		if (value != null)
+			// TODO: May be an expression containing variables - ideally we
+			// should resolve the expression as far as possible, leaving any
+			// undefined variables as is
+			props.setProperty("value", value);
+		if (codeword != null) props.setProperty("codeword", codeword);
+		if (dock != null) props.setProperty("dock", dock);
+		if (modifier != null) props.setProperty("modifier", modifier);
+		if (cache != null) props.setProperty("cache", cache);
+		if (item != null) item.saveProperties(props);
+		if (!force) saveProperty(props, "force", false);
+	}
+	
 	public void handleContent(String text) {
 		if (text.length() > 0) {
 			hidden = false;
@@ -149,7 +166,7 @@ public class SetVarNode extends ActionNode implements Executable, Expression.Res
 		if (dock != null) {
 			int[] indices = getShips().findShipsHere();
 			for (int i = 0; i < indices.length; i++)
-				getShips().getShip(i).setDocked(dock);
+				getShips().getShip(indices[i]).setDocked(dock);
 			getShips().refresh();
 		}
 		

@@ -7,7 +7,7 @@ import javax.swing.text.Element;
 
 /**
  * Action node that, when clicked, will undo the last dice roll made.
- * Works as if a Luck blessing had just been activated. Possibly flaky.
+ * Works as if a Luck blessing had just been activated. Possibly flakey.
  * 
  * @author Jonathan Mann
  */

@@ -117,14 +117,39 @@ public class TickNode extends ActionNode implements Executable, ItemListener, Fl
 	
 	protected void outit(Properties props) {
 		super.outit(props);
-		if (shards != null)
-			props.setProperty("shards", shards);
-		if (blessing != null)
-			blessing.saveTo(props);
-		if (special != null)
-			props.setProperty("special", special);
-		if (bonus != null)
-			props.setProperty("bonus", bonus);
+		if (codeword != null) props.setProperty("codeword", codeword);
+		if (god != null) {
+			props.setProperty("god", god);
+			if (compatibleGods != null) props.setProperty("compatible", compatibleGods);
+		}
+		if (title != null) {
+			props.setProperty("title", title);
+			if (titlePattern != null) props.setProperty("titlePattern", titlePattern);
+			if (titleInitialValue != 1) saveProperty(props, "titleValue", titleInitialValue);
+			if (titleAdjustment != 1) saveProperty(props, "titleAdjust", titleAdjustment);
+		}
+		saveProperty(props, "count", ticks);
+		if (name != null) props.setProperty("name", name);
+		if (shards != null) saveVarProperty(props, "shards", shards);
+		if (ability >= 0) {
+			props.setProperty("ability", Adventurer.getAbilityName(ability));
+			if (abilityEffect != null) props.setProperty("effect", abilityEffect);
+		}
+		if (amount != null) saveVarProperty(props, "amount", amount);
+		if (!forced) saveProperty(props, "force", false);
+		if (blessing != null) blessing.saveTo(props);
+		if (special != null) props.setProperty("special", special);
+		if (bonus != null) saveVarProperty(props, "bonus", bonus);
+		if (cache != null) props.setProperty("cache", cache);
+		if (crew != null) saveVarProperty(props, "crew", crew);
+		if (cargo >= 0) saveProperty(props, "cargo", cargo);
+		if (addtag != null) props.setProperty("addtag", addtag);
+		if (removetag != null) props.setProperty("removetag", removetag);
+		if (addbonus != null) saveVarProperty(props, "addbonus", addbonus);
+		if (item != null) item.saveProperties(props);
+		if (price != null) props.setProperty("price", price);
+		if (flag != null) props.setProperty("flag", flag);
+		if (profession != null) props.setProperty("profession", profession);
 	}
 
 	protected Node createChild(String name) {
@@ -721,7 +746,7 @@ public class TickNode extends ActionNode implements Executable, ItemListener, Fl
 				if (delta > 0)
 					modText += "add " + delta + " to bonus";
 				else if (delta < 0)
-					modText += "subract " + (-delta) + " from bonus";
+					modText += "subtract " + (-delta) + " from bonus";
 			}
 			text = "Modify an item (" + modText + ")";
 			if (cache != null)

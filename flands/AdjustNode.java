@@ -1,6 +1,8 @@
 package flands;
 
 
+import java.util.Properties;
+
 import javax.swing.text.Element;
 
 import org.xml.sax.Attributes;
@@ -71,6 +73,29 @@ public class AdjustNode extends Node {
 		super.init(atts);
 	}
 
+	protected void outit(Properties props) {
+		super.outit(props);
+		
+		saveVarProperty(props, "value", valueStr);
+		if (god != null) props.setProperty("god", god);
+		if (profession >= 0) props.setProperty("profession", Adventurer.getProfessionName(profession));
+		if (titleKey != null) {
+			props.setProperty("titleVal", titleKey);
+			saveProperty(props, "default", titleDefault);
+		}
+		if (item != null) item.saveProperties(props);
+		if (codeword != null) props.setProperty("codeword", codeword);
+		if (name != null) props.setProperty("name", name);
+		if (ship >= 0) props.setProperty("ship", Ship.getTypeName(ship));
+		if (crew >= 0) props.setProperty("crew", Ship.getCrewName(crew));
+		if (ability >= 0) {
+			props.setProperty("ability", Adventurer.getAbilityName(ability));
+			props.setProperty("modifier", Adventurer.getAbilityModifierName(abilityModifier));
+		}
+		if (greaterThan != null) props.setProperty("greaterThan", greaterThan);
+		if (lessThan != null) props.setProperty("lessThan", lessThan);
+	}
+	
 	protected Element createElement() { return null; }
 
 	public int getAdjustment() {
