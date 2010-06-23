@@ -21,7 +21,7 @@ public class AboutDialog extends JDialog implements ActionListener {
 	private String[] message =
 	{
 			"Fabled Lands App (FLApp)",
-			"Version 1.0.3",
+			"Version 1.0.4",
 			"Book text \u00a9 Dave Morris & Jamie Thomson",
 			"Illustrations \u00a9 Russ Nicholson",
 			"Source code by Jonathan Mann"
