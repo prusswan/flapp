@@ -36,7 +36,9 @@ public class IndexSet {
 			System.arraycopy(temp, 0, reasons, 0, temp.length);
 		}
 		
-		reasons[index] = reason;
+		if (reasons[index] == null)
+			// Don't replace first reason for exclusion
+			reasons[index] = reason;
 	}
 	
 	public boolean contains(int index) {
