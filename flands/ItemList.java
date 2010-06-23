@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
@@ -775,6 +776,7 @@ public class ItemList extends AbstractListModel implements GameListener, XMLOutp
 		list.setModel(this);
 		list.setCellRenderer(new ItemRenderer());
 		list.addMouseListener(listListener = new MouseListener());
+		list.addMouseMotionListener(listListener);
 		configuredList = list; // useful to have a pointer here
 	}
 
@@ -807,7 +809,7 @@ public class ItemList extends AbstractListModel implements GameListener, XMLOutp
 		return item;
 	}
 
-	private class MouseListener extends MouseAdapter implements ActionListener {
+	private class MouseListener extends MouseAdapter implements ActionListener, MouseMotionListener {
 		private int currentIndex;
 		private Item currentItem;
 		private void changeWieldedState(int index) {
@@ -873,6 +875,17 @@ public class ItemList extends AbstractListModel implements GameListener, XMLOutp
 			return -1;
 		}
 
+		public void mouseMoved(MouseEvent evt) {
+			FLApp.getSingle().setToolTipContext(configuredList);
+			FLApp.getSingle().setMouseAtX(evt.getX());
+			FLApp.getSingle().setMouseAtY(evt.getY());
+			// TODO: Will I also need to update these in the actionPerformed() method
+			// (which handles popup MenuItems)?
+		}
+		public void mouseDragged(MouseEvent evt) {
+			mouseMoved(evt);
+		}
+		
 		public void mouseClicked(MouseEvent evt) {
 			if (evt.getClickCount() == 2) {
 				// Double-click should trigger main event for that item

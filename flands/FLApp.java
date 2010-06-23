@@ -484,8 +484,18 @@ public class FLApp extends JFrame implements MouseListener,
 		return rootNode;
 	}
 
-	JComponent getToolTipContext() {
-		return textPane;
+	private JComponent toolTipContext = null;
+	/**
+	 * Get the context relative to which tooltips should be displayed.
+	 * FLApp acts as a singleton here, collecting the current context and coordinates
+	 * for the whole application; this allows Roller (displaying the dice roll in a
+	 * tooltip) to find the right location for its tooltips.
+	 * @see #getMouseAtX
+	 * @see #getMouseAtY
+	 */
+	public JComponent getToolTipContext() { return toolTipContext; }
+	void setToolTipContext(JComponent context) {
+		toolTipContext = context;
 	}
 
 	public boolean gotoSection(String section) {
@@ -626,13 +636,10 @@ public class FLApp extends JFrame implements MouseListener,
 
 	private int mouseAtY;
 
-	public int getMouseAtX() {
-		return mouseAtX;
-	}
-
-	public int getMouseAtY() {
-		return mouseAtY;
-	}
+	public int getMouseAtX() { return mouseAtX; }
+	public int getMouseAtY() { return mouseAtY; }
+	void setMouseAtX(int x) { mouseAtX = x; }
+	void setMouseAtY(int y) { mouseAtY = y; }
 
 	private boolean popupEvent;
 	public void mousePressed(MouseEvent evt) {
@@ -666,6 +673,7 @@ public class FLApp extends JFrame implements MouseListener,
 		Point pt = evt.getPoint();
 		mouseAtX = pt.x;
 		mouseAtY = pt.y;
+		toolTipContext = textPane;
 
 		int pos = textPane.viewToModel(pt);
 		Element currentElement = null;
