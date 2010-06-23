@@ -26,6 +26,7 @@ public class IfNode extends Node implements Executable, ChangeListener {
 	public static final String ElementName = IfElementName;
 	private int type;
 
+	private String ifElseVarName;
 	private boolean not;
 	private String[] codewords = null;
 	private boolean andCodewords;
@@ -83,6 +84,7 @@ public class IfNode extends Node implements Executable, ChangeListener {
 	private static final String TicksAttribute = "ticks";
 	private static final String ShardsAttribute = "shards";
 	public void init(Attributes xmlAtts) {
+		ifElseVarName = getRoot().getIfElseVarName(type == IF_TYPE);
 		not = getBooleanValue(xmlAtts, "not", false);
 		codewords = split(xmlAtts.getValue(CodewordAttribute));
 		andCodewords = andSplitter;
@@ -128,6 +130,40 @@ public class IfNode extends Node implements Executable, ChangeListener {
 		super.init(xmlAtts);
 	}
 
+	protected void outit(Properties props) {
+		super.outit(props);
+		if (not) saveProperty(props, "not", true);
+		if (codewords != null) props.setProperty("codeword", concatenate(codewords, andCodewords));
+		if (god != null) props.setProperty(GodAttribute, god);
+		if (safeAddGod != null) props.setProperty("safeAddGod", safeAddGod);
+		if (titles != null) props.setProperty(TitleAttribute, concatenate(titles, andTitles));
+		if (ticks != -1) saveProperty(props, TicksAttribute, ticks);
+		if (shards != null) saveVarProperty(props, ShardsAttribute, shards);
+		if (cache != null) props.setProperty("cache", cache);
+		if (book != null) props.setProperty("book", book);
+		if (wordName != null) props.setProperty("name", wordName);
+		if (var != null) props.setProperty("var", var);
+		if (greaterThan != null) saveVarProperty(props, "greaterthan", greaterThan);
+		if (lessThan != null) saveVarProperty(props, "lessthan", lessThan);
+		if (equals != null) saveVarProperty(props, "equals", equals);
+		if (ability >= 0) {
+			props.setProperty("ability", Adventurer.getAbilityName(ability));
+			if (abilityModifier >= 0)
+				props.setProperty("modifier", Adventurer.getAbilityModifierName(abilityModifier));
+		}
+		if (gender != null) props.setProperty("gender", gender);
+		if (item != null) item.saveProperties(props);
+		if (blessing != null) blessing.saveTo(props);
+		if (curse != null) curse.storeAttributes(props, XMLOutput.OUTPUT_PROPS_STATIC);
+		if (resurrection) saveProperty(props, "resurrection", true);
+		if (dead != null) saveProperty(props, "dead", dead.booleanValue());
+		if (ship >= 0) props.setProperty("ship", Ship.getTypeName(ship));
+		if (crew >= 0) props.setProperty("crew", Ship.getCrewName(crew));
+		if (cargo >= 0) props.setProperty("cargo", Ship.getCargoName(cargo));
+		if (docked != null) props.setProperty("docked", docked);
+		if (profession >= 0) props.setProperty("profession", Adventurer.getProfessionName(profession));
+	}
+	
 	public void handleContent(String text) {
 		if (codewords != null) {
 			// Look for one or more codewords in this content
@@ -175,18 +211,18 @@ public class IfNode extends Node implements Executable, ChangeListener {
 		boolean executeBlock = true;
 		if (type == IF_TYPE)
 			// Reset - there may have been an earlier if/else in this section
-			removeVariable("*if*");
+			removeVariable(ifElseVarName);
 		
 		if (type == ELSE_TYPE || type == ELSEIF_TYPE)
 			// Only execute if the last IF or ELSEIF didn't
-			executeBlock = (getVariableValue("*if*") != 1);
+			executeBlock = (getVariableValue(ifElseVarName) != 1);
 
 		if (executeBlock && (type == IF_TYPE || type == ELSEIF_TYPE)) {
 			// Still need to meet conditions
 			executeBlock = meetsConditions();
 			if (not) executeBlock = !executeBlock;
 			if (executeBlock)
-				setVariableValue("*if*", 1);
+				setVariableValue(ifElseVarName, 1);
 		}
 
 		if (!executeBlock)

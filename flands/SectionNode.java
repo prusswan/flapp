@@ -384,6 +384,12 @@ public class SectionNode extends Node implements ItemListener, Loadable {
 	public String getDockLocation() { return dock; }
 	public String getToDockLocation() { return todock; }
 
+	private int ifElseCounter = 0;
+	public String getIfElseVarName(boolean newVar) {
+		if (newVar) ifElseCounter++;
+		return "*if*" + ifElseCounter;
+	}
+	
 	/* *****************
 	 * Load/Save methods
 	 ***************** */
