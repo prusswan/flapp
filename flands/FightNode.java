@@ -618,6 +618,8 @@ public class FightNode extends Node implements Executable, ActionListener, Rolle
 			fleeChoiceNode.resetExecute();
 		if (fleeGotoNode != null)
 			fleeGotoNode.resetExecute();
+		if (skipNode != null)
+			skipNode.setEnabled(false);
 	}
 
 	private class EnemyDetails extends Node {
@@ -1085,7 +1087,7 @@ public class FightNode extends Node implements Executable, ActionListener, Rolle
 		return flee;
 	}
 
-	public static class FleeNode extends Node implements ActionListener {
+	public static class FleeNode extends Node implements ActionListener, ExecutableGrouper {
 		public static final String ElementName = "flee";
 		private FightNode owner;
 
@@ -1120,14 +1122,38 @@ public class FightNode extends Node implements Executable, ActionListener, Rolle
 				n.setEnabled(true);
 				n = n.getParent();
 			}
-			if (runner != null)
-				runner.startExecution(false);
+			if (runner != null) {
+				if (runner.execute(this))
+					//runner.startExecution(false);
+					owner.fleeNodeActivated(this);
+			}
 		}
 
 		protected Element createElement() { return null; }
 
+		/**
+		 * Previously activated when all child nodes had been activated.
+		 * Now handled 
+		 */
 		public void actionPerformed(ActionEvent evt) {
 			owner.fleeNodeActivated(this);
+		}
+
+		/* ******************************************************************
+		 * ExecutableGrouper methods - added so we can get the right callback
+		 * once all Executable children have been executed
+		 ****************************************************************** */
+		
+		public void addExecutable(Executable e) {}
+		public void addIntermediateNode(Node n) {}
+
+		public void continueExecution(Executable done, boolean inSeparateThread) {
+			if (done == runner)
+				owner.fleeNodeActivated(this);
+		}
+
+		public boolean isSeparateThread() {
+			return false;
 		}
 	}
 
