@@ -91,9 +91,12 @@ public class FLApp extends JFrame implements MouseListener,
 	/** Record of the adventurer (and everything associated with this character). */
 	private Adventurer adventurer = null;
 
-	/** Adventurer's abilities and possessions. */
+	/** GUI showing the player's abilities and possessions. */
 	private AdventurerFrame adventureSheet = null;
 
+	/** The rules in place for this session. */
+	private ActiveRuleset rules = new ActiveRuleset();
+	
 	/** Local/global map display */
 	private ImageWindow mapWindow = null;
 
@@ -190,17 +193,14 @@ public class FLApp extends JFrame implements MouseListener,
 			//adventurer.setGodEffect("Sig", AbilityEffect.createAbilityBonus(Adventurer.ABILITY_THIEVERY, 1));
 			//adventurer.setGodless(true);
 			adventurer.addTitle("Chosen One of Nagil");
-			CacheNode.setMoneyCache("MerchantBank", 500);
+			//CacheNode.setMoneyCache("MerchantBank", 500);
 			adventurer.getItems().addItem(Item.createMoneyItem(500, "Mithral"));
 			adventurer.getItems().addItem(new Item("faery mead"));
-			//adventurer.getBlessings().addBlessing(Blessing.STORM);
-			//adventurer.getBlessings().addBlessing(Blessing.getAbilityBlessing(Adventurer.ABILITY_SANCTITY));
 			Blessing luckBlessing = new Blessing(Blessing.LUCK_TYPE);
 			luckBlessing.setPermanent(true);
 			adventurer.getBlessings().addBlessing(luckBlessing);
-			adventurer.getBlessings().addBlessing(Blessing.STORM);
+			//adventurer.getBlessings().addBlessing(Blessing.STORM);
 			//adventurer.getBlessings().addBlessing(Blessing.WRATH);
-			//adventurer.getBlessings().addBlessing(Blessing.LUCK);
 			Curse c = new Curse(Curse.CURSE_TYPE, "Blight of Nagil");
 			c.addEffect(AbilityEffect.createAbilityBonus(
 					Adventurer.ABILITY_COMBAT, -1));
@@ -219,8 +219,12 @@ public class FLApp extends JFrame implements MouseListener,
 			adventurer.getItems().addItem(new Item.Armour("splint mail", 4));
 			//adventurer.getItems().addItem(new Item("ink sac"));
 			adventurer.getItems().addItem(new Item("rope"));
-			//adventurer.getItems().addItem(new Item("lantern"));
-			//adventurer.getItems().addItem(new Item("candle"));
+			Item lantern = new Item("lantern");
+			lantern.addTag("light");
+			//adventurer.getItems().addItem(lantern);
+			Item candle = new Item("candle");
+			candle.addTags("light,useonce");
+			adventurer.getItems().addItem(candle);
 			//adventurer.adjustAbility(Adventurer.ABILITY_CHARISMA, 10);
 			//adventurer.adjustAbility(Adventurer.ABILITY_RANK, 12);
 			//for (int i = 0; i < 4; i++)
@@ -230,7 +234,7 @@ public class FLApp extends JFrame implements MouseListener,
 			//adventurer.getItems().addItem(new Item("pirate captain's head"));
 			//adventurer.getItems().addItem(new Item("witch's hand"));
 			//adventurer.getBlessings().addBlessing(Blessing.DISEASE);
-			adventurer.getBlessings().addBlessing(Blessing.getAbilityBlessing(Adventurer.ABILITY_SANCTITY));
+			//adventurer.getBlessings().addBlessing(Blessing.getAbilityBlessing(Adventurer.ABILITY_SANCTITY));
 			//Resurrection resurrect = new Resurrection("Temple of Tyrnai", "5", "500");
 			Resurrection resurrect = new Resurrection("Temple of Nagil", "2", "339");
 			resurrect.setGod("Nagil");
@@ -238,16 +242,17 @@ public class FLApp extends JFrame implements MouseListener,
 			adventurer.getStamina().damage(2);
 			// Start at an arbitrary rank
 			//adventurer.adjustAbility(Adventurer.ABILITY_RANK, 11-adventurer.getAbilityValue(Adventurer.ABILITY_RANK, Adventurer.MODIFIER_AFFECTED));
-			Ship oneShip = new Ship(Ship.GALL_TYPE, "A ship", Ship.AVG_CREW);
+			Ship oneShip = new Ship(Ship.BRIG_TYPE, "A ship", Ship.AVG_CREW);
 			//oneShip.addCargo(Ship.METAL_CARGO);
 			oneShip.addCargo(Ship.FUR_CARGO);
 			oneShip.addCargo(Ship.FUR_CARGO);
 			//oneShip.addCargo(Ship.GRAIN_CARGO);
-			oneShip.setDocked(null);
-			adventurer.getShips().addShip(oneShip);
+			oneShip.setDocked("Elsweyr");
+			//adventurer.getShips().addShip(oneShip);
 			adventurer.getShips().setAtSea();
 			adventurer.getExtraChoices().setMenu(extraChoiceMenu);
 			//adventurer.getCodewords().addCodeword("Evade");
+			adventurer.getCodewords().addCodeword("Barnacle");
 			
 			saveItem.setEnabled(true);
 			quicksaveItem.setEnabled(true);
@@ -256,6 +261,7 @@ public class FLApp extends JFrame implements MouseListener,
 		if (Address.getCurrentBookKey() == null)
 			showStartWindow();
 		else {
+			updateActiveRules(Address.getCurrentBook().getRequiredRules());
 			showTextWindow();
 			gotoSection(section);
 		}
@@ -301,6 +307,17 @@ public class FLApp extends JFrame implements MouseListener,
 		}
 	}
 
+	public boolean isRuleActive(String rule) {
+		return rules.hasRule(rule);
+	}
+	public void updateActiveRules(String bookRules) {
+		rules.clearTempRules();
+		rules.addTempRules(bookRules);
+		// TODO: Any other rules may affect more than Defence
+		if (getAdventurer() != null)
+			getAdventurer().updatedActiveRules();
+	}
+	
 	private void centerWindow(boolean pack) {
 		boolean wasVisible = false;
 		if (isVisible()) {
@@ -519,8 +536,10 @@ public class FLApp extends JFrame implements MouseListener,
 			return true;
 		
 		if (gotoFile(address.getStream(), address.getBook())) {
-			if (Address.setCurrentBookKey(address.getBook()))
+			if (Address.setCurrentBookKey(address.getBook())) {
 				updateLocalMap();
+				updateActiveRules(Address.getCurrentBook().getRequiredRules());
+			}
 			currentSection = address.section;
 			((SectionNode)rootNode).setSection(currentSection);
 			if (adventurer != null)
@@ -580,6 +599,8 @@ public class FLApp extends JFrame implements MouseListener,
 		return false;
 	}
 
+	public SectionDocument getCurrentDocument() { return document; }
+	
 	public void returnFromSection() {
 		if (lastDocument != null) {
 			closeSectionWindows();
@@ -594,9 +615,11 @@ public class FLApp extends JFrame implements MouseListener,
 			textPane.setCursor(Cursor.getDefaultCursor());
 			currentSection = rootNode.getSectionName();
 			fireGameEvent(GameEvent.NEW_SECTION);
-			if (Address.setCurrentBookKey(((SectionNode)rootNode).getBook()))
+			if (Address.setCurrentBookKey(((SectionNode)rootNode).getBook())) {
 				// Switched books - probably an item with goto effect
 				updateLocalMap();
+				updateActiveRules(Address.getCurrentBook().getRequiredRules());
+			}
 			if (adventurer != null)
 				adventurer.getExtraChoices().checkMenu();
 		}
@@ -852,6 +875,13 @@ public class FLApp extends JFrame implements MouseListener,
 		System.exit(0);
 	}
 	
+	/**
+	 * End the game, allowing the player to save, not save, or cancel.
+	 * @param messageSecondLine the second line of a dialog to be displayed to the user
+	 * if quitting this game would lose progress.
+	 * @return <code>true</code> if we should proceed to exit the game; <code>false</code>
+	 * otherwise.
+	 */
 	private boolean endGame(String messageSecondLine) {
 		if (debugging)
 			return true;
@@ -886,7 +916,7 @@ public class FLApp extends JFrame implements MouseListener,
 			loadCommand = "load", saveCommand = "save",
 			quickloadCommand = "qload", quicksaveCommand = "qsave", newCommand = "new",
 			fontCommand = "font", codewordCommand = "codewords", notesCommand = "notes",
-			exitCommand = "exit", aboutCommand = "about";
+			exitCommand = "exit", aboutCommand = "about", docViewerCommand = "viewer";
 	private static final String
 			normalSaveText = "Save Game...",
 			hardcoreSaveText = "Save and Quit...",
@@ -930,6 +960,8 @@ public class FLApp extends JFrame implements MouseListener,
 		windowMenu.add(createMenuItem("Global Map", globalMapCommand));
 		windowMenu.addSeparator();
 		windowMenu.add(createMenuItem("Choose Font...", fontCommand));
+		if (debugging)
+			windowMenu.add(createMenuItem("Doc Viewer", docViewerCommand));
 		bar.add(windowMenu);
 		
 		extraChoiceMenu = new JMenu("Extra Choices");
@@ -1022,6 +1054,9 @@ public class FLApp extends JFrame implements MouseListener,
 			if (chooser.getChosenFont() != null)
 				SectionDocument.setPreferredFont(chooser.getChosenFont(),
 						chooser.getSmallerCapsFontSize());
+		}
+		else if (command.equals(docViewerCommand)) {
+			new SectionDocumentViewer(this);
 		}
 	}
 
@@ -1202,8 +1237,10 @@ public class FLApp extends JFrame implements MouseListener,
 				else if (shipWindow != null)
 					shipWindow.show(adventurer.getShips());
 				
-				if (Address.setCurrentBookKey(current.getBook()))
+				if (Address.setCurrentBookKey(current.getBook())) {
 					updateLocalMap();
+					updateActiveRules(Address.getCurrentBook().getRequiredRules());
+				}
 				if (mapWindow == null)
 					showMapWindow();
 				if (codewordWindow != null) {

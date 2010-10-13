@@ -298,6 +298,9 @@ public class Books {
 		public String getIconFilename() {
 			return getProps().getProperty("Icon");
 		}
+		public String getRequiredRules() {
+			return getProps().getProperty("Rules");
+		}
 
 		public int compareTo(Object o) {
 			try {

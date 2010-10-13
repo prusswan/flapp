@@ -36,6 +36,12 @@ public class EffectSet {
 		 * Some types of AbilityEffects should be listed before others;
 		 * it's also important to make sure that effects with different sources
 		 * are never equal.
+		 * <p>
+		 * Records are sorted by:
+		 * - records with Effects before records without (eg. intrinsic Item effects)
+		 * - records without Effects are in no particular order (simple items only have +/- effect)
+		 * - Effects are sorted by description if present
+		 * - Effects are sorted by type (AURA, WIELD, USE, TOOL in order)
 		 */
 		public int compareTo(EffectRecord r) {
 			if ((src == r.src || src.equals(r.src)) && effect == r.effect) return 0;
@@ -203,6 +209,23 @@ public class EffectSet {
 	}
 
 	public int adjustAbility(int ability, int value) {
+		return adjustAbility(ability, value, Adventurer.MODIFIER_AFFECTED);
+	}
+	
+	public int adjustAbility(int ability, int value, int modifier) {
+		boolean applyTool = true, applyArmour = true, applyAura = true;
+		switch (modifier) {
+		case Adventurer.MODIFIER_NATURAL:
+			applyTool = applyArmour = applyAura = false;
+			break;
+		case Adventurer.MODIFIER_NOARMOUR:
+			applyArmour = false;
+			break;
+		case Adventurer.MODIFIER_NOTOOL:
+			applyTool = false;
+			break;
+		}
+		int bestToolBonus = 0;
 		for (Iterator<EffectRecord> i = getStatRelated(ability).iterator(); i.hasNext(); ) {
 			EffectRecord r = i.next();
 			if (r.isImplicit()) {
@@ -211,11 +234,12 @@ public class EffectSet {
 					switch (item.getType()) {
 						case Item.WEAPON_TYPE:
 						case Item.TOOL_TYPE:
-							if (((Item.Weapon)item).affectsAbility(ability))
-								value += item.getBonus();
+							if (((Item.Weapon)item).affectsAbility(ability) && applyTool)
+								bestToolBonus = Math.max(bestToolBonus, item.getBonus());
+								//value += item.getBonus();
 							break;
 						case Item.ARMOUR_TYPE:
-							if (ability == Adventurer.ABILITY_DEFENCE)
+							if (ability == Adventurer.ABILITY_DEFENCE && applyArmour)
 								value += item.getBonus();
 							break;
 					}
@@ -223,17 +247,30 @@ public class EffectSet {
 			}
 			else {
 				Effect e = r.effect;
-				if (e.getType() == Effect.TYPE_AURA ||
-					(e.getType() == Effect.TYPE_WIELDED && r.isItem() && ((Item.Weapon)r.getItem()).isWielded())) {
+				if ((e.getType() == Effect.TYPE_AURA && applyAura) ||
+					(e.getType() == Effect.TYPE_TOOL && applyTool) ||
+					(e.getType() == Effect.TYPE_WIELDED && r.isItem() && ((Item.Weapon)r.getItem()).isWielded()) && applyTool) {
 					if (e instanceof AbilityEffect) {
 						AbilityEffect ae = (AbilityEffect)e;
 						if (ae.getAbility() == ability ||
-							(ae.getAbility() == Adventurer.ABILITY_ALL && ability < Adventurer.ABILITY_COUNT))
-							value = ae.adjustAbility(value);
+							(ae.getAbility() == Adventurer.ABILITY_ALL && ability < Adventurer.ABILITY_COUNT)) {
+							if (e.getType() == Effect.TYPE_TOOL) {
+								if (ae.getModifyType() != AbilityEffect.ADJUST_ABILITY)
+									System.err.println("Tool type Effect has unhandled adjustment type: " + ae.getModifyType());
+								else
+									bestToolBonus = Math.max(bestToolBonus, ae.getValue());
+							}
+							else
+								value = ae.adjustAbility(value);
+						}
 					}
 				}
 			}
 		}
+		
+		if (bestToolBonus > 0)
+			// Apply it now
+			value += bestToolBonus;
 
 		return value;
 	}
@@ -295,4 +332,18 @@ public class EffectSet {
 		return atts;
 	}
 
+	public static void main(String args[]) {
+		Item tool1 = new Item.Tool("compass", Adventurer.ABILITY_SCOUTING, 1);
+		Item rod = new Item.Weapon("rod of woe", 4);
+		AbilityEffect magicToolEffect = AbilityEffect.createAbilityBonus(Adventurer.ABILITY_SCOUTING, 4);
+		magicToolEffect.type = Effect.TYPE_TOOL;
+		rod.addEffect(magicToolEffect);
+		Item tool2 = new Item.Tool("sextant", Adventurer.ABILITY_SCOUTING, 3);
+		EffectSet effects = new EffectSet(new Adventurer());
+		effects.addStatRelated(Adventurer.ABILITY_SCOUTING, tool1);
+		effects.addStatRelated(Adventurer.ABILITY_SCOUTING, tool2);
+		effects.addStatRelated(Adventurer.ABILITY_COMBAT, rod);
+		effects.addStatRelated(Adventurer.ABILITY_SCOUTING, rod, magicToolEffect);
+		System.out.println("3 -> " + effects.adjustAbility(Adventurer.ABILITY_SCOUTING, 3));
+	}
 }

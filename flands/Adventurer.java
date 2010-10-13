@@ -123,6 +123,8 @@ public class Adventurer implements Loadable {
 	
 	private Flag.Set flags = new Flag.Set();
 	
+	private ActiveRuleset rules = new ActiveRuleset();
+	
 	private boolean hardcore = false;
 	private long hardcoreTime = 0;
 	
@@ -937,34 +939,17 @@ public class Adventurer implements Loadable {
 		switch (modifier) {
 			case MODIFIER_NATURAL:
 				return stat.natural;
-			case MODIFIER_NOTOOL:
-				int val = stat.affected;
-				Item.Weapon w;
-				if (ability == ABILITY_COMBAT || ability == ABILITY_DEFENCE)
-					w = getItems().getWielded();
-				else
-					w = getItems().getTool(ability);
-				if (w != null)
-					val -= w.getBonus();
-				return val;
-			case MODIFIER_NOARMOUR:
-				if (ability == ABILITY_DEFENCE) {
-					Item.Armour a = getItems().getWorn();
-					if (a != null)
-						return stat.affected - a.getBonus();
-				}
-				return stat.affected;
 			case MODIFIER_CURRENT:
 				if (ability == ABILITY_STAMINA) {
 					System.out.println("Current stamina value=" + stamina.current);
 					return ((StaminaStat)stat).current;
 				}
-				// Fallthrough
+				// Fall-through intentional
 			case MODIFIER_AFFECTED:
-			default:
 				System.out.println("Affected ability value=" + stat.affected);
 				return stat.affected;
 		}
+		return getEffects().adjustAbility(ability, stat.natural, modifier);
 	}
 
 	private static Item MaskItem = new Item("*mask");
@@ -1057,11 +1042,25 @@ public class Adventurer implements Loadable {
 		// Except there are items that specifically raise Defence without being armour.
 		// A compromise for now: defence.natural is the sum of relevant natural values
 		// .affected is the sum of relevant affected values
-		defence.affected = abilities[ABILITY_COMBAT].affected + rank.affected;
+		int affectedCombat = abilities[ABILITY_COMBAT].affected;
+		int affectedRank = rank.affected;
+		if (isRuleActive(ActiveRuleset.SARVEN)) {
+			// Limit Combat and Rank bonuses to Defence to 12
+			affectedCombat = Math.min(12, affectedCombat);
+			affectedRank   = Math.min(12, affectedRank);
+		}
+		defence.affected = affectedCombat + affectedRank;
 		defence.affected = effects.adjustAbility(ABILITY_DEFENCE, defence.affected);
 		defence.updateDocument();
 	}
 
+	public boolean isRuleActive(String rule) {
+		return FLApp.getSingle().isRuleActive(rule);
+	}
+	void updatedActiveRules() {
+		calcDefence();
+	}
+	
 	public String getFilename() { return adventurerFileName; }
 
 	public static Adventurer[] loadAvailableAdventurers() {
@@ -1202,6 +1201,9 @@ public class Adventurer implements Loadable {
 			
 			flags.loadFrom(charProps);
 			
+			rules = new ActiveRuleset();
+			rules.addFixedRules(charProps.getProperty("Rules"));
+			
 			return success;
 		}
 		catch (IOException ioe) {
@@ -1259,6 +1261,7 @@ public class Adventurer implements Loadable {
 			charProps.setProperty("Hardcore", Long.toString(System.currentTimeMillis()));
 		
 		flags.saveTo(charProps);
+		charProps.setProperty("Rules", rules.getFixedRules());
 		
 		try {
 			charProps.store(out, null);

@@ -28,8 +28,11 @@ public class Effect implements Comparable<Effect>, XMLOutput {
 	public static final int TYPE_AURA = 0;
 	public static final int TYPE_WIELDED = 1;
 	public static final int TYPE_USE = 2;
+	public static final int TYPE_TOOL = 3;
+	// order is relevant - used to sort effects when applying in EffectSet
+	// TODO: Make sure tool effects are applied in right order when negative effects are in place
 
-	private int type = TYPE_AURA; // by default
+	int type = TYPE_AURA; // by default
 	protected String description = null;
 	protected StyledTextList styledDescription = null;
 	protected Effect next = null;
@@ -95,6 +98,8 @@ public class Effect implements Comparable<Effect>, XMLOutput {
 				e.type = TYPE_WIELDED;
 			else if (type.startsWith("use"))
 				e.type = TYPE_USE;
+			else if (type.startsWith("tool"))
+				e.type = TYPE_TOOL;
 		}
 
 		if (e != null)
@@ -170,6 +175,9 @@ public class Effect implements Comparable<Effect>, XMLOutput {
 			break;
 		case TYPE_USE:
 			typeString = "use";
+			break;
+		case TYPE_TOOL:
+			typeString = "tool";
 			break;
 		}
 		if (typeString != null)
