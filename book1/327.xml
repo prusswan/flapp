@@ -7,7 +7,6 @@
 		</extrachoice>&#8217; on your Adventure Sheet so that you can come here whenever you are in Yellowport.
 	</p>
 	<p>
-		<tick codeword="StillInYellowport" hidden="t"/>
 		To go back to the city above, <goto section="10"/>.
 	</p>
 	<itemcache name="1.327" text="Items in cache"/>
