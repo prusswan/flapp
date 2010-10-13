@@ -109,6 +109,14 @@ public class SetVarNode extends ActionNode implements Executable, Expression.Res
 			System.out.println("Weapon item=" + w);
 			return (w == null ? 0 : w.getBonus());
 		}
+		else if (ident.equals("matches")) {
+			if (item != null) {
+				ItemList items = (cache == null ? getItems() : CacheNode.getItemCache(cache));
+				int[] matches = items.findMatches(item);
+				System.out.println("Matches=" + matches.length + " to item " + item);
+				return matches.length;
+			}
+		}
 		else if (ident.equals("stamina") && modifier == null) {
 			return getAdventurer().getStamina().current;
 		}
