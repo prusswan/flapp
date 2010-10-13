@@ -51,18 +51,19 @@ public class ParagraphNode extends Node {
 		addEnableElements(leaves);
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		Element e = getElement();
 		if (e.getElementCount() > 0) {
 			Element lastChild = e.getElement(e.getElementCount() - 1);
 			if (lastChild.isLeaf())
 				((SectionDocument.ContentElement)lastChild).endWithNewline();
 		}
+		return super.handleEndTag();
 	}
 
 	protected String getElementViewType() { return ParagraphViewType; }
 
-	protected MutableAttributeSet getElementStyle(SectionDocument doc) {
+	protected MutableAttributeSet getElementStyle() {
 		SimpleAttributeSet atts = new SimpleAttributeSet();
 		StyleConstants.setAlignment(atts, alignment);
 		if (alignment == StyleConstants.ALIGN_JUSTIFIED)

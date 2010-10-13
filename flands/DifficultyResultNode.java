@@ -78,7 +78,7 @@ public class DifficultyResultNode extends ActionNode implements Executable {
 		}
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (section != null) {
 			if (textNode == null) {
 				// Add the 'Successful X roll' bit now
@@ -104,6 +104,8 @@ public class DifficultyResultNode extends ActionNode implements Executable {
 
 		System.out.println("DifficultyResultNode adding itself as Executable child");
 		findExecutableGrouper().addExecutable(this);
+		
+		return super.handleEndTag();
 	}
 
 	public boolean execute(ExecutableGrouper grouper) {
@@ -148,7 +150,7 @@ public class DifficultyResultNode extends ActionNode implements Executable {
 		setEnabled(false);
 	}
 
-	protected String getElementViewType() { return (section == null ? null : "row"); }
+	protected String getElementViewType() { return (section == null ? null : RowViewType); }
 	
 	public void saveProperties(Properties props) {
 		super.saveProperties(props);

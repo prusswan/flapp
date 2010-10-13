@@ -244,8 +244,9 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 		addEnableElements(leaves);
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		findExecutableGrouper().addExecutable(this);
+		return super.handleEndTag();
 	}
 
 	private ItemList getAffectedItems() {

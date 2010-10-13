@@ -82,8 +82,9 @@ public class TrainingNode extends ActionNode implements Executable, Roller.Liste
 		addEnableElements(leaves);
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		findExecutableGrouper().addExecutable(this);
+		return super.handleEndTag();
 	}
 
 	public boolean execute(ExecutableGrouper grouper) {

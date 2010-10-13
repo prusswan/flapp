@@ -69,7 +69,7 @@ public class RankCheckNode extends ActionNode implements Executable, Roller.List
 	}
 
 	private static final String[] numberStrings = {"zero", "one", "two", "three", "four", "five", "six"};
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (!hadContent) {
 			String text;
 			if (getDocument().isNewSentence(getDocument().getLength()))
@@ -92,6 +92,8 @@ public class RankCheckNode extends ActionNode implements Executable, Roller.List
 			hadContent = true;
 		}
 		findExecutableGrouper().addExecutable(this);
+		
+		return super.handleEndTag();
 	}
 
 	protected Node createChild(String name) {

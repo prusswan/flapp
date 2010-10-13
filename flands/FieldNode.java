@@ -47,13 +47,14 @@ public class FieldNode extends Node implements ChangeListener {
 		getDocument().addLeavesTo(getElement(), new String[] { "\n" }, null);
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		getCodewords().addChangeListener(name, this);
+		return true;
 	}
 	
 	protected String getElementViewType() { return ParagraphViewType; }
 
-	protected MutableAttributeSet getElementStyle(SectionDocument doc) {
+	protected MutableAttributeSet getElementStyle() {
 		SimpleAttributeSet atts = new SimpleAttributeSet();
 		StyleConstants.setAlignment(atts, StyleConstants.ALIGN_JUSTIFIED);
 		StyleConstants.setFirstLineIndent(atts, 25.0f);

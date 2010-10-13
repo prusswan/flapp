@@ -55,6 +55,9 @@ public class ParserHandler implements ContentHandler {
 		//System.out.println("endPrefixMapping(" + prefix + ")");
 	}
 
+	// Tracks whether the current Node contains any textual content - if not, it will have
+	// handleContent() called with an empty string before handleEndTag(). This way each
+	// Node is guaranteed to get a call to handleContent() (where it can create default content).
 	private boolean emptyTag;
 	private boolean trimContentStart = true;
 	private LinkedList<Node> nodeStack = new LinkedList<Node>();
@@ -142,7 +145,8 @@ public class ParserHandler implements ContentHandler {
 		trimContentStart = false;
 
 		Node n = popNode();
-		n.handleEndTag();
+		boolean contentAdded = n.handleEndTag();
+		if (!contentAdded) trimContentStart = true;
 		if (nodeStack.size() == 0) {
 			rootNode = n;
 			if (startExecution) {
@@ -194,7 +198,7 @@ public class ParserHandler implements ContentHandler {
 
 	/**
 	 * Removes excess whitespace, converts multiple dashes into a single mdash,
-	 * and replaces triple periods into an ellipsis..
+	 * and replaces triple periods with an ellipsis.
 	 */
 	public static void condenseContent(StringBuffer text) {
 		for (int i = 0; i < text.length(); i++) {

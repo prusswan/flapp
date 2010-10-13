@@ -25,7 +25,7 @@ public class BoxNode extends Node {
 
 	protected String getElementViewType() { return BoxYViewType; }
 
-	protected MutableAttributeSet getElementStyle(SectionDocument doc) {
+	protected MutableAttributeSet getElementStyle() {
 		// TODO: Have a play around with these attributes
 		return new SimpleAttributeSet();
 	}

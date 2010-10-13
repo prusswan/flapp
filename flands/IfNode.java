@@ -202,9 +202,13 @@ public class IfNode extends Node implements Executable, ChangeListener {
 		addEnableElements(getDocument().addLeavesTo(getElement(), new StyledText[] { new StyledText(text, StyleNode.createActiveAttributes()) }));
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		System.out.println("IfNode adding itself as Executable child");
 		findExecutableGrouper().addExecutable(this);
+		if (type == IF_TYPE || type == ELSEIF_TYPE)
+			// Pass on our var name so any following elseifs or elses can use it.
+			getRoot().setElseVarName(ifElseVarName);
+		return super.handleEndTag();
 	}
 
 	public boolean execute(ExecutableGrouper grouper) {
@@ -347,7 +351,7 @@ public class IfNode extends Node implements Executable, ChangeListener {
 			ItemList items = (cache == null ? getItems() : CacheNode.getItemCache(cache));
 			int[] matches = items.findMatches(item);
 			System.out.println("Found " + matches.length + " matches for if");
-			if (greaterThan == null && lessThan == null) {
+			if (greaterThan == null && lessThan == null && equals == null) {
 				if (matches.length > 0)
 					return true;
 			}

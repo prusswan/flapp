@@ -104,8 +104,9 @@ public class TransferNode extends ActionNode implements Executable, Flag.Listene
 		addHighlightElements(leaves);
 	}
 	
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		findExecutableGrouper().addExecutable(this);
+		return super.handleEndTag();
 	}
 	
 	private ItemList getItems(String cache) {

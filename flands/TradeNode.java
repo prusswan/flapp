@@ -135,6 +135,7 @@ public class TradeNode extends Node implements Executable {
 		paraNode.handleEndTag();
 	}
 
+	/** Attribute style (right-aligned) to be used by both subclasses. */
 	private static SimpleAttributeSet RightAlignStyle;
 	static {
 		RightAlignStyle = new SimpleAttributeSet();
@@ -178,7 +179,7 @@ public class TradeNode extends Node implements Executable {
 		paraNode.handleContent(text);
 	}
 	
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (paraNode == null) {
 			// Create a default first cell
 			if (shipType >= 0)
@@ -232,6 +233,7 @@ public class TradeNode extends Node implements Executable {
 				createParagraphNode(" - ", StyleConstants.ALIGN_RIGHT);
 		}
 		this.atts = null;
+		return true;
 	}
 
 	public boolean execute(ExecutableGrouper grouper) {
@@ -339,7 +341,7 @@ public class TradeNode extends Node implements Executable {
 			return n;
 		}
 
-		protected MutableAttributeSet getElementStyle(SectionDocument doc) {
+		protected MutableAttributeSet getElementStyle() {
 			return RightAlignStyle;
 		}
 
@@ -366,9 +368,10 @@ public class TradeNode extends Node implements Executable {
 			addEnableElements(leaves);
 		}
 
-		public void handleEndTag() {
+		public boolean handleEndTag() {
 			if (!addedContent)
 				handleContent(null);
+			return super.handleEndTag();
 		}
 
 		private boolean callContinue = false;
@@ -397,7 +400,7 @@ public class TradeNode extends Node implements Executable {
 		}
 		
 		protected boolean canBuyNow() {
-			if (!getParent().enabled)
+			if (!(getParent() instanceof GroupNode) && !getParent().enabled)
 				return false;
 			if (getMoney() < shards)
 				return false;
@@ -603,7 +606,7 @@ public class TradeNode extends Node implements Executable {
 			findExecutableGrouper().addExecutable(this);
 		}
 
-		protected MutableAttributeSet getElementStyle(SectionDocument doc) {
+		protected MutableAttributeSet getElementStyle() {
 			return RightAlignStyle;
 		}
 

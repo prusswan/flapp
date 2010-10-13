@@ -88,19 +88,26 @@ public class ItemNode extends ActionNode implements Executable, ChangeListener, 
 		addEnableElements(leaves);
 	}
 	
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (!hadContent && !hidden && !getParent().hideChildContent()) {
 			Element[] leaves = item.addTo(getDocument(), getElement(), createStandardAttributes(), getDocument().isNewSentence());
 			setHighlightElements(leaves);
 			addEnableElements(leaves);
 		}
+		return super.handleEndTag();
 	}
 
 	private boolean callContinue = false;
 	public boolean execute(ExecutableGrouper grouper) {
 		if (quantityStr != null) {
 			quantity = getAttributeValue(quantityStr);
-			quantityStr = null;
+			//quantityStr = null;
+			/*
+			 * Don't do this - if the quantity is generated randomly
+			 * (see 1.561), the player may use a luck blessing and get
+			 * a different quantity. Clicking the action will break the undo chain
+			 * that allows the luck blessing to be used anyway.
+			 */
 		}
 		else if (flag == null)
 			quantity = 1;

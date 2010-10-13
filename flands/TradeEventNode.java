@@ -64,8 +64,9 @@ public class TradeEventNode extends Node {
 	}
 	public boolean hideChildContent() { return true; }
 	
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		runner = null;
+		return false;
 	}
 	
 	public void itemTraded(boolean bought, Item trade) {

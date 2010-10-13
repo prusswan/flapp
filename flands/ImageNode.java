@@ -52,7 +52,7 @@ public class ImageNode extends ActionNode {
 		addHighlightElements(leaves);
 	}
 	
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (!hadContent && !getParent().hideChildContent()) {
 			MutableAttributeSet atts = createStandardAttributes();
 			StyleConstants.setItalic(atts, true);
@@ -60,6 +60,7 @@ public class ImageNode extends ActionNode {
 			addEnableElements(leaves);
 			addHighlightElements(leaves);
 		}
+		return super.handleEndTag();
 	}
 	
 	private ImageWindow imageWindow = null;

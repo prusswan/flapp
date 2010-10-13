@@ -71,7 +71,7 @@ public class DifficultyNode extends ActionNode implements Executable, Roller.Lis
 		}
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (!hadContent && !getParent().hideChildContent()) {
 			String text;
 			if (getDocument().isNewSentence(getDocument().getLength()))
@@ -91,6 +91,8 @@ public class DifficultyNode extends ActionNode implements Executable, Roller.Lis
 		
 		if (flag != null)
 			getFlags().addListener(flag, this);
+		
+		return super.handleEndTag();
 	}
 
 	protected Node createChild(String name) {

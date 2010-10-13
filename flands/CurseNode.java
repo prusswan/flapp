@@ -63,12 +63,14 @@ public class CurseNode extends ActionNode implements Executable {
 		addContent(text);
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (!(getParent() instanceof ItemNode)) {
 			findExecutableGrouper().addExecutable(this);
 			if (!hadContent)
 				addContent(curse.getName());
+			return hadContent;
 		}
+		return false;
 	}
 
 	private boolean callContinue = false;

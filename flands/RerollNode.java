@@ -29,11 +29,12 @@ public class RerollNode extends ActionNode implements Executable {
 		addHighlightElements(leaves);
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (!hadContent) {
 			String text = (getDocument().isNewSentence() ? "Roll again" : "roll again");
 			handleContent(text);
 		}
+		return super.handleEndTag();
 	}
 
 	public boolean execute(ExecutableGrouper grouper) {

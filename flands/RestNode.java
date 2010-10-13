@@ -66,8 +66,9 @@ public class RestNode extends ActionNode implements Executable, ChangeListener, 
 		addEnableElements(leaves);
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		findExecutableGrouper().addExecutable(this);
+		return super.handleEndTag();
 	}
 
 	public boolean execute(ExecutableGrouper grouper) {

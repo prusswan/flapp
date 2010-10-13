@@ -223,7 +223,7 @@ public class OutcomeNode extends ActionNode implements Executable, Flag.Listener
 	}
 
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (descriptionBox == null) {
 			// No description here - maybe add one now
 			if (!hasRange() && codewords != null) {
@@ -271,6 +271,8 @@ public class OutcomeNode extends ActionNode implements Executable, Flag.Listener
 
 		System.out.println("Adding OutcomeNode(" + getRange() + ") as child executable");
 		findExecutableGrouper().addExecutable(this);
+		
+		return (descriptionNode != null || gotoNode != null);
 	}
 
 	public boolean execute(ExecutableGrouper grouper) {
@@ -350,7 +352,7 @@ public class OutcomeNode extends ActionNode implements Executable, Flag.Listener
 		//}
 	}
 
-	protected String getElementViewType() { return "row"; }
+	protected String getElementViewType() { return RowViewType; }
 
 	public void setEnabled(boolean b) {
 		super.setEnabled(b);

@@ -68,7 +68,7 @@ public class ResurrectionNode extends ActionNode implements Executable, ChangeLi
 		addHighlightElements(leaves);
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (!hadContent && !hidden) {
 			if (resurrection != null) {
 				StyledTextList content = resurrection.getContent(createStandardAttributes());
@@ -77,6 +77,7 @@ public class ResurrectionNode extends ActionNode implements Executable, ChangeLi
 				addHighlightElements(leaves);
 			}
 		}
+		return super.handleEndTag();
 	}
 
 	private boolean canDoAction() {

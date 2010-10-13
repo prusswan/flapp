@@ -37,8 +37,9 @@ public class MarketNode extends TableNode implements Executable {
 		super.init(atts);
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		findExecutableGrouper().addExecutable(this);
+		return true;
 	}
 	
 	boolean isBuyingMarket() { return buy; }
@@ -133,7 +134,7 @@ public class MarketNode extends TableNode implements Executable {
 			this.sell = sell;
 		}
 
-		protected MutableAttributeSet getElementStyle(SectionDocument doc) {
+		protected MutableAttributeSet getElementStyle() {
 			SimpleAttributeSet italicAtts = new SimpleAttributeSet();
 			StyleConstants.setItalic(italicAtts, true);
 			StyleConstants.setSpaceAbove(italicAtts, 10.0f);

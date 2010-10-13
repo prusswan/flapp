@@ -146,7 +146,7 @@ public class SectionNode extends Node implements ItemListener, Loadable {
 		getParagraphChild().handleContent(text);
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		closeParagraphChild();
 
 		// Remove the first-line indent on the first paragraph child (after the section name)
@@ -194,6 +194,8 @@ public class SectionNode extends Node implements ItemListener, Loadable {
 		// Start stepping through the Executables
 		// This is now called by ParserHandler
 		//startExecution();
+		
+		return true;
 	}
 
 	public String getSectionName() { return name; }
@@ -386,8 +388,17 @@ public class SectionNode extends Node implements ItemListener, Loadable {
 
 	private int ifElseCounter = 0;
 	public String getIfElseVarName(boolean newVar) {
-		if (newVar) ifElseCounter++;
-		return "*if*" + ifElseCounter;
+		if (newVar)
+			// An <if> node - give it a new, unique variable name
+			return "*if" + ifElseCounter++;
+		else
+			// An <elseif> or <else> node - give it the variable name used by the most
+			// recently closed <if> node
+			return elseVarName;
+	}
+	private String elseVarName = null;
+	public void setElseVarName(String varName) {
+		elseVarName = varName;
 	}
 	
 	/* *****************

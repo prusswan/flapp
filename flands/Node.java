@@ -406,8 +406,13 @@ public abstract class Node implements XMLOutput, Expression.Resolver {
 	
 	/**
 	 * Handle the 'end tag' of this node.
+	 * @return <code>true</code> if any content was added to the document by this node;
+	 * <code>false</code> otherwise.
 	 */
-	public void handleEndTag() {}
+	public boolean handleEndTag() {
+		if (enableElements != null && enableElements.size() > 0) return true;
+		return false;
+	}
 
 	/**
 	 * Dispose of the node.
@@ -536,7 +541,7 @@ public abstract class Node implements XMLOutput, Expression.Resolver {
 	 */
 	protected Element createElement() {
 		Element parentElement = getParent().getElement();
-		MutableAttributeSet atts = getElementStyle(getParent().getDocument());
+		MutableAttributeSet atts = getElementStyle();
 		String viewType = getElementViewType();
 		if (viewType != null) {
 			if (atts == null)
@@ -551,7 +556,7 @@ public abstract class Node implements XMLOutput, Expression.Resolver {
 		return branch;
 	}
 
-	protected MutableAttributeSet getElementStyle(SectionDocument doc) {
+	protected MutableAttributeSet getElementStyle() {
 		return null;
 	}
 

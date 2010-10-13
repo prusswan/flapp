@@ -63,7 +63,7 @@ public class GroupNode extends ActionNode implements Executable, ExecutableGroup
 
 	public boolean hideChildContent() { return true; }
 	
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (textNode != null) {
 			Element[] textLeaves = textNode.getLeaves();
 			addHighlightElements(textLeaves);
@@ -71,6 +71,8 @@ public class GroupNode extends ActionNode implements Executable, ExecutableGroup
 		}
 
 		findExecutableGrouper().addExecutable(this);
+		
+		return super.handleEndTag();
 	}
 
 	private boolean childCallingParent = false;

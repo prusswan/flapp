@@ -127,6 +127,12 @@ public abstract class ActionNode extends Node implements ActionListener {
 		}
 	}
 
+	public boolean handleEndTag() {
+		if (super.handleEndTag()) return true;
+		if (highlightElements != null && highlightElements.length > 0) return true;
+		return false;
+	}
+	
 	private static final String ActionAttribute = "actionListener";
 	protected void addListenerTo(MutableAttributeSet atts) {
 		atts.addAttribute(ActionAttribute, this);

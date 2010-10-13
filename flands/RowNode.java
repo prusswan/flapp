@@ -17,7 +17,7 @@ public class RowNode extends Node {
 		super(ElementName, parent);
 	}
 
-	protected String getElementViewType() { return "row"; }
+	protected String getElementViewType() { return RowViewType; }
 
 	public static class CellNode extends Node {
 		public static final String ElementName = "td";
@@ -31,7 +31,7 @@ public class RowNode extends Node {
 			getDocument().addLeavesTo(getElement(), new StyledText[] { new StyledText(text, StyleNode.createActiveAttributes()) });
 		}
 
-		protected MutableAttributeSet getElementStyle(SectionDocument doc) {
+		protected MutableAttributeSet getElementStyle() {
 			SimpleAttributeSet atts = new SimpleAttributeSet();
 			StyleConstants.setAlignment(atts, StyleConstants.ALIGN_LEFT);
 			return atts;

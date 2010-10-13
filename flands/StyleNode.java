@@ -72,8 +72,9 @@ public abstract class StyleNode extends Node {
 		getParent().handleContent(content);
 	}
 	/** Handles the close tag by removing itself from the stack of active styles. */
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		removeActiveStyle(this);
+		return true;
 	}
 
 	protected Element createElement() { return null; }

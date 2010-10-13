@@ -384,7 +384,7 @@ public class CacheNode extends Node implements ActionListener, MouseListener, Ch
 	}
 
 	protected String getElementViewType() { return BoxYViewType; }
-	protected MutableAttributeSet getElementStyle(SectionDocument doc) {
+	protected MutableAttributeSet getElementStyle() {
 		return new SimpleAttributeSet();
 	}
 
@@ -428,8 +428,9 @@ public class CacheNode extends Node implements ActionListener, MouseListener, Ch
 			addEnableElements(leaves);
 			addHighlightElements(leaves);
 		}
-		public void handleEndTag() {
+		public boolean handleEndTag() {
 			findExecutableGrouper().addExecutable(this);
+			return super.handleEndTag();
 		}
 
 		private int getMoney() {

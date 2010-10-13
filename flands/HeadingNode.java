@@ -45,16 +45,17 @@ public class HeadingNode extends Node {
 		getDocument().addLeavesTo(getElement(), new StyledText[] { new StyledText(text, atts) });
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		Element e = getElement();
 		if (e.getElementCount() > 0) {
 			Element lastChild = e.getElement(e.getElementCount() - 1);
 			if (lastChild.isLeaf())
 				((SectionDocument.ContentElement)lastChild).endWithNewline();
 		}
+		return true;
 	}
 
-	protected MutableAttributeSet getElementStyle(SectionDocument doc) {
+	protected MutableAttributeSet getElementStyle() {
 		SimpleAttributeSet atts = new SimpleAttributeSet();
 		StyleConstants.setBold(atts, true);
 		float multiplier = sizeMultipliers[level-1];

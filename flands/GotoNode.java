@@ -9,7 +9,6 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.text.AttributeSet;
 import javax.swing.text.Element;
-import javax.swing.text.MutableAttributeSet;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 
@@ -146,7 +145,7 @@ public class GotoNode extends ActionNode implements Executable, ChangeListener, 
 		}
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (descriptionNode != null)
 			descriptionNode.handleEndTag();
 
@@ -175,6 +174,8 @@ public class GotoNode extends ActionNode implements Executable, ChangeListener, 
 
 		System.out.println("Goto(" + section + ") adding itself as child");
 		findExecutableGrouper().addExecutable(this);
+		
+		return super.handleEndTag();
 	}
 
 	protected void enabledStateChange() {
@@ -239,8 +240,6 @@ public class GotoNode extends ActionNode implements Executable, ChangeListener, 
 		else
 			return null;
 	}
-
-	protected MutableAttributeSet getElementStyle(SectionDocument doc) { return null; }
 
 	public void actionPerformed(ActionEvent e) {
 		if (!canUse()) {

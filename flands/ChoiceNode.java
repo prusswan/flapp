@@ -153,7 +153,7 @@ public class ChoiceNode extends Node implements Executable, ActionListener, Chan
 		}
 	}
 	
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		descriptionNode.handleEndTag();
 		//choiceElement.endWithNewline();
 
@@ -177,6 +177,8 @@ public class ChoiceNode extends Node implements Executable, ActionListener, Chan
 			setEnabled(getCodewords().hasCodeword(boxword));
 			getCodewords().addChangeListener(boxword, this);
 		}
+		
+		return true;
 	}
 
 	private int getMoney() {
@@ -251,7 +253,7 @@ public class ChoiceNode extends Node implements Executable, ActionListener, Chan
 		}
 	}
 
-	protected String getElementViewType() { return "row"; }
+	protected String getElementViewType() { return RowViewType; }
 	
 	public void dispose() {
 		if (shards != null) {

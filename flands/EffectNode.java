@@ -73,9 +73,10 @@ public class EffectNode extends Node {
 	
 	protected Element createElement() { return null; }
 	
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (textNode != null)
 			effect.setStyledDescription(textNode.getText());
+		return false;
 	}
 	
 	public void saveProperties(Properties props) {

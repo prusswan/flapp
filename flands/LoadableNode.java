@@ -64,9 +64,10 @@ public class LoadableNode extends Node  {
 		return dummyDoc;
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (dummyDoc != null)
 			dummyDoc.releaseWriteLock();
+		return false;
 	}
 	
 	/**
@@ -95,7 +96,7 @@ public class LoadableNode extends Node  {
 
 		protected Element createElement() { return null; }
 		
-		public void handleEndTag() {
+		public boolean handleEndTag() {
 			ItemList items = (listName == null ?
 					XMLPool.getPool().getAdventurer().getItems() :
 					CacheNode.getItemCache(listName));
@@ -114,6 +115,7 @@ public class LoadableNode extends Node  {
 					items.addItem(item);
 				}
 			}
+			return false;
 		}
 	}
 	
@@ -125,7 +127,7 @@ public class LoadableNode extends Node  {
 		
 		protected Element createElement() { return null; }
 		
-		public void handleEndTag() {
+		public boolean handleEndTag() {
 			CurseList curses = XMLPool.getPool().getAdventurer().getCurses();
 			curses.removeAll();
 			
@@ -136,6 +138,8 @@ public class LoadableNode extends Node  {
 					curses.addCurse(c);
 				}
 			}
+			
+			return false;
 		}
 	}
 	
@@ -152,9 +156,10 @@ public class LoadableNode extends Node  {
 			super.init(atts);
 		}
 		protected Element createElement() { return null; }
-		public void handleEndTag() {
+		public boolean handleEndTag() {
 			if (cacheName != null && amount > 0)
 				CacheNode.setMoneyCache(cacheName, amount);
+			return false;
 		}
 	}
 }

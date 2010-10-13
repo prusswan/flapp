@@ -116,7 +116,7 @@ public class ExtraChoice extends ActionNode implements Executable {
 		addEnableElements(leaves);
 	}
 	
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (styledText == null) {
 			if (text == null)
 				hidden = true;
@@ -127,6 +127,8 @@ public class ExtraChoice extends ActionNode implements Executable {
 			}
 		}
 		findExecutableGrouper().addExecutable(this);
+		
+		return super.handleEndTag();
 	}
 	
 	public boolean execute(ExecutableGrouper grouper) {

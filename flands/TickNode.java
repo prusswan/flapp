@@ -192,7 +192,7 @@ public class TickNode extends ActionNode implements Executable, ItemListener, Fl
 		addEnableElements(leaves);
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		System.out.println("Adding TickNode() as child Executable");
 		if (!hadContent && !hidden && !getParent().hideChildContent()) {
 			String text = null;
@@ -214,6 +214,7 @@ public class TickNode extends ActionNode implements Executable, ItemListener, Fl
 			handleContent(text);
 		}
 		findExecutableGrouper().addExecutable(this);
+		return super.handleEndTag();
 	}
 
 	private boolean callContinue = false;

@@ -77,7 +77,7 @@ public class RandomNode extends ActionNode implements Executable, Roller.Listene
 		addHighlightElements(leaves);
 	}
 
-	public void handleEndTag() {
+	public boolean handleEndTag() {
 		if (!addedContent && !hidden && !getParent().hideChildContent()) {
 			String content;
 			if (getDocument().isNewSentence(getDocument().getLength()))
@@ -94,6 +94,8 @@ public class RandomNode extends ActionNode implements Executable, Roller.Listene
 		}
 		System.out.println("Adding RandomNode(" + dice + "D) as Executable child");
 		findExecutableGrouper().addExecutable(this);
+		
+		return super.handleEndTag();
 	}
 
 	protected Node createChild(String name) {
@@ -193,7 +195,8 @@ public class RandomNode extends ActionNode implements Executable, Roller.Listene
 		}
 	}
 
-	protected MutableAttributeSet getElementStyle(SectionDocument doc) {
+	// TODO: Why the hell is RandomNode returning paragraph-style attributes?
+	protected MutableAttributeSet getElementStyle() {
 		SimpleAttributeSet atts = new SimpleAttributeSet();
 		StyleConstants.setAlignment(atts, StyleConstants.ALIGN_JUSTIFIED);
 		StyleConstants.setFirstLineIndent(atts, 25.0f);
