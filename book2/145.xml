@@ -28,7 +28,7 @@
 		<tool name="holy symbol" ability="sanctity" bonus="1" buy="200" sell="100"/>
 		<tool name="compass" ability="scouting" bonus="1" sell="450"/>
 		<item name="rope" buy="50" sell="45"/>
-		<item name="lantern" buy="100" sell="90"/>
+		<item name="lantern" tags="light" buy="100" sell="90"/>
 	</market>
 	<p>
 		Items with no purchase price listed are not available locally. When you&#8217;ve finished your business here, <goto section="191"/>.

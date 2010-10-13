@@ -17,7 +17,7 @@
 		<header type="other"/>
 		<tool name="compass" ability="scouting" bonus="1" buy="500" sell="450"/>
 		<item name="rope" buy="50" sell="45"/>
-		<item name="lantern" buy="100" sell="90"/>
+		<item name="lantern" tags="light" buy="100" sell="90"/>
 	</market>
 	<p>When your business is finished here, <goto section="6"/>.</p>
 </section>

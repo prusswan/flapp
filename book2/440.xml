@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section name="440">
 	<p>
-		<if not="t" item="lantern"><if item="candle">
-				<lose item="candle">
-					Cross off the <b>candle</b>
-				</lose>
-				if you&#8217;re using it, as it can be used only once.
+		<set var="lights" item="?" tags="light" value="matches"/>
+		<set var="candles" item="?" tags="light,useonce" value="matches"/>
+		<if var="candles" equals="lights">
+			<lose item="?" tags="light,useonce">
+				Cross off the <b>candle</b>
+			</lose>
+			if you&#8217;re using it, as it can be used only once.
 		</if></if>
 		Exploring the castle, you find a library containing many dusty tomes. There is a tingle of sorcery in the stale air. If you want to read a book,
 		<random dice="2" force="f"/>:

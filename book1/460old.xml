@@ -11,14 +11,14 @@
 	</p>
 	<p>
 		It is dank, dark and smelly down below.
-		<if not="t" item="lantern|candle" profession="mage">
+		<if not="t" item="?" tags="light" profession="mage">
 			<tick codeword="StillInYellowport" hidden="t"/>
 			If you do not have a light source, such as a lantern or a torch, you will have to return to the city - <goto section="10"/>.
 		</if>
 		If you are a Mage you can use sorcery to create light. If you have a light source, read on.
 	</p>
 	<p>
-		<if item="lantern|candle" profession="mage">
+		<if item="?" tags="light" profession="mage">
 			You follow a tunnel into the darkness. <goto section="164"/>.
 		</if>
 	</p>

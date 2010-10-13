@@ -3,7 +3,7 @@
 	<!-- not ideal: revise if extra light sources are found -->
 	<if codeword="LitCandle">
 		<lose codeword="LitCandle" hidden="t"/>
-		Cross off a <lose item="candle"/> if you lit one, as it is now used up.
+		Cross off a <lose item="?" tags="light,useonce">candle</lose> if you lit one, as it is now used up.
 	</if>
 	<choices>
 		<choice section="191">Return to the ship</choice>

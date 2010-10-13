@@ -45,7 +45,7 @@
 		<tool name="cross-staff" ability="scouting" bonus="2" buy="800" sell="720"/>
 		<tool name="sextant" ability="scouting" bonus="3" buy="1200" sell="1000"/>
 		<item name="rope" buy="50" sell="45"/>
-		<item name="lantern" buy="100" sell="90"/>
+		<item name="lantern" tags="light" buy="100" sell="90"/>
 		<item name="climbing gear" buy="100" sell="90"/>
 		<item name="fur cloak|wolf pelt" buy="100" sell="90"/>
 		<item name="witch's hand" buy="500" sell="450"/>

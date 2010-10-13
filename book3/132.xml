@@ -25,7 +25,7 @@
 			<tool name="ebony wand" ability="magic" bonus="2"/>
 		</outcome>
 		<outcome range="5">
-			<gain shards="1000"/> and a <item name="candle"/>
+			<gain shards="1000"/> and a <item name="candle" tags="light,useonce"/>
 		</outcome>
 		<outcome range="6">
 			<gain shards="200"/> and a

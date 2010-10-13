@@ -6,7 +6,7 @@
 	to come back and explore it another time - assuming you can
 	ever find your way to this spot again.
 	<choices>
-		<choice item="candle|lantern" section="546">Enter the tomb</choice>
+		<choice item="?" tags="light" section="546">Enter the tomb</choice>
 		<choice section="583">Leave</choice>
 	</choices>
 </section>

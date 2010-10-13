@@ -7,7 +7,7 @@
 	<outcomes>
 		<outcome range="1"><item name="paper sword"/></outcome>
 		<outcome range="2"><item name="silver chopsticks"/></outcome>
-		<outcome range="3"><item name="lantern"/></outcome>
+		<outcome range="3"><item name="lantern" tags="light"/></outcome>
 		<outcome range="4"><item name="rope"/></outcome>
 		<outcome range="5"><item name="peacock feather"/></outcome>
 		<outcome range="6"><item name="crimson arrow"/></outcome>

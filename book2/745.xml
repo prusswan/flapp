@@ -7,7 +7,7 @@
 	<else>
 		you wake up in a ditch with a pounding headache. It is midmorning and the fair is packing up. You have
 		<adjustmoney multiply="0.5">lost half your money</adjustmoney>
-		(cross it off your Adventure Sheet) but have somehow managed to acquire a <item name="candle"/>, a <item name="silver horseshoe"/>, and a
+		(cross it off your Adventure Sheet) but have somehow managed to acquire a <item name="candle" tags="light,useonce"/>, a <item name="silver horseshoe"/>, and a
 		<item name="peacock feather"/>
 	</else>.
 	<goto section="199"/>.

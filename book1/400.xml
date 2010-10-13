@@ -13,7 +13,7 @@
 	</p>
 	<p>
 		<if codeword="Barnacle">
-			If you have the codeword Barnacle, <goto section="418"/> immediately.
+			If you have the codeword Barnacle, <goto force="f" section="418"/> immediately.
 		</if>
 		Otherwise, pick from the following options.
 	</p>

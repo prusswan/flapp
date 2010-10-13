@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section name="744">
-	<if not="t" item="lantern">
-		<lose item="candle" hidden="t"/>
+	<set var="lights" item="?" tags="light" value="matches"/>
+	<set var="candles" item="?" tags="light,useonce" value="matches"/>
+	<if var="candles" equals="lights">
+		<lose hidden="t" item="?" tags="light,useonce"/>
 	</if>
 	The tunnel leads to a chamber deep inside the cliff. Stalactites as
 	fine as silver threads hang from the ceiling, surrounding a table

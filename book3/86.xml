@@ -26,7 +26,7 @@
 		<item name="selenium ore" sell="350"/>
 		<tool name="holy symbol" ability="sanctity" bonus="1" buy="200" sell="100"/>
 		<item name="rope" buy="40" sell="25"/>
-		<item name="lantern" buy="140" sell="100"/>
+		<item name="lantern" tags="light" buy="140" sell="100"/>
 		<item name="fretwork key" sell="1000"/>
 		<item name="parrot" buy="75" sell="25"/>
 		<item name="parrot fungus" buy="150" sell="120"/>

@@ -10,8 +10,8 @@
 	<market>
 		<header header1="Item" header2="To buy" header3="To sell"/>
 		<item name="rope" buy="30" sell="20"/>
-		<item name="lantern" buy="75" sell="60"/>
-		<item name="candle" buy="10" sell="5"/>
+		<item name="lantern" tags="light" buy="75" sell="60"/>
+		<item name="candle" tags="light,useonce" buy="10" sell="5"/>
 		<item name="water flask" buy="25" sell="20"/>
 		<item name="coral-red tresses" buy="1000" sell="500"/>
 		<item name="golden katana" buy="10000" sell="3000"/>

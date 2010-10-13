@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section name="196">
 	You return to the ship and sail away.
-	<if item="lantern" not="t">
-		<if item="candle">
-			<lose item="candle">Cross off a <b>candle</b></lose> if you used one.
-		</if>
+	<set var="lights" item="?" tags="light" value="matches"/>
+	<set var="candles" item="?" tags="light,useonce" value="matches"/>
+	<if var="candles" equals="lights">
+		<lose item="?" tags="light,useonce">Cross off a <b>candle</b></lose> if you used one.
 	</if>
 	Then,
 	<if codeword="Callid">

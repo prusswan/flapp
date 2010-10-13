@@ -26,7 +26,7 @@
 		<tool name="silver holy symbol" ability="sanctity" bonus="2" buy="800" sell="750"/>
 		<tool name="gold compass" ability="scouting" bonus="2" buy="900" sell="800"/>
 		<item name="rope" buy="50" sell="45"/>
-		<item name="lantern" buy="100" sell="90"/>
+		<item name="lantern" tags="light" buy="100" sell="90"/>
 		<item name="silver nugget" sell="150"/>
 	</market>
 	<p>

@@ -4,7 +4,7 @@
 	must have a <b>candle</b>, <b>lantern</b> or other source of light.
 	Otherwise you have no choice but to turn back.
 	<choices>
-		<choice item="lantern|candle" section="509">Proceed downwards</choice>
+		<choice item="?" tags="light" section="509">Proceed downwards</choice>
 		<choice section="317">Head for the surface</choice>
 	</choices>
 </section>

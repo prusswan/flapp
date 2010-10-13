@@ -5,7 +5,7 @@
 	or other source of light.
 	Otherwise you have no choice but to turn back.
 	<choices>
-		<choice item="lantern|candle" section="452">Proceed along the tunnel</choice>
+		<choice item="?" tags="light" section="452">Proceed along the tunnel</choice>
 		<choice section="317">Turn back</choice>
 	</choices>
 </section>

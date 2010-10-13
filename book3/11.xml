@@ -4,7 +4,7 @@
 	the tunnel. It is jet black, drinking in the sunlight. To explore
 	you must have a <b>lantern</b>, <b>candle</b> or other light source.
 	<choices>
-		<choice item="lantern|candle" section="178">Continue into tunnel</choice>
+		<choice item="?" tags="light" section="178">Continue into tunnel</choice>
 		<choice section="196">No source of light</choice>
 	</choices>
 </section>

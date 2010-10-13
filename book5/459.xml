@@ -20,7 +20,7 @@
 			<gain shards="10"/> and a <item name="boar's tusk"/>
 		</outcome>
 		<outcome range="4">
-			<gain shards="25"/> and a <item name="lantern"/>
+			<gain shards="25"/> and a <item name="lantern" tags="light"/>
 		</outcome>
 		<outcome range="5">
 			<gain shards="15"/> and a piece of <item name="parchment"/>

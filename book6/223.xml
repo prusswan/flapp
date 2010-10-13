@@ -9,7 +9,7 @@
 		<tool name="compass" ability="scouting" bonus="1" buy="400" sell="350"/>
 		<tool name="cross-staff" ability="scouting" bonus="2" buy="900" sell="650"/>
 		<tool name="sextant" ability="scouting" bonus="3" buy="1500" sell="900"/>
-		<item name="lantern" buy="90" sell="80"/>
+		<item name="lantern" tags="light" buy="90" sell="80"/>
 		<item name="parchment" buy="5" sell="3"/>
 		<item name="tatsu pearl" buy="2500" sell="1000"/>
 		<item name="platinum earring" sell="750"/>

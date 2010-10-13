@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section name="164">
 	<p>
+		<!-- cross off a candle, if it's being used -->
+		<if not="t" profession="mage">
+			<set var="lights" item="?" tags="light" value="matches"/>
+			<set var="candles" item="?" tags="light,useonce" value="matches"/>
+			<if var="candles" equals="lights">
+				<i>[If you're using a candle, <lose item="?" tags="light,useonce">cross it off</lose> now --Ed]</i>
+			</if>
+		</if>
+	</p>
+	<p>
 		The dank tunnels, running with rivulets of foul water, take you deeper into the unknown. You mark the twisting passages with chalk so that you can find your way back.
 	</p>
 	<p>

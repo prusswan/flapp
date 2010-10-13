@@ -22,7 +22,7 @@
 		<tool name="lockpicks" ability="thievery" bonus="1" buy="300" sell="270"/>
 		<tool name="compass" ability="scouting" bonus="1" buy="500" sell="450"/>
 		<item name="rope" sell="45"/>
-		<item name="candle" buy="1" sell="1"/>
+		<item name="candle" tags="light,useonce" buy="1" sell="1"/>
 		<item name="faery mead" sell="150"/>
 	</market>
 	<p>

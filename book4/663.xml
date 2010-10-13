@@ -4,7 +4,7 @@
 		You step into the darkness. It is much colder here, a marrowfreezing, bitter, biting cold that reaches into your chest with talons of frosty iron and squeezes your heart.
 	</p>
 	<p>
-		<if not="t" item="lantern|candle">
+		<if not="t" item="?" tags="light">
 			You must have a <b>lantern</b> or <b>candle</b> to proceed, otherwise it is too dark and you must turn back - <goto section="22"/>.
 		</if>
 	</p>
@@ -12,7 +12,7 @@
 		If you have a light source available, you press on into a maze of tunnels.
 	</p>
 	<p>
-		<if item="lantern|candle">
+		<if item="?" tags="light">
 			<difficulty ability="scouting" level="13"/>.
 		</if>
 	</p>

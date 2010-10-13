@@ -16,7 +16,7 @@
 		<tool name="flute" ability="charisma" bonus="1" buy="190" sell="180"/>
 		<tool name="compass" ability="scouting" bonus="1" buy="490" sell="450"/>
 		<item name="rope" buy="45" sell="40"/>
-		<item name="lantern" buy="90" sell="80"/>
+		<item name="lantern" tags="light" buy="90" sell="80"/>
 		<item name="parrot fungus" buy="90" sell="80"/>
 		<item name="uncanny salts" buy="90" sell="80"/>
 		<item name="scroll of Ebron" buy="200" sell="180"/>

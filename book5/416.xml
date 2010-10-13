@@ -33,7 +33,7 @@
 		<tool name="compass" ability="scouting" bonus="1" buy="500" sell="450"/>
 		<tool name="cross-staff" ability="scouting" bonus="2" buy="800" sell="720"/>
 		<item name="rope" buy="50" sell="45"/>
-		<item name="lantern" buy="100" sell="90"/>
+		<item name="lantern" tags="light" buy="100" sell="90"/>
 		<item name="fur cloak|wolf pelt" buy="100" sell="90"/>
 		<item name="bag of pearls" sell="100"/>
 	</market>

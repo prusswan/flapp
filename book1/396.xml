@@ -32,7 +32,7 @@
 		<tool name="holy symbol" ability="sanctity" bonus="1" buy="220" sell="80"/>
 		<tool name="compass" ability="scouting" bonus="1" buy="520" sell="430"/>
 		<item name="rope" buy="70" sell="25"/>
-		<item name="lantern" buy="120" sell="70"/>
+		<item name="lantern" tags="light" buy="120" sell="70"/>
 		<item name="climbing gear" buy="120" sell="70"/>
 		<item name="bag of pearls" sell="80"/>
 		<item name="rat poison" buy="80" sell="30"/>

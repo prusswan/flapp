@@ -21,7 +21,7 @@
 		<tool name="compass" ability="scouting" bonus="1" buy="500" sell="400"/>
 		<tool name="cross-staff" ability="scouting" bonus="2" buy="900" sell="700"/>
 		<tool name="sextant" ability="scouting" bonus="3" buy="1300" sell="1100"/>
-		<item name="lantern" buy="80" sell="40"/>
+		<item name="lantern" tags="light" buy="80" sell="40"/>
 		<item name="selenium ore" sell="700"/>
 	</market>
 	<p>

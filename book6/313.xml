@@ -7,7 +7,7 @@
 		<header header1="Item" header2="To buy" header3="To sell"/>
 		<tool name="compass" ability="scouting" bonus="1" buy="400" sell="350"/>
 		<tool name="cross-staff" ability="scouting" bonus="2" buy="750" sell="650"/>
-		<item name="lantern" buy="80" sell="60"/>
+		<item name="lantern" tags="light" buy="80" sell="60"/>
 		<item name="parchment" buy="8" sell="5"/>
 		<item name="platinum earring" sell="525"/>
 		<item name="silver nugget" sell="150"/>

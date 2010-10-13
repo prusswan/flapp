@@ -3,7 +3,7 @@
 	The pedlar has a few bargains among the bric-a-brac on his cart:
 	<market sell="f">
 		<header header1="Item" header2="To buy"/>
-		<item name="candle" buy="1"/>
+		<item name="candle" tags="light,useonce" buy="1"/>
 		<weapon name="hunting spear" bonus="0" buy="30"/>
 		<armour name="leather armour" bonus="1" buy="50"/>
 		<item name="fishing hook" buy="2"/>

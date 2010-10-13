@@ -12,10 +12,8 @@
 	<p>
 		<!-- Make sure any other light-sources are added here! -->
 		It is pitch dark, and you must have a source of light, such as a lantern or candle, to proceed.
-		<if not="t" item="lantern">
-			<if not="t" item="candle">
-				If not, you will have to go back - turn to <goto book="1" section="3"/>.
-			</if>
+		<if not="t" item="?" tags="light">
+			If not, you will have to go back - turn to <goto book="1" section="3"/>.
 		</if>
 	</p>
 	<p>

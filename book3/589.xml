@@ -16,7 +16,7 @@
 		<item name="parrot fungus" buy="250"/>
 		<item name="black cat" buy="20"/>
 		<item name="parchment" buy="1"/>
-		<item name="candle" buy="2"/>
+		<item name="candle" tags="light,useonce" buy="2"/>
 	</market>
 	<choices>
 		<choice section="643">Steal an item</choice>
