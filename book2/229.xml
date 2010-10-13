@@ -21,7 +21,12 @@
 		<set var="ransom" value="150"/>
 	</elseif>
 	Your captors take you to Metriciens, where the payment of the ransom is arranged through the auspices of the merchants&#8217; guild. Turn to <b>36</b> and deduct the ransom demand from your account at the guild.
-	<moneycache name="MerchantBank" text="Money banked" withdrawCharge="0.1"/>
+	<i>[Your ransom is either
+		<if var="ransom" equals="100">100</if>,
+		<if var="ransom" equals="150">150</if> or
+		<if var="ransom" equals="300">300</if> Shards --Ed]
+	</i>
+	<moneycache name="MerchantBank" text="Money banked"/>
 	<choices>
 		<choice section="252">Not enough banked to cover the ransom</choice>
 		<choice section="48" shards="ransom">Ransom paid in full</choice>
