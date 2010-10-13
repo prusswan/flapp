@@ -1,6 +1,6 @@
 <section name="Chalor the Exiled One" profession="Mage">
 	<p>
-		Chalor is an outcast by choice, shunning his native land and the family who spurned him, driven by a burning desire for secret knowledge. His goal is to become one of the mightiest wizards of the world, and nothing will stand in his way. For now, he is looking for the Gold Dust tavern in Yellowport, where adventure awaits.
+		Chalor is an outcast by choice, shunning his native land and the family who spurned him, driven by a burning desire for secret knowledge. His goal is to become one of the mightiest wizards of the world, and he is determined that nothing will stand in his way.
 	</p>
 	<p>
 		You can play as Chalor, or as a mage with a different name (enter it in the 'Name' field). To begin your adventure, <goto section="1" force="f"/>.
