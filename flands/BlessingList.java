@@ -232,7 +232,7 @@ public class BlessingList extends AbstractListModel implements Loadable,
 		currentBlessing = null;
 	}
 
-	private boolean canUseBlessing(Blessing b) {
+	public static boolean canUseBlessing(Blessing b) {
 		UndoManager.Creator currentUndoCreator = UndoManager.getCurrent().getCreator();
 		switch (b.getType()) {
 		case Blessing.ABILITY_TYPE:
@@ -258,8 +258,7 @@ public class BlessingList extends AbstractListModel implements Loadable,
 		return false;
 	}
 
-	private void useBlessing(int index) {
-		Blessing b = getBlessing(index);
+	static boolean useBlessing(Blessing b) {
 		switch (b.getType()) {
 		case Blessing.ABILITY_TYPE:
 		case Blessing.LUCK_TYPE:
@@ -267,14 +266,20 @@ public class BlessingList extends AbstractListModel implements Loadable,
 			UndoManager.getCurrent().undo();
 			//if (FLApp.debugging && b.getType() == Blessing.LUCK_TYPE)
 			//	return;
-			break;
+			return true;
 		case Blessing.DEFENCE_TYPE:
 			Blessing.addDefenceBlessing(b.getBonus());
-			break;
+			return true;
 		}
-		
-		if (!b.isPermanent())
-			removeBlessing(b);
+		return false;
+	}
+	
+	private void useBlessing(int index) {
+		Blessing b = getBlessing(index);
+		if (useBlessing(b)) {
+			if (!b.isPermanent())
+				removeBlessing(b);
+		}
 	}
 
 	public String getFilename() {

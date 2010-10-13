@@ -435,6 +435,7 @@ public class ItemList extends AbstractListModel implements GameListener, XMLOutp
 			}
 		}
 		adjustEffects(i, Effect.TYPE_AURA, true);
+		adjustEffects(i, Effect.TYPE_TOOL, true);
 	}
 	
 	public boolean adjustMoney(int money, String currency) {
@@ -594,7 +595,8 @@ public class ItemList extends AbstractListModel implements GameListener, XMLOutp
 				}
 			}
 		}
-		adjustEffects(removed, Effect.TYPE_AURA, false);		
+		adjustEffects(removed, Effect.TYPE_AURA, false);	
+		adjustEffects(removed, Effect.TYPE_TOOL, false);
 	}
 	
 	public void removeAll() { removeAll(true); }
@@ -760,6 +762,7 @@ public class ItemList extends AbstractListModel implements GameListener, XMLOutp
 			}
 
 			adjustEffects(i, Effect.TYPE_AURA, true);
+			adjustEffects(i, Effect.TYPE_TOOL, true);
 			notifyListeners();
 		}
 	}
@@ -906,7 +909,7 @@ public class ItemList extends AbstractListModel implements GameListener, XMLOutp
 					}
 					else {
 						UseEffect effect = getUseEffect(item);
-						if (effect != null) {
+						if (effect != null && effect.canUse()) {
 							boolean result = effect.use();
 							FLApp.getSingle().actionTaken();
 							if (!result)
@@ -961,8 +964,12 @@ public class ItemList extends AbstractListModel implements GameListener, XMLOutp
 				}
 
 				UseEffect effect = getUseEffect(item);
-				if (effect != null)
-					itemMenu.add(createMenuItem(effect.getVerb(), useCommand, this));
+				if (effect != null) {
+					JMenuItem useItem = createMenuItem(effect.getVerb(), useCommand, this);
+					if (!effect.canUse())
+						useItem.setEnabled(false);
+					itemMenu.add(useItem);
+				}
 
 				if (item.canBeWielded()) {
 					JMenuItem wieldItem =

@@ -24,8 +24,10 @@ public class UseEffect extends Effect implements ExecutableGrouper {
 	 */
 	public static final String UsesPattern = "{uses}";
 	
-	private int uses;
+	private int uses = -1;
 	private int ability = -1;
+	private boolean disposable = true;
+	private Blessing blessing = null;
 	private String verb = null;
 	private List<ActionNode> actions = null;
 
@@ -38,22 +40,31 @@ public class UseEffect extends Effect implements ExecutableGrouper {
 	protected void init(Attributes atts) {
 		super.init(atts);
 		String val = atts.getValue("ability");
-		if (val != null)
+		if (val != null) {
 			ability = Adventurer.getAbilityType(val);
-		uses = Node.getIntValue(atts, "uses", (ability < 0) ? -1 : 1);
+			if (ability >= 0)
+				uses = 1;
+		}
+		if (atts.getValue("blessing") != null)
+			blessing = Blessing.getBlessing(atts);
+		uses = Node.getIntValue(atts, "uses", uses);
 		if (ability < 0)
 			verb = atts.getValue("verb");
 		else
 			verb = "Drink";
+		disposable = Node.getBooleanValue(atts, "disposable", disposable);
 	}
 
 	protected void saveProperties(Properties atts) {
 		super.saveProperties(atts);
 		if (ability >= 0)
 			atts.setProperty("ability", Adventurer.getAbilityName(ability));
+		if (blessing != null)
+			blessing.saveTo(atts);
 		Node.saveProperty(atts, "uses", uses);
 		if (verb != null)
 			atts.setProperty("verb", verb);
+		Node.saveProperty(atts, "disposable", disposable);
 	}
 	
 	public int getType() { return TYPE_USE; }
@@ -64,6 +75,14 @@ public class UseEffect extends Effect implements ExecutableGrouper {
 		if (actions == null)
 			actions = new LinkedList<ActionNode>();
 		actions.add(n);
+	}
+	
+	public boolean canUse() {
+		if (blessing != null) {
+			if (!BlessingList.canUseBlessing(blessing))
+				return false;
+		}
+		return true;
 	}
 	
 	public boolean use() {
@@ -82,11 +101,15 @@ public class UseEffect extends Effect implements ExecutableGrouper {
 		else if (ability >= 0) {
 			FLApp.getSingle().getAdventurer().getEffects().addAbilityPotionBonus(ability);
 		}
+		else if (blessing != null) {
+			if (!BlessingList.useBlessing(blessing))
+				return true;
+		}
 		else
 			return true;
 
 		if (uses > 0) {
-			if (--uses == 0)
+			if (--uses == 0 && disposable)
 				return false; // to signal that this effect has been used up
 		}
 		return true;
