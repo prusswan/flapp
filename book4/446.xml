@@ -6,6 +6,6 @@
 	<fight name="Sir Leo" combat="8" defence="20" stamina="35"/>
 	<choices>
 		<choice section="571">Fight him and win</choice>
-		<flee><choice section="191">Run back to the ship</choice></flee>
+		<choice section="191" flee="t">Run back to the ship</choice>
 	</choices>
 </section>
