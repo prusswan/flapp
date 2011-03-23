@@ -3,7 +3,7 @@
 	<p>
 		<if item="salt and iron filings">
 			If you have <b>salt and iron filings</b>,
-			<goto secxtion="705"/>.
+			<goto section="705"/>.
 		</if>
 		If not, read on.
 	</p>

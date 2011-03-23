@@ -8,7 +8,7 @@
 				Cross off the <b>candle</b>
 			</lose>
 			if you&#8217;re using it, as it can be used only once.
-		</if></if>
+		</if>
 		Exploring the castle, you find a library containing many dusty tomes. There is a tingle of sorcery in the stale air. If you want to read a book,
 		<random dice="2" force="f"/>:
 	</p>

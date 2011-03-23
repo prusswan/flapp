@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <section name="Silas Cumberbatch" profession="Troubadour">
 	<p>
-		After a short spell in the Yellowport militia (he mistakenly enlisted thinking he was joining a queue for alms), Silas signed on aboard a merchantman bound for Metriciens. He found that the fresh breeze and the open sea inspired his ballads, and resolved not to return to a landlubber’s life until he has learned the song of the mermaids.
+		After a short spell in the Yellowport militia (he mistakenly enlisted thinking he was joining a queue for alms), Silas signed on aboard a merchantman bound for Metriciens. He found that the fresh breeze and the open sea inspired his ballads, and resolved not to return to a landlubber&#8217;s life until he has learned the song of the mermaids.
 	</p>
 	<p>
 		You can play as Silas, or as a troubadour with a different name (enter it in the 'Name' field). To begin your adventure, <goto section="1" force="f"/>.
