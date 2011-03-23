@@ -10,9 +10,9 @@
 	</p>
 	<p>When you are ready to leave:</p>
 	<choices>
-		<choice section="10">In Yellowport</choice>
-		<choice section="100">In Marlock City</choice>
-		<choice section="400">In Caran Baru</choice>
+		<choice box="1.605.1" section="10">In Yellowport</choice>
+		<choice box="1.605.2" section="100">In Marlock City</choice>
+		<choice box="1.605.3" section="400">In Caran Baru</choice>
 		<!-- no ransoms in book 1!
 		<choice section="501">If paying a ransom</choice>
 		-->
