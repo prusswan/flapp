@@ -67,8 +67,8 @@ public class ParserHandler implements ContentHandler {
 	private void pushNode(Node node) { nodeStack.addFirst(node); }
 	private Node popNode() { return (nodeStack.isEmpty()) ? null : nodeStack.removeFirst(); }
 
-	private static final char OpenQuote = '‘';
-	private static final char CloseQuote = '’';
+	private static final char OpenQuote = '\u2018';
+	private static final char CloseQuote = '\u2019';
 	/**
 	 * Convert any open and close quotes in a string into the standard apostrophe.
 	 * This makes item matching a lot easier.

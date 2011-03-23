@@ -423,7 +423,7 @@ public class Books {
 				canon.addBook(new BookDetails("4", "Devils & Howling Darkness", "book4"));
 				canon.addBook(new BookDetails("5", "The Court of Hidden Faces", "book5"));
 				canon.addBook(new BookDetails("6", "Lords of the Rising Sun", "book6"));
-				canon.addBook(new BookDetails("7", "The Serpent-King’s Domain", "book7"));
+				canon.addBook(new BookDetails("7", "The Serpent-King\u2019s Domain", "book7"));
 				canon.addBook(new BookDetails("8", "The Lone and Level Sands", "book8"));
 				canon.addBook(new BookDetails("9", "The Isle of a Thousand Spires", "book9"));
 				canon.addBook(new BookDetails("10", "Legions of the Labyrinth", "book10"));

@@ -196,7 +196,7 @@ public class SectionDocument extends AbstractDocument implements StyledDocument 
 				else if (Character.isWhitespace(ch) || ch == '\'') {
 					//System.out.println("Skipping whitespace");
 				}
-				else if (ch == '\'' || ch == '’' || ch == ')') {
+				else if (ch == '\'' || ch == '\u2019' || ch == ')') {
 					System.out.println("Skipping possible end-quote - is this correct?");
 				}
 				else {
