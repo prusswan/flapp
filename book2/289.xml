@@ -14,6 +14,6 @@
 		<if cache="MerchantBank" shards="150">
 			If you can pay a ransom of 150 Shards, <goto section="229"/>.
 		</if>
-		If not, the brigands <goto section="787">kill you</goto>.
+		If not, the brigands <goto section="560">kill you</goto>.
 	</p>
 </section>
