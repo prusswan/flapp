@@ -7,6 +7,8 @@
 		<if item="deed to the Wrath of God">If you have a <b>deed to the Wrath of God</b>, <goto section="192" force="f"/>.</if> <if codeword="Ebb">If not, but you have the codeword Ebb and you want to ship minerals from a mine in the Grumes, <goto section="447" force="f"/>.</if> If not, read on.
 	</p>
 	<p>
+		<tick codeword="5.Kunrir.leaving" hidden="t"/>
+		<lose codeword="5.Aku.leaving" hidden="t"/>
 		You can buy a one-way passage on a ship to the following destinations:
 	</p>
 	<choices>

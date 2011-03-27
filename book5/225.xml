@@ -5,6 +5,9 @@
 	</p>
 	<p>
 		You can buy a one-way passage on a ship to the following destinations:
+		<lose codeword="5.Kunrir.leaving" hidden="t"/>
+		<tick codeword="5.Aku.leaving" hidden="t"/>
+
 	</p>
 	<choices>
 		<choice section="372" shards="25" pay="f">Metriciens, cost 25 Shards</choice>
