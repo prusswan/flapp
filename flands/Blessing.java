@@ -161,6 +161,7 @@ public class Blessing {
 		lastDefenceEffect = e;
 		getAdventurer().checkAbilityBonus(Adventurer.ABILITY_DEFENCE);
 	}
+	
 	/**
 	 * Add the same Defence bonus that was last used in the
 	 * {@link #addDefenceBlessing(int)} method.
@@ -181,6 +182,14 @@ public class Blessing {
 			getAdventurer().getEffects().removeStatRelated(Adventurer.ABILITY_DEFENCE, DEFENCE, lastDefenceEffect);
 			getAdventurer().checkAbilityBonus(Adventurer.ABILITY_DEFENCE);
 		}
+	}
+	
+	/**
+	 * Looks for an active Defence blessing;
+	 * @return the value of the Defence bonus; <code>0</code> if not present.
+	 */
+	public static int findActiveDefenceBlessing() {
+		return getAdventurer().getEffects().getStatRelatedBonus(Adventurer.ABILITY_DEFENCE, DEFENCE);
 	}
 	
 	public String getContentString() {

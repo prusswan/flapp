@@ -776,12 +776,19 @@ public class FightNode extends Node implements Executable, ActionListener, Rolle
 					// This bonus will have to be removed after the fight
 					usingAbilityBonus = getAdventurer().getEffects().hasAbilityPotionBonus(Adventurer.ABILITY_COMBAT);
 
-				if (getBlessings().hasBlessing(Blessing.DEFENCE) && playerDefence == null) {
-					int useBlessing = JOptionPane.showConfirmDialog(FLApp.getSingle(), "Do you want to use your\nDefence through Faith blessing?", "Use Blessing?", JOptionPane.YES_NO_OPTION);
-					if (useBlessing == JOptionPane.YES_OPTION) {
-						defenceBonus = getBlessings().getDefenceBlessingBonus();
-						Blessing.addDefenceBlessing(defenceBonus);
-						getBlessings().removeBlessing(Blessing.DEFENCE);
+				if (playerDefence == null) {
+					// Check whether there's already an active Defence blessing
+					defenceBonus = Blessing.findActiveDefenceBlessing();
+					
+					// If not, check whether the player has a Defence blessing
+					// they might want to use
+					if (defenceBonus == 0 && getBlessings().hasBlessing(Blessing.DEFENCE)) {
+						int useBlessing = JOptionPane.showConfirmDialog(FLApp.getSingle(), "Do you want to use your\nDefence through Faith blessing?", "Use Blessing?", JOptionPane.YES_NO_OPTION);
+						if (useBlessing == JOptionPane.YES_OPTION) {
+							defenceBonus = getBlessings().getDefenceBlessingBonus();
+							Blessing.addDefenceBlessing(defenceBonus);
+							getBlessings().removeBlessing(Blessing.DEFENCE);
+						}
 					}
 				}
 			}

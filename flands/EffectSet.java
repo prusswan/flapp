@@ -163,6 +163,27 @@ public class EffectSet {
 		return false;
 	}
 
+	/**
+	 * Look for an 'adjust' ability effect related to the given source, and return the
+	 * amount of that adjustment.
+	 * @param ability the ability being affected;
+	 * @param src the effect source.
+	 * @return <code>0</code> if a related adjust effect can't be found.
+	 */
+	public int getStatRelatedBonus(int ability, Object src) {
+		for (Iterator<EffectRecord> i = getStatRelated(ability).iterator(); i.hasNext(); ) {
+			EffectRecord er = i.next();
+			if (er.src == src) {
+				if (er.effect instanceof AbilityEffect) {
+					AbilityEffect ae = (AbilityEffect)er.effect;
+					if (ae.getModifyType() == AbilityEffect.ADJUST_ABILITY)
+						return ae.getValue();
+				}
+			}
+		}
+		return 0;
+	}
+	
 	public boolean hasAbilityPotionBonus(int ability) {
 		return hasStatRelated(ability, Item.AbilityPotionSource, AbilityEffect.createAbilityBonus(ability, 1));
 	}
