@@ -94,7 +94,7 @@ public class SetVarNode extends ActionNode implements Executable, Expression.Res
 				a = (Item.Armour)getSingleItem();
 			}
 			catch (ClassCastException cce) {}
-			if (a == null)
+			if (a == null && cache == null)
 				a = getItems().getWorn();
 			return (a == null ? 0 : a.getBonus());
 		}
@@ -104,7 +104,7 @@ public class SetVarNode extends ActionNode implements Executable, Expression.Res
 				w = (Item.Weapon)getSingleItem();
 			}
 			catch (ClassCastException cce) {}
-			if (w == null)
+			if (w == null && cache == null)
 				w = getItems().getWielded();
 			System.out.println("Weapon item=" + w);
 			return (w == null ? 0 : w.getBonus());
@@ -162,12 +162,12 @@ public class SetVarNode extends ActionNode implements Executable, Expression.Res
 		if (value != null) {
 			Expression exp = new Expression(value);
 			int val = exp.getRoot().evaluate(this);
-			System.out.println("SetVar expression result: " + val);
+			System.out.println("SetVar (" + var + ") = " + val);
 			setVariableValue(var, val);
 		}
 		else if (codeword != null) {
 			int val = getCodewords().getValue(codeword);
-			System.out.println("SetVar expression result: " + val);
+			System.out.println("SetVar (" + var + ") = " + val);
 			setVariableValue(var, val);
 		}
 

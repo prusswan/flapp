@@ -20,6 +20,7 @@
 		</else>
 		and add 1 for every full 300 Shards you left as payment:
 
+		<!-- work out the maximum bonus we'll allow -->
 		<if var="weaponbonus" greaterthan="0">
 			<set var="bonus" value="6-weaponbonus"/>
 		</if>
@@ -37,7 +38,8 @@
 		</outcome>
 		<outcome range="10-12">
 			The item is
-			<tick item="*" cache="2.617" addtag="Molherned" addbonus="1">
+			<if var="bonus" greaterthan="1"><set var="bonus" value="1"/></if>
+			<tick item="*" cache="2.617" addtag="Molherned" addbonus="bonus">
 				upgraded by +1
 			</tick>
 		</outcome>
