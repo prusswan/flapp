@@ -30,7 +30,7 @@ public class RerollNode extends ActionNode implements Executable {
 	}
 
 	public boolean handleEndTag() {
-		if (!hadContent) {
+		if (!hadContent && !getParent().hideChildContent()) {
 			String text = (getDocument().isNewSentence() ? "Roll again" : "roll again");
 			handleContent(text);
 		}

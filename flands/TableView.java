@@ -30,15 +30,15 @@ public class TableView extends javax.swing.text.TableView {
 	public final static String CellWidth   = "cellWidth";
 	public final static String FillWidth   = "fillWidth";
 
-	private static float defaultCellAlign__ = 0.5f;
+	private static float DefaultCellAlign = 0.5f;
 
-	private View parent_;
+	private View _parent;
 
-	private BasicStroke stroke_;
-	private short       cellPadding_;
-	private float       cellAlign_;
-	private short       borderWidth_;
-	private boolean     fillWidth_;
+	private BasicStroke _stroke;
+	private short       _cellPadding;
+	private float       _cellAlign;
+	private short       _borderWidth;
+	private boolean     _fillWidth;
 
 	TableView (Element elem) {
 		super(elem);
@@ -48,14 +48,14 @@ public class TableView extends javax.swing.text.TableView {
 	// Override to protect our children from having their
 	// parent view set to null as well.  See View.setParent()
 	public void setParent(View parent) {
-		parent_ = parent;
+		_parent = parent;
 		        
 		if (parent != null)
 			super.setParent(parent);
 	}
 		
 	public View getParent() {
-		return parent_;
+		return _parent;
 	}
    
 	public TableRow createTableRow(Element e) {
@@ -95,7 +95,7 @@ public class TableView extends javax.swing.text.TableView {
 		//float f = super.getMaximumSpan(axis);
 		float f ;
 		if (axis == View.X_AXIS) {
-			if (fillWidth_)
+			if (_fillWidth)
 				f = 10000f; // super.getMaximumSpan returns -2 !?
 			else
 				f = super.getPreferredSpan(axis);  // No stretch.  Could make configurable...
@@ -123,9 +123,9 @@ public class TableView extends javax.swing.text.TableView {
 			View[] added = new View[n];
 			for (int i = 0; i < n; i++) {
 				TableRow r = createTableRow(e.getElement(i));
-				r.setCellPadding(cellPadding_);
-				r.setBorderWidth(borderWidth_);
-				r.setCellAlign(cellAlign_);
+				r.setCellPadding(_cellPadding);
+				r.setBorderWidth(_borderWidth);
+				r.setCellAlign(_cellAlign);
 				added[i] = r;
 				//System.out.println("row");
 			}
@@ -153,9 +153,9 @@ public class TableView extends javax.swing.text.TableView {
 			added = new View[addedElems.length];
 			for (int i = 0; i < addedElems.length; i++) {
 				TableRow r = createTableRow(addedElems[i]);
-				r.setCellPadding(cellPadding_);
-				r.setBorderWidth(borderWidth_);
-				r.setCellAlign(cellAlign_);
+				r.setCellPadding(_cellPadding);
+				r.setBorderWidth(_borderWidth);
+				r.setCellAlign(_cellAlign);
 				added[i] = r;
 			}
 		}
@@ -223,9 +223,9 @@ public class TableView extends javax.swing.text.TableView {
 		}
 		 
 		if (f != 0)
-			stroke_ = new BasicStroke(f);
+			_stroke = new BasicStroke(f);
 		      
-		borderWidth_ = (short)f;
+		_borderWidth = (short)f;
 	}
 
 	private void retrieveCellPadding(AttributeSet attr) {
@@ -237,12 +237,12 @@ public class TableView extends javax.swing.text.TableView {
 			s = S.shortValue();
 		}
 		      
-		cellPadding_ = s;
+		_cellPadding = s;
 	}
 
 	private void retrieveCellAlign(AttributeSet attr) {
 		Object o = null;
-		float  f = defaultCellAlign__;
+		float  f = DefaultCellAlign;
 		      
 		if (attr != null &&
 			(o = attr.getAttribute(CellAlign)) != null) {
@@ -250,7 +250,7 @@ public class TableView extends javax.swing.text.TableView {
 			f = F.shortValue();
 		}
 
-		cellAlign_ = f;
+		_cellAlign = f;
 	}
 
 	private void retrieveFillWidth(AttributeSet attr) {
@@ -262,7 +262,7 @@ public class TableView extends javax.swing.text.TableView {
 			b = B.booleanValue();
 		}
 
-		fillWidth_ = b;
+		_fillWidth = b;
 	}
 
 	public class TableRow extends javax.swing.text.TableView.TableRow {
@@ -322,7 +322,7 @@ public class TableView extends javax.swing.text.TableView {
 	      
 		void setBorderWidth(short borderWidth) {
 			borderWidth_ = borderWidth;
-			if ((borderWidth_ != TableView.this.borderWidth_) &&
+			if ((borderWidth_ != TableView.this._borderWidth) &&
 				(borderWidth_ != 0)) {
 				// per row bordering style is different to parent
 				// table.  Create local stroke object
@@ -353,7 +353,7 @@ public class TableView extends javax.swing.text.TableView {
 			// Set up the drawing
 			Graphics2D g2 = (Graphics2D)g;
 			BasicStroke stroke = (this.stroke_ != null) ?
-				this.stroke_ : TableView.this.stroke_;
+				this.stroke_ : TableView.this._stroke;
 			g2.setStroke(stroke);
 			g2.setColor(Color.BLACK);
 	        
