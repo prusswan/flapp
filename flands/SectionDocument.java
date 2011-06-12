@@ -87,7 +87,7 @@ public class SectionDocument extends AbstractDocument implements StyledDocument 
 				}
 
 				String fontname = line.substring(0, comma1).trim();
-				if (Arrays.binarySearch(availableFonts, fontname) >= 0) {
+				if (Arrays.binarySearch(availableFonts, fontname, String.CASE_INSENSITIVE_ORDER) >= 0) {
 					int size = Integer.parseInt(line.substring(comma1+1,comma2).trim());
 					int smallerSize = Integer.parseInt(line.substring(comma2+1).trim());
 					preferredFont = new Font(fontname, Font.PLAIN, size);
