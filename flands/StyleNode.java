@@ -64,6 +64,13 @@ public abstract class StyleNode extends Node {
 	public boolean isStyleNode() { return true; }
 
 	/**
+	 * Child nodes should be created as direct children of the parent node.
+	 */
+	protected Node createChild(String name) {
+		return getParent().createChild(name);
+	}
+	
+	/**
 	 * Handle textual content by passing it to the parent node.
 	 * If the parent has been keeping track of style nodes, as Node does,
 	 * it can apply this style (and any others) to the content being handled.
