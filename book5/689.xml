@@ -6,10 +6,10 @@
 	<p>
 		<set var="armpenalty" value="-armour"/>
 		The creature, a water drake, opens its mouth and a high pressure jet of water stuns you.
-		<difficulty ability="scouting" level="10">
+		<difficulty ability="scouting" level="10" var="pre">
 			<adjust value="armpenalty"/>
 		</difficulty> (remember to subtract any armour you are wearing from the roll).
-		<failure>
+		<failure var="pre">
 			If you fail, you pass out and are drowned by the monster - <goto section="7"/>.
 		</failure>
 		If you succeed, you must fight the water drake in its own environment.
@@ -21,10 +21,10 @@
 	<p>
 		<fightround pre="f">
 			Each round, you must
-			<difficulty ability="scouting" level="9">
+			<difficulty ability="scouting" level="9" var="round">
 				<adjust value="armpenalty"/>
 			</difficulty> (subtract armour) to stay afloat.
-			<failure>
+			<failure var="round">
 				If you fail at any time, one of the creature's slippery coils has
 				<goto section="7">dragged you under</goto>
 				for the last time.
