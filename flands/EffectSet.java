@@ -246,6 +246,7 @@ public class EffectSet {
 			applyTool = false;
 			break;
 		}
+		
 		int bestToolBonus = 0;
 		for (Iterator<EffectRecord> i = getStatRelated(ability).iterator(); i.hasNext(); ) {
 			EffectRecord r = i.next();
@@ -293,7 +294,10 @@ public class EffectSet {
 			// Apply it now
 			value += bestToolBonus;
 
-		return value;
+		// Peg the minimum value for an affected ability at 1.
+		// This stops curses from lowering an early character's stats below 1.
+		// TODO: Does this screw anything else up?
+		return Math.max(1, value);
 	}
 	
 	public String getAbilityAdjustments(int ability, int natural) {
