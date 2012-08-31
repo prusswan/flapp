@@ -7,8 +7,8 @@
 	<moneycache name="2.322.t" text="Available treasure:"/>
 	Decide how much you will collect
 	<i>[<tick special="lock" cache="2.322.t">click here</tick>
-		<set var="RandomPlus" value="(900-shards)/100" cache="2.322.t"/>
 		when you're done]</i>,
+	<set var="RandomPlus" value="(900-shards)/100" cache="2.322.t"/>
 	then
 	<random>
 		<adjust value="RandomPlus"/>
