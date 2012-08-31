@@ -51,6 +51,8 @@ import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 
+import flands.resources.Resources;
+
 /**
  * The main window. This should coordinate other classes and watch for user
  * events, but as far as possible delegate to other classes.
@@ -115,7 +117,7 @@ public class FLApp extends JFrame implements MouseListener,
 	private List<GameListener> gameListeners = new LinkedList<GameListener>();
 
 	private FLApp() {
-		super("Fabled Lands");
+		super(Resources.GuiText("AppTitle"));
 
 		textPane = new JTextPane() {
 			public void setDocument(Document doc) {
@@ -186,9 +188,9 @@ public class FLApp extends JFrame implements MouseListener,
 			//adventurer = advs[Adventurer.PROF_MAGE];
 			adventurer = advs[(int)(Math.random() * Adventurer.PROF_COUNT)];
 			//adventurer.adjustAbility(Adventurer.ABILITY_COMBAT, 3);
-			adventurer.adjustMoney(200);
+			adventurer.adjustMoney(2000);
 			//adventurer.addTitle("Paladin of Ravayne");
-			//adventurer.setGod("Ebron");
+			adventurer.setGod("Molhern");
 			//adventurer.setGod("Sig");
 			//adventurer.setGodEffect("Sig", AbilityEffect.createAbilityBonus(Adventurer.ABILITY_THIEVERY, 1));
 			//adventurer.setGodless(true);
@@ -200,7 +202,7 @@ public class FLApp extends JFrame implements MouseListener,
 			luckBlessing.setPermanent(true);
 			adventurer.getBlessings().addBlessing(luckBlessing);
 			//adventurer.getBlessings().addBlessing(Blessing.STORM);
-			//adventurer.getBlessings().addBlessing(Blessing.WRATH);
+			adventurer.getBlessings().addBlessing(Blessing.WRATH);
 			Curse c = new Curse(Curse.CURSE_TYPE, "Blight of Nagil");
 			c.addEffect(AbilityEffect.createAbilityBonus(
 					Adventurer.ABILITY_COMBAT, -1));
@@ -234,6 +236,7 @@ public class FLApp extends JFrame implements MouseListener,
 			//adventurer.getItems().addItem(new Item("pirate captain's head"));
 			//adventurer.getItems().addItem(new Item("witch's hand"));
 			//adventurer.getBlessings().addBlessing(Blessing.DISEASE);
+			//adventurer.getBlessings().addBlessing(Blessing.STORM);
 			//adventurer.getBlessings().addBlessing(Blessing.getAbilityBlessing(Adventurer.ABILITY_SANCTITY));
 			//Resurrection resurrect = new Resurrection("Temple of Tyrnai", "5", "500");
 			Resurrection resurrect = new Resurrection("Temple of Nagil", "2", "339");
@@ -479,9 +482,9 @@ public class FLApp extends JFrame implements MouseListener,
 		}
 		try {
 			FileOutputStream propsFile = new FileOutputStream("user.ini");
-			userProps.store(propsFile, "Fabled Lands - user properties");
+			userProps.store(propsFile, Resources.GuiText().getString("UserIniHeader"));
 		} catch (IOException ioe) {
-			System.err.println("Error in writing user properties: " + ioe);
+			System.err.println(Resources.GuiTextFormat("UserIniWriteException", ioe));
 		}
 	}
 
@@ -712,7 +715,7 @@ public class FLApp extends JFrame implements MouseListener,
 			} catch (javax.swing.text.BadLocationException e) {
 				// Often happens around ComponentViews
 				if (!reportedBadLocation) {
-					System.out.println("How did this exception occur: " + e);
+					System.out.println(Resources.GuiTextFormat("BadLocationException", e));
 					reportedBadLocation = true;
 				}
 			}
@@ -865,7 +868,7 @@ public class FLApp extends JFrame implements MouseListener,
 	
 	void quitGame() {
 		if (actionTaken || (hasPickedAdventurer() && adventurer.isHardcore())) {
-			if (!endGame("Do you want to save before quitting?"))
+			if (!endGame(Resources.GuiText().getString("SaveBeforeQuitQuery")))
 				return;
 		}
 
@@ -889,11 +892,10 @@ public class FLApp extends JFrame implements MouseListener,
 			return true;
 		boolean isDead = (adventurer.isDead() || getCurrentSection().equals(Address.getCurrentBook().getDeathSection()));
 		if (!isDead || adventurer.hasResurrection()) {
-			String firstLine = (adventurer.isHardcore() ?
-					"You currently have a Hardcore game in progress, in which back-ups are not allowed." :
-					"You currently have a game in progress.");
+			String firstLine = Resources.GuiText().getString(adventurer.isHardcore() ?
+					"EndGameHardcore" : "EndGameNormal");
 			int result =
-				JOptionPane.showConfirmDialog(this, new String[] {firstLine, messageSecondLine}, "Save Game?", JOptionPane.YES_NO_CANCEL_OPTION);
+				JOptionPane.showConfirmDialog(this, new String[] {firstLine, messageSecondLine}, Resources.GuiText("SaveQueryTitle"), JOptionPane.YES_NO_CANCEL_OPTION);
 			if (result == JOptionPane.YES_OPTION) {
 				String file = chooseSavedGame(false);
 				if (file == null)
@@ -918,16 +920,16 @@ public class FLApp extends JFrame implements MouseListener,
 			fontCommand = "font", codewordCommand = "codewords", notesCommand = "notes",
 			exitCommand = "exit", aboutCommand = "about", docViewerCommand = "viewer";
 	private static final String
-			normalSaveText = "Save Game...",
-			hardcoreSaveText = "Save and Quit...",
-			normalQuicksaveText = "Quick Save",
-			hardcoreQuicksaveText = "Quick Save and Quit";
+			NormalSaveItemKey = "NormalSaveItem",
+			HardcoreSaveItemKey = "HardcoreSaveItem",
+			NormalQuicksaveItemKey = "NormalQuicksaveItem",
+			HardcoreQuicksaveItemKey = "HardcoreQuicksaveItem";
 	
 	private JMenuItem saveItem = null, quicksaveItem = null;
 	private JMenu extraChoiceMenu = null;
 
-	private JMenuItem createMenuItem(String text, String command) {
-		JMenuItem item = new JMenuItem(text);
+	private JMenuItem createMenuItem(String key, String command) {
+		JMenuItem item = new JMenuItem(Resources.GuiText(key));
 		item.setActionCommand(command);
 		item.addActionListener(this);
 		return item;
@@ -935,43 +937,43 @@ public class FLApp extends JFrame implements MouseListener,
 
 	private void createMenuBar() {
 		JMenuBar bar = new JMenuBar();
-		JMenu fileMenu = new JMenu("File");
-		fileMenu.add(createMenuItem("New Game", newCommand));
-		fileMenu.add(createMenuItem("Load Game...", loadCommand));
-		saveItem = createMenuItem(normalSaveText, saveCommand);
+		JMenu fileMenu = new JMenu(Resources.GuiText("FileMenu"));
+		fileMenu.add(createMenuItem("NewGameItem", newCommand));
+		fileMenu.add(createMenuItem("LoadGameItem", loadCommand));
+		saveItem = createMenuItem(NormalSaveItemKey, saveCommand);
 		saveItem.setEnabled(hasPickedAdventurer());
 		fileMenu.add(saveItem);
-		fileMenu.add(createMenuItem("Quick Load", quickloadCommand));
-		quicksaveItem = createMenuItem(normalQuicksaveText, quicksaveCommand);
+		fileMenu.add(createMenuItem("QuickloadGameItem", quickloadCommand));
+		quicksaveItem = createMenuItem(NormalQuicksaveItemKey, quicksaveCommand);
 		quicksaveItem.setEnabled(hasPickedAdventurer());
 		fileMenu.add(quicksaveItem);
 		fileMenu.addSeparator();
-		fileMenu.add(createMenuItem("Exit", exitCommand));
+		fileMenu.add(createMenuItem("ExitItem", exitCommand));
 		bar.add(fileMenu);
 		
-		JMenu windowMenu = new JMenu("Windows");
-		windowMenu.add(createMenuItem("Adventure Sheet",
+		JMenu windowMenu = new JMenu(Resources.GuiText("WindowsMenu"));
+		windowMenu.add(createMenuItem("AdventureSheetItem",
 				showAdventureSheetCommand));
-		windowMenu.add(createMenuItem("Codewords", codewordCommand));
-		windowMenu.add(createMenuItem("Notes", notesCommand));
-		windowMenu.add(createMenuItem("Ship's Manifest", showShipListCommand));
+		windowMenu.add(createMenuItem("CodewordsItem", codewordCommand));
+		windowMenu.add(createMenuItem("NotesItem", notesCommand));
+		windowMenu.add(createMenuItem("ShipManifestItem", showShipListCommand));
 		windowMenu.add(ShipList.getTransferMenuItem());
-		windowMenu.add(createMenuItem("Local Map", localMapCommand));
-		windowMenu.add(createMenuItem("Global Map", globalMapCommand));
+		windowMenu.add(createMenuItem("LocalMapItem", localMapCommand));
+		windowMenu.add(createMenuItem("GlobalMapItem", globalMapCommand));
 		windowMenu.addSeparator();
-		windowMenu.add(createMenuItem("Choose Font...", fontCommand));
+		windowMenu.add(createMenuItem("FontChoiceItem", fontCommand));
 		if (debugging)
-			windowMenu.add(createMenuItem("Doc Viewer", docViewerCommand));
+			windowMenu.add(createMenuItem("DocViewerItem", docViewerCommand));
 		bar.add(windowMenu);
 		
-		extraChoiceMenu = new JMenu("Extra Choices");
+		extraChoiceMenu = new JMenu(Resources.GuiText("ExtraChoiceMenu"));
 		extraChoiceMenu.setVisible(false); // made visible when an adventurer has been chosen
 		bar.add(extraChoiceMenu);
 		
-		JMenu helpMenu = new JMenu("Help");
-		helpMenu.add(createMenuItem("Quick Rules", showQuickRulesCommand));
-		helpMenu.add(createMenuItem("Original Rules", showRulesCommand));
-		helpMenu.add(createMenuItem("About", aboutCommand));
+		JMenu helpMenu = new JMenu(Resources.GuiText("HelpMenu"));
+		helpMenu.add(createMenuItem("QuickRulesItem", showQuickRulesCommand));
+		helpMenu.add(createMenuItem("FullRulesItem", showRulesCommand));
+		helpMenu.add(createMenuItem("AboutItem", aboutCommand));
 		bar.add(helpMenu);
 		
 		getRootPane().setJMenuBar(bar);
@@ -984,11 +986,11 @@ public class FLApp extends JFrame implements MouseListener,
 		String command = evt.getActionCommand();
 		if (command.equals(showRulesCommand)) {
 			SectionBrowser rulesPanel = new SectionBrowser("Rules.xml");
-			rulesPanel.createFrame("Rules").setVisible(true);
+			rulesPanel.createFrame(Resources.GuiText("FullRulesTitle")).setVisible(true);
 		}
 		else if (command.equals(showQuickRulesCommand)) {
 			SectionBrowser rulesPanel = new SectionBrowser("QuickRules.xml");
-			rulesPanel.createFrame("Quick Rules").setVisible(true);
+			rulesPanel.createFrame(Resources.GuiText("QuickRulesTitle")).setVisible(true);
 		}
 		else if (command.equals(aboutCommand)) {
 			new AboutDialog(this).setVisible(true);
@@ -999,7 +1001,7 @@ public class FLApp extends JFrame implements MouseListener,
 		else if (command.equals(globalMapCommand)) {
 			if (globalMapWindow == null)
 				globalMapWindow = createImageWindow("global.jpg",
-						"Map of The Fabled Lands", false);
+						Resources.GuiText("GlobalMapTitle"), false);
 			globalMapWindow.setVisible(true);
 		}
 		else if (command.equals(showShipListCommand)) {
@@ -1016,7 +1018,7 @@ public class FLApp extends JFrame implements MouseListener,
 			showNotesWindow();
 		}
 		else if (command.equals(newCommand)) {
-			if (!endGame("Do you want to save before starting a new game?"))
+			if (!endGame(Resources.GuiText("SaveBeforeNewGameQuery")))
 				return;
 			
 			closeCurrentGame();
@@ -1093,8 +1095,8 @@ public class FLApp extends JFrame implements MouseListener,
 	void doBeginBook(String book, boolean hardcore) {
 		if (gotoAddress(new Address(book, "New"))) {
 			newHardcore = hardcore;
-			saveItem.setText(hardcore ? hardcoreSaveText : normalSaveText);
-			quicksaveItem.setText(hardcore ?  hardcoreQuicksaveText : normalQuicksaveText);
+			saveItem.setText(Resources.GuiText(hardcore ? HardcoreSaveItemKey : NormalSaveItemKey));
+			quicksaveItem.setText(Resources.GuiText(hardcore ?  HardcoreQuicksaveItemKey : NormalQuicksaveItemKey));
 			showTextWindow();
 		}
 	}
@@ -1113,7 +1115,7 @@ public class FLApp extends JFrame implements MouseListener,
 			}
 
 			public String getDescription() {
-				return "Saved Games (*.dat)";
+				return Resources.GuiText("SaveGameFileDescription");
 			}
 		});
 		new SavedGamePreview(chooser);
@@ -1121,7 +1123,7 @@ public class FLApp extends JFrame implements MouseListener,
 		if (lastDir == null)
 			lastDir = System.getProperty("user.dir");
 		chooser.setCurrentDirectory(lastDir == null ? null : new File(lastDir));
-		chooser.setDialogTitle(load ? "Load Game" : "Save Game");
+		chooser.setDialogTitle(Resources.GuiText(load ? "LoadGameTitle" : "SaveGameTitle"));
 		int result;
 		if (load)
 			result = chooser.showOpenDialog(this);
@@ -1159,7 +1161,7 @@ public class FLApp extends JFrame implements MouseListener,
 				return;
 			System.out.println("File last modified: " + loadFile.lastModified());
 			
-			if (!endGame("Do you want to save your current game before loading another?"))
+			if (!endGame(Resources.GuiText("SaveBeforeLoadGameQuery")))
 				return;
 			
 			adventurer = new Adventurer();
@@ -1255,35 +1257,35 @@ public class FLApp extends JFrame implements MouseListener,
 				adventurer.getExtraChoices().checkMenu();
 				
 				if (!adventurer.validateHardcore(loadFile.lastModified()))
-					JOptionPane.showMessageDialog(this, new String[] {"This was a Hardcore saved game, but has been moved or edited.", "You can continue this session as a Regular one."}, "Leaving Hardcore", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(this, new String[] { Resources.GuiText("HardcoreFailValidateMessage1"), Resources.GuiText("HardcoreFailValidateMessage2") }, Resources.GuiText("HardcoreFailTitle"), JOptionPane.ERROR_MESSAGE);
 				
 				if (adventurer.isHardcore()) {
 					// Remove the file now
 					if (!loadFile.delete()) {
 						adventurer.setHardcore(false);
-						JOptionPane.showMessageDialog(this, new String[] {"The saved game file couldn't be deleted.", "This game will continue as a Regular game (non-Hardcore)."}, "Leaving Hardcore", JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(this, new String[] { Resources.GuiText("HardcoreFailDeleteMessage1"), Resources.GuiText("HardcoreFailDeleteMessage2") }, Resources.GuiText("HardcoreFailTitle"), JOptionPane.ERROR_MESSAGE);
 					}
 				}
 				
-				saveItem.setText(adventurer.isHardcore() ? hardcoreSaveText : normalSaveText);
+				saveItem.setText(Resources.GuiText(adventurer.isHardcore() ? HardcoreSaveItemKey : NormalSaveItemKey));
 				saveItem.setEnabled(true);
-				quicksaveItem.setText(adventurer.isHardcore() ? hardcoreQuicksaveText : normalQuicksaveText);
+				quicksaveItem.setText(Resources.GuiText(adventurer.isHardcore() ? HardcoreQuicksaveItemKey : NormalQuicksaveItemKey));
 				quicksaveItem.setEnabled(true);
 				
 				actionTaken = false;
 			}
 			else {
-				JOptionPane.showMessageDialog(this, new String[] {"The saved game could not be loaded.", "You may need to start a new game."}, "Load Failed", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(this, new String[] { Resources.GuiText("LoadGameFailMessage1"), Resources.GuiText("LoadGameFailMessage2") }, Resources.GuiText("LoadGameFailTitle"), JOptionPane.ERROR_MESSAGE);
 				adventurer = oldAdv;
 			}
 		}
 		else {
 			if (handler.save()) {
-				JOptionPane.showMessageDialog(this, "Save Successful!", "Game Saved", JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(this, Resources.GuiText("SaveGameSuccessMessage"), Resources.GuiText("SaveGameSuccessTitle"), JOptionPane.INFORMATION_MESSAGE);
 				actionTaken = false;
 			}
 			else
-				JOptionPane.showMessageDialog(this, "The game could not be saved!", "Save Failed", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(this, Resources.GuiText("SaveGameFailMessage"), Resources.GuiText("SaveGameFailTitle"), JOptionPane.ERROR_MESSAGE);
 		}		
 	}
 	

@@ -13,6 +13,8 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
+import flands.resources.Resources;
+
 /**
  * Display a simple About dialog (from the Help menu).
  * @author Jonathan Mann
@@ -20,14 +22,14 @@ import javax.swing.JTextField;
 public class AboutDialog extends JDialog implements ActionListener {
 	private String[] message =
 	{
-			"Fabled Lands App (FLApp)",
-			"Version 1.0.4",
-			"Book text \u00a9 Dave Morris & Jamie Thomson",
-			"Illustrations \u00a9 Russ Nicholson",
-			"Source code by Jonathan Mann"
+			"Fabled Lands Open Source (FLOS)",
+			Resources.GuiTextFormat("AboutVersion", "1.0.5"),
+			Resources.GuiTextFormat("AboutText", "Dave Morris & Jamie Thomson"),
+			Resources.GuiTextFormat("AboutIllustrations", "Russ Nicholson"),
+			Resources.GuiTextFormat("AboutCode", "Jonathan Mann")
 	};
 
-	private static String title = "About FLApp";
+	private static String title = Resources.GuiText("AboutTitle");
 	public AboutDialog(Frame parent) {
 		super(parent, title, true);
 		init(parent);
@@ -60,7 +62,7 @@ public class AboutDialog extends JDialog implements ActionListener {
 			if (l == 0) gbc.insets.top = 5;
 		}
 		
-		JButton closeButton = new JButton("Close");
+		JButton closeButton = new JButton(Resources.GuiText("CloseButton"));
 		closeButton.addActionListener(this);
 		gbc.setWeight(1, 1)
 			.setNoFill()
