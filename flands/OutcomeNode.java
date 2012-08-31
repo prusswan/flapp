@@ -161,7 +161,7 @@ public class OutcomeNode extends ActionNode implements Executable, Flag.Listener
 			props.setProperty("range", rangeMin + (orRange ? "," : "-") + rangeMax);
 		if (varName != null) props.setProperty("var", varName);
 		if (flag != null) props.setProperty("flag", flag);
-		props.setProperty("codeword", concatenate(codewords, andSplitter));
+		if (codewords != null) props.setProperty("codeword", concatenate(codewords, andSplitter));
 		if (blessing != null) blessing.saveTo(props);
 		if (gotoNode != null) gotoNode.outit(props);
 	}
