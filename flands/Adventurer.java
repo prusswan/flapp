@@ -1156,7 +1156,7 @@ public class Adventurer implements Loadable {
 				if (val != null) {
 					AbilityEffect ge = AbilityEffect.createFrom(val);
 					if (ge != null)
-						effects.addStatRelated(ge.getAbility(), new GodEffectSrc(god), ge);
+						setGodEffect(god, ge);
 				}
 			}
 
