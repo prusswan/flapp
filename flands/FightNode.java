@@ -480,7 +480,7 @@ public class FightNode extends Node implements Executable, ActionListener, Rolle
 		}
 
 		finalFightPrep();
-		if (skipNode != null && roundNode == null && damageNode != null)
+		if (skipNode != null && roundNode == null && damageNode == null)
 			skipNode.execute();
 		
 		return false;
@@ -568,7 +568,7 @@ public class FightNode extends Node implements Executable, ActionListener, Rolle
 		else
 			defendNode.setEnabled(true);
 		
-		if (skipNode != null && roundNode == null && damageNode != null)
+		if (skipNode != null && roundNode == null && damageNode == null)
 			skipNode.execute();
 	}
 	
@@ -729,6 +729,7 @@ public class FightNode extends Node implements Executable, ActionListener, Rolle
 		}
 	}
 
+	private static boolean firstDefenceBlessingMessage = true;
 	private class AttackNode extends ActionCell implements Executable {
 		public AttackNode(Node parent) {
 			super("AttackNode", parent);
@@ -782,12 +783,15 @@ public class FightNode extends Node implements Executable, ActionListener, Rolle
 					
 					// If not, check whether the player has a Defence blessing
 					// they might want to use
-					if (defenceBonus == 0 && getBlessings().hasBlessing(Blessing.DEFENCE)) {
+					if (defenceBonus == 0 && getBlessings().hasBlessing(Blessing.DEFENCE) && firstDefenceBlessingMessage) {
+						firstDefenceBlessingMessage = false; // so we don't show the dialog again
 						int useBlessing = JOptionPane.showConfirmDialog(FLApp.getSingle(), "Do you want to use your\nDefence through Faith blessing?", "Use Blessing?", JOptionPane.YES_NO_OPTION);
 						if (useBlessing == JOptionPane.YES_OPTION) {
 							defenceBonus = getBlessings().getDefenceBlessingBonus();
 							Blessing.addDefenceBlessing(defenceBonus);
 							getBlessings().removeBlessing(Blessing.DEFENCE);
+							firstDefenceBlessingMessage = true;
+							// so the next blessing will have the dialog shown again
 						}
 					}
 				}
@@ -1211,6 +1215,7 @@ public class FightNode extends Node implements Executable, ActionListener, Rolle
 	private class SkipNode extends ActionNode {
 		public SkipNode(Node parent) {
 			super("SkipNode", parent);
+			setEnabled(false);
 		}
 		
 		protected MutableAttributeSet createStandardAttributes() {
