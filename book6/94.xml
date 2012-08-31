@@ -14,7 +14,7 @@
 			<tick blessing="wrath">Divine Wrath</tick>
 			in the Blessings box.
 		</success>
-		This blessing can be used once at the start of a fight to inflict 1-6 Stamina points of damage on your opponent. The blessing can be used once at the start of a fight to inflict 1-6 Stamina points of damage on your opponent. The blessing is then used up and you should cross it off. You can have only one Divine Wrath blessing at any one time.
+		The blessing can be used once at the start of a fight to inflict 1-6 Stamina points of damage on your opponent. The blessing is then used up and you should cross it off. You can have only one Divine Wrath blessing at any one time.
 	</p>
 	<p>Now <goto section="323"/>.</p>
 </section>
