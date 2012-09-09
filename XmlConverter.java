@@ -28,7 +28,7 @@ public class XmlConverter {
 	    String result = out.toString();
 	    if (!result.startsWith("<?")) {
 	    	// Output is UTF-8 encoding
-	    	result = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" + result;
+	    	result = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" + result;
 	    	anyConversion = true;
 	    }
 	    return result;
