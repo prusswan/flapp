@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section name="134">
 	<p>
-		The Citadel of Velis Corin is now the base of King Nergan and the Northern Alliance. The guards salute you as King's Champion and hero of the people. You are escorted inside. Captain Vorkung, the king's aide, is there to greet you. He will provide you with a suite of rooms. You can stay there as long as you like, and <rest>restore any lost Stamina points</rest>.
+		The Citadel of Velis Corin is now the base of King Nergan and the Northern Alliance. The guards salute you as King&#8217;s Champion and hero of the people. You are escorted inside. Captain Vorkung, the king's aide, is there to greet you. He will provide you with a suite of rooms. You can stay there as long as you like, and <rest>restore any lost Stamina points</rest>.
 	</p>
 	<p>
-		The court sorcereror will cure you of any
+		The court sorcerer will cure you of any
 		<lose poison="*" disease="*">poison or disease</lose>
 		you may be suffering from, such as the Blight of Nagil, but he cannot lift a curse.
 	</p>
