@@ -5,7 +5,7 @@
 		<set var="ransom" value="150"/>
 	</if>
 	<elseif codeword="2.530.r" hidden="t">
-		<lost codeword="2.530.r" hidden="t"/>
+		<lose codeword="2.530.r" hidden="t"/>
 		<set var="ransom" value="300"/>
 	</elseif>
 	<elseif codeword="2.564.r" hidden="t">
