@@ -11,7 +11,7 @@
 		</success>
 		<failure>
 			If you fail, you go hungry and must
-			<lose stamina="1">lose 1 Stamint point</lose>.
+			<lose stamina="1">lose 1 Stamina point</lose>.
 		</failure>
 	</p>
 	<p>If you still live, in the morning you set off.</p>
