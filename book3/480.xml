@@ -14,7 +14,7 @@
 		<item name="candle" tags="light,useonce" buy="10" sell="5"/>
 		<item name="water flask" buy="25" sell="20"/>
 		<item name="coral-red tresses" buy="1000" sell="500"/>
-		<item name="golden katana" buy="10000" sell="3000"/>
+		<weapon name="golden katana" buy="10000" sell="3000"/>
 		<item name="smoulder fish" buy="110" sell="90"/>
 		<tool name="cross-staff" ability="scouting" bonus="2" buy="700" sell="500"/>
 		<item name="violin" buy="90" sell="50"/>
