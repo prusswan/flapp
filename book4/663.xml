@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section name="663">
 	<p>
-		You step into the darkness. It is much colder here, a marrowfreezing, bitter, biting cold that reaches into your chest with talons of frosty iron and squeezes your heart.
+		You step into the darkness. It is much colder here, a marrow-freezing, bitter, biting cold that reaches into your chest with talons of frosty iron and squeezes your heart.
 	</p>
 	<p>
 		<if not="t" item="?" tags="light">
