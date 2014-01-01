@@ -10,6 +10,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 import javax.swing.JDialog;
+import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JScrollPane;
 import javax.swing.ListSelectionModel;
@@ -52,14 +53,22 @@ public class DocumentChooser extends JDialog implements java.awt.event.ActionLis
 		Container content = getContentPane();
 		content.setLayout(gbl);
 
-		new GBC(0, 0)
+		int row = 0;
+		if (multipleSelection) {
+			new GBC(0, row++)
+			.setWeight(1, 0)
+			.setBothFill()
+			.setInsets(12, 12, 0, 11)
+			.addComp(content, new JLabel("Select multiple items with CTRL + click."), gbl);
+		}
+		new GBC(0, row++)
 			.setWeight(1, 1)
 			.setBothFill()
 			.setInsets(12, 12, 0, 11)
 			.addComp(content, new JScrollPane(list), gbl);
 
 		CommandButtons buttons = CommandButtons.createRow(CommandButtons.OK_CANCEL, this);
-		new GBC(0, 1)
+		new GBC(0, row++)
 			.setWeight(1, 0)
 			.setBothFill()
 			.addComp(content, buttons, gbl);
