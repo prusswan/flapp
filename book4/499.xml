@@ -5,7 +5,7 @@
 	</p>
 	<p>
 		<if item="verdigris key">
-			If you have a <b>verdigris key</b>, you can <goto section="196"/>.
+			If you have a <b>verdigris key</b>, you can <goto section="196" force="f"/>.
 		</if>
 		If not, there is nothing for you to do but leave.
 	</p>
