@@ -16,12 +16,12 @@ import java.util.zip.ZipOutputStream;
  * @author Jonathan Mann
  */
 public class Pack implements FilenameFilter {
-	private static String zipName = "FLApp.zip";
+	private static String zipName = "JaFL.zip";
 	private static final String JarName = "flands.jar";
 	private static final String LocalFiles[] =
 		{
 			"README.txt",
-			"FLApp.bat",
+			"JaFL.bat",
 			JarName,
 			"user.ini",
 			"icon.jpg",
@@ -29,7 +29,7 @@ public class Pack implements FilenameFilter {
 			"Rules.xml",
 			"QuickRules.xml",
 			"books.ini",
-			"flapp.ico"
+			"jafl.ico"
 		};
 	
 	// An array of each book directory to include, along with the images that must

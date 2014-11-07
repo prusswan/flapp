@@ -1,33 +1,28 @@
-Fabled Lands Application (FLApp)
-v1.0.3
+Java Fabled Lands (JaFL)
+v1.0.5
 --------------------------------
 
 The most current version of this software (and the source code) can be downloaded from
-https://sourceforge.net/projects/flapp/
-
-The same version should also be available on the previous home page
-http://au.geocities.com/jemann75/
-and at the Yahoo group
-http://games.groups.yahoo.com/group/fabledlands/
+http://sourceforge.net/projects/flapp/
 
 Installation
 ------------
 
-- Installing Java 5.0
-  -------------------
+- Installing Java
+  ---------------
 This program requires Java 5.0 (or better) to run.
 This is available at:
 http://java.sun.com/javase/downloads/index.jsp
 
 There should be a link there to the current JRE; any version from 5.0 on will do,
 although the most recent version is probably the best.
-As of this writing, Java Runtime Environment (JRE) 6 is the most recent version.
+As of this writing, Java Runtime Environment (JRE) 7 is the most recent version.
 
 Users of Mac OS X will need to go here instead:
 http://developer.apple.com/java/download/
 
 
-If you're not sure which version of Java you have installed, you can try running FLApp
+If you're not sure which version of Java you have installed, you can try running FLOS
 as described below. Earlier versions will either show a popup message with the message
 
 "Could not find the main class. Program will exit."
@@ -38,31 +33,30 @@ Exception in thread "main" java.lang.UnsupportedClassVersionError
 (Unsupported major.minor version 49.0)
 etc.
 
-Either of these means you'll need to download a newer version of Java to run FLApp.
+Either of these means you'll need to download a newer version of Java to run FLOS.
 
-- Installing FLApp
+- Installing JaFL
   ----------------
-Once Java is installed, you should be able to run FLApp by extracting FLApp.zip
-into a new folder and running FLApp.bat.  Windows users may be able to simply
+Once Java is installed, you should be able to run JaFL by extracting JaFL.zip
+into a new folder and running JaFL.bat.  Windows users may be able to simply
 double-click on flands.jar to run it.  Alternatively, you can create a
 command prompt window, change to the directory you unzipped the files to, and type:
 
 java -jar flands.jar
 
-If you have a previous installation of FLApp, you can simply extract the zip to
+If you have a previous installation of JaFL, you can simply extract the zip to
 overwrite the old installation. This will leave any saved game unaffected
 (though see the note below about saved games).
 
 - Adding the illustrations
   ------------------------
-The illustrations for the books are available at the same website as FLApp, and will work
-with version 0.96 and later. If you haven't downloaded the version that already includes
-the illustrations, you can get them as separate downloads. You will need to copy these files
-('illus1.zip', 'illus2.zip' and so on) into your installation directory. Once there,
-the program will find and display them in the 'book' window.
-Note that the illustrations are scaled to fit in the window, and will only be displayed at
-their full size (and best quality) if the window is wide enough.
-
+The illustrations for the books are available at the same website as JaFL, and
+will work with version 0.96 and later. You will need to copy these files
+('illus1.zip', 'illus2.zip' and so on) into your installation directory. DO NOT
+unzip these files! Once there, the program will find and display them in the
+'book' window. Note that the illustrations are scaled to fit in the window, and
+will only be displayed at their full size (and best quality) if the window is
+wide enough.
 
 How to use
 ----------
@@ -131,23 +125,15 @@ Illustrations copyright Russ Nicholson.
 Thanks to Andy for creating PDFs of the books. Book 5 was typed up personally, but the
 others could be converted far more quickly via cut and paste.
 Thanks to Andy and Simon for scanning the book illustrations (I lack scanner-fu).
-Bug-finders: ahnslaut, andreasl, anthes, bty927796, cinnamon_spider931976, cip5651,
-  ddevejian, dj_afterhours, edrickv, hauke.pribnow, hubcommish, joanshomer, jonathonyeldon,
-  jpcheong, Lorenzo, lt.johnsteele, maj21, mariefoxprice, Martha Hoffman, matthewbarratt2001,
-  myth_dracon, Sigrdrifa, Stefan Hegemann, xander77, yuvalm2, 268.529 (who needs the alphabet?)
-Hero bug-finders: shadow_451, ellora84, eddienguyen
-(Email me if you want to be removed from this list or listed by another name)
-
-Features to come
-----------------
-- a complete absence of bugs (ha)
+Thanks to all the bug-finders for improving the game and keeping me honest!
 
 Bugs
 ----
-Many, probably. If you discover some, please email me at the address below.
+Many, probably. If you discover some, please email me at the address below
+or ask for help in the project forums (https://sourceforge.net/projects/flapp/forums)
 Changes in the code to deal with newly added books may break books that were previously
 working; to find these problems I need to either a) be psychic, or b) have good testers.
 
 A very happy Holy Day of the Recantation of the Soul to all.
 --jonathan mann (jemann75@yahoo.com)
---25 Oct 2009
+--November '14

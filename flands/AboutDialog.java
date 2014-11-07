@@ -22,7 +22,7 @@ import flands.resources.Resources;
 public class AboutDialog extends JDialog implements ActionListener {
 	private String[] message =
 	{
-			"Fabled Lands Open Source (FLOS)",
+			"Java Fabled Lands (JaFL)",
 			Resources.GuiTextFormat("AboutVersion", "1.0.5"),
 			Resources.GuiTextFormat("AboutText", "Dave Morris & Jamie Thomson"),
 			Resources.GuiTextFormat("AboutIllustrations", "Russ Nicholson"),

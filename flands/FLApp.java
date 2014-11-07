@@ -227,6 +227,7 @@ public class FLApp extends JFrame implements MouseListener,
 			Item candle = new Item("candle");
 			candle.addTags("light,useonce");
 			adventurer.getItems().addItem(candle);
+			adventurer.getItems().addItem(new Item("verdigris key"));
 			//adventurer.adjustAbility(Adventurer.ABILITY_CHARISMA, 10);
 			//adventurer.adjustAbility(Adventurer.ABILITY_RANK, 12);
 			//for (int i = 0; i < 4; i++)
@@ -1374,10 +1375,13 @@ public class FLApp extends JFrame implements MouseListener,
 		}
 		*/
 		FLApp app = FLApp.getSingle();
+		debugging = false;
+		/*
 		if (args.length > 0)
 			debugging = true;
 		else
 			blockOutput();
+		*/
 
 		String section = null;
 		if (args.length > 1) {
