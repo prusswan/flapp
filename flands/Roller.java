@@ -107,6 +107,7 @@ public class Roller implements Runnable {
 	
 	protected void doRoll() {
 		int min = 0, max = 0;
+		boolean exceptionPrinted = false;
 		for (int i = 0; i < 20; i++) {
 			if (i > 0) {
 				try {
@@ -127,8 +128,19 @@ public class Roller implements Runnable {
 			if (instant) break;
 			if (i == 0)
 				toolTipPopup.show();
-			else
-				toolTip.paintImmediately(toolTip.getBounds());
+			else {
+				try {
+					toolTip.paintImmediately(toolTip.getBounds());
+				}
+				catch (NullPointerException npe) {
+					// Bug reported 6/11/14
+					// NPE in javax.swing.plaf.metal.MetalToolTipUI.getAcceleratorString
+					if (!exceptionPrinted) {
+						exceptionPrinted = true;
+						npe.printStackTrace();
+					}
+				}
+			}
 
 			if (i == 0)
 				min = max = result;
@@ -137,6 +149,7 @@ public class Roller implements Runnable {
 				else if (result > max) max = result;
 			}
 		}
+		
 		if (!instant)
 			System.out.println("Min=" + min + ", max=" + max);
 		else
