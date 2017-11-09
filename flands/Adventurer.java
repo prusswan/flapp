@@ -255,9 +255,11 @@ public class Adventurer implements Loadable {
 				abilities[a].affected += d;
 				abilities[a].updateDocument();
 				if (a == ABILITY_COMBAT) {
+					/*
 					defence.natural += d;
 					defence.affected += d;
 					defence.updateDocument();
+					*/
 				}
 			}
 		}
@@ -987,7 +989,7 @@ public class Adventurer implements Loadable {
 				break;
 			case ABILITY_DEFENCE:
 				affectedStat = defence;
-				defence.affected = abilities[ABILITY_COMBAT].affected + rank.affected;
+				defence.affected = abilities[ABILITY_COMBAT].natural + rank.affected;
 				defence.affected = effects.adjustAbility(ability, defence.affected);
 				break;
 			case ABILITY_STAMINA:
@@ -1035,21 +1037,21 @@ public class Adventurer implements Loadable {
 	private void calcDefence() {
 		// Q: What is the 'natural' defence?  To quote the books:
 		// Your Defence score is equal to:
-		//   your COMBAT score, including any weapon bonus
+		//   your COMBAT score, _not_ including any weapon bonus
 		//   plus your Rank
 		//   plus the bonus for the armour you're wearing (if any)
 		// 5.689 has a fight where Defence=COMBAT + Rank only - a good definition of natural?
 		// Except there are items that specifically raise Defence without being armour.
 		// A compromise for now: defence.natural is the sum of relevant natural values
 		// .affected is the sum of relevant affected values
-		int affectedCombat = abilities[ABILITY_COMBAT].affected;
+		int naturalCombat = abilities[ABILITY_COMBAT].natural;
 		int affectedRank = rank.affected;
 		if (isRuleActive(ActiveRuleset.SARVEN)) {
 			// Limit Combat and Rank bonuses to Defence to 12
-			affectedCombat = Math.min(12, affectedCombat);
-			affectedRank   = Math.min(12, affectedRank);
+			// naturalCombat = Math.min(12, naturalCombat); // not necessary for natural score
+			affectedRank  = Math.min(12, affectedRank);
 		}
-		defence.affected = affectedCombat + affectedRank;
+		defence.affected = naturalCombat + affectedRank;
 		defence.affected = effects.adjustAbility(ABILITY_DEFENCE, defence.affected);
 		defence.updateDocument();
 	}

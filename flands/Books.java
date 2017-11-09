@@ -73,8 +73,9 @@ public class Books {
 						else
 						{
 							try {
-								new ZipFile(paths[p]);
+								ZipFile zf = new ZipFile(paths[p]);
 								pathTypes[p] = ZIP_TYPE;
+								zf.close();
 							}
 							catch (IOException e) {
 								System.out.println("Couldn't open zip-file " + paths[p]);
@@ -140,6 +141,7 @@ public class Books {
 					try {
 						ZipFile zf = new ZipFile(paths[p]);
 						ZipEntry entry = zf.getEntry(name);
+						zf.close();
 						if (entry != null)
 							return true;
 						//return (entry != null);
@@ -168,6 +170,7 @@ public class Books {
 					try {
 						ZipFile zf = new ZipFile(paths[p]);
 						ZipEntry entry = zf.getEntry(name);
+						zf.close();
 						if (entry != null)
 							return zf.getInputStream(entry);
 					}
@@ -222,6 +225,7 @@ public class Books {
 							allFiles.add(e.nextElement().getName());
 							//names[i++] = e.nextElement().getName();
 						//return names;
+						zf.close();
 					}
 					catch (IOException e) {
 						System.out.println("Error reading zip-file " + paths[p]);

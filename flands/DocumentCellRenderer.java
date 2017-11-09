@@ -3,6 +3,7 @@ package flands;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.Rectangle;
 
 import javax.swing.JList;
@@ -78,8 +79,9 @@ public class DocumentCellRenderer extends JTextPane implements ListCellRenderer 
 	public void repaint(long tm, int x, int y, int width, int height) {}
 	public void repaint(Rectangle r) {}
 	protected void firePropertyChange(String propertyName, Object oldValue, Object newValue) {
-		if (propertyName=="document")
+		if (propertyName=="document") {
 			super.firePropertyChange(propertyName, oldValue, newValue);
+		}
 	}
 	public void firePropertyChange(String propertyName, byte oldValue, byte newValue) {}
 	public void firePropertyChange(String propertyName, char oldValue, char newValue) {}
@@ -89,4 +91,15 @@ public class DocumentCellRenderer extends JTextPane implements ListCellRenderer 
 	public void firePropertyChange(String propertyName, float oldValue, float newValue) {}
 	public void firePropertyChange(String propertyName, double oldValue, double newValue) {}
 	public void firePropertyChange(String propertyName, boolean oldValue, boolean newValue) {}
+
+	private static int SafeMinHeight = -1;
+	public Dimension getPreferredSize() {
+		Dimension d = super.getPreferredSize();
+		if (d.height > 5 && SafeMinHeight == -1)
+			SafeMinHeight = d.height;
+		if (d.height <= 5 && SafeMinHeight != -1)
+			d.height = SafeMinHeight;
+		// System.out.println("Cell preferred height: " + d.height);
+		return d;
+	}	
 }

@@ -401,14 +401,13 @@ public class SectionDocument extends AbstractDocument implements StyledDocument 
 
 	/** Copied from DefaultStyledDocument. */
 	public Element getParagraphElement(int pos) {
-		Element e = null;
-		for (e = getDefaultRootElement(); !e.isLeaf(); ) {
+		Element e = getDefaultRootElement();
+		while (!e.isLeaf()) {
 			int index = e.getElementIndex(pos);
 			e = e.getElement(index);
 		}
-		if(e != null)
-			return e.getParentElement();
-		return e;
+		
+		return (e != null ? e.getParentElement() : null);
 	}
 
 	/** Copied from DefaultStyledDocument. */
