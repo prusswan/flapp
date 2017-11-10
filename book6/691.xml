@@ -36,7 +36,7 @@
 			</difficulty>
 		</if>
 		<else>
-			(<difficulty ability="charisma" level="20" force="f" var="c2">or 20</difficulty>)
+			<text/>(<difficulty ability="charisma" level="20" force="f" var="c2">or 20</difficulty>)
 			if you&#8217;re not an initiate).
 		</else>
 		<success var="c2">

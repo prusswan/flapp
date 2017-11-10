@@ -31,6 +31,7 @@ public class TextNode extends Node {
 	private final boolean isTextNode;
 	private AttributeSet defaultAtts = null;
 	private StyledTextList styledTextList = new StyledTextList();
+	private boolean hadAnyContent = false;
 	
 	public TextNode(Node parent, boolean isTextNode) {
 		super(isTextNode ? TextElementName : DescElementName , parent);
@@ -68,6 +69,7 @@ public class TextNode extends Node {
 		if (text.length() == 0)
 			return;
 
+		hadAnyContent = true;
 		SimpleAttributeSet atts;
 		StyledText textUnit;
 		
@@ -86,6 +88,14 @@ public class TextNode extends Node {
 		StyleNode.applyActiveStyles(atts);
 		textUnit = new StyledText(text, atts);
 		styledTextList.add(textUnit);
+	}
+
+	public boolean handleEndTag() {
+		if (!hadAnyContent) {
+			// Empty text node = deliberate space
+			this.handleContent(" ");
+		}
+		return super.handleEndTag();
 	}
 
 	public Element[] getLeaves() {

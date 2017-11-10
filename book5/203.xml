@@ -4,11 +4,11 @@
 		The vampire highwaymen close in. Each time if and when they wound you, they drain your blood, and you lose
 		<fightdamage type="add">
 			<curse name="Vampire's Kiss" cumulative="t">
-				one point from your COMBAT rating
 				<effect ability="combat" bonus="-1"/>
+				one point from your COMBAT rating
 			</curse>
 		</fightdamage>
-		as well as the usual Stamina.
+		<text/>as well as the usual Stamina.
 		Fight them as one opponent.
 	</p>
 	<fight name="Three Vampires" combat="10" defence="12" stamina="25"/>

@@ -15,7 +15,7 @@
 		<else>
 			or
 			<random dice="2">
-				two <adjust ability="rank"/>
+				two<adjust ability="rank"/>
 				<adjust crew="poor" amount="-2"/>
 				<adjust crew="good" amount="2"/>
 				<adjust crew="excellent" amount="3"/>

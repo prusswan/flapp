@@ -20,7 +20,7 @@
 	</p>
 	<p>
 		<if item="witch's hand"><if item="parrot fungus">
-				If you have a <b>witch&#8217;s hand</b> and some <b>parrot fungus</b>, <goto section="691"/>.
+				If you have a <b>witch&#8217;s hand</b> and some <b>parrot fungus</b>, <goto section="691"/>.<text/>
 		</if></if>
 		If not, you leave. <goto section="10"/>.
 	</p>

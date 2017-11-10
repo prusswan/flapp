@@ -13,7 +13,7 @@
 			</random>
 		</if>
 		<else>
-			(<random dice="3">
+			<text/>(<random dice="3">
 				three dice<adjust ability="rank"/>
 				<adjust crew="poor" amount="-2"/>
 				<adjust crew="good" amount="2"/>

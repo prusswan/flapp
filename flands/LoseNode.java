@@ -2,6 +2,7 @@ package flands;
 
 
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -349,21 +350,38 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 		if (ability >= 0) {
 			abilityAffected = ability;
 			if (ability == Adventurer.ABILITY_SINGLE) {
-				int[]
-				    abilities = new int[Adventurer.ABILITY_COUNT],
-				    values = new int[Adventurer.ABILITY_COUNT];
-				for (int a = 0; a < abilities.length; a++) {
-					abilities[a] = a;
-					values[a] = getAdventurer().getAbilityValue(a, Adventurer.MODIFIER_NATURAL);
+				ArrayList<Integer>
+					abilities = new ArrayList<Integer>(),
+					values = new ArrayList<Integer>();
+				for (int a = 0; a < Adventurer.ABILITY_COUNT; a++) {
+					int value = getAdventurer().getAbilityValue(a,  Adventurer.MODIFIER_NATURAL);
+					if (value > 1) {
+						// Don't let the player pick an ability that's already at 1!
+						abilities.add(new Integer(a));
+						values.add(new Integer(value));
+					}
 				}
-				DocumentChooser dc = new DocumentChooser(FLApp.getSingle(), "Choose Ability", Adventurer.getAbilityDocuments(abilities, values), false);
-				dc.setVisible(true);
 				
-				if (dc.getSelectedIndices() == null) {
-					setEnabled(true);
-					return;
+				if (abilities.size() > 0) {
+					int[]
+						abilitiesArr = new int[abilities.size()],
+						valuesArr = new int[abilities.size()];
+					for (int i = 0; i < abilitiesArr.length; i++) {
+						abilitiesArr[i] = abilities.get(i).intValue();
+						valuesArr[i] = values.get(i).intValue();
+					}
+					DocumentChooser dc = new DocumentChooser(FLApp.getSingle(), "Choose Ability", Adventurer.getAbilityDocuments(abilitiesArr, valuesArr), false);
+					dc.setVisible(true);
+					
+					if (dc.getSelectedIndices() == null) {
+						setEnabled(true);
+						return;
+					}
+					abilityAffected = dc.getSelectedIndices()[0];
 				}
-				abilityAffected = dc.getSelectedIndices()[0];
+				else {
+					abilityAffected = -1;
+				}
 			}
 		}
 		
@@ -617,7 +635,7 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 			getAdventurer().getStamina().damage(currentStamina - getAttributeValue(staminaTo));
 		}
 
-		if (ability >= 0) {
+		if (ability >= 0 && abilityAffected >= 0) {
 			// abilityAffected should have already been chosen above
 			if (Character.isDigit(amount.charAt(0))) {
 				DiceExpression exp = new DiceExpression(amount);
@@ -804,6 +822,11 @@ public class LoseNode extends ActionNode implements Executable, Roller.Listener,
 		UndoManager.createNew(this).add(this);
 		if (dead)
 			; // TODO: death!
+		
+		if (flag != null)
+			getFlags().setState(flag, false);
+		if (price != null)
+			getFlags().setState(price, true);
 		
 		super.actionPerformed(null);
 		

@@ -13,7 +13,7 @@
 			<else><set var="fail" value="0"/></else>
 			<if not="t" var="fail" equals="1">
 				<if var="roll" greaterthan="m">
-					If you get higher than your current MAGIC score, <gain ability="magic" amount="1">increase it by 1</gain>.
+					If you get higher than your current MAGIC score, <gain ability="magic" amount="1">increase it by 1</gain>.<text/>
 				</if>
 			</if>
 			<if var="fail" equals="1">

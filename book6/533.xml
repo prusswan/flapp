@@ -15,14 +15,14 @@
 				<adjust codeword="Fuchsia" amount="3"/>
 			</difficulty>
 		</if>
-		if you&#8217;re a Warrior, or
+		<text/>if you&#8217;re a Warrior, or
 		<if not="t" profession="warrior">
 			<difficulty ability="charisma" level="22">
 				Difficulty 22<adjust amount="t"/>
 				<adjust codeword="Fuchsia" amount="3"/>
 			</difficulty>
 		</if>
-		if you belong to another profession. If you have the title of Junior Court Rank or Senior Court Rank you can add 2 to the dice roll. If you have the codeword Fuchsia you can add 3.
+		<text/>if you belong to another profession. If you have the title of Junior Court Rank or Senior Court Rank you can add 2 to the dice roll. If you have the codeword Fuchsia you can add 3.
 	</p>
 	<p>
 		<failure>

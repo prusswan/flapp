@@ -13,7 +13,7 @@
 				a CHARISMA roll at Difficulty 12
 			</difficulty>
 		</else>
-		or show them a <b>silver medallion</b>.
+		<text/>or show them a <b>silver medallion</b>.
 	</p>
 	<outcomes>
 		<success var="x" section="688">Gain their confidence</success>

@@ -9,7 +9,7 @@
 	<p>
 		&#8216;You see?&#8217; says the stranger. &#8216;They listened raptly, the little darlings. I&#8217;m sure they&#8217;ll go home better cats for that sermon. Now it&#8217;s your turn...&#8217;
 	</p>
-	<p><difficulty ability="scouting" level="12"/>.</p>
+	<p><difficulty ability="scouting" level="12">Make a SCOUTING roll at Difficulty 12</difficulty>.</p>
 	<outcomes>
 		<success section="403"/>
 		<failure section="428"/>

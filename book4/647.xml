@@ -17,8 +17,8 @@
 		<if profession="wayfarer" not="t">
 			<difficulty ability="charisma" level="15" force="f"/>
 		</if>
-		(<else>
-			or
+		<else>
+			<text/>(or
 			<difficulty ability="charisma" level="13" force="f">Difficulty 13</difficulty> if you are a Wayfarer
 		</else>).
 	</p>

@@ -6,7 +6,7 @@
 	<p>
 		<if codeword="Fracas">
 			<if codeword="Face" not="T">
-				If you have the codeword <i>Fracas</i> but not the codeword Face, <goto section="18"/>.
+				If you have the codeword <i>Fracas</i> but not the codeword Face, <goto section="18"/>.<text/>
 		</if></if>
 		Otherwise the soldiers pass by without a word and you can <goto section="196"/>.
 	</p>
