@@ -10,11 +10,11 @@
 	</p>
 	<outcomes>
 		<outcome flag="c" range="1">Misdiagnosis. 
-			<lose stamina="1d">Lose 1-6 Stamina</lose>
+			<lose stamina="1d" flag="c">Lose 1-6 Stamina</lose>
 		</outcome>
-		<outcome flag="c" range="2">He fails to cure you</outcome>
+		<outcome flag="c" range="2">He fails to cure you<tick flag="c" hidden="true"/></outcome>
 		<outcome flag="c" range="3-6">
-			Cured of one <lose disease="?">disease or poison effect</lose>
+			Cured of one <lose disease="?" flag="c">disease or poison effect</lose>
 		</outcome>
 	</outcomes>
 	<p>When you are ready you can:</p>

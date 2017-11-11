@@ -12,7 +12,7 @@ import org.xml.sax.Attributes;
  * 
  * @author Jonathan Mann
  */
-public class OutcomesTableNode extends TableNode {
+public class OutcomesTableNode extends TableNode implements Executable {
 	public static final String ElementName = "outcomes";
 	private String var;
 
@@ -22,6 +22,7 @@ public class OutcomesTableNode extends TableNode {
 
 	public void init(Attributes atts) {
 		var = atts.getValue("var");
+		findExecutableGrouper().addExecutable(this);
 	}
 
 	/**
@@ -46,4 +47,19 @@ public class OutcomesTableNode extends TableNode {
 
 		return false;
 	}
+	
+	public boolean execute(ExecutableGrouper grouper) {
+		System.out.println("Executing Outcomes node");
+		// Make sure all child OutcomeNodes are in initial state
+		for (Iterator<Node> i = getChildren(); i.hasNext(); ) {
+			Node n = i.next();
+			if (n instanceof Executable) {
+				((Executable)n).resetExecute();
+			}
+		}
+		
+		return true;
+	}
+
+	public void resetExecute() {}
 }

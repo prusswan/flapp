@@ -919,7 +919,7 @@ public class FLApp extends JFrame implements MouseListener,
 			loadCommand = "load", saveCommand = "save",
 			quickloadCommand = "qload", quicksaveCommand = "qsave", newCommand = "new",
 			fontCommand = "font", codewordCommand = "codewords", notesCommand = "notes",
-			exitCommand = "exit", aboutCommand = "about", docViewerCommand = "viewer";
+			exitCommand = "exit", aboutCommand = "about", docViewerCommand = "viewer", nodeDumpCommand = "dump";
 	private static final String
 			NormalSaveItemKey = "NormalSaveItem",
 			HardcoreSaveItemKey = "HardcoreSaveItem",
@@ -963,8 +963,10 @@ public class FLApp extends JFrame implements MouseListener,
 		windowMenu.add(createMenuItem("GlobalMapItem", globalMapCommand));
 		windowMenu.addSeparator();
 		windowMenu.add(createMenuItem("FontChoiceItem", fontCommand));
-		if (debugging)
+		if (debugging) {
 			windowMenu.add(createMenuItem("DocViewerItem", docViewerCommand));
+			windowMenu.add(createMenuItem("NodeDumpItem", nodeDumpCommand));
+		}
 		bar.add(windowMenu);
 		
 		extraChoiceMenu = new JMenu(Resources.GuiText("ExtraChoiceMenu"));
@@ -1060,6 +1062,12 @@ public class FLApp extends JFrame implements MouseListener,
 		}
 		else if (command.equals(docViewerCommand)) {
 			new SectionDocumentViewer(this);
+		}
+		else if (command.equals(nodeDumpCommand)) {
+			try {
+				((SectionNode)this.rootNode).outputTo(System.out, "", XMLOutput.OUTPUT_PROPS_DYNAMIC);
+			}
+			catch (IOException ioe) {}
 		}
 	}
 
@@ -1376,12 +1384,10 @@ public class FLApp extends JFrame implements MouseListener,
 		*/
 		FLApp app = FLApp.getSingle();
 		debugging = false;
-		/*
 		if (args.length > 0)
 			debugging = true;
 		else
 			blockOutput();
-		*/
 
 		String section = null;
 		if (args.length > 1) {

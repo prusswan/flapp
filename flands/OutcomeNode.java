@@ -310,8 +310,8 @@ public class OutcomeNode extends ActionNode implements Executable, Flag.Listener
 			}
 			
 			if (flag != null) {
-				System.out.println("OutcomeNode, range " + getRange() + ", matches - setting flag to false");
-				getFlags().setState(flag, false);
+				//System.out.println("OutcomeNode, range " + getRange() + ", matches - setting flag to false");
+				//getFlags().setState(flag, false);
 			}
 
 			if (blessing != null && getBlessings().hasBlessing(blessing)) {
@@ -340,7 +340,7 @@ public class OutcomeNode extends ActionNode implements Executable, Flag.Listener
 			if (gotoNode != null)
 				gotoNode.setEnabled(false);
 			if (descriptionBox != null)
-				descriptionBox.setEnabled(true);
+				descriptionBox.setEnabled(false); // correct initial state?
 			if (descriptionNode != null)
 				descriptionNode.setEnabled(false);
 			setHighlighted(false);
