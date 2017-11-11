@@ -255,11 +255,9 @@ public class Adventurer implements Loadable {
 				abilities[a].affected += d;
 				abilities[a].updateDocument();
 				if (a == ABILITY_COMBAT) {
-					/*
 					defence.natural += d;
 					defence.affected += d;
 					defence.updateDocument();
-					*/
 				}
 			}
 		}
