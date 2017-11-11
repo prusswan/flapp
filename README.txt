@@ -1,5 +1,5 @@
 Java Fabled Lands (JaFL)
-v1.0.5
+v1.0.6
 --------------------------------
 
 The most current version of this software (and the source code) can be downloaded from
@@ -12,17 +12,14 @@ Installation
   ---------------
 This program requires Java 5.0 (or better) to run.
 This is available at:
-http://java.sun.com/javase/downloads/index.jsp
+http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
-There should be a link there to the current JRE; any version from 5.0 on will do,
+There should be a link there to the current Java SE; any version from 5.0 on will do,
 although the most recent version is probably the best.
-As of this writing, Java Runtime Environment (JRE) 7 is the most recent version.
-
-Users of Mac OS X will need to go here instead:
-http://developer.apple.com/java/download/
+As of this writing, Java Standard Edition (Java SE) 9 is the most recent version.
 
 
-If you're not sure which version of Java you have installed, you can try running FLOS
+If you're not sure which version of Java you have installed, you can try running JaFL
 as described below. Earlier versions will either show a popup message with the message
 
 "Could not find the main class. Program will exit."
@@ -76,7 +73,8 @@ The Adventure Sheet is largely non-interactive. The elements that _are_ interact
 Double-clicking will 'use' an item or blessing (wielding a weapon, wearing armour,
 using a special item, or using a luck blessing). The items also have popup menus
 (activated by right-clicking on an item), through which they can be dropped, sold,
-or transferred to a cache.
+or transferred to a cache. Occasionally you can select multiple items in a list
+via a Ctrl + Click, when appropriate.
 
 Abilities are shown in their 'affected' state: that is, their value after all bonuses and
 penalties are applied. Each of the six abilities has a tooltip showing how the score has
@@ -136,4 +134,4 @@ working; to find these problems I need to either a) be psychic, or b) have good 
 
 A very happy Holy Day of the Recantation of the Soul to all.
 --jonathan mann (jemann75@yahoo.com)
---November '14
+--November '17

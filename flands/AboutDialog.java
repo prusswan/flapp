@@ -23,7 +23,7 @@ public class AboutDialog extends JDialog implements ActionListener {
 	private String[] message =
 	{
 			"Java Fabled Lands (JaFL)",
-			Resources.GuiTextFormat("AboutVersion", "1.0.5"),
+			Resources.GuiTextFormat("AboutVersion", "1.0.6"),
 			Resources.GuiTextFormat("AboutText", "Dave Morris & Jamie Thomson"),
 			Resources.GuiTextFormat("AboutIllustrations", "Russ Nicholson"),
 			Resources.GuiTextFormat("AboutCode", "Jonathan Mann")
