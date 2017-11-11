@@ -170,7 +170,6 @@ public class Books {
 					try {
 						ZipFile zf = new ZipFile(paths[p]);
 						ZipEntry entry = zf.getEntry(name);
-						zf.close();
 						if (entry != null)
 							return zf.getInputStream(entry);
 					}
