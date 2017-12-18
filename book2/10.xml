@@ -5,9 +5,9 @@
 	</p>
 	<market>
 		<header type="shipsale"/>
-		<trade ship="barque" sell="190"/>
-		<trade ship="brigantine" sell="380"/>
-		<trade ship="galleon" sell="750"/>
+		<trade ship="barque" sell="100"/>
+		<trade ship="brigantine" sell="200"/>
+		<trade ship="galleon" sell="350"/>
 	</market>
 	<p>
 		Remember to cross the ship off the Ship&#8217;s Manifest if you go ahead with the sale. When you have finished your business here, <goto section="33"/>.
