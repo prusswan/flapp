@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section name="1" start="t">
+	<p>
+		The white, shining serpent comes in your dreams. It slithers
+		through the dark sky as if on land and then, noticing you,
+		descends. It draws nearer and nearer, and it is immense.
+	</p>
+	<p>(ommitted)</p>
+	<p>
+		At last you are well enough to leave. Cellacqtella, your
+		taciturn healer, walks with you along the edge of the Lake of
+		Firewater for three hours, until you can see the city of
+		Dunpala in the distance. ‘We part ways here,’ she tells you.
+		‘Take these.’ With that, she gives you a small pouch
+		containing 20 Shards, and a well-balanced fishing spear
+		(COMBAT +1). Note them on your Adventure Sheet.
+	</p>
+	<p>
+		You start to thank her for all that she’s done, but she says,
+		‘Thank me by never returning to my home. In this land, it is dangerous to help a foreigner. Goodbye.’
+	</p>
+	<p>
+		You watch her for a time as she walks back the way you
+		have come. Then you turn away, and enter Dunpala.
+	</p>
+	<p>
+		<tick codeword="Gloom">Get the codeword Gloom</tick>,
+		and <goto section="42"/>.
+	</p>
+</section>

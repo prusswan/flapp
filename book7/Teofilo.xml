@@ -1,0 +1,17 @@
+<section name="Teofilo" profession="Priest">
+	<p>
+		Teofilo was known as 'the Brutal', 'the Slaver', 'He Who Steals
+		Lives'. A vision in Uttaku's House of the Oracle, changed him.
+		He saw a weeping mother in a deserted jungle village, and a
+		ravenous winged serpent whose face became his own. Teofilo
+		freed his slaves and gave away his riches that day. His voyage
+		to Ankon-Konu is one of penance and, he hopes, redemption.
+	</p>
+	<p>
+		You can play as Teofilo, or as a priest with a different name (enter it in the 'Name' field). To begin your adventure, <goto section="1" force="f"/>.
+	</p>
+	<p>For another profession, choose from the following:</p>
+	<choices>
+		<choice section="Kintu">Warrior</choice>
+	</choices>
+</section>

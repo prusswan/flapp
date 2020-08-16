@@ -1,0 +1,22 @@
+<adventurers>
+  <abilities>
+    <header>Charisma Combat Magic Sanctity Scouting Thievery</header>
+    <profession name="Priest">7 5 6 9 7 2</profession>
+    <profession name="Mage">5 5 9 1 8 6</profession>
+    <profession name="Rogue">8 7 7 2 5 9</profession>
+    <profession name="Troubadour">9 6 6 5 5 7</profession>
+    <profession name="Warrior">6 9 3 7 6 3</profession>
+    <profession name="Wayfarer">5 8 4 5 9 7</profession>
+  </abilities>
+  <stamina amount="30"/>
+  <rank amount="7"/>
+  <gold amount="0"/>
+  <starting>
+    <adventurer name="Teofilo, THE STOLEN ONE" profession="Priest" gender="M"/>
+    <adventurer name="Charburner SMITH" profession="Rogue" gender="M"/>
+	  <adventurer name="Meregalli THE MAGUS" profession="Mage" gender="M"/>
+	  <adventurer name="Poppel THE NIGHTINGALE" profession="Troubadour" gender="M"/>
+    <adventurer name="Aguirren WRIALTO" profession="Warrior" gender="M"/>
+	  <adventurer name="Garth THE TRAVERSER" profession="Wayfarer" gender="M"/>
+  </starting>
+</adventurers>

@@ -31,7 +31,7 @@ public class Pack implements FilenameFilter {
 			"books.ini",
 			"jafl.ico"
 		};
-	
+
 	// An array of each book directory to include, along with the images that must
 	// be included (all other non-JPGs will be included regardless)
 	private static final String BookDetails[][] =
@@ -41,7 +41,8 @@ public class Pack implements FilenameFilter {
 			{"book3", "Map of Bazalek Isle.JPG", "Violet Ocean.JPG"},
 			{"book4", "Great Steppes.JPG"},
 			{"book5", "The Black Diptych.JPG", "Uttaku.JPG"},
-			{"book6", "Akatsurai.JPG"}
+			{"book6", "Akatsurai.JPG"},
+			{"book7", "Ankon-Konu.JPG"}
 		};
 
 	private String extension;
@@ -59,9 +60,9 @@ public class Pack implements FilenameFilter {
 		while ((read = in.read(buffer, 0, buffer.length)) >= 0)
 			zout.write(buffer, 0, read);
 		zout.closeEntry();
-		in.close();		
+		in.close();
 	}
-	
+
 	public static void main(String args[]) {
 		boolean zipbooks = true;
 		if (args.length > 0) {
@@ -71,11 +72,11 @@ public class Pack implements FilenameFilter {
 				zipbooks = true;
 			else
 				System.out.println("Usage: Pack [{d|z} [zip-name]]");
-			
+
 			if (args.length > 1)
 				zipName = args[1];
 		}
-		
+
 		try {
 			FileOutputStream fout = new FileOutputStream(zipName);
 			ZipOutputStream zout = new ZipOutputStream(new BufferedOutputStream(fout));
@@ -84,12 +85,12 @@ public class Pack implements FilenameFilter {
 				System.out.println("File " + i + ": " + LocalFiles[i]);
 				addFile(zout, LocalFiles[i], LocalFiles[i]);
 			}
-			
+
 			for (int d = 0; d < BookDetails.length; d++) {
 				File bookDir = new File(BookDetails[d][0]);
 				if (bookDir.exists() && bookDir.isDirectory()) {
 					String[] xmlFiles = bookDir.list(/*new Pack(".xml")*/);
-					
+
 					String bookZip = BookDetails[d][0] + ".zip";
 					ZipOutputStream bookOut;
 					String zipPathPrefix;
@@ -123,14 +124,14 @@ public class Pack implements FilenameFilter {
 						addFile(bookOut, BookDetails[d][0] + "/" + xmlFiles[i], zipPathPrefix + xmlFiles[i]);
 					}
 					System.out.println("Written " + count + " files from " + BookDetails[d][0]);
-					
+
 					if (zipbooks) {
 						// Close the book.zip
 						bookOut.close();
-						
+
 						// Write this book.zip file into the main zip
 						addFile(zout, bookZip, bookZip);
-						
+
 						// and delete the book-zip
 						new File(bookZip).delete();
 					}

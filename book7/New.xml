@@ -1,0 +1,8 @@
+<section name="Serpent King" image="Arms.jpg">
+	<p>
+		To begin your adventure, you will need to choose a profession:
+	</p>
+	<choices>
+		<choice section="Teofilo">Priest</choice>
+	</choices>
+</section>
